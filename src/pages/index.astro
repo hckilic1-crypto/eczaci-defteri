@@ -1,0 +1,209 @@
+---
+import Base from '../layouts/Base.astro';
+import PostCard from '../components/PostCard.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (
+  await getCollection('posts', (post) => !post.data.draft)
+).sort(
+  (a, b) =>
+    b.data.publishedAt.valueOf() -
+    a.data.publishedAt.valueOf()
+);
+
+const categories = (
+  await getCollection('categories')
+).sort((a, b) =>
+  a.data.name.localeCompare(b.data.name, 'tr')
+);
+
+const featured =
+  posts.find((post) => post.data.featured) ?? posts[0];
+
+const rest = posts
+  .filter((post) => post.id !== featured?.id)
+  .slice(0, 5);
+---
+
+<Base
+  title="Eczacı Defteri"
+  description="Takviye edici gıdalar, dermokozmetik ürünler ve eczacılık pratiği üzerine kaynak odaklı içerikler."
+>
+
+  <section class="shell hero">
+
+    <div class="hero-content">
+
+      <div class="kicker">
+        ECZACININ NOT DEFTERİ
+      </div>
+
+      <h1>
+        Bilgiyi<br />
+        kanıtıyla oku.
+      </h1>
+
+      <p>
+        Takviye edici gıdaları, dermokozmetik ürünleri ve
+        eczacılık pratiğini; içerik, etkinlik, güvenlilik
+        ve güncel bilimsel veriler üzerinden ele alan
+        bağımsız içerikler.
+      </p>
+
+      <div class="hero-actions">
+
+        <a class="primary-button" href="/yazilar">
+          Son yazıları keşfet
+          <span>→</span>
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="editorial-note">
+
+      <div class="editorial-number">
+        01 / DEFTER
+      </div>
+
+      <div>
+
+        <span class="editorial-small">
+          EDİTORYAL YAKLAŞIM
+        </span>
+
+        <h2>
+          Etiketten önce<br />
+          içeriğe bak.
+        </h2>
+
+        <p>
+          Ürünlerin pazarlama söylemlerinden çok;
+          içeriklerini, dozlarını, kullanım biçimlerini,
+          olası risklerini ve mevcut bilimsel kanıtları
+          değerlendirmeye çalışıyoruz.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="shell category-strip">
+
+    {categories.map((category) => (
+
+      <a
+        class="category-mini"
+        href={`/kategori/${category.id.replace('.json', '')}`}
+      >
+
+        <span
+          class="category-accent"
+          style={`background:${category.data.accent}`}
+        ></span>
+
+        <div>
+
+          <strong>
+            {category.data.name}
+          </strong>
+
+          <p>
+            {category.data.description}
+          </p>
+
+        </div>
+
+        <span class="category-arrow">
+          ↗
+        </span>
+
+      </a>
+
+    ))}
+
+  </section>
+
+
+  <section class="shell">
+
+    <div class="section-head">
+
+      <div>
+
+        <span class="section-eyebrow">
+          YENİ EKLENENLER
+        </span>
+
+        <h2>
+          Son yazılar
+        </h2>
+
+      </div>
+
+      <a href="/yazilar">
+        Tüm yazıları gör →
+      </a>
+
+    </div>
+
+    <div class="grid">
+
+      {featured && (
+        <PostCard
+          post={featured}
+          featured
+        />
+      )}
+
+      {rest.map((post) => (
+        <PostCard post={post} />
+      ))}
+
+    </div>
+
+  </section>
+
+
+  <section class="shell about-strip">
+
+    <div>
+
+      <span class="section-eyebrow">
+        ECZACI DEFTERİ
+      </span>
+
+      <h2>
+        Ürün değil,<br />
+        bilgi merkezde.
+      </h2>
+
+    </div>
+
+    <div>
+
+      <p>
+        Bir ürünün popüler olması etkili olduğu anlamına gelmez.
+        Bir içeriğin doğal olması da otomatik olarak güvenli olduğu
+        anlamına gelmez.
+      </p>
+
+      <p>
+        Buradaki içeriklerin amacı; takviye ve dermokozmetik
+        alanındaki bilgileri daha anlaşılır, sorgulanabilir
+        ve kaynak kontrollü hale getirmek.
+      </p>
+
+      <a href="/hakkinda">
+        Editoryal yaklaşımı oku →
+      </a>
+
+    </div>
+
+  </section>
+
+</Base>

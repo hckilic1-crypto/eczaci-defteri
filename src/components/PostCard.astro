@@ -1,0 +1,9 @@
+---
+const { post, featured = false } = Astro.props;
+const d = post.data;
+const slug = post.id.replace(/\.mdoc$/,'');
+---
+<a class:list={['card', {featured}]} href={`/yazi/${slug}`}>
+<div class="meta"><span class="dot"></span><span>{d.category.replaceAll('-',' ')}</span><span>·</span><span>{d.readingTime} dk</span></div>
+<h3>{d.title}</h3><p>{d.excerpt}</p><div class="arrow">↗</div>
+</a>

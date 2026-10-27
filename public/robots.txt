@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /keystatic/
+
+Sitemap: https://eczacidefteri.com/sitemap-index.xml

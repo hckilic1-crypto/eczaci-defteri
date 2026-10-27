@@ -1,0 +1,120 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const settings =
+  (await getCollection('settings'))[0]?.data;
+
+const email =
+  settings?.contactEmail ??
+  'iletisim@eczacidefteri.com';
+---
+
+<Base
+  title="İletişim | Eczacı Defteri"
+  description="İçerik düzeltmeleri, editoryal bildirimler ve iş birliği teklifleri için Eczacı Defteri ile iletişime geçin."
+>
+
+  <article class="shell contact-page">
+
+    <div class="kicker">
+      İLETİŞİM
+    </div>
+
+    <h1>
+      Bir şey söylemek<br />
+      istiyorsanız yazın.
+    </h1>
+
+    <p class="contact-lead">
+
+      Eczacı Defteri ile iletişim e-posta üzerinden yürütülür.
+
+      Bir yazıda güncellenmesi gerektiğini düşündüğünüz bir bilgi,
+      bilimsel kaynak veya maddi hata fark ettiyseniz ilgili yazının
+      bağlantısıyla birlikte iletebilirsiniz.
+
+      İçerik projeleri, marka iş birlikleri ve profesyonel
+      iş birliği teklifleri için de aynı adresi kullanabilirsiniz.
+
+    </p>
+
+
+    <div class="contact-card">
+
+      <div>
+
+        <span class="contact-label">
+          E-POSTA
+        </span>
+
+        <a
+          class="contact-email"
+          href={`mailto:${email}`}
+        >
+          {email}
+        </a>
+
+      </div>
+
+
+      <a
+        class="mail-button"
+        href={`mailto:${email}?subject=Eczacı%20Defteri%20İletişim`}
+      >
+        E-posta gönder ↗
+      </a>
+
+    </div>
+
+
+    <div class="contact-notes">
+
+      <div>
+
+        <strong>
+          İçerik düzeltme
+        </strong>
+
+        <p>
+          Bir içerikte hata veya eksik bilgi olduğunu
+          düşünüyorsanız ilgili yazının bağlantısını ve
+          mümkünse bilimsel kaynağınızı ekleyin.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <strong>
+          İş birliği
+        </strong>
+
+        <p>
+          Marka, ürün veya içerik projeleri değerlendirilirken
+          editoryal bağımsızlık korunur. İş birliği yapılması
+          olumlu ürün değerlendirmesi anlamına gelmez.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <strong>
+          Sağlık danışmanlığı
+        </strong>
+
+        <p>
+          Bu iletişim adresi kişiye özel tanı,
+          tedavi veya ilaç danışmanlığı amacıyla kullanılmaz.
+        </p>
+
+      </div>
+
+    </div>
+
+  </article>
+
+</Base>

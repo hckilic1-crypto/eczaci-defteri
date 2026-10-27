@@ -1,0 +1,23 @@
+{
+  "name": "eczaci-defteri",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "start": "node ./dist/server/entry.mjs"
+  },
+  "dependencies": {
+    "@astrojs/markdoc": "^2.1.1",
+    "@astrojs/node": "^11.1.9",
+    "@astrojs/react": "^7.1.1",
+    "@astrojs/sitemap": "^3.7.4",
+    "@keystatic/astro": "^6.0.0",
+    "@keystatic/core": "^0.6.9",
+    "astro": "latest",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  }
+}

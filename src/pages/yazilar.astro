@@ -1,0 +1,5 @@
+---
+import Base from '../layouts/Base.astro';import PostCard from '../components/PostCard.astro';import { getCollection } from 'astro:content';
+const posts=(await getCollection('posts',p=>!p.data.draft)).sort((a,b)=>b.data.publishedAt.valueOf()-a.data.publishedAt.valueOf());
+---
+<Base title="Yazılar | Eczacı Defteri"><section class="shell page-head"><div class="kicker">Arşiv</div><h1>Yazılar</h1><p>İlaç, eczacılık pratiği ve sağlık okuryazarlığı üzerine tüm notlar.</p></section><section class="shell grid">{posts.map(p=><PostCard post={p}/>)}</section></Base>

@@ -1,0 +1,4 @@
+---
+import Base from '../layouts/Base.astro';import {getCollection} from 'astro:content';const s=(await getCollection('settings'))[0]?.data;
+---
+<Base title="Hakkında | Eczacı Defteri"><article class="shell article"><header class="article-head"><div class="kicker">Hakkında</div><h1>Eczacı Defteri nedir?</h1><p class="dek">{s?.authorBio}</p></header><div class="article-body"><h2>Editoryal yaklaşım</h2><p>İçeriklerde kaynak niteliği, klinik anlamlılık, yarar-risk dengesi ve belirsizlik açıkça ayrıştırılır. Sağlık bilgisinin reklam diliyle sunulmaması temel ilkedir.</p><h2>Bağımsızlık ve şeffaflık</h2><p>Yayınlanan içerikler genel bilgilendirme amacı taşır. Sponsorlu veya ticari içerik kullanılması halinde bu durum içerikte açıkça belirtilmelidir.</p><h2>Düzeltme politikası</h2><p>Bilimsel veriler değişebilir. Önemli bir güncelleme gerektiğinde yazının güncelleme tarihi değiştirilir; maddi hatalar görünür biçimde düzeltilir.</p></div></article></Base>
