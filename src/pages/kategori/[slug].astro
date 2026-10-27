@@ -8,7 +8,7 @@ const slugOf = (item) => item.id.replace(/\.json$/, '').split('/').pop();
 
 export async function getStaticPaths() {
   const all = await getCollection('categories');
-  return all.map(cat => ({ params: { slug: slugOf(cat) }, props: { cat } }));
+  return all.map(cat => ({ params: { slug: cat.id.replace(/\.json$/, '').split('/').pop() }, props: { cat } }));
 }
 
 const { cat } = Astro.props;
