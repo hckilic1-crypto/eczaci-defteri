@@ -1,8 +1,127 @@
 ---
 export const prerender = true;
-import Base from '../../layouts/Base.astro';import { getCollection, render } from 'astro:content';
-export async function getStaticPaths(){const posts=await getCollection('posts',p=>!p.data.draft);return posts.map(post=>({params:{slug:post.id.replace(/\.mdoc$/,'')},props:{post}}));}
-const {post}=Astro.props;const {Content}=await render(post);const d=post.data;
-const date=(x)=>new Intl.DateTimeFormat('tr-TR',{day:'2-digit',month:'long',year:'numeric'}).format(x);
+import Base from '../../layouts/Base.astro';
+import PostCard from '../../components/PostCard.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts', p => !p.data.draft);
+  return posts.map(post => ({ params: { slug: post.id.replace(/\.mdoc$/, '') }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content, headings } = await render(post);
+const d = post.data;
+const categoryList = await getCollection('categories');
+const getCategorySlug = c => c.id.replace(/\.json$/, '').split('/').pop();
+const category = categoryList.find(c => getCategorySlug(c) === d.category);
+const parent = categoryList.find(c => getCategorySlug(c) === category?.data.parent);
+const toc = (headings || []).filter(h => h.depth === 2 && h.text?.trim() && h.slug);
+const related = (await getCollection('posts', p => !p.data.draft && p.id !== post.id))
+  .sort((a, b) => {
+    const aRelated = a.data.category === d.category ? 1 : 0;
+    const bRelated = b.data.category === d.category ? 1 : 0;
+    return bRelated - aRelated || b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf();
+  }).slice(0, 3);
+const date = x => new Intl.DateTimeFormat('tr-TR', { day: '2-digit', month: 'long', year: 'numeric' }).format(x);
+const siteURL = 'https://eczacidefteri.com';
+const postURL = new URL(`/yazi/${post.id.replace(/\.mdoc$/, '')}`, siteURL).href;
+const imageURL = new URL(d.coverImage || '/og-default.gif', siteURL).href;
+const settings = (await getCollection('settings'))[0]?.data;
+const authorName = settings?.authorName || 'Eczacı H.K.';
+const authorBio = settings?.authorBio || 'Eczacılık ve sağlık alanındaki konuları bilimsel kaynaklarla değerlendiren Eczacı Defteri editörü.';
+const breadcrumbs = [
+  { name: 'Anasayfa', href: '/' },
+  ...(parent ? [{ name: parent.data.name, href: `/kategori/${getCategorySlug(parent)}` }] : []),
+  ...(category ? [{ name: category.data.name, href: `/kategori/${getCategorySlug(category)}` }] : []),
+  { name: d.title, href: `/yazi/${post.id.replace(/\.mdoc$/, '')}` }
+];
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BlogPosting',
+      headline: d.title,
+      description: d.seoDescription || d.excerpt,
+      image: imageURL,
+      datePublished: d.publishedAt.toISOString(),
+      dateModified: (d.updatedAt || d.publishedAt).toISOString(),
+      author: { '@type': 'Person', name: authorName, url: `${siteURL}/hakkinda` },
+      publisher: { '@type': 'Organization', name: 'Eczacı Defteri', url: siteURL },
+      articleSection: category?.data.name || d.category,
+      mainEntityOfPage: postURL
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: breadcrumbs.map((c, i) => ({
+        '@type': 'ListItem', position: i + 1, name: c.name,
+        item: new URL(c.href, siteURL).href
+      }))
+    }
+  ]
+};
 ---
-<Base title={d.seoTitle||`${d.title} | Eczacı Defteri`} description={d.seoDescription||d.excerpt} image={d.coverImage || '/og-default.jpg'} type="article" publishedAt={d.publishedAt} updatedAt={d.updatedAt}><article class="shell article"><header class="article-head"><div class="meta"><span class="pill">{d.category.replaceAll('-',' ')}</span><span>{date(d.publishedAt)}</span><span>·</span><span>{d.readingTime} dk okuma</span></div><h1>{d.title}</h1><p class="dek">{d.excerpt}</p>{d.updatedAt && <p class="meta">Son güncelleme: {date(d.updatedAt)}</p>}</header>{d.coverImage && <figure class="article-cover"><img src={d.coverImage} alt={`${d.title} kapak görseli`} loading="eager" decoding="async" /></figure>}<div class="article-body"><Content /></div>{d.references?.length>0 && <section class="legalbox"><strong>Kaynakça</strong><ol>{d.references.map(r=><li><a href={r.url} rel="noreferrer">{r.label}</a></li>)}</ol></section>}<aside class="authorbox"><div class="kicker">Yazar künyesi</div><strong>Eczacı H.K.</strong><p>Eczacı Defteri’nin kurucusu ve editörü. İlaç, sağlık okuryazarlığı ve eczacılık pratiği üzerine kaynak temelli içerikler hazırlar.</p></aside><aside class="legalbox"><strong>Tıbbi sorumluluk notu</strong><br>Bu içerik genel bilgilendirme içindir; tanı, reçete veya kişiye özel tedavi önerisi değildir. İlaç değişikliği veya tedavi kararı için hekiminiz ve eczacınızla görüşün.</aside></article></Base>
+
+<Base
+  title={d.seoTitle || `${d.title} | Eczacı Defteri`}
+  description={d.seoDescription || d.excerpt}
+  image={d.coverImage || '/og-default.gif'}
+  type="article"
+  publishedAt={d.publishedAt}
+  updatedAt={d.updatedAt}
+  structuredData={structuredData}
+>
+  <article class="shell article">
+    <nav class="article-breadcrumbs" aria-label="Gezinme yolu">
+      {breadcrumbs.map((c, i) => (
+        <span>
+          {i > 0 && <span class="article-crumb-sep">/</span>}
+          {i === breadcrumbs.length - 1 ? <span aria-current="page">{c.name}</span> : <a href={c.href}>{c.name}</a>}
+        </span>
+      ))}
+    </nav>
+    <header class="article-head">
+      <div class="meta">
+        <span class="pill">{category ? <a href={`/kategori/${getCategorySlug(category)}`}>{category.data.name}</a> : d.category.replaceAll('-', ' ')}</span>
+        <span>{date(d.publishedAt)}</span><span>·</span><span>{d.readingTime} dk okuma</span>
+      </div>
+      <h1>{d.title}</h1>
+      <p class="dek">{d.excerpt}</p>
+      {d.updatedAt && <p class="meta">Son güncelleme: {date(d.updatedAt)}</p>}
+    </header>
+
+    {d.coverImage && <figure class="article-cover"><img src={d.coverImage} alt={`${d.title} yazısının kapak görseli`} loading="eager" decoding="async" /></figure>}
+
+    {toc.length > 2 && (
+      <nav class="article-toc" aria-label="Bu yazıda">
+        <div class="article-toc-label">BU YAZIDA</div>
+        <ol>{toc.map(h => <li><a href={`#${h.slug}`}>{h.text}</a></li>)}</ol>
+      </nav>
+    )}
+
+    <div class="article-body"><Content /></div>
+
+    {d.references?.length > 0 && (
+      <section class="legalbox">
+        <strong>Kaynakça</strong>
+        <ol>{d.references.map(r => <li><a href={r.url} target="_blank" rel="noopener noreferrer">{r.label}</a></li>)}</ol>
+      </section>
+    )}
+
+    <aside class="authorbox">
+      <div class="kicker">YAZAR</div>
+      <strong>{authorName}</strong>
+      <p>{authorBio}</p>
+      <a class="author-more" href="/hakkinda">Editoryal yaklaşım ve yazar hakkında →</a>
+    </aside>
+
+    <aside class="legalbox"><strong>Tıbbi sorumluluk notu</strong><p>Bu içerik genel bilgilendirme içindir; kişisel tanı veya tedavi önerisi değildir. İlaç değişikliği ve tedavi kararı için hekiminize ve eczacınıza danışın.</p></aside>
+  </article>
+
+  {related.length > 0 && (
+    <section class="shell related-posts">
+      <div class="section-head"><div><span class="section-eyebrow">OKUMAYA DEVAM ET</span><h2>İlgili yazılar</h2></div></div>
+      <div class="grid">{related.map(p => <PostCard post={p} />)}</div>
+    </section>
+  )}
+</Base>

@@ -1,5 +1,63 @@
 ---
-import Base from '../layouts/Base.astro';import PostCard from '../components/PostCard.astro';import { getCollection } from 'astro:content';
-const posts=(await getCollection('posts',p=>!p.data.draft)).sort((a,b)=>b.data.publishedAt.valueOf()-a.data.publishedAt.valueOf());
+import Base from '../layouts/Base.astro';
+import PostCard from '../components/PostCard.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('posts', p => !p.data.draft))
+  .sort((a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf());
+const categories = (await getCollection('categories')).sort((a, b) =>
+  (a.data.order ?? 100) - (b.data.order ?? 100) || a.data.name.localeCompare(b.data.name, 'tr'));
 ---
-<Base title="Yazılar | Eczacı Defteri"><section class="shell page-head"><div class="kicker">Arşiv</div><h1>Yazılar</h1><p>İlaç, eczacılık pratiği ve sağlık okuryazarlığı üzerine tüm notlar.</p></section><section class="shell grid">{posts.map(p=><PostCard post={p}/>)}</section></Base>
+
+<Base title="Yazılar | Eczacı Defteri" description="Eczacı Defteri'ndeki ilaç, takviye, dermokozmetik ve sağlık yazılarını keşfedin.">
+  <section class="shell page-head">
+    <div class="kicker">ARŞİV</div>
+    <h1>Yazılar</h1>
+    <p>Takviye edici gıdalar, dermokozmetik, eczacılık ve sağlık bilimleri üzerine kaynaklı değerlendirmeler.</p>
+  </section>
+
+  <section class="shell archive-tools" aria-label="Yazılarda ara ve filtrele">
+    <label class="archive-search">
+      <span class="sr-only">Yazılarda ara</span>
+      <input type="search" id="archive-search" placeholder="Başlık veya konu ara..." autocomplete="off" />
+    </label>
+    <label class="archive-select">
+      <span class="sr-only">Kategori seç</span>
+      <select id="archive-category">
+        <option value="">Tüm kategoriler</option>
+        {categories.map(c => (
+          <option value={c.id.replace(/\.json$/, '')}>{c.data.parent ? '↳ ' : ''}{c.data.name}</option>
+        ))}
+      </select>
+    </label>
+  </section>
+
+  <section class="shell archive-results">
+    {posts.length > 0 ? <div class="grid" id="archive-posts">{posts.map(p => <PostCard post={p} />)}</div> : (
+      <p class="archive-empty">Henüz yayımlanmış yazı bulunmuyor. Yeni içerikler burada yer alacak.</p>
+    )}
+    <p id="archive-no-results" class="archive-empty" hidden>Bu aramayla eşleşen yazı bulunamadı. Başka bir kelime veya kategori deneyin.</p>
+  </section>
+</Base>
+
+<script>
+  const search = document.querySelector<HTMLInputElement>('#archive-search');
+  const category = document.querySelector<HTMLSelectElement>('#archive-category');
+  const cards = [...document.querySelectorAll<HTMLElement>('#archive-posts .card')];
+  const noResults = document.querySelector<HTMLElement>('#archive-no-results');
+  const normalize = (s: string) => (s || '').toLocaleLowerCase('tr-TR').normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  function filterCards() {
+    const term = normalize(search?.value.trim() || '');
+    const selected = category?.value || '';
+    let count = 0;
+    for (const card of cards) {
+      const text = normalize(card.dataset.search || '');
+      const visible = (!term || text.includes(term)) && (!selected || card.dataset.category === selected);
+      card.hidden = !visible;
+      if (visible) count++;
+    }
+    if (noResults) noResults.hidden = count > 0 || cards.length === 0;
+  }
+  search?.addEventListener('input', filterCards);
+  category?.addEventListener('change', filterCards);
+</script>

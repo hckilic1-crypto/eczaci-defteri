@@ -5,10 +5,12 @@ import { getCollection } from 'astro:content';
 const {
   title = 'Eczacı Defteri',
   description = 'Takviye, dermokozmetik ve eczacılık pratiği üzerine kaynak odaklı içerikler.',
-  image = '/og-default.jpg',
+  image = '/og-default.gif',
   type = 'website',
   publishedAt,
-  updatedAt
+  updatedAt,
+  noindex = false,
+  structuredData
 } = Astro.props;
 
 
@@ -104,6 +106,7 @@ const absoluteImage = new URL(
   image,
   Astro.site ?? Astro.url.origin
 ).toString();
+const jsonLd = structuredData ? JSON.stringify(structuredData).replace(/</g, '\\u003c') : undefined;
 ---
 
 <!doctype html>
@@ -128,7 +131,7 @@ const absoluteImage = new URL(
 
   <meta
     name="robots"
-    content="index,follow"
+    content={noindex ? "noindex,follow" : "index,follow"}
   />
 
   <meta
@@ -250,6 +253,8 @@ const absoluteImage = new URL(
       content={updatedAt.toISOString()}
     />
   )}
+
+  {jsonLd && <script type="application/ld+json" set:html={jsonLd} />}
 
 </head>
 

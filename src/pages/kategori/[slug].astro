@@ -1,7 +1,107 @@
 ---
 export const prerender = true;
-import Base from '../../layouts/Base.astro';import PostCard from '../../components/PostCard.astro';import {getCollection} from 'astro:content';
-export async function getStaticPaths(){const cats=await getCollection('categories');return cats.map(cat=>({params:{slug:cat.id.replace(/\.json$/,'')},props:{cat}}));}
-const {cat}=Astro.props;const posts=(await getCollection('posts',p=>!p.data.draft&&p.data.category===cat.id.replace(/\.json$/,''))).sort((a,b)=>b.data.publishedAt.valueOf()-a.data.publishedAt.valueOf());
+import Base from '../../layouts/Base.astro';
+import PostCard from '../../components/PostCard.astro';
+import { getCollection } from 'astro:content';
+
+const slugOf = (item) => item.id.replace(/\.json$/, '').split('/').pop();
+
+export async function getStaticPaths() {
+  const all = await getCollection('categories');
+  return all.map(cat => ({ params: { slug: slugOf(cat) }, props: { cat } }));
+}
+
+const { cat } = Astro.props;
+const categories = await getCollection('categories');
+const slug = slugOf(cat);
+const children = categories.filter(c => c.data.parent === slug)
+  .sort((a, b) => (a.data.order ?? 100) - (b.data.order ?? 100) || a.data.name.localeCompare(b.data.name, 'tr'));
+
+const visibleCategories = new Set([slug, ...children.map(slugOf)]);
+const posts = (await getCollection('posts', p => !p.data.draft && visibleCategories.has(p.data.category)))
+  .sort((a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf());
+
+const parent = categories.find(c => slugOf(c) === cat.data.parent);
+const crumbs = [
+  { title: 'Anasayfa', href: '/' },
+  ...(parent ? [{ title: parent.data.name, href: `/kategori/${slugOf(parent)}` }] : []),
+  { title: cat.data.name, href: `/kategori/${slug}` }
+];
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: crumbs.map((c, i) => ({
+    '@type': 'ListItem', position: i + 1,
+    name: c.title, item: new URL(c.href, 'https://eczacidefteri.com').href
+  }))
+};
 ---
-<Base title={`${cat.data.name} | Eczacı Defteri`} description={cat.data.description}><section class="shell page-head"><div class="kicker">Kategori</div><h1>{cat.data.name}</h1><p>{cat.data.description}</p></section><section class="shell grid">{posts.map(p=><PostCard post={p}/>)}</section></Base>
+
+<Base title={`${cat.data.name} | Eczacı Defteri`} description={cat.data.description || ''} noindex={posts.length === 0} structuredData={structuredData}>
+  <nav class="shell crumbs" aria-label="Gezinme yolu">
+    {crumbs.map((c, i) => (
+      <span>{i > 0 && <span class="crumb-sep">/</span>}{i === crumbs.length - 1 ? c.title : <a href={c.href}>{c.title}</a>}</span>
+    ))}
+  </nav>
+  <section class="shell page-head">
+    <div class="kicker">Kategori</div>
+    <h1>{cat.data.name}</h1>
+    {cat.data.description && <p>{cat.data.description}</p>}
+  </section>
+
+  {children.length > 0 && (
+    <section class="shell subcategory-area" aria-label="Alt kategoriler">
+      <div class="subcategory-label">ALT KATEGORİLER</div>
+      <div class="subcategory-grid">
+        {children.map(child => (
+          <a class="subcategory-card" href={`/kategori/${slugOf(child)}`}>
+            <span class="subcategory-dot" style={`background:${child.data.accent || '#166534'}`}></span>
+            <div>
+              <h2>{child.data.name}</h2>
+              {child.data.description && <p>{child.data.description}</p>}
+            </div>
+            <span aria-hidden="true" class="subcategory-arrow">↗</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <section class="shell category-post-area">
+    {posts.length > 0 ? (
+      <>
+        <div class="subcategory-label">YAZILAR</div>
+        <div class="grid">{posts.map(post => <PostCard post={post} />)}</div>
+      </>
+    ) : (
+      <div class="category-empty">
+        <strong>Henüz yazı yayınlanmadı.</strong>
+        <p>Bu başlıkla ilgili kaynaklı değerlendirmeler yayımlandığında burada yer alacak.</p>
+        <a href="/yazilar">Diğer yazılara göz at →</a>
+      </div>
+    )}
+  </section>
+</Base>
+
+<style>
+  .crumbs { display: flex; gap: 6px; flex-wrap: wrap; font-size: 12px; color: #6b756c; padding-top: 20px; }
+  .crumbs a { color: #275f39; text-decoration: none; }
+  .crumbs a:hover { text-decoration: underline; }
+  .crumb-sep { display: inline-block; margin: 0 7px 0 1px; color: #a2aca2; }
+  .subcategory-area { margin-top: -10px; margin-bottom: 48px; }
+  .subcategory-label { font-size: 11px; font-weight: 700; letter-spacing: .15em; color: #166534; margin-bottom: 18px; }
+  .subcategory-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+  .subcategory-card { display: flex; align-items: flex-start; gap: 12px; padding: 23px; min-height: 142px; border: 1px solid rgba(25,44,31,.15); border-radius: 19px; background: rgba(251,250,245,.8); color: inherit; transition: transform .2s, border-color .2s; }
+  .subcategory-card:hover { transform: translateY(-3px); border-color: #42694b; }
+  .subcategory-dot { height: 8px; width: 8px; flex-shrink: 0; border-radius: 50%; margin-top: 10px; }
+  .subcategory-card div { min-width: 0; flex: 1; }
+  .subcategory-card h2 { font-family: Georgia, serif; font-size: 24px; line-height: 1.15; font-weight: 600; margin: 0 0 9px; }
+  .subcategory-card p { font-size: 13px; line-height: 1.55; color: #627064; margin: 0; }
+  .subcategory-arrow { font-size: 18px; color: #486e50; }
+  .category-post-area { padding-bottom: 38px; }
+  .category-empty { padding: 28px 30px; border: 1px solid rgba(25,44,31,.12); border-radius: 18px; background: rgba(255,255,255,.55); }
+  .category-empty strong { font-family: Georgia, serif; font-size: 22px; }
+  .category-empty p { color: #647068; margin: 12px 0; }
+  .category-empty a { color: #166534; text-decoration: underline; text-underline-offset: 3px; }
+  @media(max-width:680px) { .subcategory-grid { grid-template-columns: 1fr; } .subcategory-card { min-height: auto; } .crumbs { padding-top: 15px; } }
+</style>

@@ -18,6 +18,9 @@ const categories = (
   a.data.name.localeCompare(b.data.name, 'tr')
 );
 
+const topCategories = categories.filter((category) => !category.data.parent);
+const childrenFor = (parent) => categories.filter((category) => category.data.parent === parent.id.replace(/\.json$/, ''));
+
 const featured =
   posts.find((post) => post.data.featured) ?? posts[0];
 
@@ -95,36 +98,24 @@ const rest = posts
 
   <section class="shell category-strip">
 
-    {categories.map((category) => (
-
-      <a
-        class="category-mini"
-        href={`/kategori/${category.id.replace('.json', '')}`}
-      >
-
-        <span
-          class="category-accent"
-          style={`background:${category.data.accent}`}
-        ></span>
-
+    {topCategories.map((category) => (
+      <div class="category-mini">
+        <span class="category-accent" style={`background:${category.data.accent}`}></span>
         <div>
-
-          <strong>
-            {category.data.name}
-          </strong>
-
-          <p>
-            {category.data.description}
-          </p>
-
+          <a href={`/kategori/${category.id.replace('.json', '')}`} class="category-mini-title">
+            <strong>{category.data.name}</strong>
+          </a>
+          <p>{category.data.description}</p>
+          {childrenFor(category).length > 0 && (
+            <nav class="category-mini-children" aria-label={`${category.data.name} alt kategorileri`}>
+              {childrenFor(category).map((child) => (
+                <a href={`/kategori/${child.id.replace('.json', '')}`}>{child.data.name}</a>
+              ))}
+            </nav>
+          )}
         </div>
-
-        <span class="category-arrow">
-          ↗
-        </span>
-
-      </a>
-
+        <a class="category-arrow" href={`/kategori/${category.id.replace('.json', '')}`} aria-label={`${category.data.name} kategorisini aç`}>↗</a>
+      </div>
     ))}
 
   </section>
@@ -208,3 +199,9 @@ const rest = posts
   </section>
 
 </Base>
+<style>
+  .category-mini-title { color: inherit; display: inline-block; }
+  .category-mini-children { display: flex; flex-wrap: wrap; gap: 7px 13px; margin-top: 12px; }
+  .category-mini-children a { color: #366045; font-size: 11px; text-decoration: underline; text-decoration-color: #c5d2c5; text-underline-offset: 3px; }
+  .category-mini-children a:hover { color: #102b1c; }
+</style>

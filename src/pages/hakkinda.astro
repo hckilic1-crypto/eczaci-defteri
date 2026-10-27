@@ -1,4 +1,37 @@
 ---
-import Base from '../layouts/Base.astro';import {getCollection} from 'astro:content';const s=(await getCollection('settings'))[0]?.data;
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+const settings = (await getCollection('settings'))[0]?.data;
+const author = settings?.authorName || 'Eczacı H.K.';
+const bio = settings?.authorBio || 'İlaç, sağlık ve eczacılık konularını kaynak temelli ele alan Eczacı Defteri editörü.';
 ---
-<Base title="Hakkında | Eczacı Defteri"><article class="shell article"><header class="article-head"><div class="kicker">Hakkında</div><h1>Eczacı Defteri nedir?</h1><p class="dek">{s?.authorBio}</p></header><div class="article-body"><h2>Editoryal yaklaşım</h2><p>İçeriklerde kaynak niteliği, klinik anlamlılık, yarar-risk dengesi ve belirsizlik açıkça ayrıştırılır. Sağlık bilgisinin reklam diliyle sunulmaması temel ilkedir.</p><h2>Bağımsızlık ve şeffaflık</h2><p>Yayınlanan içerikler genel bilgilendirme amacı taşır. Sponsorlu veya ticari içerik kullanılması halinde bu durum içerikte açıkça belirtilmelidir.</p><h2>Düzeltme politikası</h2><p>Bilimsel veriler değişebilir. Önemli bir güncelleme gerektiğinde yazının güncelleme tarihi değiştirilir; maddi hatalar görünür biçimde düzeltilir.</p></div></article></Base>
+
+<Base title="Hakkında ve Yayın İlkeleri | Eczacı Defteri" description="Eczacı Defteri'nin yayın yaklaşımı, yazarı, kaynak seçimi ve düzeltme ilkeleri.">
+  <article class="shell article">
+    <header class="article-head">
+      <div class="kicker">ECZACI DEFTERİ / HAKKINDA</div>
+      <h1>Bilgiye nasıl yaklaşıyoruz?</h1>
+      <p class="dek">Eczacı Defteri, ilaçlar, takviye edici gıdalar, dermokozmetik ve sağlık alanındaki konuları bilimsel kaynaklar üzerinden ele alan bağımsız bir dijital yayındır.</p>
+    </header>
+    <div class="article-body">
+      <h2>Yazar hakkında</h2>
+      <p><strong>{author}</strong> — {bio}</p>
+      <p>Bu sitede amaç, bir ürünü övmek veya belirli bir tedaviyi önermekten çok, okuyucunun sağlıkla ilgili iddiaları daha bilinçli değerlendirebilmesine yardımcı olmaktır. Yazılarda eczacılık bakış açısıyla kullanım amacı, olası yararlar, sınırlılıklar ve güvenlilik birlikte ele alınır.</p>
+
+      <h2>Kaynakları nasıl seçiyoruz?</h2>
+      <p>Konunun niteliğine göre resmî sağlık kurumlarının yayınları, klinik kılavuzlar, sistematik derlemeler, randomize kontrollü çalışmalar ve hakemli araştırmalar değerlendirilir. Tek bir çalışmanın bulguları bütün kanıtların yerine konmaz. Bulguların hangi gruplarda geçerli olduğu ve çalışmaların sınırlılıkları açıkça belirtilmeye çalışılır.</p>
+      <p>Kaynaklar mümkün olduğunda yazı sonunda bağlantılarıyla sunulur. Bilimsel kanıtın sınırlı olduğu konularda kesin sonuçlar veya herkese uygun tek bir öneri varmış gibi ifadeler kullanılmaz.</p>
+
+      <h2>Editoryal bağımsızlık</h2>
+      <p>Ürünlerin pazarlama dili ile bilimsel kanıtlar birbirinden ayrılır. Bir markanın popülerliği veya bir içeriğin doğal kökenli olması, tek başına etkinlik ya da güvenlilik göstergesi değildir.</p>
+      <p>Olası sponsorluklar, ücretli iş birlikleri veya çıkar çatışmaları ilgili içerikte açıkça belirtilmelidir. Ticari ilişki, bilimsel değerlendirmelerin yerine geçmemelidir.</p>
+
+      <h2>Güncelleme ve düzeltmeler</h2>
+      <p>Sağlık bilgisi zamanla değişebilir. Yeni ve güçlü kanıtlar ortaya çıktığında içerikler gözden geçirilebilir; anlamlı güncellemelerde yazının güncellenme tarihi değiştirilir. Maddi hata fark eden okuyucuların geri bildirimleri incelenir ve gerektiğinde düzeltme yapılır.</p>
+      <p>Yazıda düzeltme gerektirdiğini düşündüğünüz bir bölüm varsa ilgili yazının bağlantısını ve mümkünse bilimsel kaynağını <a href="/iletisim">iletişim sayfasından</a> paylaşabilirsiniz.</p>
+
+      <h2>Tıbbi sorumluluk</h2>
+      <p>Buradaki bilgiler genel bilgilendirme amacı taşır. Kişiye özel tanı, reçete veya tedavi önerisi yerine geçmez. Özellikle ilaç değişikliği, gebelik, çocukluk dönemi, kronik hastalıklar ve düzenli ilaç kullanımı söz konusu olduğunda bireysel değerlendirme için yetkili sağlık profesyonellerine başvurulmalıdır.</p>
+    </div>
+  </article>
+</Base>
