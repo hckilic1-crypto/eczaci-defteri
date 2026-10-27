@@ -1,5 +1,6 @@
 {
   "name": "Takviye Edici Gıdalar",
   "description": "Vitaminler, mineraller, bitkisel ürünler, probiyotikler ve diğer takviye edici gıdalar hakkında bilimsel veriler, kullanım alanları, etkinlik ve güvenlilik değerlendirmeleri.",
-  "accent": "#c98b70"
+  "accent": "#c98b70",
+  "order": 1
 }
