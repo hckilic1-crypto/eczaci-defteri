@@ -31,6 +31,7 @@ const siteName =
 const categories = (
   await getCollection('categories')
 ).sort((a, b) =>
+  (a.data.order ?? 100) - (b.data.order ?? 100) ||
   a.data.name.localeCompare(b.data.name, 'tr')
 );
 
