@@ -48,6 +48,13 @@ repo: 'hckilic1-crypto/eczaci-defteri'  },
           }
         }),
 
+        coverImage: fields.image({
+          label: 'Kapak görseli (isteğe bağlı)',
+          description: 'Yazı detayında ve sosyal medya önizlemesinde kullanılır. Ana sayfa kartlarının tasarımı değişmez.',
+          directory: 'public/images/posts',
+          publicPath: '/images/posts/'
+        }),
+
         category: fields.relationship({
           label: 'Kategori',
           collection: 'categories',
