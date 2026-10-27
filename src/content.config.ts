@@ -55,6 +55,8 @@ const categories = defineCollection({
 
     accent: z.string().default('#166534'),
 
+    order: z.number().int().min(1).default(100),
+
     parent: z.string().optional()
   })
 });
