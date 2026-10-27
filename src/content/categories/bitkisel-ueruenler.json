@@ -2,5 +2,6 @@
   "name": "Bitkisel Ürünler",
   "description": "Bitkisel ekstreler, tıbbi bitkiler ve bitkisel takviyelerin içerikleri, geleneksel kullanım alanları, klinik araştırmaları, olası yan etkileri ve ilaç etkileşimleri.",
   "parent": "takviye-edici-gidalar",
-  "accent": "#166534"
+  "accent": "#166534",
+  "order": 4
 }

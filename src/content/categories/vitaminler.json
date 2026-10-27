@@ -2,5 +2,6 @@
   "name": "Vitaminler",
   "description": "A, B, C, D, E ve K vitaminleri hakkında bilimsel bilgiler; vücuttaki görevleri, eksiklik durumları, günlük gereksinimler, takviye kullanımı ve güvenlilik değerlendirmeleri.",
   "parent": "takviye-edici-gidalar",
-  "accent": "#166534"
+  "accent": "#166534",
+  "order": 1
 }
