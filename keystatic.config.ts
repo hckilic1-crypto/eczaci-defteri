@@ -146,6 +146,7 @@ repo: 'hckilic1-crypto/eczaci-defteri'  },
 
       columns: [
         'name',
+        'order',
         'parent'
       ],
 
@@ -163,6 +164,13 @@ repo: 'hckilic1-crypto/eczaci-defteri'  },
         description: fields.text({
           label: 'Açıklama',
           multiline: true
+        }),
+
+        order: fields.integer({
+          label: 'Sıra numarası',
+          description: 'Küçük sayı önce görünür. Örneğin 1, 2, 3. Ana kategoriler ve alt kategoriler ayrı ayrı sıralanır.',
+          defaultValue: 100,
+          validation: { min: 1 }
         }),
 
         parent: fields.relationship({
