@@ -13,6 +13,13 @@ export default defineConfig({
 
   output: 'server',
 
+  security: {
+    allowedDomains: [
+      { hostname: 'eczacidefteri.com', protocol: 'https' },
+      { hostname: 'www.eczacidefteri.com', protocol: 'https' }
+    ]
+  },
+
   adapter: node({
     mode: 'standalone'
   }),
