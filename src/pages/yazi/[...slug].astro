@@ -1,4 +1,5 @@
 ---
+export const prerender = true;
 import Base from '../../layouts/Base.astro';import { getCollection, render } from 'astro:content';
 export async function getStaticPaths(){const posts=await getCollection('posts',p=>!p.data.draft);return posts.map(post=>({params:{slug:post.id.replace(/\.mdoc$/,'')},props:{post}}));}
 const {post}=Astro.props;const {Content}=await render(post);const d=post.data;
