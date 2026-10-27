@@ -102,9 +102,24 @@ const structuredData = {
     <div class="article-body"><Content /></div>
 
     {d.references?.length > 0 && (
-      <section class="legalbox">
-        <strong>Kaynakça</strong>
-        <ol>{d.references.map(r => <li><a href={r.url} target="_blank" rel="noopener noreferrer">{r.label}</a></li>)}</ol>
+      <section class="article-references" aria-labelledby="article-references-title">
+        <header class="article-references-head">
+          <div>
+            <span class="article-references-kicker">BİLİMSEL KAYNAKLAR</span>
+            <h2 id="article-references-title">Kaynakça</h2>
+          </div>
+          <span class="article-references-count">{d.references.length} kaynak</span>
+        </header>
+        <ol class="article-references-list">
+          {d.references.map(r => (
+            <li>
+              <a href={r.url} target="_blank" rel="noopener noreferrer">
+                <span class="article-reference-title">{r.label.replaceAll('*', '')}</span>
+                <span class="article-reference-link">Kaynağı görüntüle <span aria-hidden="true">↗</span></span>
+              </a>
+            </li>
+          ))}
+        </ol>
       </section>
     )}
 
