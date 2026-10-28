@@ -20,6 +20,10 @@ repo: 'hckilic1-crypto/eczaci-defteri'  },
     posts: collection({
       label: 'Yazılar',
 
+      // Liste görünümü: mevcut taslak alanı üzerinden yayında/taslak ayrımı.
+      // İşaretli = Taslak, işaretsiz = Yayında. Yayınlama mantığı değişmez.
+      columns: ['draft', 'category', 'publishedAt', 'featured'],
+
       slugField: 'title',
 
       path: 'src/content/posts/*',
@@ -80,7 +84,8 @@ repo: 'hckilic1-crypto/eczaci-defteri'  },
         }),
 
         draft: fields.checkbox({
-          label: 'Taslak',
+          label: 'Taslak mı? (Evet: Taslak / Hayır: Yayında)',
+          description: 'İşaretliyse yazı sitede yayınlanmaz. İşaretli değilse yayınlanır.',
           defaultValue: false
         }),
 
