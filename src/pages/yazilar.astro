@@ -3,7 +3,7 @@ import Base from '../layouts/Base.astro';
 import PostCard from '../components/PostCard.astro';
 import { getCollection } from 'astro:content';
 
-const posts = (await getCollection('posts', p => p.data.status === 'published'))
+const posts = (await getCollection('posts', p => !p.data.draft))
   .sort((a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf());
 const categories = (await getCollection('categories')).sort((a, b) =>
   (a.data.order ?? 100) - (b.data.order ?? 100) || a.data.name.localeCompare(b.data.name, 'tr'));

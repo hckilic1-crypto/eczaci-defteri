@@ -4,7 +4,7 @@ import PostCard from '../components/PostCard.astro';
 import { getCollection } from 'astro:content';
 
 const posts = (
-  await getCollection('posts', (post) => post.data.status === 'published')
+  await getCollection('posts', (post) => !post.data.draft)
 ).sort(
   (a, b) =>
     b.data.publishedAt.valueOf() -

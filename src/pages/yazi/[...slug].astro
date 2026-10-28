@@ -5,7 +5,7 @@ import PostCard from '../../components/PostCard.astro';
 import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('posts', p => p.data.status === 'published');
+  const posts = await getCollection('posts', p => !p.data.draft);
   return posts.map(post => ({ params: { slug: post.id.replace(/\.mdoc$/, '') }, props: { post } }));
 }
 
@@ -17,7 +17,7 @@ const getCategorySlug = c => c.id.replace(/\.json$/, '').split('/').pop();
 const category = categoryList.find(c => getCategorySlug(c) === d.category);
 const parent = categoryList.find(c => getCategorySlug(c) === category?.data.parent);
 const toc = (headings || []).filter(h => h.depth === 2 && h.text?.trim() && h.slug);
-const related = (await getCollection('posts', p => p.data.status === 'published' && p.id !== post.id))
+const related = (await getCollection('posts', p => !p.data.draft && p.id !== post.id))
   .sort((a, b) => {
     const aRelated = a.data.category === d.category ? 1 : 0;
     const bRelated = b.data.category === d.category ? 1 : 0;

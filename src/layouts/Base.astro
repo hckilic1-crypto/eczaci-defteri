@@ -61,7 +61,7 @@ const categorySlug = (category: any) =>
 
 const allPosts = await getCollection(
   'posts',
-  (post) => post.data.status === 'published'
+  (post) => !post.data.draft
 );
 
 const searchPosts = allPosts.map((post) => {

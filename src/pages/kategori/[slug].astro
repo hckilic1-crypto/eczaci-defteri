@@ -18,7 +18,7 @@ const children = categories.filter(c => c.data.parent === slug)
   .sort((a, b) => (a.data.order ?? 100) - (b.data.order ?? 100) || a.data.name.localeCompare(b.data.name, 'tr'));
 
 const visibleCategories = new Set([slug, ...children.map(slugOf)]);
-const posts = (await getCollection('posts', p => p.data.status === 'published' && visibleCategories.has(p.data.category)))
+const posts = (await getCollection('posts', p => !p.data.draft && visibleCategories.has(p.data.category)))
   .sort((a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf());
 
 const parent = categories.find(c => slugOf(c) === cat.data.parent);

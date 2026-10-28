@@ -1,4 +1,3 @@
-import { createElement } from 'react';
 import {
   config,
   collection,
@@ -13,23 +12,13 @@ repo: 'hckilic1-crypto/eczaci-defteri'  },
 
   ui: {
     brand: {
-      name: 'Eczacı Defteri | Editör',
-      mark: () => createElement('img', {
-        src: '/favicon.svg', width: 24, height: 24, alt: ''
-      })
-    },
-    navigation: {
-      'İçerik Merkezi': ['posts', 'categories'],
-      'Site Yönetimi': ['site']
+      name: 'Eczacı Defteri'
     }
   },
 
   collections: {
     posts: collection({
       label: 'Yazılar',
-
-      // Başlık zaten ilk sütunda görünür. Yayın durumunu yazıya girmeden göster.
-      columns: ['status', 'category', 'publishedAt', 'featured', 'reviewed'],
 
       slugField: 'title',
 
@@ -82,52 +71,33 @@ repo: 'hckilic1-crypto/eczaci-defteri'  },
         }),
 
         updatedAt: fields.date({
-          label: 'Son düzenleme tarihi'
+          label: 'Güncelleme tarihi'
         }),
 
         featured: fields.checkbox({
-          label: 'Öne çıkan (ana sayfa)',
+          label: 'Öne çıkan yazı',
           defaultValue: false
         }),
 
-        status: fields.select({
-          label: 'Yayın durumu',
-          description: 'Yayında: sitede görünür. Taslak ve Kontrol bekliyor: sitede görünmez.',
-          options: [
-            { label: 'Taslak', value: 'draft' },
-            { label: 'Kontrol bekliyor', value: 'review' },
-            { label: 'Yayında', value: 'published' }
-          ],
-          defaultValue: 'draft'
+        draft: fields.checkbox({
+          label: 'Taslak',
+          defaultValue: false
         }),
 
         readingTime: fields.integer({
-          label: 'Tahmini okuma süresi (dk)',
+          label: 'Okuma süresi (dk)',
           defaultValue: 5,
           validation: {
             min: 1
           }
         }),
 
-        reviewed: fields.checkbox({
-          label: 'Editoryal kontrol tamamlandı',
-          description: 'Kaynaklar, yazım, görseller ve SEO alanları son kez incelendiyse işaretle. Yayın durumunu değiştirmez.',
-          defaultValue: false
-        }),
-
-        editorNotes: fields.text({
-          label: 'Editör notları (sitede gösterilmez)',
-          description: 'Revizyon isteklerini ve yapılacakları not alabilirsin.',
-          multiline: true
-        }),
-
         seoTitle: fields.text({
-          label: 'SEO başlığı (arama sonuçları)'
+          label: 'SEO başlığı'
         }),
 
         seoDescription: fields.text({
-          label: 'SEO açıklaması (arama sonuçları)',
-          description: 'Arama sonuçlarında görünebilen kısa, doğal bir özet yaz.'
+          label: 'SEO açıklaması',
           multiline: true
         }),
 
