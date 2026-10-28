@@ -1,3 +1,4 @@
+import { createElement } from 'react';
 import {
   config,
   collection,
@@ -12,7 +13,12 @@ repo: 'hckilic1-crypto/eczaci-defteri'  },
 
   ui: {
     brand: {
-      name: 'Eczacı Defteri'
+      name: 'Eczacı Defteri',
+      mark: () => createElement('img', { src: '/favicon.svg', width: 24, height: 24, alt: '' })
+    },
+    navigation: {
+      'İçerik Yönetimi': ['posts', 'categories'],
+      'Site Yönetimi': ['site']
     }
   },
 
@@ -22,7 +28,7 @@ repo: 'hckilic1-crypto/eczaci-defteri'  },
 
       // Liste görünümü: mevcut taslak alanı üzerinden yayında/taslak ayrımı.
       // İşaretli = Taslak, işaretsiz = Yayında. Yayınlama mantığı değişmez.
-      columns: ['draft', 'category', 'publishedAt', 'featured'],
+      columns: ['draft', 'category', 'publishedAt', 'updatedAt', 'featured'],
 
       slugField: 'title',
 
@@ -75,7 +81,7 @@ repo: 'hckilic1-crypto/eczaci-defteri'  },
         }),
 
         updatedAt: fields.date({
-          label: 'Güncelleme tarihi'
+          label: 'Son güncelleme'
         }),
 
         featured: fields.checkbox({
