@@ -1,4 +1,4 @@
-/* Editor presentation only. ASCII source prevents encoding issues. */
+/* Editor presentation v5. ASCII source avoids encoding issues. No CMS writes. */
 (() => {
   'use strict';
   if (!location.pathname.startsWith('/keystatic')) return;
@@ -35,7 +35,7 @@
       const table = slugHead.closest('table,[role="grid"],[role="table"]') || headerRow.parentElement?.parentElement;
       if (!table) continue;
       const colIndex = key => columns.findIndex(el => (el.textContent || '').toLocaleLowerCase('tr').includes(key));
-      const titleAt = colIndex('ba\u015fl\u0131k');
+      const titleAt = colIndex('ba\u015fl\u0131k') >= 0 ? colIndex('ba\u015fl\u0131k') : colIndex('title');
       const statusAt = colIndex('taslak');
       const categoryAt = colIndex('kategori');
       if (titleAt < 0 || statusAt < 0) continue;

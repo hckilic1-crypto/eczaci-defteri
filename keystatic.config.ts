@@ -15,18 +15,18 @@ function EditorBrandMark() {
   useEffect(() => {
     if (typeof document === 'undefined') return;
 
-    if (!document.getElementById('eczaci-editor-styles-v4')) {
+    if (!document.getElementById('eczaci-editor-styles-v5')) {
       const styles = document.createElement('link');
       styles.id = 'eczaci-editor-styles-v3';
       styles.rel = 'stylesheet';
-      styles.href = '/editor-panel.css?v=4';
+      styles.href = '/editor-panel.css?v=5';
       document.head.appendChild(styles);
     }
 
-    if (!document.getElementById('eczaci-editor-script-v4')) {
+    if (!document.getElementById('eczaci-editor-script-v5')) {
       const script = document.createElement('script');
       script.id = 'eczaci-editor-script-v3';
-      script.src = '/editor-panel.js?v=4';
+      script.src = '/editor-panel.js?v=5';
       script.defer = true;
       document.body.appendChild(script);
     }
