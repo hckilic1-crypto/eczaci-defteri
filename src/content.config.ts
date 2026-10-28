@@ -22,7 +22,11 @@ const posts = defineCollection({
 
     featured: z.boolean().default(false),
 
-    draft: z.boolean().default(false),
+    status: z.enum(['draft', 'review', 'published']).default('draft'),
+
+    reviewed: z.boolean().default(false),
+
+    editorNotes: z.string().optional(),
 
     readingTime: z.number().default(5),
 
