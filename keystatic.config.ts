@@ -1,10 +1,39 @@
-import { createElement } from 'react';
+import { createElement, useEffect } from 'react';
 import {
   config,
   collection,
   fields,
   singleton
 } from '@keystatic/core';
+
+/**
+ * Keystatic itself renders this brand mark. Mounting the editor tools here
+ * ensures the enhancements are loaded inside its React admin UI, rather than
+ * relying on an Astro HTML middleware that may not run for Keystatic routes.
+ */
+function EditorBrandMark() {
+  useEffect(() => {
+    if (typeof document === 'undefined') return;
+
+    if (!document.getElementById('eczaci-editor-styles-v3')) {
+      const styles = document.createElement('link');
+      styles.id = 'eczaci-editor-styles-v3';
+      styles.rel = 'stylesheet';
+      styles.href = '/editor-panel.css?v=3';
+      document.head.appendChild(styles);
+    }
+
+    if (!document.getElementById('eczaci-editor-script-v3')) {
+      const script = document.createElement('script');
+      script.id = 'eczaci-editor-script-v3';
+      script.src = '/editor-panel.js?v=3';
+      script.defer = true;
+      document.body.appendChild(script);
+    }
+  }, []);
+
+  return createElement('img', { src: '/favicon.svg', width: 24, height: 24, alt: '' });
+}
 
 export default config({
   storage: {
@@ -14,7 +43,7 @@ repo: 'hckilic1-crypto/eczaci-defteri'  },
   ui: {
     brand: {
       name: 'Eczacı Defteri',
-      mark: () => createElement('img', { src: '/favicon.svg', width: 24, height: 24, alt: '' })
+      mark: () => createElement(EditorBrandMark)
     },
     navigation: {
       'İçerik Yönetimi': ['posts', 'categories'],
@@ -90,7 +119,7 @@ repo: 'hckilic1-crypto/eczaci-defteri'  },
         }),
 
         draft: fields.checkbox({
-          label: 'Taslak mı? (Evet: Taslak / Hayır: Yayında)',
+          label: 'Taslak mı?',
           description: 'İşaretliyse yazı sitede yayınlanmaz. İşaretli değilse yayınlanır.',
           defaultValue: false
         }),
