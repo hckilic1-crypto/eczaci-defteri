@@ -15,18 +15,18 @@ function EditorBrandMark() {
   useEffect(() => {
     if (typeof document === 'undefined') return;
 
-    if (!document.getElementById('eczaci-editor-styles-v3')) {
+    if (!document.getElementById('eczaci-editor-styles-v4')) {
       const styles = document.createElement('link');
       styles.id = 'eczaci-editor-styles-v3';
       styles.rel = 'stylesheet';
-      styles.href = '/editor-panel.css?v=3';
+      styles.href = '/editor-panel.css?v=4';
       document.head.appendChild(styles);
     }
 
-    if (!document.getElementById('eczaci-editor-script-v3')) {
+    if (!document.getElementById('eczaci-editor-script-v4')) {
       const script = document.createElement('script');
       script.id = 'eczaci-editor-script-v3';
-      script.src = '/editor-panel.js?v=3';
+      script.src = '/editor-panel.js?v=4';
       script.defer = true;
       document.body.appendChild(script);
     }
@@ -57,7 +57,7 @@ repo: 'hckilic1-crypto/eczaci-defteri'  },
 
       // Liste görünümü: mevcut taslak alanı üzerinden yayında/taslak ayrımı.
       // İşaretli = Taslak, işaretsiz = Yayında. Yayınlama mantığı değişmez.
-      columns: ['draft', 'category', 'publishedAt', 'updatedAt', 'featured'],
+      columns: ['title', 'draft', 'category', 'publishedAt'],
 
       slugField: 'title',
 

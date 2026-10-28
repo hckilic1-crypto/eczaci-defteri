@@ -1,158 +1,94 @@
-/* Eczacı Defteri editor enhancements: view-only list tags and personal checklist. */
+/* Editor presentation only. ASCII source prevents encoding issues. */
 (() => {
   'use strict';
-  if (!location.pathname.startsWith('/keystatic') || document.getElementById('ed-dock')) return;
-
-  const dock = document.createElement('aside');
-  dock.id = 'ed-dock';
-  dock.className = 'ed-dock';
-  dock.setAttribute('aria-label', 'Eczacı Defteri editör araçları');
-  dock.innerHTML = [
-    '<section class="ed-dock__panel" id="ed-panel">',
-      '<div class="ed-dock__header"><span class="ed-dock__logo"><img src="/favicon.svg" width="29" height="29" alt=""></span><div><div class="ed-dock__title">Editör Masası</div><div class="ed-dock__subtitle">İçerik kontrol ve yayın araçları</div></div></div>',
-      '<div class="ed-dock__content">',
-        '<p class="ed-dock__eyebrow">Yüklenen yazılar</p>',
-        '<div class="ed-dock__summary"><div class="ed-dock__stat"><b class="ed-dock__number" id="ed-total">—</b><small>Toplam</small></div><div class="ed-dock__stat"><b class="ed-dock__number" id="ed-published">—</b><small>Yayında</small></div><div class="ed-dock__stat"><b class="ed-dock__number" id="ed-draft">—</b><small>Taslak</small></div></div>',
-        '<p class="ed-dock__eyebrow">Görünen yazıları filtrele</p>',
-        '<div class="ed-dock__filters"><button type="button" class="ed-dock__filter" data-ed-filter="all" aria-pressed="true">Tümü</button><button type="button" class="ed-dock__filter" data-ed-filter="published" aria-pressed="false">Yayında</button><button type="button" class="ed-dock__filter" data-ed-filter="draft" aria-pressed="false">Taslak</button></div>',
-        '<p class="ed-dock__eyebrow">Hızlı erişim</p>',
-        '<div class="ed-dock__links"><a class="ed-dock__link" data-ed-target="posts">Yazılar <span>↗</span></a><a class="ed-dock__link" data-ed-target="categories">Kategoriler <span>↗</span></a><a class="ed-dock__link" data-ed-target="site">Site ayarları <span>↗</span></a><a class="ed-dock__link" href="/" target="_blank" rel="noopener">Siteyi gör <span>↗</span></a></div>',
-        '<p class="ed-dock__note">Sayılar panelde o anda yüklenmiş yazılara aittir. Filtre yalnızca liste görünümünü değiştirir; yayın durumuna dokunmaz.</p>',
-        '<section class="ed-dock__check" id="ed-check" hidden><div class="ed-dock__check-header"><p class="ed-dock__eyebrow">Makale kontrol listesi</p><b id="ed-check-count" class="ed-dock__check-count">0/5</b></div><div id="ed-tasks" class="ed-dock__tasks"></div><p class="ed-dock__note">Bu işaretler yalnızca mevcut tarayıcıda tutulur; GitHub’a kaydedilmez.</p></section>',
-      '</div>',
-    '</section>',
-    '<button class="ed-dock__toggle" id="ed-toggle" type="button" aria-expanded="false" aria-controls="ed-panel">☰ &nbsp; Editör Masası <kbd>Alt+E</kbd></button>'
-  ].join('');
-
-  document.body.appendChild(dock);
-  const toggle = dock.querySelector('#ed-toggle');
-  const filters = [...dock.querySelectorAll('[data-ed-filter]')];
-  const total = dock.querySelector('#ed-total');
-  const published = dock.querySelector('#ed-published');
-  const drafts = dock.querySelector('#ed-draft');
-  const section = dock.querySelector('#ed-check');
-  const tasksElement = dock.querySelector('#ed-tasks');
-  const taskCounter = dock.querySelector('#ed-check-count');
-  const taskNames = ['Kapak görseli', 'Bilimsel kaynakça', 'SEO başlığı / açıklama', 'Dil ve bağlantılar', 'Son editoryal kontrol'];
-
-  let opened = false, filter = 'all', activePost = null, lastRoute = '';
-  function setOpen(value) {
-    opened = Boolean(value);
-    dock.setAttribute('aria-expanded', String(opened));
-    toggle.setAttribute('aria-expanded', String(opened));
-  }
-  setOpen(false);
-  toggle.addEventListener('click', () => setOpen(!opened));
-  document.addEventListener('keydown', e => {
-    const el = e.target;
-    if (e.altKey && !e.ctrlKey && !e.metaKey && (e.key || '').toLowerCase() === 'e' &&
-        !el.closest?.('input,textarea,[contenteditable="true"]')) {
-      e.preventDefault(); setOpen(!opened);
-    }
-    if (e.key === 'Escape' && opened && dock.contains(document.activeElement)) {
-      setOpen(false); toggle.focus();
-    }
-  });
-  filters.forEach(button => button.addEventListener('click', () => {
-    filter = button.dataset.edFilter;
-    filters.forEach(b => b.setAttribute('aria-pressed', String(b === button)));
-    enhanceTable();
-  }));
-
-  const categoryLabels = {
-    'vitaminler':'Vitaminler','mineraller':'Mineraller','dermokozmetik':'Dermokozmetik',
-    'eczacilik':'Eczacılık','saglik-ve-bilim':'Sağlık ve Bilim',
-    'takviye-edici-gidalar':'Takviye Edici Gıdalar',
-    'bitkisel-ueruenler':'Bitkisel Ürünler','diger-takviyeler':'Diğer Takviyeler',
-    'probiyotikler-ve-prebiyotikler':'Probiyotikler'
+  if (!location.pathname.startsWith('/keystatic')) return;
+  const categoryNames = {
+    'vitaminler':'Vitaminler',
+    'mineraller':'Mineraller',
+    'dermokozmetik':'Dermokozmetik',
+    'eczacilik':'Eczac\u0131l\u0131k',
+    'saglik-ve-bilim':'Sa\u011fl\u0131k ve Bilim',
+    'takviye-edici-gidalar':'Takviye Edici G\u0131dalar',
+    'bitkisel-ueruenler':'Bitkisel \u00dcr\u00fcnler',
+    'diger-takviyeler':'Di\u011fer Takviyeler',
+    'probiyotikler-ve-prebiyotikler':'Probiyotikler ve Prebiyotikler'
   };
-  function enhanceTable() {
-    const listPage = /\/collection\/posts\/?$/.test(location.pathname);
-    document.body.classList.toggle('ed-admin-list', listPage);
-    let rowsCount = 0, liveCount = 0, draftCount = 0;
-    if (listPage) {
-      for (const table of document.querySelectorAll('table,[role="grid"],[role="table"]')) {
-        const heads = [...table.querySelectorAll('thead th,[role="columnheader"]')];
-        if (!heads.length) continue;
-        const statusAt = heads.findIndex(h => (h.textContent || '').toLocaleLowerCase('tr').includes('taslak'));
-        const categoryAt = heads.findIndex(h => (h.textContent || '').toLocaleLowerCase('tr').includes('kategori'));
-        if (statusAt < 0) continue;
-        const rows = table.querySelectorAll('tbody tr,[role="row"]');
-        for (const row of rows) {
-          const cells = [...row.querySelectorAll(':scope > td,:scope > [role="gridcell"],:scope > [role="cell"]')];
-          if (!cells.length || !cells[statusAt]) continue;
-          const text = (cells[statusAt].textContent || '').trim().toLowerCase();
-          if (text !== 'true' && text !== 'false') continue;
-          const status = text === 'true' ? 'draft' : 'published';
-          cells[statusAt].dataset.edStatus = status;
-          cells[statusAt].setAttribute('aria-label', status === 'draft' ? 'Taslak' : 'Yayında');
-          if (categoryAt >= 0 && cells[categoryAt]) {
-            const cat = (cells[categoryAt].textContent || '').trim();
-            if (categoryLabels[cat]) {
-              cells[categoryAt].dataset.edCategory = categoryLabels[cat];
-              cells[categoryAt].setAttribute('aria-label', categoryLabels[cat]);
-            }
+  let updating = false;
+  function getCells(row) {
+    return Array.from(row.children).filter(el => {
+      const role = el.getAttribute('role');
+      return /^(TD|TH)$/.test(el.tagName) || role === 'gridcell' || role === 'rowheader' || role === 'cell' || role === 'columnheader';
+    });
+  }
+  function enhance() {
+    const isList = /\/collection\/posts\/?$/.test(location.pathname);
+    document.documentElement.classList.toggle('ed-editor-post-list', isList);
+    if (!isList) return;
+    const heads = Array.from(document.querySelectorAll('th,[role="columnheader"]'));
+    for (const slugHead of heads.filter(el => (el.textContent || '').trim().toLowerCase() === 'slug')) {
+      const headerRow = slugHead.closest('tr,[role="row"]');
+      if (!headerRow) continue;
+      const columns = getCells(headerRow);
+      if (columns.length < 3) continue;
+      const position = columns.indexOf(slugHead);
+      if (position < 0) continue;
+      const table = slugHead.closest('table,[role="grid"],[role="table"]') || headerRow.parentElement?.parentElement;
+      if (!table) continue;
+      const colIndex = key => columns.findIndex(el => (el.textContent || '').toLocaleLowerCase('tr').includes(key));
+      const titleAt = colIndex('ba\u015fl\u0131k');
+      const statusAt = colIndex('taslak');
+      const categoryAt = colIndex('kategori');
+      if (titleAt < 0 || statusAt < 0) continue;
+      table.setAttribute('data-ed-articles-table', '');
+      for (const cell of columns) {
+        const isSlug = cell === slugHead;
+        cell.toggleAttribute('data-ed-hide-slug', isSlug);
+      }
+      for (const row of table.querySelectorAll('tr,[role="row"]')) {
+        if (row === headerRow) continue;
+        const cells = getCells(row);
+        if (cells.length !== columns.length) continue;
+        const slugCell = cells[position];
+        const titleCell = cells[titleAt];
+        const statusCell = cells[statusAt];
+        const statusValue = (statusCell?.textContent || '').trim().toLowerCase();
+        if (statusValue !== 'true' && statusValue !== 'false' && !statusCell?.hasAttribute('data-ed-status')) continue;
+        if (slugCell) slugCell.setAttribute('data-ed-hide-slug', '');
+        if (titleCell) {
+          titleCell.setAttribute('data-ed-title-cell', '');
+          const fullTitle = titleCell.textContent?.trim();
+          if (fullTitle && !titleCell.hasAttribute('title')) titleCell.setAttribute('title', fullTitle);
+        }
+        if (statusCell) {
+          const value = statusValue === 'true' || statusCell.dataset.edStatus === 'draft' ? 'draft' : 'published';
+          if (statusCell.dataset.edStatus !== value) {
+            statusCell.dataset.edStatus = value;
+            statusCell.dataset.edLabel = value === 'draft' ? 'Taslak' : 'Yay\u0131nda';
+            statusCell.setAttribute('aria-label', statusCell.dataset.edLabel);
           }
-          rowsCount++; if (status === 'draft') draftCount++; else liveCount++;
-          row.classList.toggle('ed-hidden-by-filter', filter !== 'all' && filter !== status);
+        }
+        if (categoryAt >= 0 && cells[categoryAt]) {
+          const catCell = cells[categoryAt];
+          const key = (catCell.textContent || '').trim();
+          if (categoryNames[key] && catCell.dataset.edCategoryLabel !== categoryNames[key]) {
+            catCell.dataset.edCategoryLabel = categoryNames[key];
+            catCell.setAttribute('aria-label', categoryNames[key]);
+          }
         }
       }
     }
-    const currentValues = [listPage ? String(rowsCount) : '—', listPage ? String(liveCount) : '—', listPage ? String(draftCount) : '—'];
-    [total, published, drafts].forEach((node, i) => {
-      if (node.textContent !== currentValues[i]) node.textContent = currentValues[i];
+  }
+  let pending = false;
+  const observer = new MutationObserver(() => {
+    if (pending || updating) return;
+    pending = true;
+    requestAnimationFrame(() => {
+      pending = false;
+      updating = true;
+      try { enhance(); } finally { updating = false; }
     });
-    filters.forEach(b => b.disabled = !listPage || rowsCount === 0);
-  }
-
-  function refreshNavigation() {
-    const branch = location.pathname.match(/^\/keystatic\/branch\/([^/]+)/)?.[1] || 'main';
-    const base = '/keystatic/branch/' + branch;
-    const hrefs = { posts: base + '/collection/posts', categories: base + '/collection/categories', site: base + '/singleton/site' };
-    for (const a of dock.querySelectorAll('[data-ed-target]')) a.href = hrefs[a.dataset.edTarget];
-
-    const post = location.pathname.match(/\/collection\/posts\/item\/([^/]+)/)?.[1] || '';
-    section.hidden = !post;
-    if (post && post !== activePost) {
-      activePost = post;
-      tasksElement.replaceChildren();
-      const key = 'eczacidefteri:checks:' + branch + ':' + post;
-      let saved = {};
-      try { saved = JSON.parse(localStorage.getItem(key) || '{}') || {}; } catch {}
-      const checkboxes = [];
-      function sync() { taskCounter.textContent = checkboxes.filter(x => x.checked).length + '/' + checkboxes.length; }
-      for (const [i, labelText] of taskNames.entries()) {
-        const label = document.createElement('label');
-        const box = document.createElement('input');
-        box.type = 'checkbox'; box.checked = Boolean(saved[i]);
-        label.append(box, document.createTextNode(labelText));
-        tasksElement.append(label); checkboxes.push(box);
-        box.addEventListener('change', () => {
-          const state = Object.fromEntries(checkboxes.map((x, k) => [k, x.checked]));
-          try { localStorage.setItem(key, JSON.stringify(state)); } catch {}
-          sync();
-        });
-      }
-      sync();
-    }
-  }
-
-  function update() {
-    if (location.pathname !== lastRoute) {
-      lastRoute = location.pathname;
-      refreshNavigation();
-    }
-    enhanceTable();
-  }
-  let scheduled = false;
-  function scheduleUpdate() {
-    if (scheduled) return;
-    scheduled = true;
-    requestAnimationFrame(() => { scheduled = false; update(); });
-  }
-  const observer = new MutationObserver(scheduleUpdate);
+  });
   observer.observe(document.body, {subtree:true,childList:true});
-  addEventListener('popstate', scheduleUpdate);
-  addEventListener('hashchange', scheduleUpdate);
-  update();
+  addEventListener('popstate', enhance);
+  enhance();
 })();
