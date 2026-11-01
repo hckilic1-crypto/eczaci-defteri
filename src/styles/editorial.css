@@ -11,8 +11,17 @@
   --journal-muted:#606c62;
 }
 html{scroll-padding-top:22px}
+/* Subtle notebook paper: CSS-only ruled lines; no external texture or image request. */
 body{
-  background:var(--journal-paper)!important;
+  background:
+    linear-gradient(to right,
+      transparent 0 45px,
+      rgba(172,88,80,.17) 45px 46px,
+      transparent 46px),
+    repeating-linear-gradient(to bottom,
+      transparent 0 35px,
+      rgba(52,91,72,.075) 35px 36px),
+    var(--journal-paper)!important;
   background-attachment:scroll!important;
   color:var(--journal-ink);
 }
@@ -728,4 +737,19 @@ a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{
 }
 @media(prefers-reduced-motion:reduce){
   .journal-glossary-link,.journal-topic{transition:none!important}
+}
+
+/* Eczacılık sözlüğü: unobtrusive progressive disclosure. */
+.glossary-item[hidden],.glossary-more[hidden]{display:none!important}
+.glossary-more{display:flex;justify-content:center;align-items:center;gap:13px;flex-wrap:wrap;padding:32px 0 2px}
+.glossary-more button{min-height:48px;padding:11px 23px;background:var(--journal-paper);border:1px solid #819786;border-radius:3px;color:var(--journal-green);font:700 13px/1.4 var(--sans);cursor:pointer;transition:background .15s ease,border-color .15s ease}
+.glossary-more button:hover{background:#e8eee5;border-color:var(--journal-green)}
+.glossary-more span{font:500 12px/1.6 var(--sans);color:var(--journal-muted)}
+@media(max-width:600px){
+  body{background:
+    linear-gradient(to right,transparent 0 11px,rgba(172,88,80,.14) 11px 12px,transparent 12px),
+    repeating-linear-gradient(to bottom,transparent 0 35px,rgba(52,91,72,.065) 35px 36px),
+    var(--journal-paper)!important}
+  .glossary-more{flex-direction:column;gap:10px}
+  .glossary-more button{width:100%}
 }

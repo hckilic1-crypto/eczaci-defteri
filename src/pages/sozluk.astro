@@ -13,13 +13,7 @@ const structuredData = {
   '@type':'DefinedTermSet',
   name:'Eczacılık Sözlüğü',
   description:'Farmakoloji, klinik araştırmalar, farmasötik teknoloji ve mikrobiyota kavramlarının tanımları.',
-  url:'https://eczacidefteri.com/sozluk',
-  hasDefinedTerm:terms.map(t=>({
-    '@type':'DefinedTerm',
-    name:t.data.name,
-    description:t.data.definition,
-    url:'https://eczacidefteri.com/sozluk/' + getSlug(t)
-  }))
+  url:'https://eczacidefteri.com/sozluk'
 };
 ---
 <Base
@@ -79,6 +73,10 @@ const structuredData = {
         </a>
       ))}
     </div>
+    <div class="glossary-more" id="glossary-more" hidden>
+      <button type="button" id="glossary-show-more" aria-controls="glossary-list">24 terim daha göster</button>
+      <span id="glossary-more-progress" aria-live="polite"></span>
+    </div>
     <p class="glossary-noresults" id="glossary-noresults" hidden>Bu aramayla eşleşen terim bulunamadı. Aramayı veya alan filtresini değiştirebilirsiniz.</p>
     <aside class="glossary-note">Bu sözlük temel kavramları anlamaya yardımcı olur. Tanımlar kişisel tedavi önerisi yerine geçmez; ilaç kullanımı için ürün bilgisi ve sağlık profesyonelinin değerlendirmesi esastır.</aside>
   </div>
@@ -92,28 +90,44 @@ const structuredData = {
       const empty = document.getElementById('glossary-noresults');
       const buttons = Array.from(document.querySelectorAll('.glossary-alphabet [data-letter]'));
       const items = Array.from(list?.querySelectorAll('.glossary-item') || []);
+      const more = document.getElementById('glossary-more');
+      const showMore = document.getElementById('glossary-show-more');
+      const progress = document.getElementById('glossary-more-progress');
+      const PAGE_SIZE = 24;
       let letter = '';
+      let limit = PAGE_SIZE;
       function update(){
         const search = (input?.value || '').trim().toLocaleLowerCase('tr-TR');
         const selected = category?.value || '';
-        let visible=0;
-        for(const item of items){
+        let matched = 0;
+        let visible = 0;
+        for (const item of items) {
           const matches = (!search || (item.dataset.search || '').includes(search)) &&
             (!letter || item.dataset.letter === letter) &&
             (!selected || item.dataset.category === selected);
-          item.hidden=!matches;
-          if(matches)visible++;
+          if (matches) matched++;
+          const reveal = matches && matched <= limit;
+          item.hidden = !reveal;
+          if (reveal) visible++;
         }
-        if(count)count.textContent=visible+' terim gösteriliyor';
-        if(empty)empty.hidden=visible!==0;
+        if (count) count.textContent = visible + ' / ' + matched + ' terim gösteriliyor';
+        if (empty) empty.hidden = matched !== 0;
+        if (more) more.hidden = visible >= matched;
+        if (progress) progress.textContent = matched - visible + ' terim daha var';
       }
-      input?.addEventListener('input',update);
-      category?.addEventListener('change',update);
+      const reset = () => { limit = PAGE_SIZE; update(); };
+      input?.addEventListener('input',reset);
+      category?.addEventListener('change',reset);
       buttons.forEach(btn=>btn.addEventListener('click',()=>{
         letter=btn.dataset.letter||'';
         buttons.forEach(b=>b.setAttribute('aria-pressed',String(b===btn)));
-        update();
+        reset();
       }));
+      showMore?.addEventListener('click',()=>{
+        limit += PAGE_SIZE;
+        update();
+      });
+      // With JavaScript disabled every link remains visible and crawlable.
       update();
     })();
   </script>
