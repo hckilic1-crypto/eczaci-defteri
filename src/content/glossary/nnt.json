@@ -1,0 +1,9 @@
+{
+  "name": "Tedavi Edilmesi Gereken Hasta Sayısı (NNT)",
+  "category": "Klinik Araştırmalar",
+  "definition": "Tanımlı bir zaman aralığında bir ek olumlu sonuca ulaşmak veya bir olumsuz olayı önlemek için tedavi edilmesi gereken kişi sayısıdır.",
+  "explanation": "Mutlak risk azalması oran biçimindeyse NNT=1/ARR'dir. Sonlanım noktası ve takip süresi olmadan NNT karşılaştırması eksik kalır.",
+  "sourceLabel": "Measures of Frequency and Effect in Clinical Research",
+  "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10611611/",
+  "draft": false
+}

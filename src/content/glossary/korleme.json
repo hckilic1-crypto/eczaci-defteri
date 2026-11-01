@@ -1,0 +1,9 @@
+{
+  "name": "Körleme (Masking)",
+  "category": "Klinik Araştırmalar",
+  "definition": "Klinik araştırmada müdahale atamasının katılımcı, araştırmacı veya değerlendirici gibi belirli taraflardan gizlenmesidir.",
+  "explanation": "Amaç beklenti ve değerlendirme yanlılığını azaltmaktır; kimin kör olduğu protokolde belirtilmelidir.",
+  "sourceLabel": "ClinicalTrials.gov – Glossary",
+  "sourceUrl": "https://clinicaltrials.gov/study-basics/glossary",
+  "draft": false
+}

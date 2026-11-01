@@ -1,0 +1,9 @@
+{
+  "name": "Niyet Edilen Tedavi Analizi (ITT)",
+  "category": "Klinik Araştırmalar",
+  "definition": "Randomize edilen katılımcıları tedaviyi alıp almamalarından bağımsız olarak ilk atandıkları gruplarda değerlendirme ilkesidir.",
+  "explanation": "Randomizasyonun sağladığı grup karşılaştırılabilirliğini korumayı amaçlar; eksik sonuç verilerinin ele alınışı ayrıca açıklanmalıdır.",
+  "sourceLabel": "Understanding the Intention-to-treat Principle",
+  "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5654877/",
+  "draft": false
+}

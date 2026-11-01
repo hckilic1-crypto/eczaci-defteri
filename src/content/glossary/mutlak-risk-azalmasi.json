@@ -1,0 +1,9 @@
+{
+  "name": "Mutlak Risk Azalması (ARR)",
+  "category": "Klinik Araştırmalar",
+  "definition": "Kontrol grubundaki olay riskinden tedavi grubundaki olay riskinin çıkarılmasıyla elde edilen risk farkıdır.",
+  "explanation": "Kontrolde yüzde 10, tedavide yüzde 6 olay riski varsa ARR 4 yüzde puandır; göreceli yüzde 40 azalmayla karıştırılmamalıdır.",
+  "sourceLabel": "Measures of Frequency and Effect in Clinical Research",
+  "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10611611/",
+  "draft": false
+}

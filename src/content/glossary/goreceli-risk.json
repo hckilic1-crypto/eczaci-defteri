@@ -1,0 +1,9 @@
+{
+  "name": "Göreceli Risk (RR)",
+  "category": "Klinik Araştırmalar",
+  "definition": "Bir gruptaki olay olasılığının karşılaştırılan diğer gruptaki olay olasılığına oranıdır.",
+  "explanation": "RR=1 eşit riski, RR'nin 1'in altında olması tanımlanan olay bakımından daha düşük riski ifade eder.",
+  "sourceLabel": "Measures of Frequency and Effect in Clinical Research",
+  "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10611611/",
+  "draft": false
+}

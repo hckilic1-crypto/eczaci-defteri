@@ -1,0 +1,9 @@
+{
+  "name": "Güven Aralığı (Confidence Interval)",
+  "category": "Klinik Araştırmalar",
+  "definition": "Bir istatistiksel tahminin belirsizliğini, seçilen güven düzeyine göre oluşturulan alt ve üst sınırlarla gösteren aralıktır.",
+  "explanation": "Yüzde 95 güven düzeyi, aynı yöntemle tekrarlanan örneklemelerde oluşturulan aralıkların uzun dönemde yaklaşık yüzde 95'inin gerçek parametreyi kapsamasıyla ilgilidir.",
+  "sourceLabel": "Statistical and Clinical Significance",
+  "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/20347326/",
+  "draft": false
+}

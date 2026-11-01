@@ -1,0 +1,9 @@
+{
+  "name": "İkincil Sonlanım Noktası",
+  "category": "Klinik Araştırmalar",
+  "definition": "Bir klinik araştırmada birincil sonlanıma ek olarak önceden tanımlanan diğer sonuç ölçütüdür.",
+  "explanation": "İkincil analizler yorumlanırken çoklu karşılaştırmalar ve çalışmanın istatistiksel gücü dikkate alınmalıdır.",
+  "sourceLabel": "ClinicalTrials.gov – Glossary",
+  "sourceUrl": "https://clinicaltrials.gov/study-basics/glossary",
+  "draft": false
+}

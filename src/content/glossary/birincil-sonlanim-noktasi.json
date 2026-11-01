@@ -1,0 +1,9 @@
+{
+  "name": "Birincil Sonlanım Noktası",
+  "category": "Klinik Araştırmalar",
+  "definition": "Bir klinik araştırmada ana araştırma sorusunu değerlendirmek için önceden belirlenen en önemli sonuç ölçütüdür.",
+  "explanation": "Örneklem büyüklüğü hesabı sıklıkla bu sonlanıma dayanır; bir çalışmada birden fazla birincil sonuç olabilir.",
+  "sourceLabel": "ClinicalTrials.gov – Glossary",
+  "sourceUrl": "https://clinicaltrials.gov/study-basics/glossary",
+  "draft": false
+}
