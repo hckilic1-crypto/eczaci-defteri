@@ -14,24 +14,27 @@ import {
 function EditorBrandMark() {
   useEffect(() => {
     if (typeof document === 'undefined') return;
-
-    if (!document.getElementById('eczaci-editor-styles-v5')) {
-      const styles = document.createElement('link');
-      styles.id = 'eczaci-editor-styles-v3';
-      styles.rel = 'stylesheet';
-      styles.href = '/editor-panel.css?v=5';
-      document.head.appendChild(styles);
-    }
-
-    if (!document.getElementById('eczaci-editor-script-v5')) {
-      const script = document.createElement('script');
-      script.id = 'eczaci-editor-script-v3';
-      script.src = '/editor-panel.js?v=5';
-      script.defer = true;
-      document.body.appendChild(script);
+    const assets = [
+      {id:'eczaci-admin-style-v6', tag:'link', href:'/editor-panel.css?v=6'},
+      {id:'eczaci-analytics-style-v6', tag:'link', href:'/editor-analytics.css?v=6'},
+      {id:'eczaci-admin-script-v6', tag:'script', src:'/editor-panel.js?v=6'},
+      {id:'eczaci-analytics-script-v6', tag:'script', src:'/editor-analytics.js?v=6'}
+    ];
+    for (const asset of assets) {
+      if (document.getElementById(asset.id)) continue;
+      const element = document.createElement(asset.tag);
+      element.id = asset.id;
+      if (asset.tag === 'link') {
+        element.rel = 'stylesheet';
+        element.href = asset.href;
+        document.head.appendChild(element);
+      } else {
+        element.src = asset.src;
+        element.defer = true;
+        document.body.appendChild(element);
+      }
     }
   }, []);
-
   return createElement('img', { src: '/favicon.svg', width: 24, height: 24, alt: '' });
 }
 

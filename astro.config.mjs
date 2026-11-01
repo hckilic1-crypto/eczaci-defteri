@@ -30,7 +30,8 @@ export default defineConfig({
 
     sitemap({
       filter: (page) =>
-        !page.includes('/keystatic')
+        !page.includes('/keystatic') &&
+        !page.includes('/api/')
     }),
 
     ...(enableKeystatic
