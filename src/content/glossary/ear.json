@@ -1,0 +1,9 @@
+{
+  "name": "EAR (Tahmini Ortalama Gereksinim)",
+  "category": "Beslenme ve Metabolizma",
+  "definition": "Sağlıklı bir gruptaki bireylerin yaklaşık yarısının gereksinimini karşılayan ortalama günlük alım düzeyidir.",
+  "explanation": "EAR, RDA'nın altında yer alabilir; toplum düzeyinde yetersiz alım değerlendirmelerinde kullanılır.",
+  "sourceLabel": "NIH ODS – Dietary Reference Intakes",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/",
+  "draft": false
+}

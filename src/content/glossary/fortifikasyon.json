@@ -1,0 +1,9 @@
+{
+  "name": "Gıda Fortifikasyonu",
+  "category": "Beslenme ve Metabolizma",
+  "definition": "Bir gıdaya besin ögesi miktarını artırmak veya eksikliği azaltmak amacıyla vitamin ya da mineral eklenmesidir.",
+  "explanation": "Fortifikasyonla zenginleştirilmiş ürünün bütün besin içeriği ayrıca değerlendirilmelidir.",
+  "sourceLabel": "NIH ODS – Dietary Supplement Terms",
+  "sourceUrl": "https://ods.od.nih.gov/HealthInformation/dictionary/",
+  "draft": false
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Trans Yağ Asidi",
+  "category": "Beslenme ve Metabolizma",
+  "definition": "En az bir çift bağı trans geometrik düzenlenime sahip doymamış yağ asididir.",
+  "explanation": "Endüstriyel kısmi hidrojenasyon kaynaklı trans yağlar olumsuz kardiyovasküler etkilerle ilişkilidir.",
+  "sourceLabel": "Dietary Guidelines for Americans",
+  "sourceUrl": "https://www.dietaryguidelines.gov/",
+  "draft": false
+}

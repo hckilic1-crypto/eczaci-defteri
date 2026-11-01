@@ -1,0 +1,9 @@
+{
+  "name": "AI (Yeterli Alım)",
+  "category": "Beslenme ve Metabolizma",
+  "definition": "RDA hesaplamaya yetecek kanıt olmadığında belirlenen, yeterli kabul edilen günlük alım düzeyidir.",
+  "explanation": "AI, eksikliğin tanısında kesin biyolojik eşik olarak yorumlanmamalıdır.",
+  "sourceLabel": "NIH ODS – Dietary Reference Intakes",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/",
+  "draft": false
+}

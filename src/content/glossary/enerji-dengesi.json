@@ -1,0 +1,9 @@
+{
+  "name": "Enerji Dengesi",
+  "category": "Beslenme ve Metabolizma",
+  "definition": "Enerji alımı ile enerji harcaması arasındaki uzun dönemli ilişkiyi ifade eden kavramdır.",
+  "explanation": "Kısa süreli ağırlık değişimleri su, glikojen ve bağırsak içeriğinden de etkilenebilir.",
+  "sourceLabel": "Dietary Guidelines for Americans",
+  "sourceUrl": "https://www.dietaryguidelines.gov/",
+  "draft": false
+}

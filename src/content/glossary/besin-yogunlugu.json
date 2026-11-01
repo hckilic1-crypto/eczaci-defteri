@@ -1,0 +1,9 @@
+{
+  "name": "Besin Yoğunluğu",
+  "category": "Beslenme ve Metabolizma",
+  "definition": "Bir gıdanın sağladığı enerjiye göre içerdiği yararlı besin ögesi miktarını ifade eden kavramdır.",
+  "explanation": "Aynı kaloriye sahip iki gıda vitamin, mineral, protein ve lif açısından çok farklı olabilir.",
+  "sourceLabel": "Dietary Guidelines for Americans",
+  "sourceUrl": "https://www.dietaryguidelines.gov/",
+  "draft": false
+}

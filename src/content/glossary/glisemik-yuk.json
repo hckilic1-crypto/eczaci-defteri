@@ -1,0 +1,9 @@
+{
+  "name": "Glisemik Yük",
+  "category": "Beslenme ve Metabolizma",
+  "definition": "Gıdanın glisemik indeksini bir porsiyondaki kullanılabilir karbonhidrat miktarıyla birleştiren ölçüttür.",
+  "explanation": "Düşük glisemik indeksli büyük porsiyon her zaman düşük glisemik yük oluşturmaz.",
+  "sourceLabel": "NIH ODS – Dietary Supplement Terms",
+  "sourceUrl": "https://ods.od.nih.gov/HealthInformation/dictionary/",
+  "draft": false
+}

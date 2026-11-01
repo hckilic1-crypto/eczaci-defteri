@@ -1,0 +1,9 @@
+{
+  "name": "Mikrobesin",
+  "category": "Beslenme ve Metabolizma",
+  "definition": "Vücudun düşük miktarlarda gereksinim duyduğu vitamin ve mineral besin ögelerini kapsar.",
+  "explanation": "Az miktarda gerekli olmaları, yüksek miktarlarının güvenli olduğu anlamına gelmez.",
+  "sourceLabel": "Dietary Guidelines for Americans",
+  "sourceUrl": "https://www.dietaryguidelines.gov/",
+  "draft": false
+}

@@ -1,0 +1,9 @@
+{
+  "name": "UL (Tolere Edilebilir Üst Alım Düzeyi)",
+  "category": "Beslenme ve Metabolizma",
+  "definition": "Genel sağlıklı popülasyonda olumsuz etki oluşturması beklenmeyen en yüksek günlük kronik alım düzeyidir.",
+  "explanation": "Bir hedef doz veya önerilen günlük miktar değildir; kimi besin ögelerinde UL bulunmaz.",
+  "sourceLabel": "NIH ODS – Dietary Reference Intakes",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/",
+  "draft": false
+}

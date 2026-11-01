@@ -1,0 +1,9 @@
+{
+  "name": "DV (Günlük Değer)",
+  "category": "Beslenme ve Metabolizma",
+  "definition": "Besin ve takviye etiketlerinde porsiyonun referans besin ögesi miktarına katkısını karşılaştırmaya yarayan değerdir.",
+  "explanation": "Etiketteki yüzde DV, bireysel eksikliği veya terapötik gereksinimi doğrudan göstermez.",
+  "sourceLabel": "NIH ODS – Dietary Supplement Terms",
+  "sourceUrl": "https://ods.od.nih.gov/HealthInformation/dictionary/",
+  "draft": false
+}

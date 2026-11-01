@@ -1,0 +1,9 @@
+{
+  "name": "Makrobesin",
+  "category": "Beslenme ve Metabolizma",
+  "definition": "Enerji ve yapı taşı sağlayan, görece yüksek miktarda alınan karbonhidrat, yağ ve protein grubudur.",
+  "explanation": "Alkol enerji sağlayabilir ancak temel ve gerekli bir besin ögesi değildir.",
+  "sourceLabel": "Dietary Guidelines for Americans",
+  "sourceUrl": "https://www.dietaryguidelines.gov/",
+  "draft": false
+}

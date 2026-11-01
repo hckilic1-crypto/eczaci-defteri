@@ -1,0 +1,9 @@
+{
+  "name": "Esansiyel Yağ Asidi",
+  "category": "Beslenme ve Metabolizma",
+  "definition": "İnsanın yeterli miktarda sentezleyemediği, dışarıdan alınması gerekli yağ asididir.",
+  "explanation": "Linoleik asit ve alfa-linolenik asit temel örneklerdir; EPA ve DHA teknik olarak aynı esansiyellik statüsünde değildir.",
+  "sourceLabel": "NIH ODS – Omega-3 Fatty Acids",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/",
+  "draft": false
+}

@@ -1,0 +1,9 @@
+{
+  "name": "RDA (Önerilen Günlük Alım)",
+  "category": "Beslenme ve Metabolizma",
+  "definition": "Sağlıklı kişilerin yaklaşık yüzde 97–98'inin gereksinimini karşılayan ortalama günlük besin ögesi alımıdır.",
+  "explanation": "Bireye özel tedavi dozu veya besin takviyesi ürününün zorunlu günlük dozu değildir.",
+  "sourceLabel": "NIH ODS – Dietary Reference Intakes",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/",
+  "draft": false
+}
