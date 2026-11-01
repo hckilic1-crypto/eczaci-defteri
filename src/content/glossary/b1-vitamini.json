@@ -1,0 +1,9 @@
+{
+  "name": "B1 Vitamini (Tiamin)",
+  "category": "Takviye Edici Gıdalar",
+  "definition": "Karbonhidrat metabolizması ve sinir işlevleri için gerekli suda çözünen vitamindir.",
+  "explanation": "Tiamin eksikliği beriberi ve Wernicke ensefalopatisi gibi ciddi tablolara neden olabilir.",
+  "sourceLabel": "NIH ODS – B Vitamins",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/list-all/",
+  "draft": false
+}

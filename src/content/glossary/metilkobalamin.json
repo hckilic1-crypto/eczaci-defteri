@@ -1,0 +1,9 @@
+{
+  "name": "Metilkobalamin",
+  "category": "Takviye Edici Gıdalar",
+  "definition": "B12 vitamininin metil grubu taşıyan koenzim biçimidir.",
+  "explanation": "Takviye formu olarak bulunur; diğer B12 formlarına her hasta için klinik üstün olduğu kanıtlanmış değildir.",
+  "sourceLabel": "NIH ODS – Vitamin B12",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/",
+  "draft": false
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Alg Yağı",
+  "category": "Takviye Edici Gıdalar",
+  "definition": "Mikroalglerden elde edilen ve özellikle DHA, bazı ürünlerde EPA sağlayan yağdır.",
+  "explanation": "Vegan kaynaklı omega-3 seçeneği olabilir; yağın toplam gramı EPA+DHA toplamı değildir.",
+  "sourceLabel": "NIH ODS – Omega-3 Fatty Acids",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/",
+  "draft": false
+}

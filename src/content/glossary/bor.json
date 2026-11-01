@@ -1,0 +1,9 @@
+{
+  "name": "Bor",
+  "category": "Takviye Edici Gıdalar",
+  "definition": "Bazı gıdalarda ve takviyelerde bulunan, insanlarda esansiyelliği kesinleşmemiş elementtir.",
+  "explanation": "Kemik sağlığına dair mekanistik öneriler, herkese takviye gerekliliği anlamına gelmez.",
+  "sourceLabel": "NIH ODS – Vitamin and Mineral Fact Sheets",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/list-all/",
+  "draft": false
+}

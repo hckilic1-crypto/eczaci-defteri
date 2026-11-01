@@ -1,0 +1,9 @@
+{
+  "name": "Krill Yağı",
+  "category": "Takviye Edici Gıdalar",
+  "definition": "Krill adlı deniz kabuklularından elde edilen omega-3 ve fosfolipit bileşenleri içerebilen yağdır.",
+  "explanation": "Deniz kabuklusu alerjisi ve gerçek EPA+DHA dozu değerlendirilmelidir.",
+  "sourceLabel": "NIH ODS – Omega-3 Fatty Acids",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/",
+  "draft": false
+}

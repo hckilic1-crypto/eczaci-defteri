@@ -1,0 +1,9 @@
+{
+  "name": "İnositol",
+  "category": "Takviye Edici Gıdalar",
+  "definition": "Hücre sinyal iletiminde yer alan farklı stereoizomerleri bulunan siklik polioldür.",
+  "explanation": "Miyo-inozitol ve D-kiro-inozitolün klinik verileri birbirine karıştırılmamalıdır.",
+  "sourceLabel": "NIH ODS – Vitamin and Mineral Fact Sheets",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/list-all/",
+  "draft": false
+}

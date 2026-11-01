@@ -1,0 +1,9 @@
+{
+  "name": "Selenyum",
+  "category": "Takviye Edici Gıdalar",
+  "definition": "Selenoproteinler ve antioksidan enzim sistemlerinde görev alan esansiyel eser elementtir.",
+  "explanation": "Düşük gereksinime rağmen aşırı alımı selenozise yol açabilir.",
+  "sourceLabel": "NIH ODS – Selenium",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/Selenium-HealthProfessional/",
+  "draft": false
+}

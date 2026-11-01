@@ -1,0 +1,9 @@
+{
+  "name": "Balık Yağı",
+  "category": "Takviye Edici Gıdalar",
+  "definition": "Balık dokularından elde edilen, EPA ve DHA gibi uzun zincirli omega-3 yağ asitleri içerebilen yağdır.",
+  "explanation": "1000 mg balık yağı ifadesi 1000 mg EPA+DHA anlamına gelmez.",
+  "sourceLabel": "NIH ODS – Omega-3 Fatty Acids",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/",
+  "draft": false
+}

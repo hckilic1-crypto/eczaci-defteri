@@ -1,0 +1,9 @@
+{
+  "name": "Krom Pikolinat",
+  "category": "Takviye Edici Gıdalar",
+  "definition": "Üç değerlikli kromun pikolinik asitle kompleks oluşturduğu takviye bileşiğidir.",
+  "explanation": "Kilo kaybı veya diyabet tedavisinde ilaç yerine geçmesi için yeterli kanıt yoktur.",
+  "sourceLabel": "NIH ODS – Vitamin and Mineral Fact Sheets",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/list-all/",
+  "draft": false
+}

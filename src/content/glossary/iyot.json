@@ -1,0 +1,9 @@
+{
+  "name": "İyot",
+  "category": "Takviye Edici Gıdalar",
+  "definition": "Tiroid hormonlarının sentezi için gerekli eser elementtir.",
+  "explanation": "Hem eksik hem aşırı iyot alımı tiroid işlevlerini bozabilir.",
+  "sourceLabel": "NIH ODS – Iodine",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/Iodine-HealthProfessional/",
+  "draft": false
+}

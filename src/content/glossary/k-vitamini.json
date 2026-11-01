@@ -1,0 +1,9 @@
+{
+  "name": "K Vitamini",
+  "category": "Takviye Edici Gıdalar",
+  "definition": "Kan pıhtılaşması ve bazı kemik proteinlerinin karboksilasyonunda görevli yağda çözünen vitamindir.",
+  "explanation": "K1 ve K2 farklı formlardır; varfarin kullananlarda istikrarlı alım önemlidir.",
+  "sourceLabel": "NIH ODS – Vitamin K",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/VitaminK-HealthProfessional/",
+  "draft": false
+}

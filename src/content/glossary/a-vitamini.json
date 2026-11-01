@@ -1,0 +1,9 @@
+{
+  "name": "A Vitamini",
+  "category": "Takviye Edici Gıdalar",
+  "definition": "Retinol ve ilgili retinoid bileşiklerin görme, bağışıklık ve hücre farklılaşması için gerekli besinsel grubudur.",
+  "explanation": "Preform A vitamininin aşırı alımı toksisite ve gebelikte teratojenite riski oluşturabilir.",
+  "sourceLabel": "NIH ODS – Vitamin and Mineral Fact Sheets",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/list-all/",
+  "draft": false
+}

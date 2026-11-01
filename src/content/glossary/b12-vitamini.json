@@ -1,0 +1,9 @@
+{
+  "name": "B12 Vitamini (Kobalamin)",
+  "category": "Takviye Edici Gıdalar",
+  "definition": "DNA sentezi, eritrosit oluşumu ve sinir sistemi işlevleri için gerekli suda çözünen vitamindir.",
+  "explanation": "Metilkobalamin ve siyanokobalamin farklı B12 formlarıdır; eksiklik nedenine göre tedavi yolu belirlenir.",
+  "sourceLabel": "NIH ODS – Vitamin B12",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/",
+  "draft": false
+}
