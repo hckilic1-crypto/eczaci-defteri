@@ -1,0 +1,9 @@
+{
+  "name": "Bitkisel Drog",
+  "category": "Farmakognozi",
+  "definition": "Tıbbi amaçla kullanılan, genellikle kurutulmuş veya uygun biçimde işlenmiş bitki ya da bitki kısmıdır.",
+  "explanation": "Tür kimliği ve kullanılan bitki bölümü kalite değerlendirmesinde belirleyicidir.",
+  "sourceLabel": "EMA – Herbal Medicinal Products Q&A",
+  "sourceUrl": "https://www.ema.europa.eu/en/human-regulatory-overview/herbal-medicinal-products/herbal-medicinal-products-questions-answers",
+  "draft": false
+}

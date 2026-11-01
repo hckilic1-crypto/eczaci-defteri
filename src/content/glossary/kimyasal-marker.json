@@ -1,0 +1,9 @@
+{
+  "name": "Kimyasal Marker",
+  "category": "Farmakognozi",
+  "definition": "Bitkisel ham madde veya ürünün kimliğini ve kalitesini izlemek amacıyla ölçülen belirli kimyasal bileşendir.",
+  "explanation": "Marker bileşik her zaman klinik etkinlikten sorumlu molekül değildir.",
+  "sourceLabel": "EMA – Herbal Medicinal Products Q&A",
+  "sourceUrl": "https://www.ema.europa.eu/en/human-regulatory-overview/herbal-medicinal-products/herbal-medicinal-products-questions-answers",
+  "draft": false
+}

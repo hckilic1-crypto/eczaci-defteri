@@ -1,0 +1,9 @@
+{
+  "name": "DER (Drog/Ekstre Oranı)",
+  "category": "Farmakognozi",
+  "definition": "Ekstre hazırlamada kullanılan başlangıç bitkisel drog miktarının elde edilen ekstre miktarına oranıdır.",
+  "explanation": "5:1 ifadesi tek başına etkin madde konsantrasyonunu kanıtlamaz; çözücü ve doğal ekstre tanımı da gerekir.",
+  "sourceLabel": "EMA – Herbal Medicinal Products Q&A",
+  "sourceUrl": "https://www.ema.europa.eu/en/human-regulatory-overview/herbal-medicinal-products/herbal-medicinal-products-questions-answers",
+  "draft": false
+}

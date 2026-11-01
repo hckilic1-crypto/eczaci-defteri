@@ -1,0 +1,9 @@
+{
+  "name": "Tıbbi Bitki",
+  "category": "Farmakognozi",
+  "definition": "Tıbbi kullanım amacıyla değerlendirilen doğal bileşenleri barındıran bitki türüdür.",
+  "explanation": "Bir bitkinin geleneksel kullanımı, her preparatının klinik etkinlik ve güvenliğinin kanıtlandığı anlamına gelmez.",
+  "sourceLabel": "EMA – EU Herbal Monographs",
+  "sourceUrl": "https://www.ema.europa.eu/en/human-regulatory-overview/herbal-medicinal-products/european-union-monographs-list-entries",
+  "draft": false
+}

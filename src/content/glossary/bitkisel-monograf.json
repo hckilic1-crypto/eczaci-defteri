@@ -1,0 +1,9 @@
+{
+  "name": "Bitkisel Monograf",
+  "category": "Farmakognozi",
+  "definition": "Belirli bir bitki materyalinin kimlik, kalite veya tıbbi kullanımına ilişkin değerlendirmeleri içeren referans belgesidir.",
+  "explanation": "EMA monograflarında geleneksel kullanım ile iyi yerleşmiş tıbbi kullanım farklı kanıt kategorileridir.",
+  "sourceLabel": "EMA – EU Herbal Monographs",
+  "sourceUrl": "https://www.ema.europa.eu/en/human-regulatory-overview/herbal-medicinal-products/european-union-monographs-list-entries",
+  "draft": false
+}
