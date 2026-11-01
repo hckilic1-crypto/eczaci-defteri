@@ -2,6 +2,7 @@
 export const prerender = true;
 import Base from '../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
+import { glossarySlug, articleSlug, relatedPostsForTerm, relatedTermsForTerm } from '../../lib/glossary-related';
 
 export async function getStaticPaths(){
   const terms=await getCollection('glossary', t=>!t.data.draft);
@@ -13,9 +14,9 @@ export async function getStaticPaths(){
 const {term}=Astro.props;
 const d=term.data;
 const slug=term.id.replace(/\.json$/,'').split('/').pop();
-const others=(await getCollection('glossary', t=>!t.data.draft&&t.id!==term.id))
-  .filter(t=>t.data.category===d.category)
-  .sort((a,b)=>a.data.name.localeCompare(b.data.name,'tr')).slice(0,5);
+const glossaryEntries = await getCollection('glossary', t => !t.data.draft);
+const others = relatedTermsForTerm(term, glossaryEntries);
+const relatedArticles = relatedPostsForTerm(term, await getCollection('posts', p => !p.data.draft));
 const structuredData={
   '@context':'https://schema.org',
   '@type':'DefinedTerm',
@@ -55,10 +56,24 @@ const structuredData={
       )}
     </div>
     <nav class="glossary-entry-back"><a href="/sozluk">← Sözlükteki tüm terimler</a></nav>
-    {others.length>0&&(
+    {relatedArticles.length > 0 && (
+      <section class="glossary-entry-articles" aria-labelledby="glossary-article-heading">
+        <div class="journal-section-heading"><div><span class="journal-eyebrow">DAHA FAZLA OKU</span><h2 id="glossary-article-heading">İlgili yazılar</h2></div></div>
+        <div class="glossary-article-list">
+          {relatedArticles.map(post => (
+            <a href={'/yazi/' + articleSlug(post)}>
+              <strong>{post.data.title}</strong>
+              <span>{post.data.excerpt}</span>
+              <small>Yazıyı oku ↗</small>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+    {others.length > 0 && (
       <aside class="glossary-entry-related">
-        <div class="journal-section-heading"><div><span class="journal-eyebrow">AYNI KONU ALANINDA</span><h2>Diğer terimler</h2></div></div>
-        <div>{others.map(t=><a href={'/sozluk/'+t.id.replace(/\.json$/,'').split('/').pop()}>{t.data.name}<span aria-hidden="true">↗</span></a>)}</div>
+        <div class="journal-section-heading"><div><span class="journal-eyebrow">BAĞLANTILI KAVRAMLAR</span><h2>İlgili terimler</h2></div></div>
+        <div>{others.map(t => <a href={'/sozluk/' + glossarySlug(t)}>{t.data.name}<span aria-hidden="true">↗</span></a>)}</div>
       </aside>
     )}
   </article>

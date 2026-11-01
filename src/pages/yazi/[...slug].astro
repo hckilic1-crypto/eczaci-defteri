@@ -3,6 +3,7 @@ export const prerender = true;
 import Base from '../../layouts/Base.astro';
 import PostCard from '../../components/PostCard.astro';
 import { getCollection, render } from 'astro:content';
+import { relatedTermsForPost, glossarySlug } from '../../lib/glossary-related';
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts', p => !p.data.draft);
@@ -10,6 +11,7 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
+const termsForArticle = relatedTermsForPost(post, await getCollection('glossary', term => !term.data.draft));
 const { Content, headings } = await render(post);
 const d = post.data;
 const categoryList = await getCollection('categories');
@@ -107,6 +109,12 @@ const structuredData = {
       )}
       <div class="journal-article-copy">
         <div class="article-body"><Content /></div>
+        {termsForArticle.length > 0 && (
+          <nav class="article-glossary-links" aria-labelledby="article-glossary-label">
+            <span class="glossary-detail-kicker" id="article-glossary-label">BU YAZIDAKİ KAVRAMLAR</span>
+            <div>{termsForArticle.map(term => <a href={'/sozluk/' + glossarySlug(term)}>{term.data.name}<span aria-hidden="true">↗</span></a>)}</div>
+          </nav>
+        )}
       </div>
     </div>
 
