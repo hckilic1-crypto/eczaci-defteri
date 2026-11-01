@@ -1,0 +1,9 @@
+{
+  "name": "OTU (Operasyonel Taksonomik Birim)",
+  "category": "Mikrobiyota",
+  "definition": "Dizileme okumalarının belirli benzerlik eşiğiyle kümelendiği analiz birimidir.",
+  "explanation": "Bir OTU her zaman biyolojik olarak tek türle örtüşmez.",
+  "sourceLabel": "Gut Microbiome Research Terms",
+  "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7205593/",
+  "draft": false
+}

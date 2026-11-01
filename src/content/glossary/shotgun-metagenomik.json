@@ -1,0 +1,9 @@
+{
+  "name": "Shotgun Metagenomik",
+  "category": "Mikrobiyota",
+  "definition": "Örnekteki toplam genetik materyalin geniş kapsamlı dizilenmesiyle mikrobiyal içerik ve gen potansiyelini inceleyen yaklaşımdır.",
+  "explanation": "Gen bulunması o genin mutlaka ifade edildiğini veya metabolitin üretildiğini göstermez.",
+  "sourceLabel": "Methods for Studying Gut Microbiota",
+  "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6363981/",
+  "draft": false
+}

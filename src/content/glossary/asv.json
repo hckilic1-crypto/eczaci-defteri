@@ -1,0 +1,9 @@
+{
+  "name": "ASV (Amplicon Sequence Variant)",
+  "category": "Mikrobiyota",
+  "definition": "Amplicon dizilemede hesaplamalı olarak ayırt edilen özgül dizi varyantıdır.",
+  "explanation": "OTU kümelerinden farklı olarak seçilmiş benzerlik eşiğine bağlı kümeleme gerektirmez.",
+  "sourceLabel": "Gut Microbiome Research Terms",
+  "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7205593/",
+  "draft": false
+}

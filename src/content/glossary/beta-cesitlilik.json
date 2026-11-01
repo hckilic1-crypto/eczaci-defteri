@@ -1,0 +1,9 @@
+{
+  "name": "Beta Çeşitlilik",
+  "category": "Mikrobiyota",
+  "definition": "Farklı mikrobiyal topluluklar arasındaki bileşim farklılığını değerlendiren ölçüt grubudur.",
+  "explanation": "Bray–Curtis ve UniFrac farklı bilgi türlerini kullanır; tek sayıyla klinik tanı konulmaz.",
+  "sourceLabel": "Gut Microbiome Research Terms",
+  "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7205593/",
+  "draft": false
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Metabolomik",
+  "category": "Mikrobiyota",
+  "definition": "Biyolojik örnekteki düşük molekül ağırlıklı metabolitlerin kapsamlı incelenmesidir.",
+  "explanation": "Bir metabolitin varlığı hangi mikrobun ürettiğini tek başına göstermez.",
+  "sourceLabel": "Methods for Studying Gut Microbiota",
+  "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6363981/",
+  "draft": false
+}

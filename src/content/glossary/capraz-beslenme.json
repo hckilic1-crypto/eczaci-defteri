@@ -1,0 +1,9 @@
+{
+  "name": "Mikrobiyal Çapraz Beslenme",
+  "category": "Mikrobiyota",
+  "definition": "Bir mikroorganizmanın ürettiği metabolitlerin başka bir mikroorganizma tarafından besin olarak kullanılmasıdır.",
+  "explanation": "Toplulukta bir metabolitin miktarı yalnızca onu üreten türlerin bolluğuna bağlı değildir.",
+  "sourceLabel": "Gut Microbiome Research Terms",
+  "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7205593/",
+  "draft": false
+}

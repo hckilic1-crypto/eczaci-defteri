@@ -1,0 +1,9 @@
+{
+  "name": "Alfa Çeşitlilik",
+  "category": "Mikrobiyota",
+  "definition": "Tek bir mikrobiyal örnek veya topluluk içindeki çeşitliliği tanımlayan ölçüt grubudur.",
+  "explanation": "Tür zenginliği ve göreli bolluk dengesi gibi bileşenleri kapsayabilir; yüksek değer her durumda daha sağlıklı demek değildir.",
+  "sourceLabel": "Gut Microbiome Research Terms",
+  "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7205593/",
+  "draft": false
+}

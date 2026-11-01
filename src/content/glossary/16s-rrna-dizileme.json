@@ -1,0 +1,9 @@
+{
+  "name": "16S rRNA Dizileme",
+  "category": "Mikrobiyota",
+  "definition": "Bakteri ve arkealarda korunmuş bir genin değişken bölgelerini analiz eden taksonomik profilleme yöntemidir.",
+  "explanation": "Bütün mikrobiyal genleri incelemez; suş ayrımı ve işlev çıkarımı bakımından sınırlılıkları vardır.",
+  "sourceLabel": "Methods for Studying Gut Microbiota",
+  "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6363981/",
+  "draft": false
+}

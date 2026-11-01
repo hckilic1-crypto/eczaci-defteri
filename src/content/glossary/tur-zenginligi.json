@@ -1,0 +1,9 @@
+{
+  "name": "Tür Zenginliği",
+  "category": "Mikrobiyota",
+  "definition": "Bir mikrobiyal toplulukta saptanan farklı tür veya operasyonel birim sayısıdır.",
+  "explanation": "Sekanslama derinliği ve analitik yöntemden etkilenir.",
+  "sourceLabel": "Gut Microbiome Research Terms",
+  "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7205593/",
+  "draft": false
+}

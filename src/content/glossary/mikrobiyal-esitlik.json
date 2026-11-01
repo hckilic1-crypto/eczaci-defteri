@@ -1,0 +1,9 @@
+{
+  "name": "Mikrobiyal Eşitlik (Evenness)",
+  "category": "Mikrobiyota",
+  "definition": "Topluluktaki farklı mikroorganizmaların göreli bolluklarının birbirine ne kadar dengeli dağıldığını gösterir.",
+  "explanation": "Zenginlikle birlikte çeşitlilik indekslerini etkiler; tek başına patojen varlığını ölçmez.",
+  "sourceLabel": "Gut Microbiome Research Terms",
+  "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7205593/",
+  "draft": false
+}

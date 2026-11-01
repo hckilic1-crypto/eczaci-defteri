@@ -1,0 +1,9 @@
+{
+  "name": "Propiyonat",
+  "category": "Mikrobiyota",
+  "definition": "Propiyonik asidin iyonlaşmış formu olup bağırsak mikrobiyal fermantasyon ürünleri arasındadır.",
+  "explanation": "Metabolik etkileri koşula ve maruziyete bağlıdır; tek başına hastalık belirteci değildir.",
+  "sourceLabel": "Gut Microbiome Research Terms",
+  "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7205593/",
+  "draft": false
+}

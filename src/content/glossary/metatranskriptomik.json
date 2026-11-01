@@ -1,0 +1,9 @@
+{
+  "name": "Metatranskriptomik",
+  "category": "Mikrobiyota",
+  "definition": "Mikrobiyal topluluktaki RNA transkriptlerini inceleyerek gen ifade örüntülerini değerlendiren yöntemdir.",
+  "explanation": "Genetik potansiyelden farklı olarak örnekleme anındaki ifade hakkında bilgi verir.",
+  "sourceLabel": "Methods for Studying Gut Microbiota",
+  "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6363981/",
+  "draft": false
+}

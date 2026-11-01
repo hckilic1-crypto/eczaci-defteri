@@ -1,0 +1,9 @@
+{
+  "name": "Bütirat",
+  "category": "Mikrobiyota",
+  "definition": "Bağırsak mikroorganizmalarınca üretilebilen dört karbonlu kısa zincirli yağ asididir.",
+  "explanation": "Kolonosit enerji metabolizmasında rol alır; dışkı bütirat ölçümü toplam üretimi birebir göstermez.",
+  "sourceLabel": "Gut Microbiome Research Terms",
+  "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7205593/",
+  "draft": false
+}
