@@ -1,0 +1,9 @@
+{
+  "name": "Fotostabilite",
+  "category": "Farmasötik Teknoloji",
+  "definition": "Bir ilaç maddesi veya ürününün ışık maruziyeti karşısında kalite özelliklerini koruma durumudur.",
+  "explanation": "Işığa duyarlılık değerlendirmeleri, koruyucu ambalaj ve etiket uyarısı gerekip gerekmediğini belirlemeye yardım eder.",
+  "sourceLabel": "ICH Q1B – Photostability Testing",
+  "sourceUrl": "https://database.ich.org/sites/default/files/Q1B%20Guideline.pdf",
+  "draft": false
+}

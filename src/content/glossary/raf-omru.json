@@ -1,0 +1,9 @@
+{
+  "name": "Raf Ömrü",
+  "category": "Farmasötik Teknoloji",
+  "definition": "Bir ilaç ürününün tanımlanan saklama koşullarında onaylı spesifikasyonlara uygun kalmasının beklendiği süredir.",
+  "explanation": "Son kullanma tarihi stabilite verilerinden türetilir; açıldıktan sonraki kullanım süresi bazı ürünlerde ayrıca sınırlanır.",
+  "sourceLabel": "ICH Q1A(R2) – Stability Testing",
+  "sourceUrl": "https://database.ich.org/sites/default/files/Q1A%28R2%29%20Guideline.pdf",
+  "draft": false
+}

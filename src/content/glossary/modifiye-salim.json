@@ -1,0 +1,9 @@
+{
+  "name": "Modifiye Salım",
+  "category": "Farmasötik Teknoloji",
+  "definition": "Etkin maddenin salım hızının ve/veya zamanının hemen salımlı forma göre değiştirildiği farmasötik tasarımdır.",
+  "explanation": "Uzatılmış ve geciktirilmiş salım farklı stratejilerdir; kırma veya ezme uygunluğu ürün bazında incelenmelidir.",
+  "sourceLabel": "FDA – Modified Release Dosage Form Glossary",
+  "sourceUrl": "https://www.fda.gov/media/149688/download",
+  "draft": false
+}

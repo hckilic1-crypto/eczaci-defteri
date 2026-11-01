@@ -1,0 +1,9 @@
+{
+  "name": "İlaç Stabilitesi",
+  "category": "Farmasötik Teknoloji",
+  "definition": "Bir ilaç maddesinin veya ürününün belirlenmiş koşullarda kabul edilebilir kalite özelliklerini sürdürme yeteneğidir.",
+  "explanation": "Kimyasal bozunma dışında fiziksel ve mikrobiyolojik değişiklikler de değerlendirilir; saklama koşulları stabilite verilerine dayanır.",
+  "sourceLabel": "ICH Q1A(R2) – Stability Testing",
+  "sourceUrl": "https://database.ich.org/sites/default/files/Q1A%28R2%29%20Guideline.pdf",
+  "draft": false
+}

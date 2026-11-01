@@ -1,0 +1,9 @@
+{
+  "name": "Geciktirilmiş Salım",
+  "category": "Farmasötik Teknoloji",
+  "definition": "Etkin madde salımının uygulamadan sonra belirli bir süre veya koşul gerçekleşene kadar ertelendiği formülasyondur.",
+  "explanation": "Enterik kaplama geciktirilmiş salımın bir örneğidir; tüm geciktirilmiş salım sistemleri enterik kaplamalı değildir.",
+  "sourceLabel": "FDA – Modified Release Dosage Form Glossary",
+  "sourceUrl": "https://www.fda.gov/media/149688/download",
+  "draft": false
+}

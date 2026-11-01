@@ -1,0 +1,9 @@
+{
+  "name": "Dissolüsyon (Çözünme Testi)",
+  "category": "Farmasötik Teknoloji",
+  "definition": "Etkin maddenin bir farmasötik dozaj formundan belirli test koşullarında çözeltiye geçişinin hızını ve miktarını değerlendiren işlemdir.",
+  "explanation": "İn vitro çözünme profili ürün kalitesi ve biyofarmasötik karşılaştırmalar için kullanılır; her durumda klinik eşdeğerlik kanıtı değildir.",
+  "sourceLabel": "FDA – Dissolution Testing",
+  "sourceUrl": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/dissolution-testing-immediate-release-solid-oral-dosage-forms",
+  "draft": false
+}

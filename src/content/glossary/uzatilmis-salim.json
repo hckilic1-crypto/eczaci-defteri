@@ -1,0 +1,9 @@
+{
+  "name": "Uzatılmış Salım",
+  "category": "Farmasötik Teknoloji",
+  "definition": "Etkin maddenin daha uzun bir süre boyunca salınmasını sağlayacak şekilde tasarlanmış farmasötik salım biçimidir.",
+  "explanation": "Hemen salımlı forma kıyasla dozlama sıklığını azaltabilir; tabletin bölünmesi veya ezilmesi salım profilini bozabilir.",
+  "sourceLabel": "FDA – Modified Release Dosage Form Glossary",
+  "sourceUrl": "https://www.fda.gov/media/149688/download",
+  "draft": false
+}
