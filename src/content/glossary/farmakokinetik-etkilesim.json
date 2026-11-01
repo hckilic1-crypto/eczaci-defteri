@@ -1,0 +1,9 @@
+{
+  "name": "Farmakokinetik Etkileşim",
+  "category": "İlaç Güvenliği",
+  "definition": "Bir maddenin diğer ilacın emilim, dağılım, metabolizma veya eliminasyonunu değiştirmesidir.",
+  "explanation": "Enzim inhibisyonu veya taşıyıcı protein etkileri örnek olabilir; her plazma düzeyi değişimi klinik zarar oluşturmaz.",
+  "sourceLabel": "FDA – Drug Development and Labeling",
+  "sourceUrl": "https://www.fda.gov/drugs/investigational-new-drug-application-ind/drug-development-and-review-definitions",
+  "draft": false
+}

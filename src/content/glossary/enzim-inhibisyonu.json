@@ -1,0 +1,9 @@
+{
+  "name": "Enzim İnhibisyonu",
+  "category": "İlaç Güvenliği",
+  "definition": "Enzim aktivitesinin azalması sonucunda belirli substratların metabolizma hızının değişmesidir.",
+  "explanation": "Metabolize edilen aktif ilaçla proilaç üzerindeki klinik etki aynı olmayabilir.",
+  "sourceLabel": "FDA – Drug Development and Labeling",
+  "sourceUrl": "https://www.fda.gov/drugs/investigational-new-drug-application-ind/drug-development-and-review-definitions",
+  "draft": false
+}

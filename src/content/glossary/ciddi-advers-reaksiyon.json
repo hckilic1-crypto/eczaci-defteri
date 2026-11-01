@@ -1,0 +1,9 @@
+{
+  "name": "Ciddi Advers Reaksiyon",
+  "category": "İlaç Güvenliği",
+  "definition": "Ölüm, yaşamı tehdit etme, hastaneye yatış veya önemli yeti kaybı gibi ciddi sonuç kriterlerini karşılayan istenmeyen ilaç reaksiyonudur.",
+  "explanation": "Ciddiyet, reaksiyonun şiddet derecesinden farklı bir düzenleyici sınıflamadır.",
+  "sourceLabel": "EMA – GVP Definitions (Rev.5)",
+  "sourceUrl": "https://www.ema.europa.eu/en/documents/scientific-guideline/guideline-good-pharmacovigilance-practices-annex-i-definitions-rev-5_en.pdf",
+  "draft": false
+}

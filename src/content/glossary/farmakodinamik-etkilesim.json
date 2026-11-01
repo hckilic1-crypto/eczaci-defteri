@@ -1,0 +1,9 @@
+{
+  "name": "Farmakodinamik Etkileşim",
+  "category": "İlaç Güvenliği",
+  "definition": "Bir ilacın diğerinin etkisini, plazma düzeyini değiştirmeden artırması veya azaltmasıdır.",
+  "explanation": "Birlikte sedasyon veya kanama eğiliminde artış bu mekanizmayla görülebilir.",
+  "sourceLabel": "FDA – Drug Development and Labeling",
+  "sourceUrl": "https://www.fda.gov/drugs/investigational-new-drug-application-ind/drug-development-and-review-definitions",
+  "draft": false
+}

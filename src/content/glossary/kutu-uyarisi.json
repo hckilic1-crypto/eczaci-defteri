@@ -1,0 +1,9 @@
+{
+  "name": "Kutulu Uyarı (Boxed Warning)",
+  "category": "İlaç Güvenliği",
+  "definition": "ABD reçeteli ilaç etiketlerinde ciddi riskleri vurgulamak için kullanılan belirgin uyarı biçimidir.",
+  "explanation": "ABD FDA etiket formatına özgüdür; Türkiye'deki KÜB uyarı yapısıyla birebir aynı değildir.",
+  "sourceLabel": "FDA – Drug Development and Labeling",
+  "sourceUrl": "https://www.fda.gov/drugs/investigational-new-drug-application-ind/drug-development-and-review-definitions",
+  "draft": false
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Antikolinerjik Yük",
+  "category": "İlaç Güvenliği",
+  "definition": "Bir kişinin kullandığı ilaçların toplam antikolinerjik etkisini ifade eden kavramdır.",
+  "explanation": "Özellikle yaşlılarda bilişsel etkiler, kabızlık ve üriner retansiyon açısından önem taşıyabilir.",
+  "sourceLabel": "WHO – Medication Without Harm",
+  "sourceUrl": "https://www.who.int/news/item/16-09-2022-who-calls-for-urgent-action-by-countries-for-achieving-medication-without-harm",
+  "draft": false
+}

@@ -1,0 +1,9 @@
+{
+  "name": "İlaç Etkileşimi",
+  "category": "İlaç Güvenliği",
+  "definition": "Bir ilacın etkisinin veya maruziyetinin başka ilaç, besin ya da madde tarafından değiştirilmesidir.",
+  "explanation": "Etkileşimin klinik önemi maruziyet, doz, hastalık ve eşzamanlı tedavilere bağlıdır.",
+  "sourceLabel": "WHO – Medication Without Harm",
+  "sourceUrl": "https://www.who.int/news/item/16-09-2022-who-calls-for-urgent-action-by-countries-for-achieving-medication-without-harm",
+  "draft": false
+}

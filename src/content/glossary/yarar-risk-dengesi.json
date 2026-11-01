@@ -1,0 +1,9 @@
+{
+  "name": "Yarar–Risk Dengesi",
+  "category": "İlaç Güvenliği",
+  "definition": "Bir ilacın beklenen terapötik yararlarının güvenlilik riskleri karşısında değerlendirilmesidir.",
+  "explanation": "Aynı ilacın dengesi endikasyon, doz ve hasta grubuna göre farklılaşabilir.",
+  "sourceLabel": "EMA – GVP Definitions (Rev.5)",
+  "sourceUrl": "https://www.ema.europa.eu/en/documents/scientific-guideline/guideline-good-pharmacovigilance-practices-annex-i-definitions-rev-5_en.pdf",
+  "draft": false
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Enzim İndüksiyonu",
+  "category": "İlaç Güvenliği",
+  "definition": "Bir enzim sisteminin ifade veya işlevinin artması nedeniyle substrat ilaçların metabolizmasının değişmesidir.",
+  "explanation": "Etki başlangıcı ve kaybolması zaman alabilir; proilaçlar için sonuç ters yönde olabilir.",
+  "sourceLabel": "FDA – Drug Development and Labeling",
+  "sourceUrl": "https://www.fda.gov/drugs/investigational-new-drug-application-ind/drug-development-and-review-definitions",
+  "draft": false
+}

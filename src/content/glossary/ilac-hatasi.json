@@ -1,0 +1,9 @@
+{
+  "name": "İlaç Hatası",
+  "category": "İlaç Güvenliği",
+  "definition": "İlacın kullanımı sürecinde önlenebilir uygunsuz kullanıma veya hasta zararına yol açabilen olaydır.",
+  "explanation": "Hata oluşması mutlaka zarar geliştiği anlamına gelmez; süreç iyileştirmesinde bildirim değerlidir.",
+  "sourceLabel": "WHO – Medication Without Harm",
+  "sourceUrl": "https://www.who.int/news/item/16-09-2022-who-calls-for-urgent-action-by-countries-for-achieving-medication-without-harm",
+  "draft": false
+}

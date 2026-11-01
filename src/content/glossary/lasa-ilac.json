@@ -1,0 +1,9 @@
+{
+  "name": "LASA İlaç",
+  "category": "İlaç Güvenliği",
+  "definition": "Adı veya ambalajı birbirine benzeyen ve karıştırılma riski taşıyan ilaçları tanımlayan kısaltmadır.",
+  "explanation": "Look-alike/sound-alike sorunları reçeteleme, hazırlama ve uygulamanın tümünde hata yaratabilir.",
+  "sourceLabel": "WHO – Look-Alike/Sound-Alike Medicines",
+  "sourceUrl": "https://www.who.int/publications/i/item/9789240058897",
+  "draft": false
+}

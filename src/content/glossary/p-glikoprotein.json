@@ -1,0 +1,9 @@
+{
+  "name": "P-Glikoprotein (P-gp)",
+  "category": "İlaç Güvenliği",
+  "definition": "Bazı ilaçların hücre dışına taşınmasında görev alan ATP bağımlı efluks taşıyıcısıdır.",
+  "explanation": "Bağırsak ve kan-beyin bariyeri gibi dokularda maruziyeti etkileyebilir.",
+  "sourceLabel": "FDA – Drug Development and Labeling",
+  "sourceUrl": "https://www.fda.gov/drugs/investigational-new-drug-application-ind/drug-development-and-review-definitions",
+  "draft": false
+}

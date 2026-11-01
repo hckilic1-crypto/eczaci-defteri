@@ -1,0 +1,9 @@
+{
+  "name": "Risk Yönetim Planı (RMP)",
+  "category": "İlaç Güvenliği",
+  "definition": "Bir ilacın önemli risklerini tanımlama, izleme ve azaltma yaklaşımını belgeleyen plandır.",
+  "explanation": "İzlem çalışmaları ve eğitim materyalleri gibi ek önlemler içerebilir.",
+  "sourceLabel": "EMA – GVP Definitions (Rev.5)",
+  "sourceUrl": "https://www.ema.europa.eu/en/documents/scientific-guideline/guideline-good-pharmacovigilance-practices-annex-i-definitions-rev-5_en.pdf",
+  "draft": false
+}
