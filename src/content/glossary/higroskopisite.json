@@ -1,0 +1,9 @@
+{
+  "name": "Higroskopisite",
+  "category": "Farmasötik Teknoloji",
+  "definition": "Bir maddenin çevresindeki havadan nem alma eğilimidir.",
+  "explanation": "Nem alımı toz akışını, tablet bütünlüğünü veya stabiliteyi etkileyebilir.",
+  "sourceLabel": "EMA – Stability Guidelines",
+  "sourceUrl": "https://www.ema.europa.eu/en/human-regulatory-overview/research-development/scientific-guidelines/quality-guidelines/quality-guidelines-stability",
+  "draft": false
+}

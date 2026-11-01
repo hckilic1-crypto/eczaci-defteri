@@ -1,0 +1,9 @@
+{
+  "name": "Soğuk Zincir",
+  "category": "Farmasötik Teknoloji",
+  "definition": "Sıcaklığa duyarlı ürünlerin üretimden kullanıma dek belirlenen sıcaklık sınırlarında tutulduğu izleme sistemidir.",
+  "explanation": "Her soğuk zincir ürünü aynı sıcaklık aralığını gerektirmez; ürünün onaylı saklama koşulu esastır.",
+  "sourceLabel": "EMA – Stability Guidelines",
+  "sourceUrl": "https://www.ema.europa.eu/en/human-regulatory-overview/research-development/scientific-guidelines/quality-guidelines/quality-guidelines-stability",
+  "draft": false
+}

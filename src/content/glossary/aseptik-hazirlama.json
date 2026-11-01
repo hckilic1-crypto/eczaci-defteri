@@ -1,0 +1,9 @@
+{
+  "name": "Aseptik Hazırlama",
+  "category": "Farmasötik Teknoloji",
+  "definition": "Steril ürün veya bileşenlerin kontaminasyonunu önleyen kontrollü koşullarda hazırlama işlemidir.",
+  "explanation": "Aseptik çalışma terminal sterilizasyon ile aynı yöntem değildir; personel ve ortam kontrolleri gerektirir.",
+  "sourceLabel": "USP – Sterile Compounding",
+  "sourceUrl": "https://doi.usp.org/USPNF/USPNF_M99925_09_01.html",
+  "draft": false
+}

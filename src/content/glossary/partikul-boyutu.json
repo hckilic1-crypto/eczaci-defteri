@@ -1,0 +1,9 @@
+{
+  "name": "Partikül Boyutu",
+  "category": "Farmasötik Teknoloji",
+  "definition": "Toz veya disperse sistemdeki taneciklerin büyüklüğünü tanımlayan fiziksel özelliktir.",
+  "explanation": "Çözünme, akış ve aerosol birikimi gibi özellikleri etkileyebilir.",
+  "sourceLabel": "EMA – Analytical Quality Guidelines",
+  "sourceUrl": "https://www.ema.europa.eu/en/human-regulatory-overview/research-development/scientific-guidelines/quality-guidelines/quality-guidelines-specifications-analytical-procedures-analytical-validation",
+  "draft": false
+}

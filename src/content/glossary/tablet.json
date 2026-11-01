@@ -1,0 +1,9 @@
+{
+  "name": "Tablet",
+  "category": "Farmasötik Teknoloji",
+  "definition": "Etkin madde ve yardımcı maddelerin genellikle sıkıştırılmasıyla elde edilen katı tek dozluk farmasötik formdur.",
+  "explanation": "Her tabletin kırılabilir veya ezilebilir olduğu varsayılmamalıdır.",
+  "sourceLabel": "EMA – Pharmaceutical Quality Guidelines",
+  "sourceUrl": "https://www.ema.europa.eu/en/human-regulatory-overview/research-development/scientific-guidelines/quality-guidelines",
+  "draft": false
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Osmolarite",
+  "category": "Farmasötik Teknoloji",
+  "definition": "Bir litre çözelti başına ozmotik olarak etkin tanecik miktarını ifade eden derişim ölçüsüdür.",
+  "explanation": "Osmolaliteden farklı olarak çözelti hacmini esas alır; birim genellikle Osm/L'dir.",
+  "sourceLabel": "EMA – Pharmaceutical Quality Guidelines",
+  "sourceUrl": "https://www.ema.europa.eu/en/human-regulatory-overview/research-development/scientific-guidelines/quality-guidelines",
+  "draft": false
+}

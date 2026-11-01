@@ -1,0 +1,9 @@
+{
+  "name": "Kapsül",
+  "category": "Farmasötik Teknoloji",
+  "definition": "Etkin maddeyi ve yardımcı maddeleri bir kabuk içinde taşıyan katı farmasötik formdur.",
+  "explanation": "Sert ve yumuşak kapsüllerin içerikleri ve açılma uygunluğu farklı olabilir.",
+  "sourceLabel": "EMA – Pharmaceutical Quality Guidelines",
+  "sourceUrl": "https://www.ema.europa.eu/en/human-regulatory-overview/research-development/scientific-guidelines/quality-guidelines",
+  "draft": false
+}

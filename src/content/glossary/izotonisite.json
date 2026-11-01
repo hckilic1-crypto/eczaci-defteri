@@ -1,0 +1,9 @@
+{
+  "name": "İzotonisite",
+  "category": "Farmasötik Teknoloji",
+  "definition": "Bir çözeltinin uygun biyolojik referansla benzer etkin ozmotik basınç göstermesi özelliğidir.",
+  "explanation": "İzotonik ve izoosmotik terimler her durumda eş anlamlı değildir.",
+  "sourceLabel": "EMA – Pharmaceutical Quality Guidelines",
+  "sourceUrl": "https://www.ema.europa.eu/en/human-regulatory-overview/research-development/scientific-guidelines/quality-guidelines",
+  "draft": false
+}

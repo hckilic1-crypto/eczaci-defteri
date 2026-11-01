@@ -1,0 +1,9 @@
+{
+  "name": "Süspansiyon",
+  "category": "Farmasötik Teknoloji",
+  "definition": "Çözünmeyen katı parçacıkların sıvı taşıyıcı içinde dağıtıldığı heterojen farmasötik sistemdir.",
+  "explanation": "Çökelme olasılığı nedeniyle bazı ürünler uygulanmadan önce çalkalanmalıdır.",
+  "sourceLabel": "EMA – Pharmaceutical Quality Guidelines",
+  "sourceUrl": "https://www.ema.europa.eu/en/human-regulatory-overview/research-development/scientific-guidelines/quality-guidelines",
+  "draft": false
+}

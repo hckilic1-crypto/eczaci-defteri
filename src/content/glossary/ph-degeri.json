@@ -1,0 +1,9 @@
+{
+  "name": "pH Değeri",
+  "category": "Farmasötik Teknoloji",
+  "definition": "Bir sulu ortamın hidrojen iyonu etkinliğiyle ilişkili asitlik ölçüsüdür.",
+  "explanation": "İlaç çözünürlüğünü, kimyasal stabiliteyi ve lokal toleransı etkileyebilir.",
+  "sourceLabel": "EMA – Pharmaceutical Quality Guidelines",
+  "sourceUrl": "https://www.ema.europa.eu/en/human-regulatory-overview/research-development/scientific-guidelines/quality-guidelines",
+  "draft": false
+}

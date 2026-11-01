@@ -1,0 +1,9 @@
+{
+  "name": "Emülsiyon",
+  "category": "Farmasötik Teknoloji",
+  "definition": "Birbirine karışmayan iki sıvı fazdan birinin diğerinde damlacıklar hâlinde dağıldığı sistemdir.",
+  "explanation": "Yağ içinde su ve su içinde yağ tipleri farklıdır; emülgatör stabiliteyi etkiler.",
+  "sourceLabel": "EMA – Pharmaceutical Quality Guidelines",
+  "sourceUrl": "https://www.ema.europa.eu/en/human-regulatory-overview/research-development/scientific-guidelines/quality-guidelines",
+  "draft": false
+}

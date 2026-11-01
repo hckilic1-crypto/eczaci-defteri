@@ -1,0 +1,9 @@
+{
+  "name": "Antimikrobiyal Koruyucu",
+  "category": "Farmasötik Teknoloji",
+  "definition": "Çok dozlu bazı farmasötik ürünlerde mikrobiyal çoğalmayı sınırlamak için eklenen maddedir.",
+  "explanation": "Koruyucu bulunması ürünü steril yapmaz; etkinlik uygun yöntemle doğrulanmalıdır.",
+  "sourceLabel": "EMA – Analytical Quality Guidelines",
+  "sourceUrl": "https://www.ema.europa.eu/en/human-regulatory-overview/research-development/scientific-guidelines/quality-guidelines/quality-guidelines-specifications-analytical-procedures-analytical-validation",
+  "draft": false
+}

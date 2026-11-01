@@ -1,0 +1,9 @@
+{
+  "name": "Rekonstitüsyon (Sulandırma)",
+  "category": "Farmasötik Teknoloji",
+  "definition": "Kuru veya konsantre preparatın uygun çözücü eklenerek kullanıma hazır duruma getirilmesidir.",
+  "explanation": "Doğru çözücü, hacim ve sulandırma sonrası saklama süresi ürün bazında kontrol edilmelidir.",
+  "sourceLabel": "EMA – Stability Guidelines",
+  "sourceUrl": "https://www.ema.europa.eu/en/human-regulatory-overview/research-development/scientific-guidelines/quality-guidelines/quality-guidelines-stability",
+  "draft": false
+}

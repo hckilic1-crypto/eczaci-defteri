@@ -1,0 +1,9 @@
+{
+  "name": "Sterilite",
+  "category": "Farmasötik Teknoloji",
+  "definition": "Canlı mikroorganizmalardan arınmış olma durumudur.",
+  "explanation": "Sterilite testinin sınırlı örneklemesi, üretimde mikrobiyal kontrol gereksinimini ortadan kaldırmaz.",
+  "sourceLabel": "USP – Sterile Compounding",
+  "sourceUrl": "https://doi.usp.org/USPNF/USPNF_M99925_09_01.html",
+  "draft": false
+}

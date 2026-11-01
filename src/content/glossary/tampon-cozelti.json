@@ -1,0 +1,9 @@
+{
+  "name": "Tampon Çözelti",
+  "category": "Farmasötik Teknoloji",
+  "definition": "Az miktarda asit veya baz eklendiğinde pH değişimini sınırlayan kimyasal sistemdir.",
+  "explanation": "Tampon kapasitesi seçilen bileşenlerin konsantrasyonu ve pKa değerine bağlıdır.",
+  "sourceLabel": "EMA – Pharmaceutical Quality Guidelines",
+  "sourceUrl": "https://www.ema.europa.eu/en/human-regulatory-overview/research-development/scientific-guidelines/quality-guidelines",
+  "draft": false
+}
