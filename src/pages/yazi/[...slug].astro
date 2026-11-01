@@ -87,19 +87,28 @@ const structuredData = {
       </div>
       <h1>{d.title}</h1>
       <p class="dek">{d.excerpt}</p>
-      {d.updatedAt && <p class="meta">Son güncelleme: {date(d.updatedAt)}</p>}
+      <div class="journal-article-byline">
+        <span class="journal-byline-mark" aria-hidden="true">ED</span>
+        <span><strong>{authorName}</strong><small>Eczacı Defteri · Kaynaklı değerlendirme</small></span>
+        <span class="journal-byline-date">Yayımlanma: {date(d.publishedAt)}{d.updatedAt && <span> · Güncelleme: {date(d.updatedAt)}</span>}</span>
+      </div>
     </header>
 
-    {d.coverImage && <figure class="article-cover"><img src={d.coverImage} alt={`${d.title} yazısının kapak görseli`} loading="eager" decoding="async" /></figure>}
+    {d.coverImage && <figure class="article-cover"><img src={d.coverImage} alt="" width="1200" height="675" loading="eager" decoding="async" /></figure>}
 
-    {toc.length > 2 && (
-      <nav class="article-toc" aria-label="Bu yazıda">
-        <div class="article-toc-label">BU YAZIDA</div>
-        <ol>{toc.map(h => <li><a href={`#${h.slug}`}>{h.text}</a></li>)}</ol>
-      </nav>
-    )}
-
-    <div class="article-body"><Content /></div>
+    <div class="journal-article-layout">
+      {toc.length > 2 && (
+        <aside class="journal-article-rail">
+          <nav class="article-toc" aria-label="Bu yazıda">
+            <div class="article-toc-label">BU YAZIDA</div>
+            <ol>{toc.map(h => <li><a href={'#' + h.slug}>{h.text}</a></li>)}</ol>
+          </nav>
+        </aside>
+      )}
+      <div class="journal-article-copy">
+        <div class="article-body"><Content /></div>
+      </div>
+    </div>
 
     {d.references?.length > 0 && (
       <section class="article-references" aria-labelledby="article-references-title">

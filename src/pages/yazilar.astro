@@ -10,11 +10,12 @@ const categories = (await getCollection('categories')).sort((a, b) =>
 ---
 
 <Base title="Yazılar | Eczacı Defteri" description="Eczacı Defteri'ndeki ilaç, takviye, dermokozmetik ve sağlık yazılarını keşfedin.">
-  <section class="shell page-head">
-    <div class="kicker">ARŞİV</div>
+  <header class="shell journal-archive-head">
+    <div class="journal-eyebrow">ECZACI DEFTERİ / ARŞİV</div>
     <h1>Yazılar</h1>
-    <p>Takviye edici gıdalar, dermokozmetik, eczacılık ve sağlık bilimleri üzerine kaynaklı değerlendirmeler.</p>
-  </section>
+    <p>Takviye edici gıdalardan dermokozmetiğe, eczacılık pratiğinden sağlık bilimlerine uzanan kaynaklı yazılar.</p>
+    <div class="journal-archive-count">{posts.length} yayımlanmış yazı</div>
+  </header>
 
   <section class="shell archive-tools" aria-label="Yazılarda ara ve filtrele">
     <label class="archive-search">
@@ -33,7 +34,7 @@ const categories = (await getCollection('categories')).sort((a, b) =>
   </section>
 
   <section class="shell archive-results">
-    {posts.length > 0 ? <div class="grid" id="archive-posts">{posts.map(p => <PostCard post={p} />)}</div> : (
+    {posts.length > 0 ? <div class="grid journal-post-grid" id="archive-posts">{posts.map(p => <PostCard post={p} />)}</div> : (
       <p class="archive-empty">Henüz yayımlanmış yazı bulunmuyor. Yeni içerikler burada yer alacak.</p>
     )}
     <p id="archive-no-results" class="archive-empty" hidden>Bu aramayla eşleşen yazı bulunamadı. Başka bir kelime veya kategori deneyin.</p>

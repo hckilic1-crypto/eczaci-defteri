@@ -4,9 +4,21 @@ const { post, featured = false } = Astro.props;
 const d = post.data;
 const slug = post.id.replace(/\.mdoc$/, '');
 const cats = await getCollection('categories');
-const categoryName = cats.find(c => c.id.replace(/\.json$/, '') === d.category)?.data.name ?? d.category.replaceAll('-', ' ');
+const categoryName = cats.find(c => c.id.replace(/\.json$/, '').split('/').pop() === d.category)?.data.name ?? d.category.replaceAll('-', ' ');
+const date = new Intl.DateTimeFormat('tr-TR', {day:'numeric', month:'short', year:'numeric'}).format(d.publishedAt);
 ---
-<a class:list={['card', {featured}]} href={`/yazi/${slug}`} data-category={d.category} data-search={`${d.title} ${d.excerpt} ${categoryName}`}>
-  <div class="meta"><span class="dot"></span><span>{categoryName}</span><span>·</span><span>{d.readingTime} dk</span></div>
-  <h3>{d.title}</h3><p>{d.excerpt}</p><div class="arrow">↗</div>
+<a class:list={['card', 'journal-card', {'featured': featured}]} href={'/yazi/' + slug} data-category={d.category} data-search={[d.title,d.excerpt,categoryName].join(' ')}>
+  {d.coverImage ? (
+    <div class="journal-card-media">
+      <img src={d.coverImage} alt="" loading={featured ? 'eager' : 'lazy'} decoding="async" width="720" height="405" />
+    </div>
+  ) : (
+    <div class="journal-card-media journal-card-media--plain" aria-hidden="true"><span>ECZACI DEFTERİ</span></div>
+  )}
+  <div class="journal-card-content">
+    <div class="journal-card-category">{categoryName}<span aria-hidden="true"> / </span>{d.readingTime} dk</div>
+    <h3>{d.title}</h3>
+    <p>{d.excerpt}</p>
+    <div class="journal-card-footer"><time datetime={d.publishedAt.toISOString().slice(0,10)}>{date}</time><span aria-hidden="true">↗</span></div>
+  </div>
 </a>

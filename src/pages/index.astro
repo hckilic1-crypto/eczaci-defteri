@@ -3,205 +3,77 @@ import Base from '../layouts/Base.astro';
 import PostCard from '../components/PostCard.astro';
 import { getCollection } from 'astro:content';
 
-const posts = (
-  await getCollection('posts', (post) => !post.data.draft)
-).sort(
-  (a, b) =>
-    b.data.publishedAt.valueOf() -
-    a.data.publishedAt.valueOf()
-);
-
-const categories = (
-  await getCollection('categories')
-).sort((a, b) =>
-  (a.data.order ?? 100) - (b.data.order ?? 100) ||
-  a.data.name.localeCompare(b.data.name, 'tr')
-);
-
-const topCategories = categories.filter((category) => !category.data.parent);
-const childrenFor = (parent) => categories.filter((category) => category.data.parent === parent.id.replace(/\.json$/, ''));
-
-const featured =
-  posts.find((post) => post.data.featured) ?? posts[0];
-
-const rest = posts
-  .filter((post) => post.id !== featured?.id)
-  .slice(0, 5);
+const posts = (await getCollection('posts', p => !p.data.draft))
+  .sort((a,b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf());
+const categories = (await getCollection('categories'))
+  .sort((a,b) => (a.data.order ?? 100) - (b.data.order ?? 100) || a.data.name.localeCompare(b.data.name,'tr'));
+const topCategories = categories.filter(c => !c.data.parent);
+const featured = posts.find(p => p.data.featured) ?? posts[0];
+const latest = posts.filter(p => p.id !== featured?.id);
+const leadAside = latest.slice(0,2);
+const morePosts = latest.slice(2,11);
+const slugOf = p => p.id.replace(/\.mdoc$/, '');
+const catLabel = p => categories.find(c => c.id.replace(/\.json$/,'').split('/').pop() === p.data.category)?.data.name || p.data.category.replaceAll('-',' ');
+const dateLabel = p => new Intl.DateTimeFormat('tr-TR',{day:'numeric',month:'long',year:'numeric'}).format(p.data.publishedAt);
 ---
 
 <Base
-  title="Eczacı Defteri"
-  description="Takviye edici gıdalar, dermokozmetik ürünler ve eczacılık pratiği üzerine kaynak odaklı içerikler."
+  title="Eczacı Defteri | Eczacılık, Takviyeler ve Dermokozmetik"
+  description="Eczacılık, takviye edici gıdalar, dermokozmetik ve sağlık üzerine kaynaklı değerlendirmeler. Eczacı Defteri'nde bilgiyi kanıtıyla okuyun."
 >
+  <header class="shell journal-intro">
+    <div class="journal-intro-label"><span class="journal-signet" aria-hidden="true">ED</span><span>BAĞIMSIZ ECZACILIK YAYINI</span></div>
+    <h1>Sağlık bilgisini <em>kaynağından</em> okuyun.</h1>
+    <p>İlaçları, takviyeleri ve cilt bakımını; kullanım alanları, bilimsel kanıtlar ve eczacılık pratiği üzerinden ele alan bir not defteri.</p>
+  </header>
 
-  <section class="shell hero">
-
-    <div class="hero-content">
-
-      <div class="kicker">
-        ECZACININ NOT DEFTERİ
-      </div>
-
-      <h1>
-        Bilgiyi<br />
-        kanıtıyla oku.
-      </h1>
-
-      <p>
-        Takviye edici gıdaları, dermokozmetik ürünleri ve
-        eczacılık pratiğini; içerik, etkinlik, güvenlilik
-        ve güncel bilimsel veriler üzerinden ele alan
-        bağımsız içerikler.
-      </p>
-
-      <div class="hero-actions">
-
-        <a class="primary-button" href="/yazilar">
-          Son yazıları keşfet
-          <span>→</span>
-        </a>
-
-      </div>
-
-    </div>
-
-    <div class="editorial-note">
-
-      <div class="editorial-number">
-        01 / DEFTER
-      </div>
-
-      <div>
-
-        <span class="editorial-small">
-          EDİTORYAL YAKLAŞIM
-        </span>
-
-        <h2>
-          Etiketten önce<br />
-          içeriğe bak.
-        </h2>
-
-        <p>
-          Ürünlerin pazarlama söylemlerinden çok;
-          içeriklerini, dozlarını, kullanım biçimlerini,
-          olası risklerini ve mevcut bilimsel kanıtları
-          değerlendirmeye çalışıyoruz.
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <section class="shell category-strip">
-
-    {topCategories.map((category) => (
-      <div class="category-mini">
-        <span class="category-accent" style={`background:${category.data.accent}`}></span>
-        <div>
-          <a href={`/kategori/${category.id.replace('.json', '')}`} class="category-mini-title">
-            <strong>{category.data.name}</strong>
-          </a>
-          <p>{category.data.description}</p>
-          {childrenFor(category).length > 0 && (
-            <nav class="category-mini-children" aria-label={`${category.data.name} alt kategorileri`}>
-              {childrenFor(category).map((child) => (
-                <a href={`/kategori/${child.id.replace('.json', '')}`}>{child.data.name}</a>
-              ))}
-            </nav>
-          )}
+  {featured && (
+    <section class="shell journal-lead" aria-label="Öne çıkan ve yeni yazılar">
+      <a class="journal-lead-story" href={'/yazi/' + slugOf(featured)}>
+        <div class="journal-lead-image">
+          {featured.data.coverImage
+            ? <img src={featured.data.coverImage} alt="" width="1200" height="675" loading="eager" decoding="async" fetchpriority="high" />
+            : <div class="journal-lead-fallback" aria-hidden="true">ECZACI DEFTERİ / DOSYA</div>}
         </div>
-        <a class="category-arrow" href={`/kategori/${category.id.replace('.json', '')}`} aria-label={`${category.data.name} kategorisini aç`}>↗</a>
-      </div>
-    ))}
-
-  </section>
-
-
-  <section class="shell">
-
-    <div class="section-head">
-
-      <div>
-
-        <span class="section-eyebrow">
-          YENİ EKLENENLER
-        </span>
-
-        <h2>
-          Son yazılar
-        </h2>
-
-      </div>
-
-      <a href="/yazilar">
-        Tüm yazıları gör →
+        <div class="journal-lead-caption">
+          <span class="journal-eyebrow">ÖNE ÇIKAN YAZI <span class="journal-bullet">·</span> {catLabel(featured)}</span>
+          <h2>{featured.data.title}</h2>
+          <p>{featured.data.excerpt}</p>
+          <div class="journal-story-meta"><span>{dateLabel(featured)}</span><span>{featured.data.readingTime} dakika okuma</span><span class="journal-read-arrow">Yazıyı oku ↗</span></div>
+        </div>
       </a>
+      <aside class="journal-lead-aside" aria-label="Yeni yazılar">
+        <div class="journal-aside-heading"><span>YENİ YAZILAR</span><a href="/yazilar">Tümü ↗</a></div>
+        {leadAside.map((post,i) => (
+          <a href={'/yazi/' + slugOf(post)} class="journal-aside-story">
+            <span class="journal-aside-number">0{i+1}</span>
+            <span class="journal-aside-copy"><small>{catLabel(post)} / {post.data.readingTime} dk</small><strong>{post.data.title}</strong><span>{post.data.excerpt}</span></span>
+          </a>
+        ))}
+        <div class="journal-aside-signoff"><span class="journal-signet" aria-hidden="true">ED</span><p>Kaynağı gösteren, karşılaştıran ve anlaşılır kılan içerikler.</p></div>
+      </aside>
+    </section>
+  )}
 
+  <nav class="shell journal-category-nav" aria-label="Konuya göre keşfet">
+    <span>KONULAR</span>
+    <div class="journal-category-links">
+      {topCategories.map(cat => <a href={'/kategori/' + cat.id.replace(/\.json$/,'').split('/').pop()}>{cat.data.name}</a>)}
     </div>
+  </nav>
 
-    <div class="grid">
-
-      {featured && (
-        <PostCard
-          post={featured}
-          featured
-        />
-      )}
-
-      {rest.map((post) => (
-        <PostCard post={post} />
-      ))}
-
+  <section class="shell journal-latest">
+    <div class="journal-section-heading">
+      <div><span class="journal-eyebrow">ARŞİVDEN</span><h2>Son yazılar</h2></div>
+      <a href="/yazilar">Bütün yazıları gör <span aria-hidden="true">↗</span></a>
     </div>
-
+    {morePosts.length > 0 ? <div class="grid journal-post-grid">{morePosts.map(p => <PostCard post={p} />)}</div> : (
+      <p>Yeni yazılar yayımlandıkça burada yer alacak.</p>
+    )}
   </section>
 
-
-  <section class="shell about-strip">
-
-    <div>
-
-      <span class="section-eyebrow">
-        ECZACI DEFTERİ
-      </span>
-
-      <h2>
-        Ürün değil,<br />
-        bilgi merkezde.
-      </h2>
-
-    </div>
-
-    <div>
-
-      <p>
-        Bir ürünün popüler olması etkili olduğu anlamına gelmez.
-        Bir içeriğin doğal olması da otomatik olarak güvenli olduğu
-        anlamına gelmez.
-      </p>
-
-      <p>
-        Buradaki içeriklerin amacı; takviye ve dermokozmetik
-        alanındaki bilgileri daha anlaşılır, sorgulanabilir
-        ve kaynak kontrollü hale getirmek.
-      </p>
-
-      <a href="/hakkinda">
-        Editoryal yaklaşımı oku →
-      </a>
-
-    </div>
-
+  <section class="shell journal-manifesto">
+    <div><span class="journal-eyebrow">ECZACININ NOT DEFTERİ</span><h2>Merakla başlar.<br/>Kaynakla devam eder.</h2></div>
+    <div><p>Bu yayında bir içeriğin ne işe yaradığını, ne zaman kullanılabileceğini ve bilimsel araştırmalarda ne kadar destek bulduğunu birlikte değerlendiriyoruz.</p><p>Amacımız bilgi kalabalığını artırmak değil, konuya hakim olmak isteyen okura anlaşılır ve kaynaklı bir yol açmak.</p><a href="/hakkinda">Yayın ilkelerimiz ve yazar hakkında ↗</a></div>
   </section>
-
 </Base>
-<style>
-  .category-mini-title { color: inherit; display: inline-block; }
-  .category-mini-children { display: flex; flex-wrap: wrap; gap: 7px 13px; margin-top: 12px; }
-  .category-mini-children a { color: #366045; font-size: 11px; text-decoration: underline; text-decoration-color: #c5d2c5; text-underline-offset: 3px; }
-  .category-mini-children a:hover { color: #102b1c; }
-</style>
