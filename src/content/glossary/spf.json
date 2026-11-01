@@ -1,0 +1,9 @@
+{
+  "name": "SPF (Güneş Koruma Faktörü)",
+  "category": "Dermokozmetik",
+  "definition": "Güneş koruyucunun standart test koşullarında UV kaynaklı eriteme karşı sağladığı korumayı ifade eden sayısal ölçüttür.",
+  "explanation": "SPF esas olarak eritemle ilişkili UV korumasını ölçer; 'SPF 30, güneşte 30 kat daha uzun kalınabilir' şeklinde yorumlanmamalıdır.",
+  "sourceLabel": "American Academy of Dermatology – Sunscreen FAQs",
+  "sourceUrl": "https://www.aad.org/media/stats-sunscreen",
+  "draft": false
+}

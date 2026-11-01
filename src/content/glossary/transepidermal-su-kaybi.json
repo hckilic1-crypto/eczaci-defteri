@@ -1,0 +1,9 @@
+{
+  "name": "Transepidermal Su Kaybı (TEWL)",
+  "category": "Dermokozmetik",
+  "definition": "Suyun deri içinden epidermis yoluyla dış ortama pasif geçişinin birim yüzey ve zaman başına ölçülen miktarıdır.",
+  "explanation": "Artmış TEWL bariyer bozulmasıyla ilişkili olabilir; ölçüm sıcaklık, nem ve uygulama koşullarından etkilenir.",
+  "sourceLabel": "Clinical Measurement of TEWL",
+  "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12359141/",
+  "draft": false
+}
