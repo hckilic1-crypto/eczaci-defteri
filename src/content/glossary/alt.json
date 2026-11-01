@@ -1,0 +1,9 @@
+{
+  "name": "ALT (Alanin Aminotransferaz)",
+  "category": "Laboratuvar ve Tanı",
+  "definition": "Başta hepatositlerde bulunan, hücresel hasarla kanda yükselebilen enzimdir.",
+  "explanation": "Yüksek ALT tek başına karaciğer yetmezliği ya da belirli bir etiyoloji tanısı değildir.",
+  "sourceLabel": "MedlinePlus – Medical Tests",
+  "sourceUrl": "https://medlineplus.gov/lab-tests/",
+  "draft": false
+}

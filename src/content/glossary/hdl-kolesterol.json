@@ -1,0 +1,9 @@
+{
+  "name": "HDL Kolesterol (HDL-C)",
+  "category": "Laboratuvar ve Tanı",
+  "definition": "Yüksek yoğunluklu lipoproteinlerin taşıdığı kolesterol miktarını ifade eden laboratuvar ölçütüdür.",
+  "explanation": "HDL-C yüksekliği her durumda koruyucu işlevin yüksek olduğunu kanıtlamaz.",
+  "sourceLabel": "MedlinePlus – Medical Tests",
+  "sourceUrl": "https://medlineplus.gov/lab-tests/",
+  "draft": false
+}

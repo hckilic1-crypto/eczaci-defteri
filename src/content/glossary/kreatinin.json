@@ -1,0 +1,9 @@
+{
+  "name": "Kreatinin",
+  "category": "Laboratuvar ve Tanı",
+  "definition": "Kas kreatin metabolizmasından oluşup böbreklerle uzaklaştırılan ve kanda ölçülen bileşiktir.",
+  "explanation": "Tek başına böbrek fonksiyonunu tam göstermez; kas kütlesi, beslenme ve ilaçlar değeri etkileyebilir.",
+  "sourceLabel": "MedlinePlus – Creatinine Test",
+  "sourceUrl": "https://medlineplus.gov/lab-tests/creatinine-test/",
+  "draft": false
+}

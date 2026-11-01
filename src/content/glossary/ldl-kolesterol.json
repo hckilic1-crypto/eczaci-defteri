@@ -1,0 +1,9 @@
+{
+  "name": "LDL Kolesterol (LDL-C)",
+  "category": "Laboratuvar ve Tanı",
+  "definition": "Düşük yoğunluklu lipoprotein parçacıklarının taşıdığı kolesterol miktarını gösteren ölçüttür.",
+  "explanation": "Doğrudan ölçülebilir veya hesaplanabilir; yüksek trigliseritte bazı hesaplamalar daha az güvenilir olabilir.",
+  "sourceLabel": "MedlinePlus – Medical Tests",
+  "sourceUrl": "https://medlineplus.gov/lab-tests/",
+  "draft": false
+}

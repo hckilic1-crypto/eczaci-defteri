@@ -1,0 +1,9 @@
+{
+  "name": "AST (Aspartat Aminotransferaz)",
+  "category": "Laboratuvar ve Tanı",
+  "definition": "Karaciğer yanında kas ve başka dokularda da bulunan hücre içi enzimdir.",
+  "explanation": "Kas hasarında da yükselebileceğinden ALT ve diğer testlerle birlikte yorumlanır.",
+  "sourceLabel": "MedlinePlus – Medical Tests",
+  "sourceUrl": "https://medlineplus.gov/lab-tests/",
+  "draft": false
+}

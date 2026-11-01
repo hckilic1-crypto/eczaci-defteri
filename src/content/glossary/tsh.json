@@ -1,0 +1,9 @@
+{
+  "name": "TSH (Tiroid Uyarıcı Hormon)",
+  "category": "Laboratuvar ve Tanı",
+  "definition": "Hipofizden salgılanan ve tiroid hormon üretimini düzenleyen hormondur; serum düzeyi tiroid ekseninin değerlendirilmesinde kullanılır.",
+  "explanation": "TSH, serbest T4 ve klinik tablo birlikte incelenir; hipofiz hastalıklarında tek başına yanıltıcı olabilir.",
+  "sourceLabel": "MedlinePlus – Medical Tests",
+  "sourceUrl": "https://medlineplus.gov/lab-tests/",
+  "draft": false
+}

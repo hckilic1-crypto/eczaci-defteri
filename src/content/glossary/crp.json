@@ -1,0 +1,9 @@
+{
+  "name": "CRP (C-Reaktif Protein)",
+  "category": "Laboratuvar ve Tanı",
+  "definition": "Karaciğerde üretilen ve inflamatuvar yanıtta kanda düzeyi artabilen akut faz proteinidir.",
+  "explanation": "Yüksek CRP tek başına bakteriyel enfeksiyonun kanıtı veya antibiyotik endikasyonu değildir.",
+  "sourceLabel": "MedlinePlus – Medical Tests",
+  "sourceUrl": "https://medlineplus.gov/lab-tests/",
+  "draft": false
+}

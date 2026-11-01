@@ -1,0 +1,9 @@
+{
+  "name": "eGFR (Tahmini Glomerüler Filtrasyon Hızı)",
+  "category": "Laboratuvar ve Tanı",
+  "definition": "Serum kreatinin ve/veya sistatin C ile diğer değişkenlerden hesaplanan böbrek filtrasyon tahminidir.",
+  "explanation": "Formül, yaş, kas kütlesi ve stabil olmayan böbrek fonksiyonu sonucu etkileyebilir.",
+  "sourceLabel": "MedlinePlus – Creatinine Test",
+  "sourceUrl": "https://medlineplus.gov/lab-tests/creatinine-test/",
+  "draft": false
+}

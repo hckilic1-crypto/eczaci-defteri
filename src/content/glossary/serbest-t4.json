@@ -1,0 +1,9 @@
+{
+  "name": "Serbest T4 (FT4)",
+  "category": "Laboratuvar ve Tanı",
+  "definition": "Kanda proteinlere bağlı olmayan tiroksin fraksiyonunu ölçen tiroid fonksiyon testidir.",
+  "explanation": "TSH ile birlikte yorumlanır; kullanılan immünoassay ve ilaç etkileşimlerinden etkilenebilir.",
+  "sourceLabel": "MedlinePlus – Medical Tests",
+  "sourceUrl": "https://medlineplus.gov/lab-tests/",
+  "draft": false
+}

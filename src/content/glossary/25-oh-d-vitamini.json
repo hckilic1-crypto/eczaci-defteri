@@ -1,0 +1,9 @@
+{
+  "name": "25-OH D Vitamini (Kalsidiol)",
+  "category": "Laboratuvar ve Tanı",
+  "definition": "D vitamini durumunu değerlendirmede en sık kullanılan dolaşımdaki 25-hidroksivitamin D metabolitidir.",
+  "explanation": "1,25-dihidroksivitamin D ile aynı test değildir; değerlendirme eşiği ve test standardizasyonu önemlidir.",
+  "sourceLabel": "NIH ODS – Vitamin D",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/Vitamind-HealthProfessional/",
+  "draft": false
+}

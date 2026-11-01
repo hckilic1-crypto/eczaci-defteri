@@ -1,0 +1,9 @@
+{
+  "name": "Tam Kan Sayımı (Hemogram)",
+  "category": "Laboratuvar ve Tanı",
+  "definition": "Eritrosit, lökosit, trombosit ve ilgili eritrosit indekslerini ölçen kan testi grubudur.",
+  "explanation": "Tek bir değerdeki sapma klinik bağlam, diğer parametreler ve referans aralığıyla birlikte yorumlanır.",
+  "sourceLabel": "MedlinePlus – Complete Blood Count",
+  "sourceUrl": "https://medlineplus.gov/lab-tests/complete-blood-count-cbc/",
+  "draft": false
+}

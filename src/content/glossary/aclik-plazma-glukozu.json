@@ -1,0 +1,9 @@
+{
+  "name": "Açlık Plazma Glukozu",
+  "category": "Laboratuvar ve Tanı",
+  "definition": "Genellikle en az 8 saat kalori alınmadıktan sonra plazmada ölçülen glukoz konsantrasyonudur.",
+  "explanation": "Diyabet tarama ve tanısında belirli eşiklerle kullanılır; tek ölçüm gerektiğinde doğrulama gerektirebilir.",
+  "sourceLabel": "MedlinePlus – Medical Tests",
+  "sourceUrl": "https://medlineplus.gov/lab-tests/",
+  "draft": false
+}

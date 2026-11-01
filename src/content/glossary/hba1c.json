@@ -1,0 +1,9 @@
+{
+  "name": "HbA1c (Glikozillenmiş Hemoglobin)",
+  "category": "Laboratuvar ve Tanı",
+  "definition": "Hemoglobinin glukozla ilişkili modifikasyonunu ölçerek önceki yaklaşık 2–3 aylık glisemik maruziyet hakkında bilgi veren testtir.",
+  "explanation": "Eritrosit ömrünü değiştiren durumlarda sonuç gerçek glisemiyi yansıtmayabilir.",
+  "sourceLabel": "MedlinePlus – Hemoglobin A1c",
+  "sourceUrl": "https://www.medlineplus.gov/lab-tests/hemoglobin-a1c-hba1c-test/",
+  "draft": false
+}

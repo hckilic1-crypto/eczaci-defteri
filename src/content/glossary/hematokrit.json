@@ -1,0 +1,9 @@
+{
+  "name": "Hematokrit (Hct)",
+  "category": "Laboratuvar ve Tanı",
+  "definition": "Kanın hacimce yaklaşık ne kadarının eritrositlerden oluştuğunu gösteren ölçüttür.",
+  "explanation": "Dehidratasyon ve plazma hacmindeki değişiklikler değeri etkileyebilir.",
+  "sourceLabel": "MedlinePlus – Complete Blood Count",
+  "sourceUrl": "https://medlineplus.gov/lab-tests/complete-blood-count-cbc/",
+  "draft": false
+}

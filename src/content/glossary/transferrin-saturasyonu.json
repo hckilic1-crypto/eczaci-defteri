@@ -1,0 +1,9 @@
+{
+  "name": "Transferrin Satürasyonu (TSAT)",
+  "category": "Laboratuvar ve Tanı",
+  "definition": "Serum demirinin toplam demir bağlama kapasitesine oranının yüzde olarak ifadesidir.",
+  "explanation": "Demir eksikliği ve yüklenmesi değerlendirmesinde ferritin gibi diğer parametrelerle birlikte ele alınır.",
+  "sourceLabel": "MedlinePlus – Medical Tests",
+  "sourceUrl": "https://medlineplus.gov/lab-tests/",
+  "draft": false
+}

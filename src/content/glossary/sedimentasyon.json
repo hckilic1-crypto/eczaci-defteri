@@ -1,0 +1,9 @@
+{
+  "name": "Eritrosit Sedimentasyon Hızı (ESH)",
+  "category": "Laboratuvar ve Tanı",
+  "definition": "Eritrositlerin belirli sürede tüpte çökme hızını ölçen, inflamasyondan etkilenebilen laboratuvar testidir.",
+  "explanation": "Anemi ve yaş gibi faktörlerden de etkilenir; spesifik hastalık tanısı koydurmaz.",
+  "sourceLabel": "MedlinePlus – Medical Tests",
+  "sourceUrl": "https://medlineplus.gov/lab-tests/",
+  "draft": false
+}

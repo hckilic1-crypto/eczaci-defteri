@@ -1,0 +1,9 @@
+{
+  "name": "HOMA-IR",
+  "category": "Laboratuvar ve Tanı",
+  "definition": "Açlık glukozu ve açlık insülini üzerinden hesaplanan insülin direnci kestirim indeksidir.",
+  "explanation": "Laboratuvar yöntemi ve popülasyona göre değiştiği için tüm bireylere geçerli tek bir tanısal kesim noktası yoktur.",
+  "sourceLabel": "MedlinePlus – Medical Tests",
+  "sourceUrl": "https://medlineplus.gov/lab-tests/",
+  "draft": false
+}

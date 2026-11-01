@@ -1,0 +1,9 @@
+{
+  "name": "MCV (Ortalama Eritrosit Hacmi)",
+  "category": "Laboratuvar ve Tanı",
+  "definition": "Eritrositlerin ortalama hacmini gösteren hemogram indeksidir.",
+  "explanation": "Mikrositer ve makrositer anemi ayrımına yardımcı olur; tek başına tanı koydurmaz.",
+  "sourceLabel": "MedlinePlus – Complete Blood Count",
+  "sourceUrl": "https://medlineplus.gov/lab-tests/complete-blood-count-cbc/",
+  "draft": false
+}

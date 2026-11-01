@@ -1,0 +1,9 @@
+{
+  "name": "Ferritin",
+  "category": "Laboratuvar ve Tanı",
+  "definition": "Hücre içi demir depolanmasında görev alan ve serumda da ölçülebilen proteindir.",
+  "explanation": "Düşük ferritin demir depolarının azaldığını düşündürür; inflamasyon ferritini yükseltebilir.",
+  "sourceLabel": "MedlinePlus – Ferritin Blood Test",
+  "sourceUrl": "https://medlineplus.gov/lab-tests/ferritin-blood-test/",
+  "draft": false
+}

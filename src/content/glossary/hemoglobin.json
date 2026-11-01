@@ -1,0 +1,9 @@
+{
+  "name": "Hemoglobin (Hb)",
+  "category": "Laboratuvar ve Tanı",
+  "definition": "Eritrositlerde oksijen taşınmasını sağlayan demir içeren proteindir; kan düzeyi anemi değerlendirmesinde kullanılır.",
+  "explanation": "Hemoglobin düşükse neden yalnızca demir eksikliği olmayabilir.",
+  "sourceLabel": "MedlinePlus – Hemoglobin Test",
+  "sourceUrl": "https://medlineplus.gov/lab-tests/hemoglobin-test/",
+  "draft": false
+}
