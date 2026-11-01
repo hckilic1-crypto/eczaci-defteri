@@ -1,0 +1,9 @@
+{
+  "name": "Terapötik Aralık",
+  "category": "Farmakoloji",
+  "definition": "İlacın beklenen yararı sağladığı ve kabul edilebilir güvenlilikle kullanılabildiği doz veya derişim aralığıdır.",
+  "explanation": "Belirli ilaçlarda kan düzeyi izlemi tedavinin bireyselleştirilmesine yardımcı olabilir.",
+  "sourceLabel": "NCBI Bookshelf",
+  "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK595006/",
+  "draft": false
+}

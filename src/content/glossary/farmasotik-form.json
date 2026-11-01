@@ -1,0 +1,9 @@
+{
+  "name": "Farmasötik Form",
+  "category": "Farmasötik Teknoloji",
+  "definition": "Bir ilacın uygulanmaya hazır fiziksel sunum biçimidir.",
+  "explanation": "Tablet, kapsül, çözelti, merhem ve inhalasyon preparatı farklı farmasötik formlara örnektir.",
+  "sourceLabel": "WHO teknik sözlüğü",
+  "sourceUrl": "https://extranet.who.int/prequal/sites/default/files/document_files/WHO_TRS_850.pdf",
+  "draft": false
+}

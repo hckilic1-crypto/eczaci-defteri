@@ -1,0 +1,9 @@
+{
+  "name": "Biyobelirteç",
+  "category": "Klinik Araştırmalar",
+  "definition": "Biyolojik süreçleri, hastalık durumunu veya tedaviye yanıtı değerlendirmek için ölçülebilen göstergedir.",
+  "explanation": "CRP bir inflamasyon biyobelirtecidir; tek başına belirli bir hastalığın tanısını koymaz.",
+  "sourceLabel": "IUPHAR Pharmacology Education",
+  "sourceUrl": "https://pharmacologyeducation.org/glossary/",
+  "draft": false
+}

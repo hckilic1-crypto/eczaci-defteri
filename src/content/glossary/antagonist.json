@@ -1,0 +1,9 @@
+{
+  "name": "Antagonist",
+  "category": "Farmakoloji",
+  "definition": "Bir reseptör veya hedef üzerinden başka bir maddenin etkisini azaltan ya da engelleyen madde.",
+  "explanation": "Antagonist, hedefe bağlansa da agonist gibi yanıt oluşturmak zorunda değildir.",
+  "sourceLabel": "NCBI Bookshelf",
+  "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK595006/",
+  "draft": false
+}

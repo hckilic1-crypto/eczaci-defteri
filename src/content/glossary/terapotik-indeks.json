@@ -1,0 +1,9 @@
+{
+  "name": "Terapötik İndeks",
+  "category": "Farmakoloji",
+  "definition": "Bir maddenin toksik etki oluşturan dozu ile terapötik etki oluşturan dozu arasındaki ilişkiyi ifade eden nicel güvenlilik ölçüsüdür.",
+  "explanation": "Dar terapötik aralıklı ilaçlarda doz değişimleri ve etkileşimler daha dikkatli izlenebilir.",
+  "sourceLabel": "NCBI Bookshelf",
+  "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK595006/",
+  "draft": false
+}

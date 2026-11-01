@@ -1,0 +1,9 @@
+{
+  "name": "Biyoeşdeğerlik",
+  "category": "Farmasötik Teknoloji",
+  "definition": "Farmasötik açıdan karşılaştırılabilir iki ürünün, etkin maddenin vücutta erişilebilir hale gelme hızı ve miktarı açısından kabul edilen sınırlar içinde benzer olmasıdır.",
+  "explanation": "Biyoeşdeğerlik değerlendirmesi, yalnızca iki ürünün etiketinde aynı mg değerinin yazmasından daha kapsamlıdır.",
+  "sourceLabel": "FDA Orange Book",
+  "sourceUrl": "https://www.fda.gov/drugs/development-approval-process-drugs/orange-book-preface",
+  "draft": false
+}

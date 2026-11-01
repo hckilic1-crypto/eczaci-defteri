@@ -1,0 +1,9 @@
+{
+  "name": "CFU (Koloni Oluşturan Birim)",
+  "category": "Mikrobiyota",
+  "definition": "Uygun kültür koşullarında koloni oluşturabilen canlı mikroorganizma sayısını tahmin etmek için kullanılan ölçü birimidir.",
+  "explanation": "Probiyotik seçimi için CFU tek başına yeterli değildir; suş kimliği, doz ve ilgili klinik çalışma da önemlidir.",
+  "sourceLabel": "ISAPP konsensüs kaynakları",
+  "sourceUrl": "https://isappscience.org/a-roundup-of-the-isapp-consensus-definitions-probiotics-prebiotics-synbiotics-postbiotics-and-fermented-foods/",
+  "draft": false
+}

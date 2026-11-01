@@ -1,0 +1,9 @@
+{
+  "name": "Randomize Kontrollü Çalışma",
+  "category": "Klinik Araştırmalar",
+  "definition": "Katılımcıların müdahale veya karşılaştırma gruplarına rastgele atandığı, sonuçların karşılaştırıldığı araştırma tasarımıdır.",
+  "explanation": "Randomizasyon gruplar arasındaki sistematik farklılıkları azaltmayı amaçlar; çalışmanın tüm yanlılık risklerini tek başına ortadan kaldırmaz.",
+  "sourceLabel": "NCI Cancer Dictionary",
+  "sourceUrl": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/randomized-clinical-trial",
+  "draft": false
+}

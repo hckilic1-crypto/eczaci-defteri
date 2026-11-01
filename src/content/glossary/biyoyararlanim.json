@@ -1,0 +1,9 @@
+{
+  "name": "Biyoyararlanım",
+  "category": "Farmakoloji",
+  "definition": "Verilen bir ilaç dozunun sistemik dolaşıma değişmeden ulaşan kısmının oranı ve dolaşıma ulaşma hızıyla ilişkili kavramdır.",
+  "explanation": "Damar içi uygulamada sistemik biyoyararlanım tanım gereği %100'dür; oral formlarda emilim ve ilk geçiş kayıpları nedeniyle daha düşük olabilir.",
+  "sourceLabel": "WHO teknik sözlüğü",
+  "sourceUrl": "https://extranet.who.int/prequal/sites/default/files/document_files/WHO_TRS_850.pdf",
+  "draft": false
+}

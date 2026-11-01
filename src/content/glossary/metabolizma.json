@@ -1,0 +1,9 @@
+{
+  "name": "İlaç Metabolizması",
+  "category": "Farmakoloji",
+  "definition": "Bir ilacın enzimatik veya diğer biyokimyasal süreçlerle farklı bileşiklere dönüştürülmesidir.",
+  "explanation": "Metabolizma ilacı etkisizleştirebilir, etkinleştirebilir ya da aktif metabolit oluşumuna yol açabilir.",
+  "sourceLabel": "NCBI Bookshelf",
+  "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK595006/",
+  "draft": false
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Farmakokinetik",
+  "category": "Farmakoloji",
+  "definition": "İlacın emilimini, dağılımını, metabolizmasını ve vücuttan atılımını zaman içinde inceleyen alandır.",
+  "explanation": "'Vücut ilaca ne yapar?' sorusuna odaklanır; ADME olarak özetlenir.",
+  "sourceLabel": "NCBI Bookshelf",
+  "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK595006/",
+  "draft": false
+}

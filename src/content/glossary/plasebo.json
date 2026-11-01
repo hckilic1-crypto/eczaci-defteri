@@ -1,0 +1,9 @@
+{
+  "name": "Plasebo",
+  "category": "Klinik Araştırmalar",
+  "definition": "Araştırmalarda etkin tedaviyi karşılaştırmak için kullanılabilen, çalışılan özgül etkin maddeyi içermeyen müdahaledir.",
+  "explanation": "Plasebo etkisi ile bir ürünün özgül farmakolojik etkisi aynı şey değildir.",
+  "sourceLabel": "NCI klinik araştırma sözlüğü",
+  "sourceUrl": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/randomized-clinical-trial",
+  "draft": false
+}

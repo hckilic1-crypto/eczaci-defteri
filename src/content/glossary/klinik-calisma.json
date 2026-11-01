@@ -1,0 +1,9 @@
+{
+  "name": "Klinik Çalışma",
+  "category": "Klinik Araştırmalar",
+  "definition": "İnsanlarda sağlıkla ilgili bir soruyu yanıtlamak amacıyla yürütülen, yöntemleri önceden belirlenmiş araştırmadır.",
+  "explanation": "Tüm klinik çalışmalar randomize değildir; tasarım, sonuçların nasıl yorumlanacağını etkiler.",
+  "sourceLabel": "NIH Clinical Trials",
+  "sourceUrl": "https://grants.nih.gov/policy-and-compliance/policy-topics/clinical-trials/definition",
+  "draft": false
+}

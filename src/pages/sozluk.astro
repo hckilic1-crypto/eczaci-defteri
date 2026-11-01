@@ -1,0 +1,120 @@
+---
+export const prerender = true;
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const terms = (await getCollection('glossary', t => !t.data.draft))
+  .sort((a, b) => a.data.name.localeCompare(b.data.name, 'tr'));
+const categories = Array.from(new Set(terms.map(t => t.data.category))).sort((a,b)=>a.localeCompare(b,'tr'));
+const getSlug = term => term.id.replace(/\.json$/, '').split('/').pop();
+const initials = Array.from(new Set(terms.map(t => t.data.name.charAt(0).toLocaleUpperCase('tr-TR')))).sort((a,b)=>a.localeCompare(b,'tr'));
+const structuredData = {
+  '@context':'https://schema.org',
+  '@type':'DefinedTermSet',
+  name:'Eczacılık Sözlüğü',
+  description:'Farmakoloji, klinik araştırmalar, farmasötik teknoloji ve mikrobiyota kavramlarının tanımları.',
+  url:'https://eczacidefteri.com/sozluk',
+  hasDefinedTerm:terms.map(t=>({
+    '@type':'DefinedTerm',
+    name:t.data.name,
+    description:t.data.definition,
+    url:'https://eczacidefteri.com/sozluk/' + getSlug(t)
+  }))
+};
+---
+<Base
+  title="Eczacılık Sözlüğü: İlaç ve Sağlık Terimleri | Eczacı Defteri"
+  description="Biyoyararlanım, endikasyon, farmakokinetik, probiyotik ve diğer eczacılık terimlerinin kısa, kaynaklı tanımları. A'dan Z'ye eczacılık sözlüğü."
+  structuredData={structuredData}
+>
+  <div class="shell glossary-page">
+    <nav class="article-breadcrumbs" aria-label="Gezinme yolu">
+      <a href="/">Anasayfa</a><span class="article-crumb-sep">/</span><span aria-current="page">Eczacılık Sözlüğü</span>
+    </nav>
+    <header class="glossary-head">
+      <span class="journal-eyebrow">ECZACI DEFTERİ / REFERANS</span>
+      <h1>Eczacılık <em>Sözlüğü.</em></h1>
+      <p>Bir kutunun üzerinde, bilimsel makalede veya reçetede karşımıza çıkan kavramları anlaşılır ve kaynaklı biçimde açıklıyoruz.</p>
+      <div class="glossary-head-foot"><span>{terms.length} terim</span><span>Farmakoloji · Klinik · Mikrobiyota</span></div>
+    </header>
+
+    <div class="glossary-controls" role="search" aria-label="Sözlükte ara">
+      <label class="glossary-search-label">
+        <span class="sr-only">Sözlük terimlerinde ara</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.4"></circle><path d="m15.5 15.5 5 5"></path></svg>
+        <input id="glossary-query" type="search" placeholder="Terim ara: ör. biyoyararlanım, agonist..." autocomplete="off"/>
+      </label>
+      <label class="glossary-filter-label">
+        <span class="sr-only">Konu alanına göre filtrele</span>
+        <select id="glossary-category">
+          <option value="">Bütün alanlar</option>
+          {categories.map(cat=><option value={cat}>{cat}</option>)}
+        </select>
+      </label>
+    </div>
+
+    <nav class="glossary-alphabet" aria-label="Alfabetik filtre">
+      <button type="button" data-letter="" aria-pressed="true">Tümü</button>
+      {initials.map(letter=><button type="button" data-letter={letter} aria-pressed="false">{letter}</button>)}
+    </nav>
+
+    <div class="glossary-list-meta"><span id="glossary-results">{terms.length} terim gösteriliyor</span><span>Terime tıklayarak ayrıntısını okuyun</span></div>
+
+    <div class="glossary-list" id="glossary-list">
+      {terms.map(t=>(
+        <a
+          class="glossary-item"
+          href={'/sozluk/' + getSlug(t)}
+          data-letter={t.data.name.charAt(0).toLocaleUpperCase('tr-TR')}
+          data-category={t.data.category}
+          data-search={(t.data.name+' '+t.data.definition+' '+t.data.category).toLocaleLowerCase('tr-TR')}
+        >
+          <span class="glossary-item-initial" aria-hidden="true">{t.data.name.charAt(0).toLocaleUpperCase('tr-TR')}</span>
+          <span class="glossary-item-text">
+            <small>{t.data.category}</small>
+            <strong>{t.data.name}</strong>
+            <span>{t.data.definition}</span>
+          </span>
+          <span class="glossary-item-arrow" aria-hidden="true">↗</span>
+        </a>
+      ))}
+    </div>
+    <p class="glossary-noresults" id="glossary-noresults" hidden>Bu aramayla eşleşen terim bulunamadı. Aramayı veya alan filtresini değiştirebilirsiniz.</p>
+    <aside class="glossary-note">Bu sözlük temel kavramları anlamaya yardımcı olur. Tanımlar kişisel tedavi önerisi yerine geçmez; ilaç kullanımı için ürün bilgisi ve sağlık profesyonelinin değerlendirmesi esastır.</aside>
+  </div>
+
+  <script is:inline>
+    (() => {
+      const list = document.getElementById('glossary-list');
+      const input = document.getElementById('glossary-query');
+      const category = document.getElementById('glossary-category');
+      const count = document.getElementById('glossary-results');
+      const empty = document.getElementById('glossary-noresults');
+      const buttons = Array.from(document.querySelectorAll('.glossary-alphabet [data-letter]'));
+      const items = Array.from(list?.querySelectorAll('.glossary-item') || []);
+      let letter = '';
+      function update(){
+        const search = (input?.value || '').trim().toLocaleLowerCase('tr-TR');
+        const selected = category?.value || '';
+        let visible=0;
+        for(const item of items){
+          const matches = (!search || (item.dataset.search || '').includes(search)) &&
+            (!letter || item.dataset.letter === letter) &&
+            (!selected || item.dataset.category === selected);
+          item.hidden=!matches;
+          if(matches)visible++;
+        }
+        if(count)count.textContent=visible+' terim gösteriliyor';
+        if(empty)empty.hidden=visible!==0;
+      }
+      input?.addEventListener('input',update);
+      category?.addEventListener('change',update);
+      buttons.forEach(btn=>btn.addEventListener('click',()=>{
+        letter=btn.dataset.letter||'';
+        buttons.forEach(b=>b.setAttribute('aria-pressed',String(b===btn)));
+        update();
+      }));
+      update();
+    })();
+  </script>
+</Base>

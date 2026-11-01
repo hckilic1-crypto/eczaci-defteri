@@ -1,0 +1,9 @@
+{
+  "name": "Agonist",
+  "category": "Farmakoloji",
+  "definition": "Bir reseptöre bağlanarak onu etkinleştiren ve biyolojik yanıt oluşturan madde.",
+  "explanation": "Bir agonistin etkisi, reseptöre bağlanması kadar reseptörü etkinleştirme kapasitesine de bağlıdır.",
+  "sourceLabel": "NCBI Bookshelf",
+  "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK595006/",
+  "draft": false
+}

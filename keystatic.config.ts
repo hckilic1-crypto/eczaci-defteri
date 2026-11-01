@@ -49,7 +49,7 @@ repo: 'hckilic1-crypto/eczaci-defteri'  },
       mark: () => createElement(EditorBrandMark)
     },
     navigation: {
-      'İçerik Yönetimi': ['posts', 'categories'],
+      'İçerik Yönetimi': ['posts', 'categories', 'glossary'],
       'Site Yönetimi': ['site']
     }
   },
@@ -172,6 +172,54 @@ repo: 'hckilic1-crypto/eczaci-defteri'  },
               publicPath: '/uploads/'
             }
           }
+        })
+      }
+    }),
+
+    glossary: collection({
+      label: 'Eczacılık Sözlüğü',
+      slugField: 'name',
+      path: 'src/content/glossary/*',
+      format: { data: 'json' },
+      columns: ['category', 'draft'],
+      schema: {
+        name: fields.slug({
+          name: {
+            label: 'Terim',
+            validation: { isRequired: true }
+          }
+        }),
+        category: fields.select({
+          label: 'Konu alanı',
+          options: [
+            { label: 'Farmakoloji', value: 'Farmakoloji' },
+            { label: 'Farmasötik Teknoloji', value: 'Farmasötik Teknoloji' },
+            { label: 'Klinik Araştırmalar', value: 'Klinik Araştırmalar' },
+            { label: 'Mikrobiyota', value: 'Mikrobiyota' },
+            { label: 'Dermokozmetik', value: 'Dermokozmetik' }
+          ],
+          defaultValue: 'Farmakoloji'
+        }),
+        definition: fields.text({
+          label: 'Kısa ve net tanım',
+          multiline: true,
+          validation: { isRequired: true }
+        }),
+        explanation: fields.text({
+          label: 'Eczacının notu (isteğe bağlı)',
+          multiline: true,
+          description: 'Kavramı açıklayan kısa örnek veya kritik ayrım.'
+        }),
+        sourceLabel: fields.text({
+          label: 'Bilimsel kaynak adı (isteğe bağlı)'
+        }),
+        sourceUrl: fields.url({
+          label: 'Kaynak bağlantısı (isteğe bağlı)'
+        }),
+        draft: fields.checkbox({
+          label: 'Taslak mı?',
+          description: 'İşaretli terim sözlükte görünmez.',
+          defaultValue: false
         })
       }
     }),

@@ -1,0 +1,9 @@
+{
+  "name": "Eksipiyan (Yardımcı Madde)",
+  "category": "Farmasötik Teknoloji",
+  "definition": "İlaç formülasyonunda etkin madde dışında yer alan ve ürünün hazırlanmasına veya özelliklerine katkı sağlayan bileşendir.",
+  "explanation": "Dolgu, bağlayıcı ve koruyucu maddeler örnek olabilir. Yardımcı madde, her durumda biyolojik açıdan etkisiz olduğu anlamına gelmez.",
+  "sourceLabel": "WHO teknik sözlüğü",
+  "sourceUrl": "https://extranet.who.int/prequal/sites/default/files/document_files/WHO_TRS_850.pdf",
+  "draft": false
+}

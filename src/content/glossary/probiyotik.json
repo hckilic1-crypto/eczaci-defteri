@@ -1,0 +1,9 @@
+{
+  "name": "Probiyotik",
+  "category": "Mikrobiyota",
+  "definition": "Yeterli miktarda verildiğinde konak sağlığına yarar sağlayan canlı mikroorganizmadır.",
+  "explanation": "Etkinlik tür, suş, doz ve kullanılan klinik duruma göre değişir.",
+  "sourceLabel": "ISAPP konsensüsü",
+  "sourceUrl": "https://isappscience.org/a-roundup-of-the-isapp-consensus-definitions-probiotics-prebiotics-synbiotics-postbiotics-and-fermented-foods/",
+  "draft": false
+}

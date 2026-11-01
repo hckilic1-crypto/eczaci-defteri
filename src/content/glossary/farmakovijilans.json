@@ -1,0 +1,9 @@
+{
+  "name": "Farmakovijilans",
+  "category": "Farmakoloji",
+  "definition": "İlaç ve aşılarla ilişkili istenmeyen etkilerin ve diğer güvenlilik sorunlarının saptanması, değerlendirilmesi, anlaşılması ve önlenmesine yönelik bilim ve faaliyetlerdir.",
+  "explanation": "Yan etki bildirimi, ilaç güvenliliğinin izlenmesinde önemli veri kaynaklarından biridir.",
+  "sourceLabel": "Dünya Sağlık Örgütü",
+  "sourceUrl": "https://www.who.int/teams/regulation-prequalification/regulation-and-safety/pharmacovigilance",
+  "draft": false
+}

@@ -55,12 +55,34 @@ const dateLabel = p => new Intl.DateTimeFormat('tr-TR',{day:'numeric',month:'lon
     </section>
   )}
 
-  <nav class="shell journal-category-nav" aria-label="Konuya göre keşfet">
-    <span>KONULAR</span>
-    <div class="journal-category-links">
-      {topCategories.map(cat => <a href={'/kategori/' + cat.id.replace(/\.json$/,'').split('/').pop()}>{cat.data.name}</a>)}
+  <section class="shell journal-topics" aria-labelledby="journal-topics-title">
+    <div class="journal-section-heading journal-topics-heading">
+      <div><span class="journal-eyebrow">ECZACI DEFTERİ / KEŞFET</span><h2 id="journal-topics-title">Konular</h2></div>
+      <span class="journal-topics-aside">Merak ettiğiniz alandan başlayın.</span>
     </div>
-  </nav>
+    <div class="journal-topics-grid">
+      {topCategories.map((cat, index) => {
+        const slug=cat.id.replace(/\.json$/,'').split('/').pop();
+        const childSlugs=categories.filter(c=>c.data.parent===slug).map(c=>c.id.replace(/\.json$/,'').split('/').pop());
+        const count=posts.filter(p=>p.data.category===slug||childSlugs.includes(p.data.category)).length;
+        return <a class="journal-topic" href={'/kategori/'+slug}>
+          <span class="journal-topic-top"><span>{String(index+1).padStart(2,'0')}</span><span>{count} yazı</span></span>
+          <strong>{cat.data.name}</strong>
+          <p>{cat.data.description}</p>
+          <span class="journal-topic-foot">Konuyu keşfet <span aria-hidden="true">↗</span></span>
+        </a>;
+      })}
+    </div>
+    <a class="journal-glossary-link" href="/sozluk">
+      <span class="journal-glossary-monogram" aria-hidden="true">A–Z</span>
+      <span class="journal-glossary-copy">
+        <small>YENİ / REFERANS</small>
+        <strong>Eczacılık Sözlüğü</strong>
+        <span>İlaç ve sağlık terimlerini kısa, anlaşılır ve kaynaklı tanımlarıyla keşfedin.</span>
+      </span>
+      <span class="journal-glossary-arrow" aria-hidden="true">↗</span>
+    </a>
+  </section>
 
   <section class="shell journal-latest">
     <div class="journal-section-heading">

@@ -1,0 +1,9 @@
+{
+  "name": "Yarılanma Ömrü",
+  "category": "Farmakoloji",
+  "definition": "Bir maddenin kandaki veya vücuttaki miktarının, belirli koşullarda yarıya inmesi için geçen süredir.",
+  "explanation": "Eliminasyon yarılanma ömrü, doz aralığı ve kararlı duruma ulaşma süresiyle ilişkili olabilir.",
+  "sourceLabel": "NCBI Bookshelf",
+  "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK595006/",
+  "draft": false
+}

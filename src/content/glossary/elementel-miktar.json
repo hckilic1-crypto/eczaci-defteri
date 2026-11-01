@@ -1,0 +1,9 @@
+{
+  "name": "Elementel Mineral Miktarı",
+  "category": "Farmasötik Teknoloji",
+  "definition": "Mineral tuzları ve bileşiklerinde, bileşiğin toplam ağırlığı değil sağlanan mineral elementinin gerçek miktarıdır.",
+  "explanation": "Örneğin magnezyum sitrat bileşiğinin miligramı ile sağladığı elementel magnezyum miligramı aynı değildir.",
+  "sourceLabel": "NIH Dietary Supplements",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/",
+  "draft": false
+}

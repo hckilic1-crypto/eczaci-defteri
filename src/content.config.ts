@@ -87,8 +87,26 @@ const settings = defineCollection({
 });
 
 
+
+const glossary = defineCollection({
+  loader: glob({
+    base: './src/content/glossary',
+    pattern: '**/*.json'
+  }),
+  schema: z.object({
+    name: z.string(),
+    definition: z.string(),
+    explanation: z.string().optional().nullable(),
+    category: z.string().default('Farmakoloji'),
+    sourceLabel: z.string().optional().nullable(),
+    sourceUrl: z.string().url().optional().nullable(),
+    draft: z.boolean().default(false)
+  })
+});
+
 export const collections = {
   posts,
   categories,
-  settings
+  settings,
+  glossary
 };

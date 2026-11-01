@@ -1,0 +1,65 @@
+---
+export const prerender = true;
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths(){
+  const terms=await getCollection('glossary', t=>!t.data.draft);
+  return terms.map(term=>({
+    params:{slug:term.id.replace(/\.json$/,'').split('/').pop()},
+    props:{term}
+  }));
+}
+const {term}=Astro.props;
+const d=term.data;
+const slug=term.id.replace(/\.json$/,'').split('/').pop();
+const others=(await getCollection('glossary', t=>!t.data.draft&&t.id!==term.id))
+  .filter(t=>t.data.category===d.category)
+  .sort((a,b)=>a.data.name.localeCompare(b.data.name,'tr')).slice(0,5);
+const structuredData={
+  '@context':'https://schema.org',
+  '@type':'DefinedTerm',
+  name:d.name,
+  description:d.definition,
+  inDefinedTermSet:'https://eczacidefteri.com/sozluk',
+  url:'https://eczacidefteri.com/sozluk/'+slug,
+  ...(d.sourceUrl ? {citation:d.sourceUrl} : {})
+};
+---
+<Base
+  title={d.name+' Nedir? | Eczacılık Sözlüğü - Eczacı Defteri'}
+  description={d.definition}
+  structuredData={structuredData}
+>
+  <article class="shell glossary-entry-page">
+    <nav class="article-breadcrumbs" aria-label="Gezinme yolu">
+      <a href="/">Anasayfa</a><span class="article-crumb-sep">/</span><a href="/sozluk">Sözlük</a><span class="article-crumb-sep">/</span><span aria-current="page">{d.name}</span>
+    </nav>
+    <header class="glossary-entry-head">
+      <span class="journal-eyebrow">ECZACILIK SÖZLÜĞÜ <span aria-hidden="true">/</span> {d.category}</span>
+      <h1>{d.name}<span> nedir?</span></h1>
+      <p>{d.definition}</p>
+    </header>
+    <div class="glossary-entry-body">
+      {d.explanation && (
+        <section aria-labelledby="glossary-detail-label">
+          <span class="glossary-detail-kicker" id="glossary-detail-label">ECZACININ NOTU</span>
+          <p>{d.explanation}</p>
+        </section>
+      )}
+      {d.sourceUrl && (
+        <section class="glossary-entry-source" aria-labelledby="glossary-source-label">
+          <span class="glossary-detail-kicker" id="glossary-source-label">KAYNAK</span>
+          <a href={d.sourceUrl} rel="noopener noreferrer" target="_blank">{d.sourceLabel || 'İlgili bilimsel kaynak'} <span aria-hidden="true">↗</span></a>
+        </section>
+      )}
+    </div>
+    <nav class="glossary-entry-back"><a href="/sozluk">← Sözlükteki tüm terimler</a></nav>
+    {others.length>0&&(
+      <aside class="glossary-entry-related">
+        <div class="journal-section-heading"><div><span class="journal-eyebrow">AYNI KONU ALANINDA</span><h2>Diğer terimler</h2></div></div>
+        <div>{others.map(t=><a href={'/sozluk/'+t.id.replace(/\.json$/,'').split('/').pop()}>{t.data.name}<span aria-hidden="true">↗</span></a>)}</div>
+      </aside>
+    )}
+  </article>
+</Base>

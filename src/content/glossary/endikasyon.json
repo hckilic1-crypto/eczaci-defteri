@@ -1,0 +1,9 @@
+{
+  "name": "Endikasyon",
+  "category": "Farmakoloji",
+  "definition": "Bir ilaç veya tıbbi girişimin kullanılmasını haklı kılan hastalık, belirti ya da klinik durumdur.",
+  "explanation": "Bir etken maddenin farklı endikasyonlarında doz ve tedavi süresi değişebilir.",
+  "sourceLabel": "NCBI Bookshelf",
+  "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK595006/",
+  "draft": false
+}

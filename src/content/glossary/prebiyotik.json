@@ -1,0 +1,9 @@
+{
+  "name": "Prebiyotik",
+  "category": "Mikrobiyota",
+  "definition": "Konak mikroorganizmaları tarafından seçici biçimde kullanılan ve konak için sağlık yararı sağlayan substrattır.",
+  "explanation": "Her lif otomatik olarak prebiyotik değildir; tanımda seçici kullanım ve sağlık yararı birlikte aranır.",
+  "sourceLabel": "ISAPP konsensüsü",
+  "sourceUrl": "https://isappscience.org/a-roundup-of-the-isapp-consensus-definitions-probiotics-prebiotics-synbiotics-postbiotics-and-fermented-foods/",
+  "draft": false
+}

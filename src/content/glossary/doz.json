@@ -1,0 +1,9 @@
+{
+  "name": "Doz",
+  "category": "Farmakoloji",
+  "definition": "Bir uygulamada veya belirlenmiş zaman diliminde alınması ya da verilmesi planlanan etkin madde miktarıdır.",
+  "explanation": "Tek doz, günlük toplam doz ve birim farmasötik formdaki miktar birbirinden farklı olabilir.",
+  "sourceLabel": "WHO teknik sözlüğü",
+  "sourceUrl": "https://extranet.who.int/prequal/sites/default/files/document_files/WHO_TRS_850.pdf",
+  "draft": false
+}

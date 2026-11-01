@@ -1,0 +1,9 @@
+{
+  "name": "Advers Etki",
+  "category": "Farmakoloji",
+  "definition": "Bir ilacın kullanımı sırasında ortaya çıkan, istenmeyen ve zararlı etkidir.",
+  "explanation": "Advers olay, ilaçla nedensel ilişkisi henüz gösterilmemiş herhangi bir olumsuz tıbbi durum olabilir; ikisi eş anlamlı değildir.",
+  "sourceLabel": "NCBI Bookshelf",
+  "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK595006/",
+  "draft": false
+}

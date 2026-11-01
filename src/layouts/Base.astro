@@ -87,8 +87,16 @@ const searchPosts = allPosts.map((post) => {
   };
 });
 
+const allGlossary = await getCollection('glossary', item => !item.data.draft);
+const searchTerms = allGlossary.map(item => ({
+  title: item.data.name,
+  excerpt: item.data.definition,
+  category: 'Eczacılık Sözlüğü',
+  href: '/sozluk/' + item.id.replace(/\.json$/, '').split('/').pop()
+}));
+
 const searchData =
-  JSON.stringify(searchPosts);
+  JSON.stringify([...searchPosts, ...searchTerms]);
 
 
 /* =========================================================
@@ -447,6 +455,10 @@ const jsonLd = structuredData ? JSON.stringify(structuredData).replace(/</g, '\\
       </div>
 
 
+      <a href="/sozluk">
+        Sözlük
+      </a>
+
       <a href="/yazilar">
         Yazılar
       </a>
@@ -462,7 +474,7 @@ const jsonLd = structuredData ? JSON.stringify(structuredData).replace(/</g, '\\
         class="search-trigger"
         id="search-trigger"
         type="button"
-        aria-label="Yazılarda ara"
+        aria-label="Yazı veya terim ara"
       >
 
         <svg
@@ -534,7 +546,7 @@ const jsonLd = structuredData ? JSON.stringify(structuredData).replace(/</g, '\\
         <input
           id="mobile-search-input"
           type="search"
-          placeholder="Yazılarda ara..."
+          placeholder="Yazı veya terim ara..."
           autocomplete="off"
           aria-label="Yazılarda ara"
         />
@@ -666,6 +678,10 @@ const jsonLd = structuredData ? JSON.stringify(structuredData).replace(/</g, '\\
         Yazılar
       </a>
 
+      <a href="/sozluk" class="mobile-main-link">
+        Sözlük
+      </a>
+
       <a
         href="/hakkinda"
         class="mobile-main-link"
@@ -757,7 +773,7 @@ const jsonLd = structuredData ? JSON.stringify(structuredData).replace(/</g, '\\
 
 
     <div class="search-hint">
-      Yazı başlığı, açıklama veya kategori ile arayın.
+      Yazı, eczacılık terimi veya kategori ile arayın.
     </div>
 
 
@@ -839,6 +855,8 @@ const jsonLd = structuredData ? JSON.stringify(structuredData).replace(/</g, '\\
         Takviye edici gıdalar, dermokozmetik ürünler ve
         eczacılık pratiği üzerine kaynak odaklı içerikler.
       </p>
+
+      <nav class="journal-footer-links" aria-label="Alt menü"><a href="/yazilar">Yazılar</a><a href="/sozluk">Eczacılık Sözlüğü</a><a href="/hakkinda">Hakkında</a></nav>
 
     </div>
 

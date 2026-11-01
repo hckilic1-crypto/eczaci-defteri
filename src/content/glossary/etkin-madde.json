@@ -1,0 +1,9 @@
+{
+  "name": "Etkin Madde",
+  "category": "Farmasötik Teknoloji",
+  "definition": "Bir ilaçta beklenen farmakolojik veya terapötik etkinin oluşmasından sorumlu bileşendir.",
+  "explanation": "Aynı etkin maddeyi içeren ürünlerin dozaj formu, yardımcı maddeleri veya salım özellikleri farklı olabilir.",
+  "sourceLabel": "FDA Orange Book",
+  "sourceUrl": "https://www.fda.gov/drugs/development-approval-process-drugs/orange-book-preface",
+  "draft": false
+}

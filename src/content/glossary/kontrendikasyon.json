@@ -1,0 +1,9 @@
+{
+  "name": "Kontrendikasyon",
+  "category": "Farmakoloji",
+  "definition": "Bir ilaç veya tıbbi girişimin, belirli bir durumda oluşturabileceği risk nedeniyle uygulanmaması gerektiğini ifade eden koşuldur.",
+  "explanation": "Mutlak ve göreceli kontrendikasyonlar arasında klinik değerlendirme açısından fark vardır.",
+  "sourceLabel": "NCBI Bookshelf",
+  "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK595006/",
+  "draft": false
+}
