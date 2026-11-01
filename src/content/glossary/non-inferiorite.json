@@ -1,0 +1,9 @@
+{
+  "name": "Non-İnferiorite (Aşağı Kalmama)",
+  "category": "Klinik Araştırmalar",
+  "definition": "Yeni müdahalenin karşılaştırıcıdan önceden belirlenen klinik sınırdan daha kötü olmadığını değerlendiren tasarımdır.",
+  "explanation": "İstatistiksel olarak anlamlı fark bulunmaması, tek başına aşağı kalmamanın kanıtı değildir.",
+  "sourceLabel": "Cochrane – Handbook for Systematic Reviews",
+  "sourceUrl": "https://training.cochrane.org/handbook",
+  "draft": false
+}

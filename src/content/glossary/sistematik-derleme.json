@@ -1,0 +1,9 @@
+{
+  "name": "Sistematik Derleme",
+  "category": "Klinik Araştırmalar",
+  "definition": "Belirlenmiş soruya ilişkin kanıtları önceden tarif edilen kapsamlı arama ve seçme yöntemleriyle sentezleyen araştırmadır.",
+  "explanation": "Her sistematik derlemede meta-analiz bulunmak zorunda değildir.",
+  "sourceLabel": "Cochrane – Handbook for Systematic Reviews",
+  "sourceUrl": "https://training.cochrane.org/handbook",
+  "draft": false
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Faz 4 Çalışma",
+  "category": "Klinik Araştırmalar",
+  "definition": "Bir ürünün pazarlama ruhsatından sonra yürütülen klinik araştırma aşamasıdır.",
+  "explanation": "Uzun süreli güvenlilik, yeni popülasyonlar veya gerçek kullanım koşulları araştırılabilir.",
+  "sourceLabel": "ClinicalTrials.gov – Glossary",
+  "sourceUrl": "https://clinicaltrials.gov/study-basics/glossary",
+  "draft": false
+}

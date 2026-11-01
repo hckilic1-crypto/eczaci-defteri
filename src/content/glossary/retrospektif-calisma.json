@@ -1,0 +1,9 @@
+{
+  "name": "Retrospektif Çalışma",
+  "category": "Klinik Araştırmalar",
+  "definition": "Geçmişte kaydedilmiş olay veya veriler üzerinden yapılan araştırma yaklaşımıdır.",
+  "explanation": "Kayıt eksikliği ve ölçüm hataları sonuçları etkileyebilir.",
+  "sourceLabel": "ClinicalTrials.gov – Glossary",
+  "sourceUrl": "https://clinicaltrials.gov/study-basics/glossary",
+  "draft": false
+}

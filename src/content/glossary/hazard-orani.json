@@ -1,0 +1,9 @@
+{
+  "name": "Hazard Oranı (HR)",
+  "category": "Klinik Araştırmalar",
+  "definition": "İki grubun belirli bir anda olayı yaşama hızlarını karşılaştıran zaman-aşımı analiz ölçüsüdür.",
+  "explanation": "HR, belirli bir süredeki mutlak risk oranıyla aynı değildir; orantılı hazard varsayımı önemlidir.",
+  "sourceLabel": "Cochrane – Handbook for Systematic Reviews",
+  "sourceUrl": "https://training.cochrane.org/handbook",
+  "draft": false
+}

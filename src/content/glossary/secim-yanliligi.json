@@ -1,0 +1,9 @@
+{
+  "name": "Seçim Yanlılığı",
+  "category": "Klinik Araştırmalar",
+  "definition": "Çalışmaya dahil edilme veya grupların oluşumu nedeniyle karşılaştırmanın sistematik biçimde çarpıtılmasıdır.",
+  "explanation": "Örneklem büyüklüğünü artırmak sistematik seçim yanlılığını kendiliğinden düzeltmez.",
+  "sourceLabel": "Cochrane – Handbook for Systematic Reviews",
+  "sourceUrl": "https://training.cochrane.org/handbook",
+  "draft": false
+}

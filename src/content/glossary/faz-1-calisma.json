@@ -1,0 +1,9 @@
+{
+  "name": "Faz 1 Çalışma",
+  "category": "Klinik Araştırmalar",
+  "definition": "Bir müdahalenin insanlarda ilk güvenlilik, tolerabilite ve farmakokinetik özelliklerinin incelendiği erken klinik araştırma aşamasıdır.",
+  "explanation": "Genellikle küçük gruplarla yapılır; her Faz 1 çalışması yalnızca sağlıklı gönüllü içermez.",
+  "sourceLabel": "FDA – Drug Development Definitions",
+  "sourceUrl": "https://www.fda.gov/drugs/investigational-new-drug-application-ind/drug-development-and-review-definitions",
+  "draft": false
+}

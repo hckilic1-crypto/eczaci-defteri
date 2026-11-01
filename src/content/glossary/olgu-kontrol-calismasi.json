@@ -1,0 +1,9 @@
+{
+  "name": "Olgu-Kontrol Çalışması",
+  "category": "Klinik Araştırmalar",
+  "definition": "Belirli bir sonucu yaşayan olgularla yaşamayan kontrollerin önceki maruziyetlerinin karşılaştırıldığı tasarımdır.",
+  "explanation": "Nadir hastalık araştırmalarında yararlı olabilir; genellikle doğrudan insidans hesaplatmaz.",
+  "sourceLabel": "ClinicalTrials.gov – Glossary",
+  "sourceUrl": "https://clinicaltrials.gov/study-basics/glossary",
+  "draft": false
+}

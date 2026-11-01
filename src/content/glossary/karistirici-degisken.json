@@ -1,0 +1,9 @@
+{
+  "name": "Karıştırıcı Değişken (Confounder)",
+  "category": "Klinik Araştırmalar",
+  "definition": "Hem incelenen maruziyetle hem sonuçla ilişkili olarak gözlenen ilişkiyi çarpıtabilecek değişkendir.",
+  "explanation": "Yaş ve hastalık şiddeti gibi faktörler uygun tasarım veya analizle ele alınmalıdır.",
+  "sourceLabel": "Cochrane – Handbook for Systematic Reviews",
+  "sourceUrl": "https://training.cochrane.org/handbook",
+  "draft": false
+}

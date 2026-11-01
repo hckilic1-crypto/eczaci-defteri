@@ -1,0 +1,9 @@
+{
+  "name": "Göreceli Risk Azalması (RRR)",
+  "category": "Klinik Araştırmalar",
+  "definition": "Kontrol grubuna göre olay riskinin oransal azalmasıdır ve genellikle 1−RR olarak hesaplanır.",
+  "explanation": "Yüzde 50 göreceli azalma, başlangıç riski bilinmeden mutlak klinik yararı göstermez.",
+  "sourceLabel": "Cochrane – Handbook for Systematic Reviews",
+  "sourceUrl": "https://training.cochrane.org/handbook",
+  "draft": false
+}

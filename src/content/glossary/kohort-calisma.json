@@ -1,0 +1,9 @@
+{
+  "name": "Kohort Çalışması",
+  "category": "Klinik Araştırmalar",
+  "definition": "Belirli bir maruziyete sahip olan ve olmayan grupların sonuçlar açısından izlendiği gözlemsel tasarımdır.",
+  "explanation": "Maruziyet araştırmacı tarafından rastgele atanmadığından karıştırıcı değişkenler önemli olabilir.",
+  "sourceLabel": "ClinicalTrials.gov – Glossary",
+  "sourceUrl": "https://clinicaltrials.gov/study-basics/glossary",
+  "draft": false
+}

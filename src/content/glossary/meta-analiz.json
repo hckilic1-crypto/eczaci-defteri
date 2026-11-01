@@ -1,0 +1,9 @@
+{
+  "name": "Meta-Analiz",
+  "category": "Klinik Araştırmalar",
+  "definition": "Birden fazla çalışmanın sayısal sonuçlarını belirlenmiş istatistiksel yöntemlerle birleştiren analizdir.",
+  "explanation": "Çalışmaların kalitesi ve heterojenliği değerlendirilmeden birleşik etki güvenilir sayılmaz.",
+  "sourceLabel": "Cochrane – Handbook for Systematic Reviews",
+  "sourceUrl": "https://training.cochrane.org/handbook",
+  "draft": false
+}

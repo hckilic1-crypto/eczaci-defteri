@@ -1,0 +1,9 @@
+{
+  "name": "Surrogat Sonlanım Noktası",
+  "category": "Klinik Araştırmalar",
+  "definition": "Klinik açıdan önemli bir sonucu doğrudan ölçmek yerine onun yerine kullanılan biyobelirteç veya ara ölçüttür.",
+  "explanation": "Biyobelirteçte iyileşme, mortalite ya da yaşam kalitesinde düzelme anlamına gelmeyebilir.",
+  "sourceLabel": "ClinicalTrials.gov – Glossary",
+  "sourceUrl": "https://clinicaltrials.gov/study-basics/glossary",
+  "draft": false
+}

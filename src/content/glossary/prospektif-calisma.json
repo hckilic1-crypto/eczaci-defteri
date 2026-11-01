@@ -1,0 +1,9 @@
+{
+  "name": "Prospektif Çalışma",
+  "category": "Klinik Araştırmalar",
+  "definition": "Araştırma planı kurulduktan sonra ileride oluşacak veri veya sonuçların takip edildiği tasarımdır.",
+  "explanation": "Prospektif olması çalışmanın randomize veya yanlılıktan bağımsız olduğunu göstermez.",
+  "sourceLabel": "ClinicalTrials.gov – Glossary",
+  "sourceUrl": "https://clinicaltrials.gov/study-basics/glossary",
+  "draft": false
+}

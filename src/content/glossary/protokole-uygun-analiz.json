@@ -1,0 +1,9 @@
+{
+  "name": "Protokole Uygun Analiz (Per-Protocol)",
+  "category": "Klinik Araştırmalar",
+  "definition": "Araştırmayı protokole yeterli uyumla tamamlayan katılımcılara odaklanan analiz yaklaşımıdır.",
+  "explanation": "Randomizasyonun sağladığı başlangıç dengesini bozabilecek dışlamalar içerebilir.",
+  "sourceLabel": "Cochrane – Handbook for Systematic Reviews",
+  "sourceUrl": "https://training.cochrane.org/handbook",
+  "draft": false
+}

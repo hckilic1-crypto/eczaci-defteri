@@ -1,0 +1,9 @@
+{
+  "name": "Kesitsel Çalışma",
+  "category": "Klinik Araştırmalar",
+  "definition": "Maruziyet ve sonuç bilgilerinin belirli bir zaman kesitinde ölçüldüğü gözlemsel araştırmadır.",
+  "explanation": "Nedensellikte zaman sırasını göstermek çoğu zaman mümkün değildir.",
+  "sourceLabel": "ClinicalTrials.gov – Glossary",
+  "sourceUrl": "https://clinicaltrials.gov/study-basics/glossary",
+  "draft": false
+}

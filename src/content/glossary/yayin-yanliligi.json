@@ -1,0 +1,9 @@
+{
+  "name": "Yayın Yanlılığı",
+  "category": "Klinik Araştırmalar",
+  "definition": "İstatistiksel olarak anlamlı veya olumlu sonuçlu çalışmaların yayımlanma olasılığının daha yüksek olmasıyla oluşan çarpıklıktır.",
+  "explanation": "Huni grafikleri bu olasılığı inceleyebilir; asimetri tek başına yayın yanlılığını kanıtlamaz.",
+  "sourceLabel": "Cochrane – Handbook for Systematic Reviews",
+  "sourceUrl": "https://training.cochrane.org/handbook",
+  "draft": false
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Faz 2 Çalışma",
+  "category": "Klinik Araştırmalar",
+  "definition": "Bir müdahalenin hedef hasta grubunda ön etkinlik ve güvenlilik özelliklerini araştıran klinik geliştirme aşamasıdır.",
+  "explanation": "Doz seçimi ve Faz 3 tasarımına bilgi sağlayabilir; sonuçlar kesin ruhsat kanıtı sayılmaz.",
+  "sourceLabel": "FDA – Drug Development Definitions",
+  "sourceUrl": "https://www.fda.gov/drugs/investigational-new-drug-application-ind/drug-development-and-review-definitions",
+  "draft": false
+}

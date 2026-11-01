@@ -1,0 +1,9 @@
+{
+  "name": "Alt Grup Analizi",
+  "category": "Klinik Araştırmalar",
+  "definition": "Tedavi etkisinin önceden tanımlanmış katılımcı alt gruplarında farklılaşıp farklılaşmadığını inceleyen analizdir.",
+  "explanation": "Çok sayıda plansız alt grup analizi tesadüfi bulgu riskini artırır.",
+  "sourceLabel": "Cochrane – Handbook for Systematic Reviews",
+  "sourceUrl": "https://training.cochrane.org/handbook",
+  "draft": false
+}
