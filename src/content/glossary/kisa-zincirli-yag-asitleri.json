@@ -1,0 +1,9 @@
+{
+  "name": "Kısa Zincirli Yağ Asitleri (SCFA)",
+  "category": "Mikrobiyota",
+  "definition": "Özellikle bağırsak mikrobiyotasının fermente edilebilir substratları işlemesiyle oluşabilen kısa karbon zincirli yağ asitleridir.",
+  "explanation": "Asetat, propiyonat ve bütirat başlıca örneklerdir; üretilen miktarlar diyet ve mikrobiyal bileşime göre değişir.",
+  "sourceLabel": "Gut Microbiota–Immune Interactions",
+  "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7205593/",
+  "draft": false
+}

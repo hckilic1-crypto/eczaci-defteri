@@ -1,0 +1,9 @@
+{
+  "name": "Fermente Gıda",
+  "category": "Mikrobiyota",
+  "definition": "Gıda bileşenlerinin istenen mikrobiyal büyüme ve enzimatik dönüşümlerle değiştirildiği gıdadır.",
+  "explanation": "Her fermente gıda probiyotik değildir; probiyotik sayılabilmesi için uygun canlı mikroorganizma ve sağlık yararı kanıtı gerekir.",
+  "sourceLabel": "ISAPP Scientific Consensus",
+  "sourceUrl": "https://isappscience.org/a-roundup-of-the-isapp-consensus-definitions-probiotics-prebiotics-synbiotics-postbiotics-and-fermented-foods/",
+  "draft": false
+}

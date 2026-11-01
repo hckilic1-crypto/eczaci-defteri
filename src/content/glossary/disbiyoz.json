@@ -1,0 +1,9 @@
+{
+  "name": "Disbiyoz",
+  "category": "Mikrobiyota",
+  "definition": "Mikrobiyal topluluğun bileşiminde veya işlevinde, belirli bir referans duruma göre oluşan değişikliği tanımlamak için kullanılan terimdir.",
+  "explanation": "Evrensel ve tek bir 'sağlıklı mikrobiyota' profili olmadığından disbiyoz tek başına standart bir klinik tanı değildir.",
+  "sourceLabel": "The Gut Microbiome: Glossary",
+  "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7873547/",
+  "draft": false
+}

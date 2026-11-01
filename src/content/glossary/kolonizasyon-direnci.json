@@ -1,0 +1,9 @@
+{
+  "name": "Kolonizasyon Direnci",
+  "category": "Mikrobiyota",
+  "definition": "Yerleşik mikrobiyotanın dışarıdan gelen mikroorganizmaların veya fırsatçı patojenlerin yerleşmesini sınırlama kapasitesidir.",
+  "explanation": "Besin rekabeti, antimikrobiyal ürünler ve konak bağışıklığıyla etkileşim gibi mekanizmalar rol oynayabilir.",
+  "sourceLabel": "Microbiota-mediated Colonization Resistance",
+  "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10249723/",
+  "draft": false
+}

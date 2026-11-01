@@ -1,0 +1,9 @@
+{
+  "name": "Mikrobiyom",
+  "category": "Mikrobiyota",
+  "definition": "Mikroorganizmaları, genomlarını ve içinde bulundukları ekolojik çevreyi birlikte ele alan kavramdır.",
+  "explanation": "Bazı yayınlarda yalnızca topluluğun genetik içeriği için de kullanılır; kullanılan tanımın belirtilmesi önemlidir.",
+  "sourceLabel": "The Gut Microbiome: Glossary",
+  "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7873547/",
+  "draft": false
+}

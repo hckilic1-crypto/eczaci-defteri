@@ -1,0 +1,9 @@
+{
+  "name": "Probiyotik Suş",
+  "category": "Mikrobiyota",
+  "definition": "Probiyotik olarak incelenen mikroorganizmanın türün altında tanımlanan, izlenebilir özgül soyunu ifade eder.",
+  "explanation": "Aynı türün farklı suşlarının klinik etkileri aynı varsayılamaz; suş kodu ve endikasyona özgü kanıt önemlidir.",
+  "sourceLabel": "Strain-Specificity of Probiotic Efficacy",
+  "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5949321/",
+  "draft": false
+}
