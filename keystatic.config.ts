@@ -196,7 +196,12 @@ repo: 'hckilic1-crypto/eczaci-defteri'  },
             { label: 'Farmasötik Teknoloji', value: 'Farmasötik Teknoloji' },
             { label: 'Klinik Araştırmalar', value: 'Klinik Araştırmalar' },
             { label: 'Mikrobiyota', value: 'Mikrobiyota' },
-            { label: 'Dermokozmetik', value: 'Dermokozmetik' }
+            { label: 'Dermokozmetik', value: 'Dermokozmetik' },
+            { label: 'Takviye Edici Gıdalar', value: 'Takviye Edici Gıdalar' },
+            { label: 'Beslenme ve Metabolizma', value: 'Beslenme ve Metabolizma' },
+            { label: 'Farmakognozi', value: 'Farmakognozi' },
+            { label: 'İlaç Güvenliği', value: 'İlaç Güvenliği' },
+            { label: 'Laboratuvar ve Tanı', value: 'Laboratuvar ve Tanı' }
           ],
           defaultValue: 'Farmakoloji'
         }),
