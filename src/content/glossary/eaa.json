@@ -1,0 +1,9 @@
+{
+  "name": "EAA (Esansiyel Amino Asitler)",
+  "category": "Takviye Edici Gıdalar",
+  "definition": "Vücutta yeterli miktarda sentezlenemeyen ve besinlerden alınması gereken amino asitlerin bütünüdür.",
+  "explanation": "BCAA, EAA grubunun alt kümesidir; kas protein sentezinde tüm esansiyel amino asitlerin yeterliliği önemlidir.",
+  "sourceLabel": "NIH ODS – Exercise and Athletic Performance",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/",
+  "draft": false
+}

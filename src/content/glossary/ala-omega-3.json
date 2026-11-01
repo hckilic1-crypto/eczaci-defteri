@@ -1,0 +1,9 @@
+{
+  "name": "ALA (Alfa-Linolenik Asit)",
+  "category": "Takviye Edici Gıdalar",
+  "definition": "Bitkisel kaynaklarda bulunan, 18 karbonlu esansiyel omega-3 yağ asididir.",
+  "explanation": "EPA ve DHA'ya dönüşümü sınırlıdır; gram ALA, gram EPA veya DHA ile eşdeğer kabul edilmez.",
+  "sourceLabel": "NIH ODS – Omega-3 Fatty Acids",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/",
+  "draft": false
+}

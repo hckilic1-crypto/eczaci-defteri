@@ -1,0 +1,9 @@
+{
+  "name": "Omega-3 Yağ Asitleri",
+  "category": "Takviye Edici Gıdalar",
+  "definition": "İlk çift bağı metil ucundan üçüncü karbonda bulunan çoklu doymamış yağ asitleridir.",
+  "explanation": "ALA, EPA ve DHA başlıca örneklerdir; balık yağı ürünlerinde toplam yağ miktarı EPA+DHA miktarına eşit değildir.",
+  "sourceLabel": "NIH ODS – Omega-3 Fatty Acids",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/",
+  "draft": false
+}
