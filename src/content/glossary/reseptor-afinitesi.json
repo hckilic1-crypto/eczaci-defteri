@@ -1,0 +1,9 @@
+{
+  "name": "Reseptör Afinitesi",
+  "category": "Farmakoloji",
+  "definition": "Bir ligandın belirli bir reseptöre bağlanma eğilimini ifade eden özelliğidir.",
+  "explanation": "Yüksek afinite, yüksek intrinsik aktivite anlamına gelmez; antagonistler de reseptöre yüksek afiniteyle bağlanabilir.",
+  "sourceLabel": "MSD Manual – Drug–Receptor Interactions",
+  "sourceUrl": "https://www.msdmanuals.com/professional/clinical-pharmacology/pharmacodynamics/drug-receptor-interactions",
+  "draft": false
+}

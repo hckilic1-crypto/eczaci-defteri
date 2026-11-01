@@ -1,0 +1,9 @@
+{
+  "name": "İdame Dozu",
+  "category": "Farmakoloji",
+  "definition": "Tedavi sırasında hedef ilaç maruziyetini sürdürmek için düzenli aralıklarla verilen dozdur.",
+  "explanation": "Yükleme dozundan farklı olarak idame dozunun belirlenmesinde ilaç klirensi ve dozlama aralığı özellikle belirleyicidir.",
+  "sourceLabel": "NCBI Bookshelf – Steady State",
+  "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK553132/",
+  "draft": false
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Absorpsiyon",
+  "category": "Farmakoloji",
+  "definition": "Bir ilacın uygulandığı yerden sistemik dolaşıma geçiş sürecidir.",
+  "explanation": "Emilim hızı ve miktarı uygulama yolu, formülasyon ve fizyolojik koşullardan etkilenir. Emilim, biyoyararlanımla eş anlamlı değildir.",
+  "sourceLabel": "NCBI Bookshelf – Pharmacokinetics",
+  "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK557744/",
+  "draft": false
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Dağılım Hacmi (Vd)",
+  "category": "Farmakoloji",
+  "definition": "Vücuttaki toplam ilaç miktarını plazma ilaç konsantrasyonuna oranlayan görünür farmakokinetik hacimdir.",
+  "explanation": "Gerçek anatomik bir hacim değildir. Büyük Vd, ilacın plazma dışı dokulara yaygın dağılımıyla ilişkili olabilir.",
+  "sourceLabel": "NCBI Bookshelf – Volume of Distribution",
+  "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK545280/",
+  "draft": false
+}

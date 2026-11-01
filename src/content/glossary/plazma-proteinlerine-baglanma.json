@@ -1,0 +1,9 @@
+{
+  "name": "Plazma Proteinlerine Bağlanma",
+  "category": "Farmakoloji",
+  "definition": "Bir ilacın dolaşımda albümin gibi plazma proteinleriyle ilişkilenmesidir.",
+  "explanation": "Serbest ilaç fraksiyonu doku dağılımı, eliminasyon ve hedefe erişim açısından önemlidir; toplam konsantrasyon tek başına yanıltıcı olabilir.",
+  "sourceLabel": "NCBI Bookshelf – Pharmacokinetics",
+  "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK557744/",
+  "draft": false
+}

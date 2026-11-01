@@ -1,0 +1,9 @@
+{
+  "name": "Birinci Derece Eliminasyon",
+  "category": "Farmakoloji",
+  "definition": "Eliminasyon hızının ilaç konsantrasyonuyla orantılı olduğu ve birim zamanda sabit bir fraksiyonun uzaklaştırıldığı kinetiktir.",
+  "explanation": "Lineer farmakokinetikte yarılanma ömrü yaklaşık sabittir; birçok ilaç terapötik aralığında bu davranışı gösterir.",
+  "sourceLabel": "NCBI Bookshelf – Pharmacokinetics",
+  "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK557744/",
+  "draft": false
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Parsiyel Agonist",
+  "category": "Farmakoloji",
+  "definition": "Reseptöre bağlanarak yanıt oluşturan ancak aynı sistemde tam agoniste göre daha düşük maksimum etki sağlayan ligandır.",
+  "explanation": "Tam agonist varlığında reseptörleri paylaşarak onun etkisini azaltabilir; davranışı deneysel koşullara bağlıdır.",
+  "sourceLabel": "MSD Manual – Drug–Receptor Interactions",
+  "sourceUrl": "https://www.msdmanuals.com/professional/clinical-pharmacology/pharmacodynamics/drug-receptor-interactions",
+  "draft": false
+}

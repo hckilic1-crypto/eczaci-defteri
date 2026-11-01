@@ -1,0 +1,9 @@
+{
+  "name": "Potens",
+  "category": "Farmakoloji",
+  "definition": "Bir ilacın belirli büyüklükteki etkiyi oluşturmak için gereken konsantrasyon veya dozu bakımından ifade edilen özelliğidir.",
+  "explanation": "Daha potent bir ilaç aynı etkiye daha düşük dozda ulaşabilir; bu, daha yüksek maksimum etki veya daha iyi klinik sonuç demek değildir.",
+  "sourceLabel": "NCBI Bookshelf – Pharmacodynamics",
+  "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK507791/",
+  "draft": false
+}

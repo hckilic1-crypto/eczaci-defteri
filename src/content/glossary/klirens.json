@@ -1,0 +1,9 @@
+{
+  "name": "Klirens (CL)",
+  "category": "Farmakoloji",
+  "definition": "Bir ilacın birim zamanda tamamen temizlendiği varsayılan plazma hacmini ifade eden farmakokinetik parametredir.",
+  "explanation": "Birim genellikle L/saat veya mL/dakikadır. İdame doz hızı, hedef konsantrasyon ve biyoyararlanımla birlikte klirense bağlıdır.",
+  "sourceLabel": "NCBI Bookshelf – Pharmacokinetics",
+  "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK557744/",
+  "draft": false
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Maksimum Etki (Emax)",
+  "category": "Farmakoloji",
+  "definition": "Belirli bir sistemde ölçülen parametre açısından bir ilacın ulaşabildiği en yüksek etki düzeyidir.",
+  "explanation": "Emax potensle aynı kavram değildir; maksimum etki deneysel koşullara ve ölçülen sonlanıma göre değişebilir.",
+  "sourceLabel": "NCBI Bookshelf – Pharmacodynamics",
+  "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK507791/",
+  "draft": false
+}

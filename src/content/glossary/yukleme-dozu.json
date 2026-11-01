@@ -1,0 +1,9 @@
+{
+  "name": "Yükleme Dozu",
+  "category": "Farmakoloji",
+  "definition": "Hedef ilaç konsantrasyonuna daha hızlı ulaşmak için başlangıçta verilen doz veya dozlar bütünüdür.",
+  "explanation": "Uygun hesaplamada dağılım hacmi, hedef konsantrasyon ve biyoyararlanım önemlidir; her ilaç için gerekli değildir.",
+  "sourceLabel": "NCBI Bookshelf – Volume of Distribution",
+  "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK545280/",
+  "draft": false
+}

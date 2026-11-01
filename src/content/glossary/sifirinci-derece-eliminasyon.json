@@ -1,0 +1,9 @@
+{
+  "name": "Sıfırıncı Derece Eliminasyon",
+  "category": "Farmakoloji",
+  "definition": "Eliminasyon hızının belirli koşullarda konsantrasyondan bağımsız olduğu ve birim zamanda yaklaşık sabit miktarın uzaklaştırıldığı kinetiktir.",
+  "explanation": "Eliminasyon süreçlerinin doygunluğa ulaşmasıyla görülebilir; küçük doz artışları maruziyeti orantısız artırabilir.",
+  "sourceLabel": "NCBI Bookshelf – Pharmacokinetics",
+  "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK557744/",
+  "draft": false
+}

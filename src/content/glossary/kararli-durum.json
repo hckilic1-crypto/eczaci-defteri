@@ -1,0 +1,9 @@
+{
+  "name": "Kararlı Durum (Steady State)",
+  "category": "Farmakoloji",
+  "definition": "İlacın sisteme giriş hızı ile vücuttan uzaklaştırılma hızının dengelendiği farmakokinetik durumdur.",
+  "explanation": "Tekrarlayan dozlarda konsantrasyon doz aralığı içinde dalgalanır; kararlı durumda her doz aralığındaki profil benzer şekilde tekrarlanır.",
+  "sourceLabel": "NCBI Bookshelf – Steady State",
+  "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK553132/",
+  "draft": false
+}

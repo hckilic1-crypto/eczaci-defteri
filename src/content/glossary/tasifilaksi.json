@@ -1,0 +1,9 @@
+{
+  "name": "Taşifilaksi",
+  "category": "Farmakoloji",
+  "definition": "Bir ilacın kısa aralıklarla tekrarlanan uygulanmasından sonra yanıtın hızla azalmasıdır.",
+  "explanation": "Genellikle daha uzun sürede gelişen toleranstan zaman ölçeğiyle ayrılır; mekanizma ilaca göre değişir.",
+  "sourceLabel": "NLM MeSH – Tachyphylaxis",
+  "sourceUrl": "https://www.ncbi.nlm.nih.gov/mesh/68013618",
+  "draft": false
+}

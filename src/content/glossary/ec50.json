@@ -1,0 +1,9 @@
+{
+  "name": "EC50",
+  "category": "Farmakoloji",
+  "definition": "Bir ilacın belirli bir deneysel sistemde kendi maksimum etkisinin yüzde 50'sini oluşturduğu konsantrasyondur.",
+  "explanation": "EC50 potensi karşılaştırmada kullanılır; reseptöre bağlanma sabiti (Kd) ile her durumda aynı değildir.",
+  "sourceLabel": "NCBI Bookshelf – Pharmacodynamics",
+  "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK507791/",
+  "draft": false
+}
