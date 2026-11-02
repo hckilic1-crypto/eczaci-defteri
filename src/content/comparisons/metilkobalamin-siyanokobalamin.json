@@ -1,0 +1,17 @@
+{
+  "title": "Metilkobalamin mi siyanokobalamin mi?",
+  "area": "Vitamin",
+  "summary": "B12 takviyesinin formundan önce eksikliğin nedeni ve uygun replasman değerlendirilir.",
+  "leftName": "Metilkobalamin",
+  "rightName": "Siyanokobalamin",
+  "leftDetail": "B12'nin biyokimyasal olarak etkin koenzim formlarındandır.",
+  "rightDetail": "Kararlı, uygun koşullarda aktif B12 formlarına dönüşen takviye biçimidir.",
+  "keyDifference": "Tüm bireylerde metilkobalaminin klinik açıdan üstün olduğunu söylemek için yeterli genellenebilir kanıt yoktur.",
+  "practical": "Malabsorpsiyon varsa oral veya parenteral yol seçimi değerlendirilmelidir.",
+  "warning": "Nörolojik semptomlarda gecikmeden tıbbi değerlendirme gerekir.",
+  "sourceLabel": "NIH ODS — Vitamin B12",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/",
+  "leftAtlasSlug": "b12-vitamini",
+  "rightAtlasSlug": "b12-vitamini",
+  "draft": false
+}

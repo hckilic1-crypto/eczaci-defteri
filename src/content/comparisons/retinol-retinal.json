@@ -1,0 +1,17 @@
+{
+  "title": "Retinol mü retinal mi?",
+  "area": "Dermokozmetik",
+  "summary": "İki retinoid dönüşüm basamağı ve ürün koşulları açısından ayrılır.",
+  "leftName": "Retinol",
+  "rightName": "Retinal",
+  "leftDetail": "A vitamini alkolüdür; retinal ve retinoik aside metabolik dönüşüm gerektirir.",
+  "rightDetail": "Retinaldehit formudur; retinoik asitten bir basamak önce yer alır.",
+  "keyDifference": "Aynı yüzde etiketinin aynı cilt etkinliği anlamına gelmesi beklenmez.",
+  "practical": "Ürün stabilitesi, tahriş ve kişisel tolerans sıklık seçiminde önemlidir.",
+  "warning": "Gebelikte retinoid içeren ürünlerin kullanımı ayrıca değerlendirilmelidir.",
+  "sourceLabel": "DermNet — Topical Retinoids",
+  "sourceUrl": "https://dermnetnz.org/topics/topical-retinoids",
+  "leftAtlasSlug": "retinol",
+  "rightAtlasSlug": "retinal",
+  "draft": false
+}

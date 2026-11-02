@@ -1,0 +1,17 @@
+{
+  "title": "Ferroz tuzlar mı demir bisglisinat mı?",
+  "area": "Mineral",
+  "summary": "Karşılaştırmada tuz ağırlığı değil elementel demir dozu belirleyicidir.",
+  "leftName": "Ferroz tuzlar",
+  "rightName": "Demir bisglisinat",
+  "leftDetail": "Ferroz sülfat ve fumarat gibi formlar klinik replasmanda uzun süredir kullanılır.",
+  "rightDetail": "Demirin glisinle şelatlı olduğu preparat biçimidir.",
+  "keyDifference": "Molekül ve elementel miktar farklıdır; tolerans çalışmaları bütün ürünlere genellenmez.",
+  "practical": "Demir eksikliğinin nedeni ve tedavide hedef hemoglobin/ferritin izlenmelidir.",
+  "warning": "Demir fazlalığı ve çocuklarda doz aşımı ciddi risk oluşturabilir.",
+  "sourceLabel": "NIH ODS — Iron",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/",
+  "leftAtlasSlug": "demir",
+  "rightAtlasSlug": "demir",
+  "draft": false
+}

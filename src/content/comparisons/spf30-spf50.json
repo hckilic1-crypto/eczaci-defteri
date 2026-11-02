@@ -1,0 +1,17 @@
+{
+  "title": "SPF 30 mu SPF 50 mi?",
+  "area": "Dermokozmetik",
+  "summary": "SPF sayısının UVB korumasındaki farkı doğrusal değildir.",
+  "leftName": "SPF 30",
+  "rightName": "SPF 50",
+  "leftDetail": "Test koşullarında UVB'nin yaklaşık %97'sini filtreleyen koruma düzeyidir.",
+  "rightDetail": "Test koşullarında UVB'nin yaklaşık %98'ini filtreleyen koruma düzeyidir.",
+  "keyDifference": "SPF 50, UVB'nin iki katını filtrelemez; doğru uygulama miktarı çok önemlidir.",
+  "practical": "Her ikisinde de UVA/UVB geniş spektrum ve yeniden uygulama dikkate alınmalıdır.",
+  "warning": "Yüksek SPF tek başına suya dayanıklılık veya görünür ışık koruması göstermez.",
+  "sourceLabel": "AAD — Sunscreen Labels",
+  "sourceUrl": "https://www.aad.org/public/everyday-care/sun-protection/shade-clothing-sunscreen/understand-sunscreen-labels",
+  "leftAtlasSlug": "gunes-koruyucu",
+  "rightAtlasSlug": "gunes-koruyucu",
+  "draft": false
+}
