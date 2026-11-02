@@ -1,0 +1,23 @@
+{
+  "name": "Beta-Glukan",
+  "category": "Takviye",
+  "summary": "Kaynağına göre farklı bağ yapısı olan polisakkarit ailesi; yulafın çözünür lifi ile maya beta-glukanı aynı değildir.",
+  "molecularFormula": "Sabit formül yok; (C6H10O5)n tekrar birimi",
+  "chemicalClass": "Beta-glikozidik bağlarla birleşmiş glukan polisakkaritleri",
+  "chemicalIdentity": "Beta-glukan, glukoz polimerleri için yapısal bir sınıf adıdır. Yulafta ağırlıkla β(1→3)/(1→4), maya ve bazı mantarlarda β(1→3)/(1→6) gibi bağ düzenleri önemlidir.",
+  "mechanism": "Viskoz yulaf beta-glukanları bağırsakta safra asidi ve kolesterol metabolizmasını etkileyebilir; maya/mantar beta-glukanlarının immunolojik etkileri farklı mekanizmalarda araştırılır.",
+  "clinical": "Yulaf ve arpa beta-glukanlarının LDL kolesterol üzerindeki etkilerine ilişkin çalışmalar bulunur; maya bağışıklık takviyeleri ayrı değerlendirilmelidir.",
+  "evidence": "Aynı gram beta-glukanın her kaynaktan benzer etki verdiğini söylemek mümkün değildir; molekül ağırlığı, çözünürlük ve üretim kritiktir.",
+  "dose": "Yulaf beta-glukanları için kardiyometabolik çalışmalar gıdadaki toplam çözünür lifle ilişkilidir; mantar ekstresine doğrudan taşınmamalıdır.",
+  "warnings": "Gaz, şişkinlik, yulaf veya diğer kaynak alerjileri ve eşzamanlı lif toleransı dikkate alınır.",
+  "interactions": "Yüksek viskoziteli lif ürünleri bazı oral ilaçların emilim zamanını etkileyebilir; zamanlama değerlendirilmeli.",
+  "labelTip": "'Beta-glukan 250 mg' ifadesinde kaynak (yulaf, maya, mantar), saflık ve beta-glukan yüzdesi var mı kontrol edin.",
+  "formulations": "Yulaf/arpada çözünür viskoz polisakkarit, mayada hücre duvarı fraksiyonu şeklinde ürünler vardır; kimyasal ve fiziksel yapıları farklıdır.",
+  "studiedPopulation": "Yüksek LDL-C'li erişkinlerin lif çalışmaları ile bağışıklık sonlanımları araştırılan gruplar ayrı kanıt kümeleridir.",
+  "pharmacistChecklist": "Kaynak, toplam gram, lif yüzdesi, IBS/FODMAP toleransı, lipid hedefi ve eşzamanlı ilaçlar incelenir.",
+  "practicalLimits": "In vitro makrofaj aktivasyonu, insanda enfeksiyondan korunma garantisi değildir.",
+  "sourceLabel": "FDA — Soluble Fiber Health Claim (21 CFR 101.81)",
+  "sourceUrl": "https://www.ecfr.gov/current/title-21/section-101.81",
+  "glossarySlug": "beta-glukan",
+  "draft": false
+}
