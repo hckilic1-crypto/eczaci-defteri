@@ -2,11 +2,23 @@
 export const prerender = true;
 import Base from '../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
+import ContentConnections from '../../components/ContentConnections.astro';
+import { atlasForGuide, termsForGuide, postsForGuide, group, link } from '../../lib/content-connections';
 export async function getStaticPaths(){
  const entries=await getCollection('labelGuides',x=>!x.data.draft);
  return entries.map(item=>({params:{slug:item.id.replace(/\.json$/,'')},props:{item}}));
 }
 const {item}=Astro.props;const d=item.data;
+const [atlases,terms,posts] = await Promise.all([
+  getCollection('atlas',x => !x.data.draft),
+  getCollection('glossary',x => !x.data.draft),
+  getCollection('posts',x => !x.data.draft)
+]);
+const readingGroups = [
+  group('01','Bileşen Atlası',atlasForGuide(item,atlases,3).map(link.atlas)),
+  group('02','Sözlük',termsForGuide(item,terms,atlases,4).map(link.term)),
+  group('03','Blog yazıları',postsForGuide(item,posts,atlases,3).map(link.post))
+];
 const schema={'@context':'https://schema.org','@type':'Article',headline:d.title,description:d.summary,mainEntityOfPage:'https://eczacidefteri.com/etiket-rehberi/'+item.id.replace(/\.json$/,'')};
 ---
 <Base title={d.title+' | Etiket Okuma Rehberi'} description={d.summary} structuredData={schema}>
@@ -23,7 +35,7 @@ const schema={'@context':'https://schema.org','@type':'Article',headline:d.title
    {d.buyingChecklist && <section><span class="library-section-label">06 / SATIN ALMA KONTROLLERİ</span><h2>Etiketteki son kontrol</h2><p>{d.buyingChecklist}</p></section>}
    {d.safetyNote && <section><span class="library-section-label">07 / GÜVENLİLİK</span><h2>Kimler dikkat etmeli?</h2><p>{d.safetyNote}</p></section>}
    <section><span class="library-section-label">08 / KAYNAK</span><h2>Bilimsel referans</h2><a class="library-source" href={d.sourceUrl} target="_blank" rel="noopener noreferrer">{d.sourceLabel} ↗</a></section>
-   {d.relatedAtlasSlug && <div class="library-connected"><span class="library-section-label">BAĞLANTILI DOSYA</span><a href={'/atlas/'+d.relatedAtlasSlug}>Bileşen Atlası'nda ayrıntılı bilgi ↗</a></div>}
+   <ContentConnections groups={readingGroups} heading="Etiketin arkasındaki bilgi" />
   </div>
   <aside class="library-disclaimer">Etiket örnekleri açıklama amaçlıdır; belirli bir ürünün tedavi etkinliğini veya uygunluğunu garanti etmez.</aside>
  </article>

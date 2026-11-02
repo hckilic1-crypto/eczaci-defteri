@@ -3,7 +3,9 @@ export const prerender = true;
 import Base from '../../layouts/Base.astro';
 import PostCard from '../../components/PostCard.astro';
 import { getCollection, render } from 'astro:content';
-import { relatedTermsForPost, glossarySlug } from '../../lib/glossary-related';
+import { relatedTermsForPost } from '../../lib/glossary-related';
+import ContentConnections from '../../components/ContentConnections.astro';
+import { atlasForPost, guidesForPost, group, link } from '../../lib/content-connections';
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts', p => !p.data.draft);
@@ -12,7 +14,15 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const termsForArticle = relatedTermsForPost(post, await getCollection('glossary', term => !term.data.draft));
-const atlasForArticle = await getCollection('atlas', item => !item.data.draft && item.data.relatedArticleSlug === post.id.replace(/\.mdoc$/, ''));
+const atlases = await getCollection('atlas', item => !item.data.draft);
+const guides = await getCollection('labelGuides', item => !item.data.draft);
+const atlasForArticle = atlasForPost(post,atlases,4);
+const guidesForArticle = guidesForPost(post,guides,atlases,3);
+const readingGroups = [
+  group('01','Bileşen Atlası', atlasForArticle.map(link.atlas)),
+  group('02','Sözlük', termsForArticle.map(link.term)),
+  group('03','Etiket Okuma Rehberi', guidesForArticle.map(link.guide))
+];
 const { Content, headings } = await render(post);
 const d = post.data;
 const categoryList = await getCollection('categories');
@@ -110,18 +120,7 @@ const structuredData = {
       )}
       <div class="journal-article-copy">
         <div class="article-body"><Content /></div>
-        {atlasForArticle.length > 0 && (
-          <nav class="article-atlas-links" aria-label="Yazıya bağlı bileşen atlası dosyaları">
-            <span class="glossary-detail-kicker">İLGİLİ BİLEŞEN DOSYALARI</span>
-            <div>{atlasForArticle.map(item => <a href={'/atlas/' + item.id.replace(/\.json$/, '')}>{item.data.name} — klinik bilgi, güvenlilik ve etiket ↗</a>)}</div>
-          </nav>
-        )}
-        {termsForArticle.length > 0 && (
-          <nav class="article-glossary-links" aria-labelledby="article-glossary-label">
-            <span class="glossary-detail-kicker" id="article-glossary-label">BU YAZIDAKİ KAVRAMLAR</span>
-            <div>{termsForArticle.map(term => <a href={'/sozluk/' + glossarySlug(term)}>{term.data.name}<span aria-hidden="true">↗</span></a>)}</div>
-          </nav>
-        )}
+        <ContentConnections groups={readingGroups} heading="Bu yazıyla bağlantılı kaynaklar" />
       </div>
     </div>
 

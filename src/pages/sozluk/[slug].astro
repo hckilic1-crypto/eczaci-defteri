@@ -2,7 +2,9 @@
 export const prerender = true;
 import Base from '../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
-import { glossarySlug, articleSlug, relatedPostsForTerm, relatedTermsForTerm } from '../../lib/glossary-related';
+import { glossarySlug, relatedPostsForTerm, relatedTermsForTerm } from '../../lib/glossary-related';
+import ContentConnections from '../../components/ContentConnections.astro';
+import { atlasForTerm, guidesForTerm, link, group } from '../../lib/content-connections';
 
 export async function getStaticPaths(){
   const terms=await getCollection('glossary', t=>!t.data.draft);
@@ -17,7 +19,15 @@ const slug=term.id.replace(/\.json$/,'').split('/').pop();
 const glossaryEntries = await getCollection('glossary', t => !t.data.draft);
 const others = relatedTermsForTerm(term, glossaryEntries);
 const relatedArticles = relatedPostsForTerm(term, await getCollection('posts', p => !p.data.draft));
-const atlasMatches = await getCollection('atlas', item => !item.data.draft && item.data.glossarySlug === slug);
+const atlases = await getCollection('atlas', item => !item.data.draft);
+const guides = await getCollection('labelGuides', item => !item.data.draft);
+const relatedAtlas = atlasForTerm(term,atlases,3);
+const relatedGuides = guidesForTerm(term,atlases,guides,3);
+const readingGroups = [
+  group('01','Bileşen Atlası',relatedAtlas.map(link.atlas)),
+  group('02','Blog yazıları',relatedArticles.map(link.post)),
+  group('03','Etiket Okuma Rehberi',relatedGuides.map(link.guide))
+];
 const structuredData={
   '@context':'https://schema.org',
   '@type':'DefinedTerm',
@@ -56,29 +66,8 @@ const structuredData={
         </section>
       )}
     </div>
-    {atlasMatches.length > 0 && (
-      <nav class="glossary-atlas-bridge" aria-label="Bileşen atlasında detaylı inceleme">
-        <span class="library-section-label">İLGİLİ BİLEŞEN DOSYASI</span>
-        <h2>Tanımdan ayrıntıya</h2>
-        <p>Etki mekanizması, klinik bağlam, etkileşim ve etiket okuma notları için atlas dosyasına geçin.</p>
-        {atlasMatches.map(item => <a href={'/atlas/'+item.id.replace(/\.json$/,'')}>{item.data.name} — Bileşen Atlası ↗</a>)}
-      </nav>
-    )}
+    <ContentConnections groups={readingGroups} heading="Bu kavramı daha ayrıntılı keşfedin" />
     <nav class="glossary-entry-back"><a href="/sozluk">← Sözlükteki tüm terimler</a></nav>
-    {relatedArticles.length > 0 && (
-      <section class="glossary-entry-articles" aria-labelledby="glossary-article-heading">
-        <div class="journal-section-heading"><div><span class="journal-eyebrow">DAHA FAZLA OKU</span><h2 id="glossary-article-heading">İlgili yazılar</h2></div></div>
-        <div class="glossary-article-list">
-          {relatedArticles.map(post => (
-            <a href={'/yazi/' + articleSlug(post)}>
-              <strong>{post.data.title}</strong>
-              <span>{post.data.excerpt}</span>
-              <small>Yazıyı oku ↗</small>
-            </a>
-          ))}
-        </div>
-      </section>
-    )}
     {others.length > 0 && (
       <aside class="glossary-entry-related">
         <div class="journal-section-heading"><div><span class="journal-eyebrow">BAĞLANTILI KAVRAMLAR</span><h2>İlgili terimler</h2></div></div>
