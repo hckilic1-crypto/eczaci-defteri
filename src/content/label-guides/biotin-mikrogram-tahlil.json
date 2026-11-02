@@ -1,0 +1,17 @@
+{
+  "title": "Biyotin Etiketi: 5.000 µg Ne Demek, Tahlili Etkiler mi?",
+  "category": "Vitamin",
+  "summary": "Biyotin içeren saç-tırnak ürünlerinde mikrogram/miligram dönüşümünü, gerçek günlük miktarı ve laboratuvar testi girişimi riskini doğru okuyun.",
+  "label": "Biyotin (Vitamin B7) — 5.000 µg / günlük porsiyon",
+  "meaning": "5.000 µg biyotin = 5 mg biyotin demektir. Bu bir beslenme gereksinimi değil, ürünün beyan ettiği günlük miktardır. NIH yetişkin AI 30 µg/gün, EFSA AI 40 µg/gündür; yüksek dozun kozmetik yararı bu farktan çıkarılamaz.",
+  "example": "Bir kapsül 2.500 µg biyotin içeriyor ve kullanım önerisi iki kapsülse günlük toplam 5.000 µg yani 5 mg olur. Başka B kompleks ürünündeki biyotin de toplam alıma eklenir.",
+  "calculation": "5.000 µg ÷ 1.000 = 5 mg. 5.000 ÷ 30 ≈ 167 (ABD yetişkin AI'na göre); 5.000 ÷ 40 = 125 (EFSA yetişkin AI'na göre). Bu oranlar toksisite ya da klinik yarar oranları değildir.",
+  "pitfall": "5.000 µg ifadesini 5.000 mg sanmak; ya da etikette büyük sayı olduğundan saç dökülmesinde daha etkili olacağını varsaymak. Tahlil etkisini yalnız ilaç etkileşimi olarak değerlendirmek.",
+  "checklist": "Günlük porsiyon, toplam mg/µg, saç dökülmesinin nedeni, birden çok takviye kullanımı, planlanan tiroid/hormon veya troponin testi ve son alınan doz.",
+  "buyingChecklist": "Biotin miktarı ürün başına mı kapsül başına mı yazıyor? Bir porsiyon kaç kapsül? Başka ürünlerde B7 var mı? Tahlil tarihi yakında mı? Ürünün kullanım amacı eksiklik tedavisi mi kozmetik destek mi?",
+  "safetyNote": "Yüksek doz biyotin belirli streptavidin-biyotin temelli laboratuvar testlerinde yalancı yüksek/yalancı düşük sonuçlara neden olabilir; özellikle bazı troponin testlerinde yanlış düşük sonuçlar ciddi klinik risk oluşturur. Bırakma süresi laboratuvar ve hekim tarafından teste göre belirlenir. Kalıtsal metabolik hastalık için reçetelenen biyotin kendi kendine kesilmemelidir.",
+  "sourceLabel": "AACC — Biotin Interference Guidance (2020)",
+  "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/32445355/",
+  "relatedAtlasSlug": "biotin",
+  "draft": false
+}
