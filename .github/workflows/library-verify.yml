@@ -16,6 +16,15 @@ jobs:
         run: npm ci
       - name: Validate library references
         run: npm run validate:library
+      - name: Report editorial SEO issues
+        run: npm run audit:seo
+      - name: Upload SEO reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-audit
+          path: reports/seo-audit.*
+          if-no-files-found: ignore
       - name: Compile Astro site
         env:
           ENABLE_KEYSTATIC: 'false'
