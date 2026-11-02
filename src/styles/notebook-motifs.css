@@ -1,0 +1,105 @@
+/* ECZACI DEFTERİ · distinctive notebook motifs.
+   Decoration stays OUTSIDE text columns; no ruled body backgrounds. */
+.journal-intro--notebook{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(260px,345px);
+  align-items:center;
+  column-gap:clamp(26px,4vw,70px);
+  padding-top:43px;
+  padding-bottom:40px;
+}
+.journal-intro-copy{min-width:0;position:relative}
+.journal-intro-copy h1{max-width:730px;margin:20px 0 16px}
+.journal-intro-copy>p{
+  max-width:700px;
+  margin:0;
+  color:#4b5b50;
+  font:400 clamp(15px,1.6vw,17px)/1.8 var(--sans,system-ui);
+}
+.notebook-intro-signature{
+  display:flex;align-items:center;gap:15px;max-width:480px;margin-top:29px;
+  font:650 9px/1.5 var(--sans,system-ui);letter-spacing:.14em;color:#7e9480
+}
+.notebook-intro-signature i{height:1px;flex:1;background:#c6d4c4}
+.notebook-scene{
+  min-width:0;max-width:360px;width:100%;
+  justify-self:end;position:relative;
+  padding:12px 0 0;
+  isolation:isolate;
+}
+.notebook-scene svg{display:block;width:100%;height:auto;overflow:visible}
+.notebook-scene-index{
+  position:absolute;top:14px;right:3px;
+  font:700 9px/1.4 var(--sans,system-ui);
+  letter-spacing:.15em;color:#79927e
+}
+.notebook-scene-caption{display:flex;justify-content:space-between;margin-top:-7px;gap:10px;padding:0 15px}
+.notebook-scene-caption span{font:700 9px/1.4 var(--sans,system-ui);letter-spacing:.12em;color:#819484}
+.notebook-scene-pen{
+  animation:ed-pen-drift 5.2s ease-in-out infinite;
+  transform-box:fill-box;transform-origin:50% 65%;
+}
+.notebook-scene-ink{
+  stroke-dasharray:135;stroke-dashoffset:135;
+  animation:ed-ink-write 2.5s ease-out 0.2s forwards;
+}
+@keyframes ed-pen-drift{
+  0%,100%{transform:translate(0,0) rotate(0)}
+  50%{transform:translate(1px,-5px) rotate(-1deg)}
+}
+@keyframes ed-ink-write{to{stroke-dashoffset:0}}
+.notebook-section-folio{
+  display:flex;justify-content:space-between;align-items:center;
+  margin:-7px 0 16px;padding:0 3px 10px;
+  border-bottom:1px solid #d8e0d5;
+  color:#718775;font:700 9px/1.5 var(--sans,system-ui);letter-spacing:.17em;
+}
+.notebook-section-folio--library{margin-top:0}
+.notebook-library-feature{position:relative;isolation:isolate}
+.notebook-card-bookmark{
+  position:absolute;right:32px;top:-1px;width:23px;height:51px;
+  background:#9d6556;
+  clip-path:polygon(0 0,100% 0,100% 100%,50% 75%,0 100%);
+  opacity:.68;pointer-events:none;
+}
+.notebook-library-feature .library-home-top,
+.notebook-library-feature>strong,
+.notebook-library-feature>span:nth-last-child(2){
+  position:relative;z-index:1
+}
+@media(min-width:1050px){
+  .journal-intro--notebook{min-height:370px}
+  .library-home{position:relative}
+  .library-home::after{
+    content:"INDEX  /  E.D.";
+    display:block;position:absolute;right:3px;bottom:24px;
+    font:700 9px/1.2 var(--sans,system-ui);letter-spacing:.18em;color:#9bae9e
+  }
+}
+@media(max-width:1000px){
+  .journal-intro--notebook{grid-template-columns:minmax(0,1fr) 270px;column-gap:20px}
+}
+@media(max-width:820px){
+  .journal-intro--notebook{grid-template-columns:minmax(0,1fr) 210px;gap:20px}
+  .journal-intro-copy h1{font-size:clamp(38px,5.9vw,57px)}
+  .notebook-scene-caption{display:none}
+  .notebook-scene-index{display:none}
+}
+@media(max-width:600px){
+  .journal-intro--notebook{
+    grid-template-columns:1fr;
+    gap:4px;
+    padding:34px 0 25px;
+  }
+  .journal-intro-copy h1{font-size:clamp(40px,10.3vw,62px);margin-top:19px}
+  .journal-intro-copy>p{font-size:15px;line-height:1.76}
+  .notebook-intro-signature{margin-top:22px}
+  .notebook-scene{justify-self:end;width:min(100%,230px);margin:-4px 0 0;height:171px;overflow:hidden}
+  .notebook-scene svg{margin-top:-26px}
+  .notebook-section-folio{margin-top:0}
+  .notebook-card-bookmark{right:21px;width:19px;height:40px}
+}
+@media(prefers-reduced-motion:reduce){
+  .notebook-scene-pen{animation:none}
+  .notebook-scene-ink{animation:none;stroke-dasharray:none;stroke-dashoffset:0}
+}

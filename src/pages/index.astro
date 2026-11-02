@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import NotebookVisual from '../components/NotebookVisual.astro';
 import PostCard from '../components/PostCard.astro';
 import { getCollection } from 'astro:content';
 
@@ -23,10 +24,14 @@ const dateLabel = p => new Intl.DateTimeFormat('tr-TR',{day:'numeric',month:'lon
   title="Eczacı Defteri | Eczacılık, Takviyeler ve Dermokozmetik"
   description="Eczacılık, takviye edici gıdalar, dermokozmetik ve sağlık üzerine kaynaklı değerlendirmeler. Eczacı Defteri'nde bilgiyi kanıtıyla okuyun."
 >
-  <header class="shell journal-intro">
-    <div class="journal-intro-label"><span class="journal-signet" aria-hidden="true">ED</span><span>BAĞIMSIZ ECZACILIK YAYINI</span></div>
-    <h1>Sağlık bilgisini <em>kaynağından</em> okuyun.</h1>
-    <p>İlaçları, takviyeleri ve cilt bakımını; kullanım alanları, bilimsel kanıtlar ve eczacılık pratiği üzerinden ele alan bir not defteri.</p>
+  <header class="shell journal-intro journal-intro--notebook">
+    <div class="journal-intro-copy">
+      <div class="journal-intro-label"><span class="journal-signet" aria-hidden="true">ED</span><span>BAĞIMSIZ ECZACILIK YAYINI</span></div>
+      <h1>Sağlık bilgisini <em>kaynağından</em> okuyun.</h1>
+      <p>İlaçları, takviyeleri ve cilt bakımını; kullanım alanları, bilimsel kanıtlar ve eczacılık pratiği üzerinden ele alan bir not defteri.</p>
+      <div class="notebook-intro-signature" aria-hidden="true"><span>NOTLAR & KAYNAKLAR</span><i></i><span>01 / 03</span></div>
+    </div>
+    <NotebookVisual />
   </header>
 
   {featured && (
@@ -62,6 +67,7 @@ const dateLabel = p => new Intl.DateTimeFormat('tr-TR',{day:'numeric',month:'lon
       <div><span class="journal-eyebrow">ECZACI DEFTERİ / KEŞFET</span><h2 id="journal-topics-title">Konular</h2></div>
       <span class="journal-topics-aside">Merak ettiğiniz alandan başlayın.</span>
     </div>
+    <div class="notebook-section-folio" aria-hidden="true"><span>YAZI ARŞİVİ</span><span>NO. 02</span></div>
     <div class="journal-topics-grid">
       {topCategories.map((cat, index) => {
         const slug=cat.id.replace(/\.json$/,'').split('/').pop();
@@ -84,8 +90,10 @@ const dateLabel = p => new Intl.DateTimeFormat('tr-TR',{day:'numeric',month:'lon
       <span class="library-home-index">DEFTER / 01—03</span>
     </div>
     <p class="library-home-intro">Bir terimden bilimsel çalışmaya, bir bileşenden güvenlilik değerlendirmesine. Konuları not defteri düzeninde birbirine bağladık.</p>
+    <div class="notebook-section-folio notebook-section-folio--library" aria-hidden="true"><span>REFERANS DEFTERİ</span><span>NO. 03</span></div>
     <div class="library-home-grid">
-      <a class="library-home-card library-home-feature" href="/atlas">
+      <a class="library-home-card library-home-feature notebook-library-feature" href="/atlas">
+        <span class="notebook-card-bookmark" aria-hidden="true"></span>
         <span class="library-home-top"><small>01 / BİLEŞENLER</small><span aria-hidden="true">↗</span></span>
         <span class="library-home-symbol" aria-hidden="true">A—Z</span>
         <strong>Bileşen Atlası</strong>
