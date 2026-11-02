@@ -250,8 +250,8 @@ repo: 'hckilic1-crypto/eczaci-defteri'  },
         labelTip: fields.text({ label: 'Etiket okuma ipucu', multiline: true }),
         sourceLabel: fields.text({ label: 'Kaynak adı' }),
         sourceUrl: fields.url({ label: 'Kaynak URL' }),
-        glossarySlug: fields.text({ label: 'Sözlük dosya adı (uzantısız)' }),
-        relatedArticleSlug: fields.text({ label: 'İlgili yazı slug (opsiyonel)' }),
+        glossarySlug: fields.relationship({ label: 'Sözlük terimi', collection: 'glossary' }),
+        relatedArticleSlug: fields.relationship({ label: 'İlgili blog yazısı', collection: 'posts' }),
         draft: fields.checkbox({ label: 'Taslak', defaultValue: false })
       }
     }),
@@ -270,7 +270,7 @@ repo: 'hckilic1-crypto/eczaci-defteri'  },
         checklist: fields.text({ label: 'Kontrol noktası', multiline: true }),
         sourceLabel: fields.text({ label: 'Kaynak' }),
         sourceUrl: fields.url({ label: 'Kaynak URL' }),
-        relatedAtlasSlug: fields.text({ label: 'İlgili atlas slug' }),
+        relatedAtlasSlug: fields.relationship({ label: 'İlgili bileşen', collection: 'atlas' }),
         draft: fields.checkbox({ label: 'Taslak', defaultValue: false })
       }
     }),
@@ -294,7 +294,7 @@ repo: 'hckilic1-crypto/eczaci-defteri'  },
         practical: fields.text({ label: 'Uygulama notu', multiline: true }),
         sourceLabel: fields.text({ label: 'Kaynak' }),
         sourceUrl: fields.url({ label: 'Kaynak URL' }),
-        relatedAtlasSlug: fields.text({ label: 'İlgili atlas slug' }),
+        relatedAtlasSlug: fields.relationship({ label: 'İlgili bileşen', collection: 'atlas' }),
         draft: fields.checkbox({ label: 'Taslak', defaultValue: false })
       }
     }),
@@ -315,8 +315,8 @@ repo: 'hckilic1-crypto/eczaci-defteri'  },
         warning: fields.text({ label: 'Güvenlilik notu', multiline: true }),
         sourceLabel: fields.text({ label: 'Kaynak' }),
         sourceUrl: fields.url({ label: 'Kaynak URL' }),
-        leftAtlasSlug: fields.text({ label: 'İlk atlas slug' }),
-        rightAtlasSlug: fields.text({ label: 'İkinci atlas slug' }),
+        leftAtlasSlug: fields.relationship({ label: 'İlk bileşenin atlas dosyası', collection: 'atlas' }),
+        rightAtlasSlug: fields.relationship({ label: 'İkinci bileşenin atlas dosyası', collection: 'atlas' }),
         draft: fields.checkbox({ label: 'Taslak', defaultValue: false })
       }
     }),
