@@ -1,0 +1,32 @@
+---
+export const prerender = true;
+import Base from '../../layouts/Base.astro';
+import HealthCalculator from '../../components/HealthCalculator.astro';
+const schema = {'@context':'https://schema.org','@type':'WebPage',
+  name:"Vücut Kitle İndeksi (VKİ) Hesaplama",url:'https://eczacidefteri.com/araclar/vucut-kitle-indeksi',
+  description:"Boy ve ağırlığınızı girerek yetişkin VKİ sınıflamasını, formülü ve yorum sınırlarını görün."};
+---
+<Base title="Vücut Kitle İndeksi (VKİ) Hesaplama | Eczacı Defteri" description="Boy ve ağırlığınızı girerek yetişkin VKİ sınıflamasını, formülü ve yorum sınırlarını görün." structuredData={schema}>
+  <div class="shell hc-page">
+    <nav class="article-breadcrumbs" aria-label="Gezinme yolu">
+      <a href="/">Anasayfa</a><span class="article-crumb-sep">/</span><a href="/araclar">Sağlık Araçları</a><span class="article-crumb-sep">/</span><span aria-current="page">Vücut kitle indeksi hesaplayıcı</span>
+    </nav>
+    <header class="hc-page-head"><span class="library-index-kicker">ECZACI DEFTERİ / SAĞLIK ARAÇLARI</span>
+      <h1>Vücut Kitle İndeksi (VKİ) Hesaplama</h1><p>Boy ve ağırlığınızı girerek yetişkin VKİ sınıflamasını, formülü ve yorum sınırlarını görün.</p>
+    </header>
+    <div class="hc-detail-grid">
+      <div>
+        <HealthCalculator mode="bmi" />
+        <section class="hc-article"><span class="hc-article-label">YÖNTEM / 01</span><h2>Vücut kitle indeksi nedir?</h2><p>Vücut kitle indeksi, kilogram cinsinden ağırlığın metre cinsinden boyun karesine bölünmesidir. Yetişkinlerde düşük ağırlık, referans aralık, fazla kilo ve obezite sınıflarını taramak için kullanılır. Tek başına bir hastalık tanısı değildir.</p><h3>Yetişkin VKİ aralıkları</h3><div class="hc-reference-list"><span>18,5'in altı</span><strong>Düşük ağırlık</strong><span>18,5–24,9</span><strong>Referans aralığı</strong><span>25,0–29,9</span><strong>Fazla kilo</strong><span>30,0 ve üzeri</span><strong>Obezite (sınıf I–III)</strong></div><h3>Kimlerde yanıltıcı olabilir?</h3><p>Çocuklarda ve ergenlerde yaşa ve cinsiyete göre persantil gerekir. Gebelikte, yüksek kas kütlesi olanlarda ve yaşlılarda VKİ sonuçlarını yalnız başına yorumlamak doğru olmaz. Bel/boy oranı, klinik durum ve gerekli laboratuvar göstergeleriyle birlikte değerlendirilir.</p></section>
+        <div class="hc-sources"><span>YÖNTEM KAYNAĞI</span><a href="https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html" rel="noopener noreferrer" target="_blank">CDC — Adult BMI Categories ↗</a></div>
+        <aside class="library-disclaimer">Bu hesaplamalar yalnızca yetişkinler için genel bilgilendirme amaçlıdır; tanı, beslenme reçetesi veya kişiye özel tedavi kararı yerine geçmez. Belirtiler, hastalıklar ve ilaç tedavileri klinik değerlendirmeyi gerektirir.</aside>
+      </div>
+      <aside class="hc-side">
+        <div class="hc-side-title">DİĞER HESAPLAMALAR</div>
+        <a href="/araclar/bel-boy-orani">Bel boy oranı hesaplayıcı <span aria-hidden="true">↗</span></a>
+        <a href="/araclar/bazal-metabolizma">Bazal metabolizma hesaplayıcı <span aria-hidden="true">↗</span></a>
+        <a href="/araclar">Tüm araçlara dön <span aria-hidden="true">↗</span></a>
+      </aside>
+    </div>
+  </div>
+</Base>

@@ -1,0 +1,32 @@
+---
+export const prerender = true;
+import Base from '../../layouts/Base.astro';
+import HealthCalculator from '../../components/HealthCalculator.astro';
+const schema = {'@context':'https://schema.org','@type':'WebPage',
+  name:"Bazal Metabolizma ve Günlük Enerji Tahmini",url:'https://eczacidefteri.com/araclar/bazal-metabolizma',
+  description:"Mifflin–St Jeor denklemiyle dinlenme enerji tüketimini ve etkinlik düzeyine bağlı kaba günlük enerji aralığını inceleyin."};
+---
+<Base title="Bazal Metabolizma ve Günlük Enerji Tahmini | Eczacı Defteri" description="Mifflin–St Jeor denklemiyle dinlenme enerji tüketimini ve etkinlik düzeyine bağlı kaba günlük enerji aralığını inceleyin." structuredData={schema}>
+  <div class="shell hc-page">
+    <nav class="article-breadcrumbs" aria-label="Gezinme yolu">
+      <a href="/">Anasayfa</a><span class="article-crumb-sep">/</span><a href="/araclar">Sağlık Araçları</a><span class="article-crumb-sep">/</span><span aria-current="page">Bazal metabolizma hesaplayıcı</span>
+    </nav>
+    <header class="hc-page-head"><span class="library-index-kicker">ECZACI DEFTERİ / SAĞLIK ARAÇLARI</span>
+      <h1>Bazal Metabolizma ve Günlük Enerji Tahmini</h1><p>Mifflin–St Jeor denklemiyle dinlenme enerji tüketimini ve etkinlik düzeyine bağlı kaba günlük enerji aralığını inceleyin.</p>
+    </header>
+    <div class="hc-detail-grid">
+      <div>
+        <HealthCalculator mode="energy" />
+        <section class="hc-article"><span class="hc-article-label">YÖNTEM / 03</span><h2>Bu araç neyi hesaplıyor?</h2><p>Mifflin–St Jeor denklemi boy, ağırlık, yaş ve çalışmadaki biyolojik cinsiyet kategorisi üzerinden <strong>dinlenme enerji harcamasını (REE)</strong> tahmin eder. REE, sıkça bazal metabolizma adıyla gösterilse de gerçek bazal metabolik hızın ölçüm koşulları farklıdır.</p><h3>Günlük enerji tahmini neden değişebilir?</h3><p>Günlük enerji tahmini, dinlenme harcaması üzerine seçilen aktivite katsayısının uygulanmasıyla elde edilen kaba bir modeldir. İş, uyku, egzersiz, vücut kompozisyonu ve hastalık gibi faktörler gerçek harcamayı belirgin etkiler. Aktivite katsayıları bireysel olarak doğrulanmış ölçümler değildir.</p><h3>Kimlerde kullanılmamalı veya dikkatle yorumlanmalı?</h3><p>Gebelik, emzirme, çocukluk, kritik hastalık, ileri yaş, belirgin ödem veya ciddi metabolik hastalıklarda bu basit tahminle beslenme tedavisi düzenlenmez. Denklemin özgün çalışması sağlıklı, 19–78 yaş arası erişkinleri içermiştir.</p></section>
+        <div class="hc-sources"><span>YÖNTEM KAYNAĞI</span><a href="https://pubmed.ncbi.nlm.nih.gov/2305711/" rel="noopener noreferrer" target="_blank">Mifflin ve ark. (1990) — American Journal of Clinical Nutrition ↗</a></div>
+        <aside class="library-disclaimer">Bu hesaplamalar yalnızca yetişkinler için genel bilgilendirme amaçlıdır; tanı, beslenme reçetesi veya kişiye özel tedavi kararı yerine geçmez. Belirtiler, hastalıklar ve ilaç tedavileri klinik değerlendirmeyi gerektirir.</aside>
+      </div>
+      <aside class="hc-side">
+        <div class="hc-side-title">DİĞER HESAPLAMALAR</div>
+        <a href="/araclar/vucut-kitle-indeksi">Vücut kitle indeksi hesaplayıcı <span aria-hidden="true">↗</span></a>
+        <a href="/araclar/bel-boy-orani">Bel boy oranı hesaplayıcı <span aria-hidden="true">↗</span></a>
+        <a href="/araclar">Tüm araçlara dön <span aria-hidden="true">↗</span></a>
+      </aside>
+    </div>
+  </div>
+</Base>

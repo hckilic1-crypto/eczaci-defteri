@@ -1,0 +1,25 @@
+---
+export const prerender = true;
+import Base from '../../layouts/Base.astro';
+const schema = {'@context':'https://schema.org','@type':'CollectionPage',
+  name:'Sağlık Araçları | Eczacı Defteri',
+  description:'Yetişkinler için kaynaklı sağlık hesaplayıcıları: VKİ, bel/boy oranı ve dinlenme enerji harcaması.',
+  url:'https://eczacidefteri.com/araclar'};
+---
+<Base title="Sağlık Araçları | Eczacı Defteri" description="Yetişkinler için VKİ, bel/boy oranı, bazal metabolizma ve günlük enerji tahmini araçları. Kaynaklı, ücretsiz, mobil uyumlu." structuredData={schema}>
+  <div class="shell hc-hub">
+    <nav class="article-breadcrumbs" aria-label="Gezinme yolu"><a href="/">Anasayfa</a><span class="article-crumb-sep">/</span><span aria-current="page">Sağlık Araçları</span></nav>
+    <header class="hc-page-head">
+      <span class="library-index-kicker">ECZACI DEFTERİ / ETKİLEŞİMLİ KÜTÜPHANE</span>
+      <h1>Sağlık Araçları<span class="library-head-period">.</span></h1>
+      <p>Rakamları yalnızca hesaplamıyoruz. Formülü, klinik yorumunu ve nerede yanıltıcı olabileceğini de gösteriyoruz.</p>
+      <div class="library-head-meta"><span>03 araç</span><span>Bilimsel referanslar</span><span>Veriler cihazınızda</span></div>
+    </header>
+    <div class="hc-tool-grid">
+      <a class="hc-tool-card" href="/araclar/vucut-kitle-indeksi"><small>01 / ANTROPOMETRİ</small><span class="hc-card-mark">kg/m²</span><h2>Vücut Kitle İndeksi</h2><p>Boy ve kilodan yetişkin VKİ hesaplama ve sınıflandırma.</p><strong>Hesaplamayı aç ↗</strong></a>
+      <a class="hc-tool-card" href="/araclar/bel-boy-orani"><small>02 / SANTRAL ADİPOZİTE</small><span class="hc-card-mark">0,5</span><h2>Bel / Boy Oranı</h2><p>Bel çevresini boyla karşılaştırarak merkezi yağlanma riskini tarama.</p><strong>Hesaplamayı aç ↗</strong></a>
+      <a class="hc-tool-card" href="/araclar/bazal-metabolizma"><small>03 / ENERJİ METABOLİZMASI</small><span class="hc-card-mark">kcal</span><h2>Bazal Metabolizma</h2><p>Mifflin–St Jeor ile dinlenme enerji harcaması ve aktiviteye göre tahmini günlük enerji.</p><strong>Hesaplamayı aç ↗</strong></a>
+    </div>
+    <div class="hc-hub-footnote"><span>DEFTER NOTU / 01</span><p>Bu araçlar tarama ve eğitim amaçlıdır. Çocuklar, gebeler ve özel klinik gruplarda farklı değerlendirme yöntemleri gerekebilir.</p></div>
+  </div>
+</Base>
