@@ -1,0 +1,9 @@
+{
+  "name": "Serum Demiri",
+  "category": "Laboratuvar ve Tanı",
+  "definition": "Kanda transferrine bağlı taşınan demir miktarını değerlendiren ölçümdür.",
+  "explanation": "Gün içi değişkenlik gösterdiğinden ferritin ve TSAT ile birlikte yorumlanır.",
+  "sourceLabel": "MedlinePlus – Medical Tests",
+  "sourceUrl": "https://medlineplus.gov/lab-tests/",
+  "draft": false
+}

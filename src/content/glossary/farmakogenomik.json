@@ -1,0 +1,9 @@
+{
+  "name": "Farmakogenomik",
+  "category": "Farmakoloji",
+  "definition": "Genom çapındaki farklılıklarla ilaç yanıtı arasındaki ilişkileri inceleyen alandır.",
+  "explanation": "Farmakogenetikle örtüşür ancak daha geniş genomik yaklaşımlar içerebilir.",
+  "sourceLabel": "CPIC – Pharmacogenetic Guidelines",
+  "sourceUrl": "https://cpicpgx.org/guidelines/",
+  "draft": false
+}

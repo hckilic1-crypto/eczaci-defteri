@@ -1,0 +1,9 @@
+{
+  "name": "Fenotip",
+  "category": "Farmakoloji",
+  "definition": "Genetik yapı ve çevre etkileşimiyle ortaya çıkan gözlemlenebilir özelliktir.",
+  "explanation": "CYP metabolize edici fenotipi genetik ve ilaç etkileriyle değişebilir.",
+  "sourceLabel": "NCBI – Medical Genetics Summaries",
+  "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK61999/",
+  "draft": false
+}

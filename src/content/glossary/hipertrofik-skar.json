@@ -1,0 +1,9 @@
+{
+  "name": "Hipertrofik Skar",
+  "category": "Dermokozmetik",
+  "definition": "Yara sınırları içinde kalan kabarık skar dokusudur.",
+  "explanation": "Keloidden farklı olarak genellikle ilk yara sınırlarını aşmaz.",
+  "sourceLabel": "DermNet – Dermatology Glossary",
+  "sourceUrl": "https://dermnetnz.org/glossary",
+  "draft": false
+}

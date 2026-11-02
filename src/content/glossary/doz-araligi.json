@@ -1,0 +1,9 @@
+{
+  "name": "Doz Aralığı",
+  "category": "Farmakoloji",
+  "definition": "İlaç uygulamaları arasında geçen süreyi ifade eden farmakokinetik ve klinik parametredir.",
+  "explanation": "Yarılanma ömrü yanında hedef konsantrasyon ve farmakodinami de önemlidir.",
+  "sourceLabel": "NCBI Bookshelf – Pharmacokinetics",
+  "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK557744/",
+  "draft": false
+}

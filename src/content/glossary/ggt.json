@@ -1,0 +1,9 @@
+{
+  "name": "GGT (Gama-Glutamil Transferaz)",
+  "category": "Laboratuvar ve Tanı",
+  "definition": "Karaciğer ve safra yolu hastalıklarının değerlendirmesinde kullanılan enzim ölçümüdür.",
+  "explanation": "Tek başına artışının birçok nedeni olabilir.",
+  "sourceLabel": "MedlinePlus – Liver Function Tests",
+  "sourceUrl": "https://medlineplus.gov/lab-tests/liver-function-tests/",
+  "draft": false
+}

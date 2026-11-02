@@ -1,0 +1,9 @@
+{
+  "name": "Alkalen Fosfataz (ALP)",
+  "category": "Laboratuvar ve Tanı",
+  "definition": "Karaciğer, safra yolları ve kemik dahil dokularda bulunan enzim ailesinin serum aktivitesidir.",
+  "explanation": "Yüksekliği organ kaynağı belirlenmeden özgül tanı koydurmaz.",
+  "sourceLabel": "MedlinePlus – Liver Function Tests",
+  "sourceUrl": "https://medlineplus.gov/lab-tests/liver-function-tests/",
+  "draft": false
+}

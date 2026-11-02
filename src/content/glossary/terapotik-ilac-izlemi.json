@@ -1,0 +1,9 @@
+{
+  "name": "Terapötik İlaç İzlemi (TDM)",
+  "category": "Farmakoloji",
+  "definition": "Belirli ilaçların konsantrasyonlarının doz ayarına yardımcı olmak üzere ölçülmesidir.",
+  "explanation": "Örnek alma zamanı ve hedef terapötik aralık birlikte değerlendirilir.",
+  "sourceLabel": "NCBI Bookshelf – Pharmacokinetics",
+  "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK557744/",
+  "draft": false
+}

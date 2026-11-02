@@ -1,0 +1,9 @@
+{
+  "name": "Direkt Bilirubin",
+  "category": "Laboratuvar ve Tanı",
+  "definition": "Laboratuvar yöntemine bağlı olarak ağırlıklı konjuge bilirubini yansıtan ölçümdür.",
+  "explanation": "Total bilirubinin tümünden farklıdır; fraksiyonlar ayırıcı tanıya yardımcıdır.",
+  "sourceLabel": "MedlinePlus – Liver Function Tests",
+  "sourceUrl": "https://medlineplus.gov/lab-tests/liver-function-tests/",
+  "draft": false
+}

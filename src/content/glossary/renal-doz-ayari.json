@@ -1,0 +1,9 @@
+{
+  "name": "Renal Doz Ayarlaması",
+  "category": "Farmakoloji",
+  "definition": "İlaç dozunun veya uygulama aralığının böbrek işlevine göre değiştirilmesidir.",
+  "explanation": "Her ilaç için eGFR ve kreatinin klirensi aynı hesapta kullanılamaz.",
+  "sourceLabel": "NCBI Bookshelf – Pharmacokinetics",
+  "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK557744/",
+  "draft": false
+}

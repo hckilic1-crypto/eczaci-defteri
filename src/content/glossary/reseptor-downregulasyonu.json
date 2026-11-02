@@ -1,0 +1,9 @@
+{
+  "name": "Reseptör Downregülasyonu",
+  "category": "Farmakoloji",
+  "definition": "Hücre yüzeyinde veya toplamda işlevsel reseptör sayısının azalmasıdır.",
+  "explanation": "Tekrarlayan agonist maruziyeti bazı sistemlerde bu etkiyi oluşturabilir.",
+  "sourceLabel": "NCBI Bookshelf – Pharmacodynamics",
+  "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK507791/",
+  "draft": false
+}

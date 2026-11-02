@@ -1,0 +1,9 @@
+{
+  "name": "Lipit Profili",
+  "category": "Laboratuvar ve Tanı",
+  "definition": "Kan lipid parametrelerini birlikte inceleyen kolesterol ve trigliserit testleri grubudur.",
+  "explanation": "Açlık gerekliliği testin amacı ve klinik duruma göre değişebilir.",
+  "sourceLabel": "MedlinePlus – Cholesterol Levels",
+  "sourceUrl": "https://medlineplus.gov/lab-tests/cholesterol-levels/",
+  "draft": false
+}

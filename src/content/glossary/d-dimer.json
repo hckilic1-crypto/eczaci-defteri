@@ -1,0 +1,9 @@
+{
+  "name": "D-Dimer",
+  "category": "Laboratuvar ve Tanı",
+  "definition": "Çapraz bağlı fibrinin yıkımıyla oluşan ve kanda ölçülebilen parçalanma ürünüdür.",
+  "explanation": "Yüksekliği tromboz için özgül değildir; klinik olasılıkla birlikte yorumlanır.",
+  "sourceLabel": "MedlinePlus – Medical Tests",
+  "sourceUrl": "https://medlineplus.gov/lab-tests/",
+  "draft": false
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Farmakogenetik Test",
+  "category": "Farmakoloji",
+  "definition": "İlaç yanıtıyla ilişkilendirilmiş belirli genetik varyantları belirleyen analizdir.",
+  "explanation": "Klinik eyleme geçirilebilirlik ilaca ve kullanılan kılavuza bağlıdır.",
+  "sourceLabel": "CPIC – Pharmacogenetic Guidelines",
+  "sourceUrl": "https://cpicpgx.org/guidelines/",
+  "draft": false
+}

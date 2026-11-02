@@ -1,0 +1,9 @@
+{
+  "name": "Aktif Metabolit",
+  "category": "Farmakoloji",
+  "definition": "Ana maddenin biyotransformasyonu sonucu oluşan ve biyolojik etki gösteren üründür.",
+  "explanation": "Bir ilacın etkisi kısmen veya büyük ölçüde aktif metabolitine bağlı olabilir.",
+  "sourceLabel": "NCBI Bookshelf – Pharmacokinetics",
+  "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK557744/",
+  "draft": false
+}

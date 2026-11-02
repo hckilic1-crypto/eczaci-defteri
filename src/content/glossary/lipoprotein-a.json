@@ -1,0 +1,9 @@
+{
+  "name": "Lipoprotein(a) [Lp(a)]",
+  "category": "Laboratuvar ve Tanı",
+  "definition": "LDL benzeri parçacığa apolipoprotein(a) bağlanmasıyla oluşan lipoproteindir.",
+  "explanation": "Düzeyi büyük ölçüde kalıtsaldır ve kardiyovasküler risk değerlendirmesinde önemlidir.",
+  "sourceLabel": "MedlinePlus – Cholesterol Levels",
+  "sourceUrl": "https://medlineplus.gov/lab-tests/cholesterol-levels/",
+  "draft": false
+}

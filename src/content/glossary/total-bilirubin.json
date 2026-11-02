@@ -1,0 +1,9 @@
+{
+  "name": "Total Bilirubin",
+  "category": "Laboratuvar ve Tanı",
+  "definition": "Kandaki konjuge ve konjuge olmayan bilirubin fraksiyonlarının toplamıdır.",
+  "explanation": "Artışın nedeni diğer karaciğer testleri ve klinik tabloyla değerlendirilir.",
+  "sourceLabel": "MedlinePlus – Liver Function Tests",
+  "sourceUrl": "https://medlineplus.gov/lab-tests/liver-function-tests/",
+  "draft": false
+}

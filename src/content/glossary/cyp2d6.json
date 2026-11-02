@@ -1,0 +1,9 @@
+{
+  "name": "CYP2D6",
+  "category": "Farmakoloji",
+  "definition": "Bazı psikiyatrik, kardiyovasküler ve analjezik ilaçları metabolize eden sitokrom P450 enzimidir.",
+  "explanation": "Genetik aktivite farklılığı klinik etki ve toksisiteyi değiştirebilir.",
+  "sourceLabel": "NCBI – Medical Genetics Summaries",
+  "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK61999/",
+  "draft": false
+}

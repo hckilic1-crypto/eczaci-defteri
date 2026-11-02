@@ -1,0 +1,9 @@
+{
+  "name": "Farmakogenetik",
+  "category": "Farmakoloji",
+  "definition": "Genetik farklılıkların ilaç yanıtını nasıl etkilediğini araştıran bilim alanıdır.",
+  "explanation": "Bir genotip sonucu tek başına bütün ilaçlar için doz belirlemez.",
+  "sourceLabel": "CPIC – Pharmacogenetic Guidelines",
+  "sourceUrl": "https://cpicpgx.org/guidelines/",
+  "draft": false
+}

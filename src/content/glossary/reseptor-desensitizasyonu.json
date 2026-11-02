@@ -1,0 +1,9 @@
+{
+  "name": "Reseptör Desensitizasyonu",
+  "category": "Farmakoloji",
+  "definition": "Uyarıya devam edildiği hâlde reseptör yanıtının azalmasıdır.",
+  "explanation": "Reseptör sayısı değişmeden de gelişebilir.",
+  "sourceLabel": "NCBI Bookshelf – Pharmacodynamics",
+  "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK507791/",
+  "draft": false
+}

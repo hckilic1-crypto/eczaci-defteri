@@ -1,0 +1,9 @@
+{
+  "name": "CYP3A4",
+  "category": "Farmakoloji",
+  "definition": "Çok sayıda ilacın oksidatif metabolizmasında görev alan sitokrom P450 enzimidir.",
+  "explanation": "İndükleyici veya inhibitör ilaçlar substrat maruziyetini değiştirebilir.",
+  "sourceLabel": "NCBI – Medical Genetics Summaries",
+  "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK61999/",
+  "draft": false
+}

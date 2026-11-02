@@ -1,0 +1,9 @@
+{
+  "name": "Apolipoprotein B (ApoB)",
+  "category": "Laboratuvar ve Tanı",
+  "definition": "Başlıca aterojenik lipoprotein parçacıklarında bulunan yapısal proteindir.",
+  "explanation": "ApoB düzeyi parçacık sayısına ilişkin bilgi verebilir.",
+  "sourceLabel": "MedlinePlus – Cholesterol Levels",
+  "sourceUrl": "https://medlineplus.gov/lab-tests/cholesterol-levels/",
+  "draft": false
+}

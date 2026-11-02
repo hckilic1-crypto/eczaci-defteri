@@ -1,0 +1,9 @@
+{
+  "name": "Serum B12 Vitamini",
+  "category": "Laboratuvar ve Tanı",
+  "definition": "Kan örneğinde ölçülen toplam kobalamin düzeyini gösteren laboratuvar testidir.",
+  "explanation": "Sınırda sonuçlarda klinik bulgular ve işlevsel belirteçler değerlendirilebilir.",
+  "sourceLabel": "MedlinePlus – Medical Tests",
+  "sourceUrl": "https://medlineplus.gov/lab-tests/",
+  "draft": false
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Farmakolojik Tolerans",
+  "category": "Farmakoloji",
+  "definition": "Tekrarlanan ilaç maruziyetiyle aynı doza verilen yanıtın zaman içinde azalmasıdır.",
+  "explanation": "Mekanizması reseptör adaptasyonu veya farmakokinetik değişiklikler olabilir.",
+  "sourceLabel": "NCBI Bookshelf – Pharmacodynamics",
+  "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK507791/",
+  "draft": false
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Hepatik Doz Ayarlaması",
+  "category": "Farmakoloji",
+  "definition": "İlaç kullanım şemasının karaciğer işlevi ve ürün bilgisi dikkate alınarak düzenlenmesidir.",
+  "explanation": "Sadece ALT değerine dayanarak doz belirlemek çoğu ilaç için yeterli değildir.",
+  "sourceLabel": "NCBI Bookshelf – Pharmacokinetics",
+  "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK557744/",
+  "draft": false
+}

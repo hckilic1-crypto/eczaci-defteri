@@ -1,0 +1,9 @@
+{
+  "name": "Non-HDL Kolesterol",
+  "category": "Laboratuvar ve Tanı",
+  "definition": "Toplam kolesterolden HDL kolesterolün çıkarılmasıyla hesaplanan değerdir.",
+  "explanation": "LDL yanında diğer aterojenik lipoproteinlerin kolesterolünü de kapsar.",
+  "sourceLabel": "MedlinePlus – Cholesterol Levels",
+  "sourceUrl": "https://medlineplus.gov/lab-tests/cholesterol-levels/",
+  "draft": false
+}
