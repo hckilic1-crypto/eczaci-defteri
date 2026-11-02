@@ -14,7 +14,7 @@ const { mode } = Astro.props;
       {mode === 'energy' && (
         <>
           <label class="hc-field">Yaş <span>yıl</span>
-            <input name="age" type="number" min="20" max="100" step="1" inputmode="numeric" placeholder="30" required />
+            <input name="age" type="number" min="18" max="100" step="1" inputmode="numeric" placeholder="30" required />
           </label>
           <label class="hc-field">Formüldeki biyolojik cinsiyet kategorisi
             <select name="sex" required>
@@ -25,9 +25,11 @@ const { mode } = Astro.props;
           </label>
         </>
       )}
-      <label class="hc-field">Boy <span>cm</span>
-        <input name="height" type="number" min="110" max="230" step="0.1" inputmode="decimal" placeholder="175" required />
-      </label>
+      {mode !== 'energy' && (
+        <label class="hc-field">Boy <span>cm</span>
+          <input name="height" type="number" min="110" max="230" step="0.1" inputmode="decimal" placeholder="175" required />
+        </label>
+      )}
       {mode !== 'waist' && (
         <label class="hc-field">Vücut ağırlığı <span>kg</span>
           <input name="weight" type="number" min="25" max="350" step="0.1" inputmode="decimal" placeholder="75" required />
@@ -41,10 +43,10 @@ const { mode } = Astro.props;
       {mode === 'energy' && (
         <label class="hc-field hc-field-wide">Günlük hareket düzeyi
           <select name="activity" required>
-            <option value="1.2">Çoğunlukla oturarak (1,20)</option>
-            <option value="1.375">Az hareketli (1,375)</option>
-            <option value="1.55">Orta düzeyde aktif (1,55)</option>
-            <option value="1.725">Çok aktif (1,725)</option>
+            <option value="">Aktivite düzeyini seçin</option>
+            <option value="light">Hareketsiz / hafif aktif (PAL 1,40–1,69)</option>
+            <option value="moderate">Orta düzeyde aktif (PAL 1,70–1,99)</option>
+            <option value="vigorous">Çok aktif (PAL 2,00–2,40)</option>
           </select>
         </label>
       )}
@@ -57,7 +59,7 @@ const { mode } = Astro.props;
   </form>
 
   <div class="hc-result" data-result hidden aria-live="polite" aria-atomic="true">
-    <span class="hc-result-label">{mode === 'bmi' ? 'VÜCUT KİTLE İNDEKSİ' : mode === 'waist' ? 'BEL / BOY ORANI' : 'TAHMİNİ İSTİRAHAT ENERJİSİ'}</span>
+    <span class="hc-result-label">{mode === 'bmi' ? 'DSÖ / YETİŞKİN VÜCUT KİTLE İNDEKSİ' : mode === 'waist' ? 'NICE / BEL – BOY ORANI' : 'FAO/WHO/UNU / TAHMİNİ BAZAL METABOLİZMA'}</span>
     <div class="hc-result-main">
       <strong data-value>—</strong>
       <span class="hc-unit" data-unit>{mode === 'energy' ? 'kcal/gün' : mode === 'bmi' ? 'kg/m²' : 'oran'}</span>
@@ -73,20 +75,20 @@ const { mode } = Astro.props;
     )}
     {mode === 'energy' && (
       <div class="hc-energy-extra">
-        <span>Aktivite katsayısıyla günlük toplam enerji tahmini</span>
+        <span>FAO/WHO/UNU PAL aralığıyla tahmini toplam günlük enerji gereksinimi</span>
         <strong data-extra>—</strong>
         <small>Bu, beslenme reçetesi veya kişiye özel enerji hedefi değildir.</small>
       </div>
     )}
     {mode === 'waist' && <p class="hc-result-extra" data-extra></p>}
   </div>
-  <p class="hc-method">{mode === 'bmi' ? 'Formül: VKİ = ağırlık (kg) / [boy (m)]².' : mode === 'waist' ? 'Formül: bel çevresi (cm) / boy (cm).' : 'Mifflin–St Jeor, dinlenme enerji harcaması tahmini: 10 × kg + 6,25 × cm − 5 × yaş + 5 (erkek) veya −161 (kadın).'} </p>
+  <p class="hc-method">{mode === 'bmi' ? 'Formül: VKİ = ağırlık (kg) / [boy (m)]².' : mode === 'waist' ? 'Formül: bel çevresi (cm) / boy (cm).' : 'FAO/WHO/UNU (2004): Schofield denklemiyle yaş ve biyolojik cinsiyet kategorisine göre kilo temelli BMR tahmini (kcal/gün). Günlük toplam enerji tahmini = BMR × PAL.'} </p>
 </section>
 
 <script>
   const format = (x: number, digits = 1) => x.toLocaleString('tr-TR', { maximumFractionDigits: digits, minimumFractionDigits: digits });
   const bounds: Record<string, [number, number]> = {
-    age:[20,100], height:[110,230], weight:[25,350], waist:[30,250]
+    age:[18,100], height:[110,230], weight:[25,350], waist:[30,250]
   };
   const readNumber = (form: HTMLFormElement, name: string) => {
     const el = form.elements.namedItem(name) as HTMLInputElement | null;
@@ -120,12 +122,17 @@ const { mode } = Astro.props;
       const waist = mode === 'waist' ? readNumber(form,'waist') : NaN;
       const age = mode === 'energy' ? readNumber(form,'age') : NaN;
       const sex = (form.elements.namedItem('sex') as HTMLSelectElement | null)?.value;
-      const activity = mode === 'energy' ? readNumber(form,'activity') : NaN;
-      const okay = valid('height',height) &&
+      const activity = (form.elements.namedItem('activity') as HTMLSelectElement | null)?.value;
+      const palRanges: Record<string,[number,number]> = {
+        light: [1.40,1.69],
+        moderate: [1.70,1.99],
+        vigorous: [2.00,2.40]
+      };
+      const okay = (mode === 'energy' || valid('height',height)) &&
         (mode === 'waist' ? valid('waist',waist) : valid('weight',weight)) &&
         (mode !== 'energy' || (valid('age',age) && Number.isInteger(age) &&
           (sex === 'male' || sex === 'female') &&
-          [1.2,1.375,1.55,1.725].includes(activity)));
+          !!activity && activity in palRanges));
       if (!okay) {
         result.hidden = true;
         error.hidden = false;
@@ -134,14 +141,16 @@ const { mode } = Astro.props;
       }
       if (mode === 'bmi') {
         const bmi = weight / Math.pow(height/100,2);
-        let status = bmi < 18.5 ? 'Düşük ağırlık' :
-          bmi < 25 ? 'Referans aralığında' :
-          bmi < 30 ? 'Fazla kilo aralığında' :
-          bmi < 35 ? 'Obezite sınıf I' :
-          bmi < 40 ? 'Obezite sınıf II' : 'Obezite sınıf III';
+        const status = bmi < 16 ? 'İleri düzeyde zayıflık (DSÖ)' :
+          bmi < 17 ? 'Orta düzeyde zayıflık (DSÖ)' :
+          bmi < 18.5 ? 'Hafif düzeyde zayıflık (DSÖ)' :
+          bmi < 25 ? 'Normal aralık (DSÖ)' :
+          bmi < 30 ? 'Fazla kilolu (DSÖ)' :
+          bmi < 35 ? 'Obezite sınıf I (DSÖ)' :
+          bmi < 40 ? 'Obezite sınıf II (DSÖ)' : 'Obezite sınıf III (DSÖ)';
         value.textContent = format(bmi);
         category.textContent = status;
-        note.textContent = 'Bu yetişkin VKİ sınıflaması yalnızca tarama amaçlıdır; yağ ve kas kütlesini ayırt etmez.';
+        note.textContent = 'DSÖ yetişkin VKİ eşikleri kullanılmıştır. VKİ yağ dağılımını veya kas kütlesini ölçmez; tek başına hastalık tanısı koydurmaz.';
         if (extra) extra.textContent = 'Boyunuza göre VKİ 18,5–24,9 aralığının matematiksel karşılığı: ' +
           format(18.5 * (height/100)**2) + '–' + format(24.9*(height/100)**2) + ' kg. Bu aralık kişisel kilo hedefi değildir.';
         const needle = root.querySelector<HTMLElement>('[data-marker]');
@@ -156,11 +165,21 @@ const { mode } = Astro.props;
         if (extra) extra.textContent = 'Boyunuzun yarısı ' + format(height/2) +
           ' cm. NICE, bel çevresini boyun yarısından düşük tutmayı önerir; bu kişisel tedavi hedefi değildir.';
       } else if (mode === 'energy') {
-        const ree = 10*weight + 6.25*height - 5*age + (sex === 'male' ? 5 : -161);
-        value.textContent = Math.round(ree).toLocaleString('tr-TR');
-        category.textContent = 'Mifflin–St Jeor ile tahmini dinlenme enerji harcaması (REE)';
-        note.textContent = 'Gerçek enerji tüketimi bireyler arasında değişir; bu yöntem doğrudan ölçüm değildir.';
-        if (extra) extra.textContent = Math.round(ree*activity).toLocaleString('tr-TR') + ' kcal/gün';
+        // Schofield weight-only BMR equations as retained in FAO/WHO/UNU (2004), Table 5.2.
+        // Age groups: 18–29, 30–59, 60+.
+        const ageGroup = age < 30 ? 0 : age < 60 ? 1 : 2;
+        const equations: Record<string, [number,number][]> = {
+          male: [[15.057,692.2],[11.472,873.1],[11.711,587.7]],
+          female: [[14.818,486.6],[8.126,845.6],[9.082,658.5]]
+        };
+        const [coefficient,constant] = equations[sex!][ageGroup];
+        const bmr = coefficient*weight + constant;
+        const [palMin,palMax] = palRanges[activity!];
+        value.textContent = Math.round(bmr).toLocaleString('tr-TR');
+        category.textContent = 'FAO/WHO/UNU – Schofield ile tahmini bazal metabolizma hızı (BMR)';
+        note.textContent = 'Bu değer doğrudan metabolizma ölçümü değildir. PAL aralığı kişisel hareket düzeyinin ölçümü değil, kategori temelli bir varsayımdır.';
+        if (extra) extra.textContent = Math.round(bmr*palMin).toLocaleString('tr-TR') +
+          '–' + Math.round(bmr*palMax).toLocaleString('tr-TR') + ' kcal/gün';
       }
       result.hidden = false;
     });
