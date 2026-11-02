@@ -95,8 +95,23 @@ const searchTerms = allGlossary.map(item => ({
   href: '/sozluk/' + item.id.replace(/\.json$/, '').split('/').pop()
 }));
 
+const referenceSections = [
+  { collection: 'atlas', title: 'Bileşen Atlası', prefix: '/atlas', key: 'name', summary: 'summary' },
+  { collection: 'labelGuides', title: 'Etiket Rehberi', prefix: '/etiket-rehberi', key: 'title', summary: 'summary' },
+  { collection: 'evidenceFiles', title: 'Kanıt Dosyaları', prefix: '/kanit-dosyalari', key: 'title', summary: 'summary' },
+  { collection: 'comparisons', title: 'Karşılaştırmalar', prefix: '/karsilastirmalar', key: 'title', summary: 'summary' }
+];
+const referenceSearch = (await Promise.all(referenceSections.map(async section => {
+  const records = await getCollection(section.collection, item => !item.data.draft);
+  return records.map(item => ({
+    title: item.data[section.key],
+    excerpt: item.data[section.summary],
+    category: section.title,
+    href: section.prefix + '/' + item.id.replace(/\\.json$/, '')
+  }));
+}))).flat();
 const searchData =
-  JSON.stringify([...searchPosts, ...searchTerms]);
+  JSON.stringify([...searchPosts, ...searchTerms, ...referenceSearch]);
 
 
 /* =========================================================
@@ -459,6 +474,10 @@ const jsonLd = structuredData ? JSON.stringify(structuredData).replace(/</g, '\\
         Sözlük
       </a>
 
+      <a href="/atlas">
+        Kütüphane
+      </a>
+
       <a href="/yazilar">
         Yazılar
       </a>
@@ -678,9 +697,14 @@ const jsonLd = structuredData ? JSON.stringify(structuredData).replace(/</g, '\\
         Yazılar
       </a>
 
-      <a href="/sozluk" class="mobile-main-link">
-        Sözlük
-      </a>
+      <a href="/sozluk" class="mobile-main-link">Sözlük</a>
+      <div class="library-mobile-links" aria-label="Referans kütüphanesi">
+        <span>REFERANS KÜTÜPHANESİ</span>
+        <a href="/atlas">Bileşen Atlası</a>
+        <a href="/etiket-rehberi">Etiket Okuma Rehberi</a>
+        <a href="/kanit-dosyalari">Bilimsel Kanıt Dosyaları</a>
+        <a href="/karsilastirmalar">Karşılaştırmalar</a>
+      </div>
 
       <a
         href="/hakkinda"
@@ -856,7 +880,7 @@ const jsonLd = structuredData ? JSON.stringify(structuredData).replace(/</g, '\\
         eczacılık pratiği üzerine kaynak odaklı içerikler.
       </p>
 
-      <nav class="journal-footer-links" aria-label="Alt menü"><a href="/yazilar">Yazılar</a><a href="/sozluk">Eczacılık Sözlüğü</a><a href="/hakkinda">Hakkında</a></nav>
+      <nav class="journal-footer-links" aria-label="Alt menü"><a href="/yazilar">Yazılar</a><a href="/sozluk">Eczacılık Sözlüğü</a><a href="/atlas">Bileşen Atlası</a><a href="/etiket-rehberi">Etiket Rehberi</a><a href="/kanit-dosyalari">Kanıt Dosyaları</a><a href="/karsilastirmalar">Karşılaştırmalar</a><a href="/hakkinda">Hakkında</a></nav>
 
     </div>
 
