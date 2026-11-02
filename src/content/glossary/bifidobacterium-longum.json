@@ -1,0 +1,9 @@
+{
+  "name": "Bifidobacterium longum",
+  "category": "Takviye Edici Gıdalar",
+  "definition": "İnsan bağırsak mikrobiyotasında bulunabilen ve bazı suşları probiyotik olarak araştırılan bakteri türüdür.",
+  "explanation": "Türe ait tüm suşlar aynı klinik etkiyi göstermez.",
+  "sourceLabel": "NIH ODS – Probiotics",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/Probiotics-HealthProfessional/",
+  "draft": false
+}

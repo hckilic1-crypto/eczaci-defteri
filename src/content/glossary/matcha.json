@@ -1,0 +1,9 @@
+{
+  "name": "Matcha",
+  "category": "Takviye Edici Gıdalar",
+  "definition": "Öğütülmüş yeşil çay yapraklarından hazırlanan ince toz ürünüdür.",
+  "explanation": "Doz başına kafein ve kateşin miktarı hazırlanma şekline bağlıdır.",
+  "sourceLabel": "NIH ODS – Weight Loss Supplements",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/WeightLoss-HealthProfessional/",
+  "draft": false
+}

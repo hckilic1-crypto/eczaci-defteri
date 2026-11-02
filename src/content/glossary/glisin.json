@@ -1,0 +1,9 @@
+{
+  "name": "Glisin",
+  "category": "Takviye Edici Gıdalar",
+  "definition": "Protein sentezinde kullanılan en basit amino asittir.",
+  "explanation": "Kolajen ve glutatyon senteziyle ilişkilidir; takviye iddiaları ayrıca kanıt gerektirir.",
+  "sourceLabel": "NIH ODS – Athletic Performance",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/",
+  "draft": false
+}

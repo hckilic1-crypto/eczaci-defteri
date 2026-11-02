@@ -1,0 +1,9 @@
+{
+  "name": "Bacillus coagulans",
+  "category": "Takviye Edici Gıdalar",
+  "definition": "Spor oluşturabilen, bazı suşları takviye ürünlerinde kullanılan bakteri türüdür.",
+  "explanation": "Spor dayanıklılığı klinik etkinlikle eş anlamlı değildir.",
+  "sourceLabel": "NIH ODS – Probiotics",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/Probiotics-HealthProfessional/",
+  "draft": false
+}

@@ -1,0 +1,9 @@
+{
+  "name": "AXOS (Arabinoksilan Oligosakkarit)",
+  "category": "Takviye Edici Gıdalar",
+  "definition": "Tahıl arabinoksilanlarından elde edilebilen kısa zincirli lif türevleridir.",
+  "explanation": "Mikrobiyal kullanım profili oligosakkarit yapısına göre değişebilir.",
+  "sourceLabel": "NIH ODS – Probiotics",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/Probiotics-HealthProfessional/",
+  "draft": false
+}

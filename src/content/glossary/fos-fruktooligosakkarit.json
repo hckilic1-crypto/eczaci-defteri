@@ -1,0 +1,9 @@
+{
+  "name": "FOS (Fruktooligosakkarit)",
+  "category": "Takviye Edici Gıdalar",
+  "definition": "Kısa zincirli fruktoz polimerlerinden oluşan fermente edilebilir karbonhidrat grubudur.",
+  "explanation": "İnülinle ilişkili olsa da polimer uzunluğu aynı değildir.",
+  "sourceLabel": "NIH ODS – Probiotics",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/Probiotics-HealthProfessional/",
+  "draft": false
+}

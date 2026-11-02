@@ -1,0 +1,9 @@
+{
+  "name": "Saccharomyces boulardii",
+  "category": "Takviye Edici Gıdalar",
+  "definition": "Probiyotik ürünlerde kullanılan, Saccharomyces cerevisiae ile yakın ilişkili maya suşları grubudur.",
+  "explanation": "Santral kateteri bulunan veya ağır immünsüprese kişilerde fungemi riski değerlendirilmelidir.",
+  "sourceLabel": "NIH ODS – Probiotics",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/Probiotics-HealthProfessional/",
+  "draft": false
+}

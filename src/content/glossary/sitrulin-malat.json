@@ -1,0 +1,9 @@
+{
+  "name": "Sitrülin Malat",
+  "category": "Takviye Edici Gıdalar",
+  "definition": "Sitrülin ile malatın birlikte bulunduğu sporcu takviyesi bileşimidir.",
+  "explanation": "Üründeki toplam gram sitrülinin saf miktarını doğrudan göstermez.",
+  "sourceLabel": "NIH ODS – Athletic Performance",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/",
+  "draft": false
+}
