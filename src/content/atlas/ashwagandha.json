@@ -1,0 +1,17 @@
+{
+  "name": "Ashwagandha",
+  "category": "Takviye",
+  "summary": "Ashwagandha ekstreleri stres ve uyku alanlarında incelense de güvenlilik sınırlılıkları vardır.",
+  "mechanism": "Withania somnifera kök ekstreleri çeşitli withanolidler içerir.",
+  "clinical": "Bazı kısa süreli çalışmalarda stres ve uyku ölçütlerinde iyileşmeler bildirilmiştir.",
+  "evidence": "Küçük örneklemler ve preparat farklılıkları sonuçları sınırlayabilir.",
+  "dose": "Çalışma dozu ekstreye ve standardizasyona bağlıdır; ürünler doğrudan eşdeğer değildir.",
+  "warnings": "Gebelikte kullanımından kaçınılması, tiroid hastalıkları ve nadir karaciğer hasarı bildirimleri önemlidir.",
+  "interactions": "Tiroid hormonu, immünsüpresan ve sedatif ilaçlarla potansiyel etkileşimler göz önünde bulundurulmalıdır.",
+  "labelTip": "Kök yaprağı ayrımını ve standardize withanolid yüzdesini kontrol edin.",
+  "sourceLabel": "NCCIH — Ashwagandha",
+  "sourceUrl": "https://www.nccih.nih.gov/health/ashwagandha",
+  "glossarySlug": "ashwagandha",
+  "relatedArticleSlug": "ashwagandha-stres-uyku-ve-guvenlilik",
+  "draft": false
+}

@@ -1,0 +1,17 @@
+{
+  "name": "C Vitamini",
+  "category": "Takviye",
+  "summary": "C vitamini kolajen sentezinde görevlidir; yüksek dozlar her enfeksiyonu önlemez.",
+  "mechanism": "Askorbik asit antioksidan reaksiyonlara ve demir emilimine katılır.",
+  "clinical": "Eksiklikte replasman gerekir; düzenli kullanım soğuk algınlığı süresini bazı koşullarda az miktarda etkileyebilir.",
+  "evidence": "Herkes için hastalık önleyici yüksek doz etkisi gösterilmemiştir.",
+  "dose": "Beslenme alımı, gereksinim ve toleransa göre doz değerlendirilir.",
+  "warnings": "Yüksek dozlarda gastrointestinal rahatsızlık; uygun hastada oksalat taşı riski önemlidir.",
+  "interactions": "Özel ilaç veya laboratuvar durumları için olası etkileşim değerlendirilmelidir.",
+  "labelTip": "Porsiyon başına mg miktarını ve toplam günlük alımı karşılaştırın.",
+  "sourceLabel": "NIH ODS — Vitamin C",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/",
+  "glossarySlug": "c-vitamini",
+  "relatedArticleSlug": "c-vitamini-bagisiklik-soguk-alginligi-ve-takviye",
+  "draft": false
+}

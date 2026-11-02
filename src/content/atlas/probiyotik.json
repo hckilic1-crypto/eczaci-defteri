@@ -1,0 +1,17 @@
+{
+  "name": "Probiyotikler",
+  "category": "Takviye",
+  "summary": "Etkiler türe değil çoğu zaman suşa, kullanım amacına ve doza özgüdür.",
+  "mechanism": "Yeterli miktarda verildiğinde konağa sağlık yararı sağlayan canlı mikroorganizmalardır.",
+  "clinical": "Antibiyotik ilişkili ishal veya bazı gastrointestinal durumlar için belirli suşlar incelenmiştir.",
+  "evidence": "Her probiyotik ürününün bütün sindirim veya bağışıklık sorunlarına etkisi gösterilmiş değildir.",
+  "dose": "Çalışma sonuçlarında suş kodu, canlı hücre miktarı ve sürenin eşleşmesi gerekir.",
+  "warnings": "Ağır immünsüpresyon ve santral kateter varlığında bazı canlı ürünlerde enfeksiyon riski değerlendirilir.",
+  "interactions": "Birlikte kullanılan antibiyotik, antifungal ve diğer ilaçlar ürün bazında dikkate alınır.",
+  "labelTip": "Sadece milyar CFU değil suş kodu, son kullanma tarihine kadar garanti edilen miktar ve saklama koşulu okunmalı.",
+  "sourceLabel": "NIH ODS — Probiotics",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/Probiotics-HealthProfessional/",
+  "glossarySlug": "probiyotik",
+  "relatedArticleSlug": "probiyotik-secerken-cfu-mu-sus-mu",
+  "draft": false
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Prebiyotik Lifler",
+  "category": "Takviye",
+  "summary": "Prebiyotik; konak mikroorganizmalarınca seçici kullanılan ve sağlık yararı sağlayan substrattır.",
+  "mechanism": "İnülin, FOS ve GOS gibi substratlar belirli mikrobiyal metabolik yolları etkileyebilir.",
+  "clinical": "Etkileri lifi kullanan mikrobiyal topluluk ve klinik sonlanıma bağlıdır.",
+  "evidence": "Her fermente olabilir lif otomatik olarak prebiyotik tanımını karşılamaz.",
+  "dose": "Tolerans nedeniyle ürün ve miktar kademeli değerlendirilir.",
+  "warnings": "Hassas bağırsakta gaz, ağrı ve şişkinlik artabilir.",
+  "interactions": "Eşzamanlı alınan oral ürünler ve bireyin gastrointestinal durumu dikkate alınmalıdır.",
+  "labelTip": "İnülin veya FOS miktarını porsiyon başına gram olarak kontrol edin.",
+  "sourceLabel": "ISAPP — Prebiotics consensus",
+  "sourceUrl": "https://isappscience.org/resource/prebiotics-consensus-statement/",
+  "glossarySlug": "prebiyotik",
+  "relatedArticleSlug": "sinbiyotik-ve-postbiyotik-nedir",
+  "draft": false
+}

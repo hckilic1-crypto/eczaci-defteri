@@ -1,0 +1,17 @@
+{
+  "name": "Omega-3 ve Balık Yağı",
+  "category": "Takviye",
+  "summary": "Balık yağı etiketinde asıl karşılaştırma EPA ve DHA üzerinden yapılır.",
+  "mechanism": "EPA ve DHA uzun zincirli omega-3 yağ asitleridir; ALA ise esansiyel bitkisel öncü yağ asididir.",
+  "clinical": "EPA ve DHA trigliseritleri düşürebilir; reçeteli yüksek doz tedavilerle sıradan takviyeler aynı değildir.",
+  "evidence": "Etki, incelenen endikasyona ve preparata göre değişir.",
+  "dose": "Beslenme desteği ile hipertrigliseridemi tedavisi için incelenen dozlar farklıdır; evrensel tedavi dozu yoktur.",
+  "warnings": "Yüksek dozlarda atriyal fibrilasyon sinyali ve gastrointestinal yakınmalar dikkate alınmalıdır.",
+  "interactions": "Antikoagülan veya antiplatelet tedavide toplam doz ve klinik risk değerlendirilmelidir.",
+  "labelTip": "1000 mg balık yağı yazması 1000 mg EPA+DHA anlamına gelmez.",
+  "sourceLabel": "NIH ODS — Omega-3 Fatty Acids",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/",
+  "glossarySlug": "omega-3-yag-asitleri",
+  "relatedArticleSlug": "omega-3-epa-ve-dha-miktari-nasil-okunur",
+  "draft": false
+}

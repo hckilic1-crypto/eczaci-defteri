@@ -1,0 +1,17 @@
+{
+  "name": "Melatonin",
+  "category": "Takviye",
+  "summary": "Melatonin bir uyku ilacından ziyade sirkadiyen zamanlama hormonu olarak düşünülmelidir.",
+  "mechanism": "Karanlık sinyalini biyolojik saate iletir ve uyku-uyanıklık zamanlamasını etkiler.",
+  "clinical": "Jet lag ve bazı sirkadiyen ritim sorunlarında belirli koşullarda çalışılmıştır.",
+  "evidence": "Kronik uykusuzluğun tüm nedenlerinde standart çözüm olduğu gösterilmiş değildir.",
+  "dose": "Zamanlama ile doz farklı sorulardır; bireysel neden önemlidir.",
+  "warnings": "Gündüz sersemlik, özel popülasyonlarda veri eksikliği ve ürün doz tutarlılığı önemlidir.",
+  "interactions": "Sedatif ilaçlar ve özel ilaç gruplarıyla etkileşim sorgulanmalıdır.",
+  "labelTip": "Hızlı ve uzatılmış salımlı formlar aynı salım profiline sahip değildir.",
+  "sourceLabel": "NCCIH — Melatonin",
+  "sourceUrl": "https://www.nccih.nih.gov/health/melatonin-what-you-need-to-know",
+  "glossarySlug": "melatonin",
+  "relatedArticleSlug": "biyolojik-saat-sirkadiyen-ritim-uyku",
+  "draft": false
+}

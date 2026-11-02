@@ -1,0 +1,17 @@
+{
+  "name": "B12 Vitamini",
+  "category": "Takviye",
+  "summary": "B12 eksikliğinde nedenin belirlenmesi formdan daha önemlidir.",
+  "mechanism": "DNA sentezi, eritrosit gelişimi ve nörolojik işlevlerde görev alır.",
+  "clinical": "Beslenme yetersizliği ve malabsorpsiyon tedavi yaklaşımını etkiler.",
+  "evidence": "Eksiklikte replasman yararlıdır; normal düzeydeki bireylerde enerji artışı genellenemez.",
+  "dose": "Oral veya parenteral tedavi seçimi klinik duruma göre yapılır.",
+  "warnings": "Uzun süreli nörolojik bulgular erken değerlendirme gerektirir.",
+  "interactions": "Metformin ve uzun süreli asit baskılayıcı kullanımı B12 düzeyleriyle ilişkili olabilir.",
+  "labelTip": "Metilkobalamin ve siyanokobalamin farklı formlardır; form adı tek başına etkinlik garantisi değildir.",
+  "sourceLabel": "NIH ODS — Vitamin B12",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/",
+  "glossarySlug": "b12-vitamini",
+  "relatedArticleSlug": "b12-vitamini-eksikligi-ve-takviye-formlari",
+  "draft": false
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Demir",
+  "category": "Takviye",
+  "summary": "Demir takviyesine karar verirken hemoglobin, ferritin ve nedenin değerlendirilmesi önemlidir.",
+  "mechanism": "Hemoglobin üretimi ve oksijen taşınması için gerekli mineraldir.",
+  "clinical": "Demir eksikliği anemisinde replasman yararlıdır; her halsizlik demir eksikliği değildir.",
+  "evidence": "Farklı tuzlar ve uygulama şemalarında tolerans ve emilim değişir.",
+  "dose": "Elementel demir dozu, tanı ve toleransa göre belirlenir.",
+  "warnings": "Aşırı doz çocuklarda ciddi zehirlenme oluşturabilir; erişkinlerde gastrointestinal yan etkiler sık görülür.",
+  "interactions": "Levotiroksin ve bazı antibiyotiklerle alım aralığı gerekebilir.",
+  "labelTip": "Ferroz sülfat 325 mg ile elementel demir 325 mg eşdeğer değildir.",
+  "sourceLabel": "NIH ODS — Iron",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/",
+  "glossarySlug": "demir-bisglisinat",
+  "relatedArticleSlug": "demir-takviyesi-ferritin-ve-emilim",
+  "draft": false
+}

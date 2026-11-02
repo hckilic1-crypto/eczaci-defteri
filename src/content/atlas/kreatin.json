@@ -1,0 +1,16 @@
+{
+  "name": "Kreatin Monohidrat",
+  "category": "Takviye",
+  "summary": "Kreatin monohidrat yüksek yoğunluklu tekrarlı egzersiz performansında iyi çalışılmıştır.",
+  "mechanism": "Kas fosfokreatin havuzunu destekleyerek kısa süreli ATP yenilenmesini kolaylaştırır.",
+  "clinical": "Direnç antrenmanlarıyla birlikte güç ve yağsız kütle kazanımlarına destek sağlayabilir.",
+  "evidence": "Sağlıklı yetişkinlerdeki bulgular böbrek hastalığı gibi özel gruplara doğrudan genellenemez.",
+  "dose": "Çalışmalarda yükleme ve yüklemesiz kullanım şemaları vardır; gereklilik bireysel değerlendirilir.",
+  "warnings": "Su tutulmasına bağlı ağırlık artışı ve gastrointestinal tolerans dikkate alınır.",
+  "interactions": "Nefrotoksik ilaç kullanımı veya böbrek hastalığında tıbbi değerlendirme gerekir.",
+  "labelTip": "Kreatin monohidrat miktarı ile çok bileşenli karışımın toplam gramı farklıdır.",
+  "sourceLabel": "NIH ODS — Exercise and Athletic Performance",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/",
+  "glossarySlug": "kreatin-monohidrat",
+  "draft": false
+}

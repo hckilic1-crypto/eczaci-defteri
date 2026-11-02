@@ -1,0 +1,17 @@
+{
+  "name": "K2 Vitamini (MK-7 ve MK-4)",
+  "category": "Takviye",
+  "summary": "K2, farklı menakinon formlarını kapsar; D3 ile birlikte alınması her birey için zorunlu değildir.",
+  "mechanism": "K vitamini bağımlı proteinlerin karboksilasyonuna katılır.",
+  "clinical": "MK-4 ve MK-7'nin kinetiği farklıdır; genel popülasyonda rutin D3+K2 kombinasyonu için tek tip öneri yoktur.",
+  "evidence": "Kemik ve damar sonlanımları açısından ek klinik yarar sorusu ürün ve çalışmalara bağlıdır.",
+  "dose": "Kanıta dayalı kişisel hedef belirlenmeden yüksek doz önerilmemelidir.",
+  "warnings": "Kanama bozuklukları veya vitamin K antagonisti tedavilerinde özel değerlendirme gerekir.",
+  "interactions": "Varfarin başta olmak üzere K vitamini antagonisti ilaçlarda alım değişikliği INR'yi etkileyebilir.",
+  "labelTip": "MK-7 ve MK-4 isimlerini, mikrogram miktarını ve diğer K vitamini kaynaklarını okuyun.",
+  "sourceLabel": "NIH ODS — Vitamin K",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/VitaminK-HealthProfessional/",
+  "glossarySlug": "k2-vitamini",
+  "relatedArticleSlug": "d3-ve-k2-vitamini-birlikte-alinmali-mi-bilimsel-kanitlar-ne-soeylueyor",
+  "draft": false
+}

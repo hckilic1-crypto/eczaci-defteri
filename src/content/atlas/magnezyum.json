@@ -1,0 +1,17 @@
+{
+  "name": "Magnezyum",
+  "category": "Takviye",
+  "summary": "Tuzun adı değil günlük porsiyondaki elementel magnezyum miktarı esastır.",
+  "mechanism": "Sinir-kas işlevi ve birçok enzimin reaksiyonlarında gerekli mineraldir.",
+  "clinical": "Eksiklikte replasman anlamlıdır; sağlıklı kişilerde her şikâyete aynı tuzun üstün olduğu gösterilmemiştir.",
+  "evidence": "Tuzlar biyoyararlanım ve gastrointestinal tolerans açısından ayrılır.",
+  "dose": "Doz, diyet alımı, eksiklik, böbrek fonksiyonu ve ürünün elementel içeriğine göre belirlenir.",
+  "warnings": "Böbrek yetmezliğinde birikim riski; yüksek dozlarda ishal ve gastrointestinal etkiler önemlidir.",
+  "interactions": "Tetrasiklin, kinolon ve bazı diğer ilaçlarla oral alım aralığı gerekebilir.",
+  "labelTip": "Magnezyum bisglisinat 1000 mg yazısı elementel magnezyum 1000 mg demek değildir.",
+  "sourceLabel": "NIH ODS — Magnesium",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/",
+  "glossarySlug": "magnezyum-bisglisinat",
+  "relatedArticleSlug": "magnezyum-sitrat-mi-bisglisinat-mi-etikette-asil-neye-bakmali",
+  "draft": false
+}

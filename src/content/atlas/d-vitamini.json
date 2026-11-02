@@ -1,0 +1,17 @@
+{
+  "name": "D Vitamini (D3 ve D2)",
+  "category": "Takviye",
+  "summary": "D vitamini gereksinimi herkeste aynı değildir; eksiklik değerlendirmesinde 25-OH D kullanılır.",
+  "mechanism": "Kalsiyum-fosfor metabolizması ve kemik mineralizasyonu için gereklidir.",
+  "clinical": "Eksikliğin tedavisi ile sağlıklı bireyin rutin kullanımı ayrı amaçlardır.",
+  "evidence": "Kemik sağlığındaki temel rolü belirgindir; birçok ek hastalığı önlediği iddiaları genellenemez.",
+  "dose": "Kullanım kararı bireysel risk, test gerekliliği ve klinik kılavuz çerçevesinde verilmelidir.",
+  "warnings": "Aşırı alım hiperkalsemi ve böbrek hasarı oluşturabilir.",
+  "interactions": "Tiyazidler ve bazı ilaçlar kalsiyum dengesi veya D vitamini metabolizmasını etkileyebilir.",
+  "labelTip": "IU ve mikrogram dönüşümünü, porsiyon başına D3 miktarını kontrol edin.",
+  "sourceLabel": "NIH ODS — Vitamin D",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/",
+  "glossarySlug": "d-vitamini",
+  "relatedArticleSlug": "d3-ve-k2-vitamini-birlikte-alinmali-mi-bilimsel-kanitlar-ne-soeylueyor",
+  "draft": false
+}

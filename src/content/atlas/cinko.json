@@ -1,0 +1,17 @@
+{
+  "name": "Çinko",
+  "category": "Takviye",
+  "summary": "Çinko gerekli eser elementtir; gereksiz yüksek doz bakır eksikliğine yol açabilir.",
+  "mechanism": "Bağışıklık işlevi, hücre bölünmesi ve çok sayıda enzimin kofaktörüdür.",
+  "clinical": "Eksikliğin giderilmesi önemlidir; çinko preparatlarının endikasyon ve uygulama biçimleri farklıdır.",
+  "evidence": "Soğuk algınlığına ilişkin çalışmalar farklı tuz ve uygulama şemaları içerir.",
+  "dose": "Elementel çinko dozu ve kullanım süresi birlikte değerlendirilir.",
+  "warnings": "Bulantı ve kronik fazla alımda bakır eksikliği ile nörolojik sorunlar görülebilir.",
+  "interactions": "Kinolon ve tetrasiklin antibiyotiklerle alım zamanlaması önemli olabilir.",
+  "labelTip": "Çinko glukonat veya pikolinat gramını değil elementel çinko miktarını okuyun.",
+  "sourceLabel": "NIH ODS — Zinc",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/",
+  "glossarySlug": "cinko",
+  "relatedArticleSlug": "cinko-takviyesi-ne-zaman-gerekli",
+  "draft": false
+}
