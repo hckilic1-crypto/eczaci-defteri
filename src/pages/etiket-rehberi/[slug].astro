@@ -17,9 +17,12 @@ const schema={'@context':'https://schema.org','@type':'Article',headline:d.title
    <div class="library-label-sample"><span>ETİKETTE ŞÖYLE GÖREBİLİRSİNİZ</span><strong>{d.label}</strong></div>
    <section><span class="library-section-label">01 / ANLAMI</span><h2>Bu ifade ne demek?</h2><p>{d.meaning}</p></section>
    <section><span class="library-section-label">02 / ÖRNEK</span><h2>Birlikte okuyalım</h2><p>{d.example}</p></section>
-   <section><span class="library-section-label">03 / SIK HATA</span><h2>En çok karıştırılan nokta</h2><p>{d.pitfall}</p></section>
-   <section><span class="library-section-label">04 / KONTROL LİSTESİ</span><h2>Satın almadan önce</h2><p>{d.checklist}</p></section>
-   <section><span class="library-section-label">05 / KAYNAK</span><h2>Bilimsel referans</h2><a class="library-source" href={d.sourceUrl} target="_blank" rel="noopener noreferrer">{d.sourceLabel} ↗</a></section>
+   {d.calculation && <section class="library-worked-example"><span class="library-section-label">03 / ADIM ADIM</span><h2>Hesabı nasıl yaparız?</h2><p>{d.calculation}</p></section>}
+   <section><span class="library-section-label">04 / SIK HATA</span><h2>En çok karıştırılan nokta</h2><p>{d.pitfall}</p></section>
+   <section><span class="library-section-label">05 / KONTROL LİSTESİ</span><h2>Satın almadan önce</h2><p>{d.checklist}</p></section>
+   {d.buyingChecklist && <section><span class="library-section-label">06 / SATIN ALMA KONTROLLERİ</span><h2>Etiketteki son kontrol</h2><p>{d.buyingChecklist}</p></section>}
+   {d.safetyNote && <section><span class="library-section-label">07 / GÜVENLİLİK</span><h2>Kimler dikkat etmeli?</h2><p>{d.safetyNote}</p></section>}
+   <section><span class="library-section-label">08 / KAYNAK</span><h2>Bilimsel referans</h2><a class="library-source" href={d.sourceUrl} target="_blank" rel="noopener noreferrer">{d.sourceLabel} ↗</a></section>
    {d.relatedAtlasSlug && <div class="library-connected"><span class="library-section-label">BAĞLANTILI DOSYA</span><a href={'/atlas/'+d.relatedAtlasSlug}>Bileşen Atlası'nda ayrıntılı bilgi ↗</a></div>}
   </div>
   <aside class="library-disclaimer">Etiket örnekleri açıklama amaçlıdır; belirli bir ürünün tedavi etkinliğini veya uygunluğunu garanti etmez.</aside>

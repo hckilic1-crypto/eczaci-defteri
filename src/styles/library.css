@@ -158,3 +158,8 @@
 @media(max-width:600px){.glossary-atlas-bridge{padding:20px}}
 
 @media(min-width:821px) and (max-width:1180px){.desktop-nav{gap:14px}.desktop-nav>a{font-size:12px}}
+
+/* Extended research dossiers and worked label calculations. */
+.library-worked-example{background:#edf2e9;border-left:3px solid #4c7256;padding:27px 30px!important;margin:12px 0 16px}
+.library-worked-example h2{font-size:clamp(25px,2.5vw,32px)}
+@media(max-width:600px){.library-worked-example{padding:23px 19px!important}}

@@ -113,6 +113,8 @@ const atlas = defineCollection({
     summary: z.string(), mechanism: z.string(), clinical: z.string(),
     evidence: z.string(), dose: z.string(), warnings: z.string(),
     interactions: z.string(), labelTip: z.string(),
+    formulations: z.string().optional(), studiedPopulation: z.string().optional(),
+    pharmacistChecklist: z.string().optional(), practicalLimits: z.string().optional(),
     sourceLabel: z.string(), sourceUrl: z.string().url(),
     glossarySlug: z.string().optional(), relatedArticleSlug: z.string().optional(),
     draft: z.boolean().default(false)
@@ -124,6 +126,8 @@ const labelGuides = defineCollection({
   schema: z.object({
     title: z.string(), category: z.string(), summary: z.string(),
     label: z.string(), meaning: z.string(), example: z.string(),
+    calculation: z.string().optional(), buyingChecklist: z.string().optional(),
+    safetyNote: z.string().optional(),
     pitfall: z.string(), checklist: z.string(),
     sourceLabel: z.string(), sourceUrl: z.string().url(),
     relatedAtlasSlug: z.string().optional(), draft: z.boolean().default(false)

@@ -36,7 +36,11 @@ const schema={
         <section id="guvenlilik"><span class="library-section-label">05 / GÜVENLİLİK</span><h2>Uyarılar ve kontrendikasyonlar</h2><p>{d.warnings}</p></section>
         <section id="etkilesimler"><span class="library-section-label">06 / BİRLİKTE KULLANIM</span><h2>İlaç etkileşimleri</h2><p>{d.interactions}</p></section>
         <section id="etiket"><span class="library-section-label">07 / ECZACININ NOTU</span><h2>Etikette neye bakmalı?</h2><p>{d.labelTip}</p></section>
-        <section id="kaynak"><span class="library-section-label">08 / BİLİMSEL KAYNAK</span><h2>Kaynak</h2><a class="library-source" href={d.sourceUrl} rel="noopener noreferrer" target="_blank">{d.sourceLabel} ↗</a></section>
+        {d.formulations && <section id="formlar"><span class="library-section-label">08 / HAZIRLAMA VE FORM</span><h2>Hangi form fark yaratır?</h2><p>{d.formulations}</p></section>}
+        {d.studiedPopulation && <section id="populasyon"><span class="library-section-label">09 / ARAŞTIRMA GRUPLARI</span><h2>Kimlerde araştırıldı?</h2><p>{d.studiedPopulation}</p></section>}
+        {d.pharmacistChecklist && <section id="eczaci-kontrol"><span class="library-section-label">10 / ECZACI KONTROL LİSTESİ</span><h2>Değerlendirilmesi gereken noktalar</h2><p>{d.pharmacistChecklist}</p></section>}
+        {d.practicalLimits && <section id="sinirlar"><span class="library-section-label">11 / YORUMLAMA SINIRLARI</span><h2>Hangi sonuç çıkarılamaz?</h2><p>{d.practicalLimits}</p></section>}
+        <section id="kaynak"><span class="library-section-label">12 / BİLİMSEL KAYNAK</span><h2>Kaynak</h2><a class="library-source" href={d.sourceUrl} rel="noopener noreferrer" target="_blank">{d.sourceLabel} ↗</a></section>
       </div>
       <aside class="library-detail-aside">
         <div class="library-aside-label">BU DOSYADA</div>
@@ -47,7 +51,11 @@ const schema={
         <a href="#guvenlilik">05 &nbsp; Güvenlilik</a>
         <a href="#etkilesimler">06 &nbsp; Etkileşimler</a>
         <a href="#etiket">07 &nbsp; Etiket</a>
-        <a href="#kaynak">08 &nbsp; Kaynak</a>
+        {d.formulations && <a href="#formlar">08 &nbsp; Formlar</a>}
+        {d.studiedPopulation && <a href="#populasyon">09 &nbsp; Çalışılan gruplar</a>}
+        {d.pharmacistChecklist && <a href="#eczaci-kontrol">10 &nbsp; Kontrol listesi</a>}
+        {d.practicalLimits && <a href="#sinirlar">11 &nbsp; Sınırlılıklar</a>}
+        <a href="#kaynak">12 &nbsp; Kaynak</a>
       </aside>
     </div>
     {(d.glossarySlug||d.relatedArticleSlug||guides.length)>0 && (
