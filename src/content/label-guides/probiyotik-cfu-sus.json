@@ -10,5 +10,8 @@
   "sourceLabel": "NIH ODS — Probiotics",
   "sourceUrl": "https://ods.od.nih.gov/factsheets/Probiotics-HealthProfessional/",
   "relatedAtlasSlug": "probiyotik",
-  "draft": false
+  "draft": false,
+  "calculation": "Etikette 10 milyar CFU yazması tek başına yeterli değildir. Örnek doğru ayrıntı: Lacticaseibacillus rhamnosus GG (ATCC 53103) ve belirtilen son kullanım tarihine kadar garantili canlı miktarı. Tür adı ile suş kimliği aynı düzey değildir; 5+5 milyar farklı suşun 10 milyar tek suşla klinik eşdeğerliği yoktur.",
+  "buyingChecklist": "Tam tür + suş kodu bulunuyor mu? CFU üretim anında mı son kullanma tarihine kadar mı garanti ediliyor? Saklama koşulu nedir? Ürüne özgü klinik endikasyon ve çalışmada kullanılan miktar uyuyor mu?",
+  "safetyNote": "Ağır immünsüpresyon, kritik hastalık veya santral venöz kateter varlığında bazı canlı mikroorganizma ürünleri invaziv enfeksiyon riski oluşturabilir. Suş bazında güvenlilik sorgulanmalıdır."
 }

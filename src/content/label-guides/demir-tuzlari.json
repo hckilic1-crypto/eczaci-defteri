@@ -10,5 +10,8 @@
   "sourceLabel": "NIH ODS — Iron",
   "sourceUrl": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/",
   "relatedAtlasSlug": "demir",
-  "draft": false
+  "draft": false,
+  "calculation": "Örnek: 325 mg ferroz sülfat heptahidrat yaklaşık 65 mg elementel demir sağlar; fakat hidrasyon/tuz formu ve üretici etiketi kontrol edilmelidir. 325 mg tuz = 325 mg demir değildir. Hedeflenen sayı elementel demir satırındaki mg miktarıdır.",
+  "buyingChecklist": "Ferroz sülfat, fumarat, glukonat veya bisglisinat hangisi? Günlük elementel Fe kaç mg? Ferritin/hemoglobin ve eksiklik nedeni değerlendirilmiş mi? Kalsiyum, levotiroksin, çay/kahve ve antibiyotiklerle kullanım zamanı uygun mu?",
+  "safetyNote": "Demir fazlalığında takviye zararlı olabilir; çocuklarda akut doz aşımı acildir. Her anemide demir kullanılmaz. Bireyde melena, beklenmedik kan kaybı veya açıklanamayan anemi varsa değerlendirme gerekir."
 }

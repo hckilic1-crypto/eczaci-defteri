@@ -10,5 +10,8 @@
   "sourceLabel": "NCCIH — Ashwagandha",
   "sourceUrl": "https://www.nccih.nih.gov/health/ashwagandha",
   "relatedAtlasSlug": "ashwagandha",
-  "draft": false
+  "draft": false,
+  "calculation": "300 mg ekstrede %5 toplam withanolid ifadesi, tanımlı analitik yönteme göre 300×0,05=15 mg marker miktarına karşılık gelebilir. 'DER 10:1' teorik olarak 300 mg ekstreye karşılık gelen 3000 mg başlangıç drogunu tanımlar; fakat ekstraksiyon çözücüsü ve doğal/son ekstre ayrımı bilinmeden farmakolojik eşdeğerlik kurulmaz.",
+  "buyingChecklist": "Bitkinin Latincesi ve bitki kısmı yazıyor mu? Ekstraksiyon çözücüsü ve DER türü belirtiliyor mu? Marker hangisi ve hangi yöntemle ölçülmüş? Ürünün üçüncü taraf kalite analiz belgesi var mı?",
+  "safetyNote": "Yüksek DER daha yüksek klinik etki veya güvenlilik garantisi değildir. Ashwagandha gibi bazı ekstrelerde gebelik, tiroid bozukluğu ve karaciğer hasarı bildirimleri ayrıca değerlendirilmelidir."
 }

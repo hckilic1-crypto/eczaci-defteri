@@ -10,5 +10,8 @@
   "sourceLabel": "NIH ODS — Omega-3 Fact Sheet",
   "sourceUrl": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/",
   "relatedAtlasSlug": "omega-3",
-  "draft": false
+  "draft": false,
+  "calculation": "Örnek etiket: Kapsül başına 1000 mg balık yağı, 180 mg EPA, 120 mg DHA. Bir kapsülde EPA+DHA = 180+120 = 300 mg. İki kapsüllük günlük porsiyonda 600 mg EPA+DHA alınır; 2000 mg toplam balık yağı ifadesi etkin omega-3 miktarı değildir.",
+  "buyingChecklist": "Günlük porsiyon kaç kapsül? EPA ve DHA ayrı ayrı listelenmiş mi? Serbest yağ asidi, etil ester veya trigliserit formu belirtiliyor mu? Balık/alg kaynağı, son kullanma ve oksidasyon kontrolü mevcut mu?",
+  "safetyNote": "Yüksek doz reçeteli EPA preparatları sıradan balık yağı kapsülleriyle eşdeğer değildir. Atriyal fibrilasyon öyküsü veya antikoagülan/antiplatelet kullanımı varsa toplam doz klinik olarak değerlendirilmelidir."
 }

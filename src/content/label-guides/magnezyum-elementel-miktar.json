@@ -10,5 +10,8 @@
   "sourceLabel": "NIH ODS — Magnesium",
   "sourceUrl": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/",
   "relatedAtlasSlug": "magnezyum",
-  "draft": false
+  "draft": false,
+  "calculation": "500 mg magnezyum oksit molekülü yaklaşık 302 mg elementel magnezyum içerebilir (MgO için kütlece yaklaşık %60,3). Ancak ticari üründeki gerçek içerik etikette beyan edilen elementel mg üzerinden kontrol edilir. 1000 mg magnezyum bisglisinat kompleksinin tamamı magnezyum değildir.",
+  "buyingChecklist": "Günlük porsiyonda ELEMENTEL Mg kaç mg? Oksit, sitrat, bisglisinat veya başka bir tuz mu? Bileşik miktarıyla elementel miktar ayrılmış mı? Böbrek fonksiyonu ve diğer magnezyum içeren antasit/laksatifler kontrol edildi mi?",
+  "safetyNote": "Oral magnezyum, kinolon/tetrasiklin antibiyotikler ve bifosfonatların emilimini etkileyebilir; zaman aralığı ürün bilgisine göre ayarlanır. Böbrek yetmezliğinde birikim ve yüksek dozlarda ishal riski vardır."
 }

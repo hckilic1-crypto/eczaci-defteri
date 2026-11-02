@@ -10,5 +10,8 @@
   "sourceLabel": "DermNet — Topical Retinoids",
   "sourceUrl": "https://dermnetnz.org/topics/topical-retinoids",
   "relatedAtlasSlug": "retinol",
-  "draft": false
+  "draft": false,
+  "calculation": "%0,3 retinol, formülün ağırlıkça %0,3'ü ise teorik olarak 1 g üründe 3 mg retinol demektir. %0,1 retinal aynı hesapla 1 g üründe 1 mg retinaldir. Ancak farklı moleküllerin bu gram hesapları klinik güç veya cilt maruziyeti karşılaştırması olarak kullanılamaz.",
+  "buyingChecklist": "INCI'da retinol mü retinal mi yazıyor? Ambalaj ışık/oksijen korumalı mı? Yüzde, kullanım sıklığı ve birlikte kullanılan AHA/BHA var mı? Cilt bariyeri ve gebelik durumunda uygunluk değerlendirildi mi?",
+  "safetyNote": "Retinoidler tahriş, kuruluk ve kızarıklık yapabilir; gebelikte kullanımları özel değerlendirme gerektirir. Yüksek yüzde veya pazarlama terimleri daha güvenli/etkili olduğunu göstermez."
 }

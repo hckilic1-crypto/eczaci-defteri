@@ -10,5 +10,8 @@
   "sourceLabel": "AAD — Sunscreen Labels",
   "sourceUrl": "https://www.aad.org/public/everyday-care/sun-protection/shade-clothing-sunscreen/understand-sunscreen-labels",
   "relatedAtlasSlug": "gunes-koruyucu",
-  "draft": false
+  "draft": false,
+  "calculation": "İdeal test koşullarında SPF 30 için erytemal ağırlıklı UV iletimi yaklaşık 1/30 (%3,33); SPF 50 için 1/50 (%2) şeklindedir. Bu nedenle teorik filtreleme yaklaşık %96,7 ve %98'dir. İki değer günlük gerçek korunmanın doğrudan oranı değildir.",
+  "buyingChecklist": "SPF kaç? Geniş spektrum/UVA logosu var mı? Suya dayanıklılık süresi belirtiliyor mu? Doğru miktarda uygulama ve yenileme yapılıyor mu? Melazmada görünür ışığa karşı renkli formül gerekebilir mi?",
+  "safetyNote": "SPF bir UVB/eritem temelli testtir; tek başına UVA veya görünür ışık korumasının tamamını göstermez. Suya dayanıklı ifadesi kalıcı/terden etkilenmez demek değildir."
 }

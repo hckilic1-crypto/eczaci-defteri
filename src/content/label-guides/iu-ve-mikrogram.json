@@ -10,5 +10,8 @@
   "sourceLabel": "NIH ODS — Vitamin D",
   "sourceUrl": "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/",
   "relatedAtlasSlug": "d-vitamini",
-  "draft": false
+  "draft": false,
+  "calculation": "D vitamini için 1 mikrogram (µg) = 40 IU. 2000 IU ÷ 40 = 50 µg; 25 µg × 40 = 1000 IU. Şişe üzerinde 1 damla 400 IU yazıyor ve günlük 5 damla kullanılıyorsa toplam 2000 IU = 50 µg eder.",
+  "buyingChecklist": "Değer tek damla mı porsiyon mu? 1 fıs veya 5 damla kaç IU? Başka takviyeler veya ilaçlarda D vitamini var mı? D3 mü D2 mi? Tedavi kararı için klinik gerekçe bulunuyor mu?",
+  "safetyNote": "Yüksek D vitamini alımı hiperkalsemi ve böbrek sorunlarına yol açabilir. Kalsiyum, tiyazid diüretik ve böbrek fonksiyonu gibi unsurlar özel değerlendirme gerektirir."
 }
