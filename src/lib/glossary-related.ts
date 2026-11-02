@@ -71,8 +71,8 @@ export const relatedTermsForTerm = (term: Term, terms: Term[], limit = 6): Term[
       const otherBody = normalize(other.data.definition + ' ' + (other.data.explanation || ''));
       const direct = phrases(other).some(p => contains(body, p)) ? 20 : 0;
       const reverse = own.some(p => contains(otherBody, p)) ? 14 : 0;
-      const sameCategory = term.data.category === other.data.category ? 2 : 0;
-      return { other, score: direct + reverse + sameCategory };
+      // Sharing a broad category alone is not a meaningful editorial link.
+      return { other, score: direct + reverse };
     })
     .filter(x => x.score > 0)
     .sort((a, b) => b.score - a.score || a.other.data.name.localeCompare(b.other.data.name, 'tr'))
