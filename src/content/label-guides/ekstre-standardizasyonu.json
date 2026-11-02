@@ -1,0 +1,14 @@
+{
+  "title": "Bitkisel ekstrede standardizasyon ve DER",
+  "category": "Bitkisel",
+  "summary": "Bitki tozu, ekstre gramı, marker oranı ve DER farklı ölçümlerdir.",
+  "label": "Ekstre 300 mg, %5 withanolid, DER 10:1",
+  "meaning": "300 mg ekstrakt %5 marker ile formüle edilmişse teorik marker miktarı 15 mg'dır; yöntemler ayrıca doğrulanmalıdır.",
+  "example": "DER 10:1 ifadesi tek başına etkin madde gücü veya biyoyararlanım kanıtı değildir.",
+  "pitfall": "Farklı çözücü ve marker profilli ekstreleri yalnız DER ile eşdeğer sanmak.",
+  "checklist": "Bitki adı/kısmı; çözücü; marker; standardizasyon; analiz belgesi.",
+  "sourceLabel": "NCCIH — Ashwagandha",
+  "sourceUrl": "https://www.nccih.nih.gov/health/ashwagandha",
+  "relatedAtlasSlug": "ashwagandha",
+  "draft": false
+}

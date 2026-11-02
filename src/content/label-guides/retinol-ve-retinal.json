@@ -1,0 +1,14 @@
+{
+  "title": "Retinol ve retinal yüzdesi nasıl okunur?",
+  "category": "Dermokozmetik",
+  "summary": "Yüzdeyi ürünün formülü, kararlılığı ve cilt toleransından ayrı değerlendirmeyin.",
+  "label": "%0,3 retinol / %0,1 retinal",
+  "meaning": "İki farklı retinoid molekülünün etiket yüzdeleri doğrudan etkinlik karşılaştırması vermez.",
+  "example": "Aynı yüzde farklı sistemlerde eşit cilt maruziyeti oluşturmayabilir.",
+  "pitfall": "Daha yüksek yüzde her kullanıcı için daha iyi sonuç sanmak.",
+  "checklist": "Retinoid türü; ambalaj; kullanım sıklığı; diğer tahriş edici içerikler.",
+  "sourceLabel": "DermNet — Topical Retinoids",
+  "sourceUrl": "https://dermnetnz.org/topics/topical-retinoids",
+  "relatedAtlasSlug": "retinol",
+  "draft": false
+}

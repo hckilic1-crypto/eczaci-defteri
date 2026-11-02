@@ -1,0 +1,14 @@
+{
+  "title": "Güneş koruyucuda SPF, UVA ve su direnci",
+  "category": "Dermokozmetik",
+  "summary": "SPF sayısı tek başına bütün ışık türlerine karşı korumayı anlatmaz.",
+  "label": "SPF 50, geniş spektrum, 80 dk suya dayanıklı",
+  "meaning": "SPF başlıca UVB ile ilişkili eritem korumasıdır; geniş spektrum ibaresi UVA korumasına da işaret eder.",
+  "example": "SPF 30, test koşullarında UVB'nin yaklaşık %97'sini filtreleyebilir; gerçekte uygulanan miktar önemlidir.",
+  "pitfall": "SPF 50'yi SPF 25'in iki katı gerçek yaşam koruması olarak yorumlamak.",
+  "checklist": "Geniş spektrum; SPF 30+; su direnci ve yeniden uygulama talimatı.",
+  "sourceLabel": "AAD — Sunscreen Labels",
+  "sourceUrl": "https://www.aad.org/public/everyday-care/sun-protection/shade-clothing-sunscreen/understand-sunscreen-labels",
+  "relatedAtlasSlug": "gunes-koruyucu",
+  "draft": false
+}

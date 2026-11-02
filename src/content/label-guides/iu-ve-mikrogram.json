@@ -1,0 +1,14 @@
+{
+  "title": "D vitamini etiketinde IU ve mikrogram",
+  "category": "Vitamin",
+  "summary": "D vitamini miktarları IU veya mikrogram olarak gösterilebilir.",
+  "label": "1000 IU vitamin D3",
+  "meaning": "D vitamini için 1 mikrogram = 40 IU; dolayısıyla 1000 IU = 25 mikrogramdır.",
+  "example": "500 IU ile 500 mikrogram aynı miktar değildir.",
+  "pitfall": "IU ile mikrogramı eşit saymak veya damla sayısını karıştırmak.",
+  "checklist": "Porsiyon başına damla; mikrogram/IU; diğer D vitamini kaynakları.",
+  "sourceLabel": "NIH ODS — Vitamin D",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/",
+  "relatedAtlasSlug": "d-vitamini",
+  "draft": false
+}

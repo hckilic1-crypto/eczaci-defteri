@@ -1,0 +1,14 @@
+{
+  "title": "Demir takviyelerinde tuz ve elementel demir",
+  "category": "Mineral",
+  "summary": "Ferroz sülfat ve demir bisglisinat için aynı mg her zaman aynı demir dozunu sağlamaz.",
+  "label": "Ferroz sülfat / demir bisglisinat",
+  "meaning": "Etkin demir miktarı tuzun kimyasal yapısına bağlıdır.",
+  "example": "Preparat üzerinde 60 mg elementel demir yazıyorsa değerlendirilecek miktar budur.",
+  "pitfall": "Tuz miktarından elementel demir dozunu tahmin etmek.",
+  "checklist": "Demirin formu; elementel miktarı; kullanım amacı; tolere edilebilirlik.",
+  "sourceLabel": "NIH ODS — Iron",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/",
+  "relatedAtlasSlug": "demir",
+  "draft": false
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Balık yağı etiketinde EPA ve DHA",
+  "category": "Takviye",
+  "summary": "Toplam yağ ile etkin omega-3 fraksiyonunu ayırmayı öğrenin.",
+  "label": "1000 mg balık yağı",
+  "meaning": "Bu değer yağın toplam miktarıdır. EPA ve DHA ayrı belirtilmeli veya içerik tablosunda toplanmalıdır.",
+  "example": "1000 mg yağ içinde 180 mg EPA ve 120 mg DHA varsa EPA+DHA 300 mg'dır.",
+  "pitfall": "1000 mg ibaresini 1000 mg EPA+DHA diye okumak.",
+  "checklist": "Günlük servis kaç kapsül; EPA+DHA toplamı kaç mg; yağ formu ne?",
+  "sourceLabel": "NIH ODS — Omega-3 Fact Sheet",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/",
+  "relatedAtlasSlug": "omega-3",
+  "draft": false
+}

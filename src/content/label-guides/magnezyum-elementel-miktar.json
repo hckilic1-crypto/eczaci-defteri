@@ -1,0 +1,14 @@
+{
+  "title": "Elementel magnezyum nasıl hesaplanır?",
+  "category": "Mineral",
+  "summary": "Magnezyum tuzunun gramı ile elementel mineral miktarı aynı değildir.",
+  "label": "Magnezyum bisglisinat 1000 mg",
+  "meaning": "Bu ibare kompleks kütlesini ifade ediyor olabilir; elementel magnezyum ayrıca incelenmelidir.",
+  "example": "Etiket günlük porsiyonda 120 mg elementel magnezyum gösteriyorsa esas mineral dozu budur.",
+  "pitfall": "Farklı tuzların aynı mg ağırlığını eşit magnezyum dozu sanmak.",
+  "checklist": "Elementel miktar; porsiyon adedi; diğer takviyelerle toplam alım.",
+  "sourceLabel": "NIH ODS — Magnesium",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/",
+  "relatedAtlasSlug": "magnezyum",
+  "draft": false
+}

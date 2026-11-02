@@ -1,0 +1,14 @@
+{
+  "title": "Probiyotik etiketinde CFU ve suş kodu",
+  "category": "Mikrobiyota",
+  "summary": "Milyar CFU ifadesi suş kimliği olmadan klinik etkinlik kanıtı değildir.",
+  "label": "10 milyar CFU",
+  "meaning": "CFU canlı koloni oluşturabilen birim sayısını ifade eder; tür ve suş kodunu belirtmez.",
+  "example": "Lacticaseibacillus rhamnosus GG bir suş örneğidir; yalnızca Lactobacillus yazması yeterli değildir.",
+  "pitfall": "Bir üründe çok tür olmasının her endikasyonda üstün olduğunu düşünmek.",
+  "checklist": "Suş kodu; kullanım amacı; son kullanma tarihinde CFU; saklama koşulu.",
+  "sourceLabel": "NIH ODS — Probiotics",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/Probiotics-HealthProfessional/",
+  "relatedAtlasSlug": "probiyotik",
+  "draft": false
+}
