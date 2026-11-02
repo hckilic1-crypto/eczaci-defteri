@@ -27,6 +27,17 @@ const schema={
       <h1>{d.name}</h1><p>{d.summary}</p>
       <div class="library-head-meta"><span>MEKANİZMA</span><span>KANIT</span><span>GÜVENLİLİK</span></div>
     </header>
+    {(d.chemicalIdentity || d.molecularFormula) && (
+      <section class="atlas-chemistry" aria-label="Kimyasal kimlik">
+        <div class="atlas-chemistry-heading"><span class="library-section-label">KİMYASAL KİMLİK KARTI</span><span>ECZACI DEFTERİ / REFERANS</span></div>
+        <div class="atlas-chemistry-grid">
+          <div><small>MOLEKÜL / FORMÜL</small><strong class="atlas-formula">{d.molecularFormula || 'Tek moleküler formül yok'}</strong></div>
+          <div><small>KİMYASAL SINIF</small><strong>{d.chemicalClass || 'Bileşik / preparat grubu'}</strong></div>
+        </div>
+        {d.chemicalIdentity && <p>{d.chemicalIdentity}</p>}
+        {d.sourceChemUrl && <a class="atlas-chem-link" href={d.sourceChemUrl} target="_blank" rel="noopener noreferrer">Molekül ve yapı verisini incele ↗</a>}
+      </section>
+    )}
     <div class="library-detail-layout">
       <div class="library-detail-content">
         <section id="mekanizma"><span class="library-section-label">01 / BİLEŞENİN YAPISI</span><h2>Nedir, nasıl çalışır?</h2><p>{d.mechanism}</p></section>

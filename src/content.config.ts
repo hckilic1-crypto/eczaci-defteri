@@ -113,6 +113,8 @@ const atlas = defineCollection({
     summary: z.string(), mechanism: z.string(), clinical: z.string(),
     evidence: z.string(), dose: z.string(), warnings: z.string(),
     interactions: z.string(), labelTip: z.string(),
+    chemicalIdentity: z.string().optional(), molecularFormula: z.string().optional(),
+    chemicalClass: z.string().optional(), sourceChemUrl: z.string().url().optional(),
     formulations: z.string().optional(), studiedPopulation: z.string().optional(),
     pharmacistChecklist: z.string().optional(), practicalLimits: z.string().optional(),
     sourceLabel: z.string(), sourceUrl: z.string().url(),
