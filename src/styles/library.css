@@ -156,3 +156,5 @@
 .article-atlas-links a{display:inline-block;padding:10px 13px;border:1px solid #c3d3c4;background:#edf2e8;font:650 12px/1.5 var(--sans,system-ui);color:#20563a;border-radius:3px}
 .article-atlas-links a:hover{background:#dfe9dc}
 @media(max-width:600px){.glossary-atlas-bridge{padding:20px}}
+
+@media(min-width:821px) and (max-width:1180px){.desktop-nav{gap:14px}.desktop-nav>a{font-size:12px}}

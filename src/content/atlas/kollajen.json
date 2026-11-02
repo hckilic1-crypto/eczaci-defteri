@@ -3,14 +3,14 @@
   "category": "Takviye",
   "summary": "Hidrolize kollajen ürünleri eklem ve cilt sonlanımları için araştırılmıştır.",
   "mechanism": "Kolajenin peptitlere ayrılması sonrası protein sindirimi ve peptit maruziyeti oluşur.",
-  "clinical": "Bazı küçük çalışmalarda cilt nemi veya elastikiyetinde değişiklik bildirilmiştir.",
-  "evidence": "Çalışma heterojenliği, sponsor etkisi ve preparat farklılığı kesin genellemeyi sınırlar.",
+  "clinical": "Cilt nemi ve elastikiyetini ölçen araştırmalarda kullanılmıştır; ancak çalışma kalitesi ve finansman kaynağı sonuçları belirgin şekilde etkilemektedir.",
+  "evidence": "2025 tarihli 23 randomize çalışmalık meta-analizde toplu analizde olumlu sonuçlar görülürken, yüksek kaliteli veya endüstri dışı finanse edilmiş alt gruplarda aynı etki doğrulanmadı. Bu nedenle cilt yaşlanmasını önleme veya tedavi amacıyla kesin klinik yarar iddia edilemez.",
   "dose": "Kullanım miktarı ve süresi kullanılan ürünün çalışma protokolüne bağlıdır.",
   "warnings": "Hayvansal kaynak alerjileri ve beslenme kısıtları dikkate alınmalıdır.",
   "interactions": "Spesifik ilaç etkileşimleri için güçlü veri sınırlıdır.",
   "labelTip": "Tip I/II, kaynak, protein miktarı ve peptit yapısı aynı terim değildir.",
-  "sourceLabel": "NIH ODS — Dietary Supplement Resources",
-  "sourceUrl": "https://ods.od.nih.gov/factsheets/list-all/",
+  "sourceLabel": "Myung ve Park, American Journal of Medicine (2025) — Sistematik Derleme ve Meta-Analiz",
+  "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/40324552/",
   "glossarySlug": "kollajen-peptitleri",
   "draft": false
 }
