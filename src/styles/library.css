@@ -145,3 +145,14 @@
  .library-versus h2{font-size:29px}
 }
 @media(prefers-reduced-motion:reduce){.library-home-card{transition:none}}
+
+/* Contextual bridges from existing editorial pages. */
+.glossary-atlas-bridge{max-width:780px;padding:24px 27px;margin-top:29px;background:#e9f0e5;border-left:3px solid #2d6747}
+.glossary-atlas-bridge h2{margin:7px 0 9px;font:550 29px/1.18 var(--serif,Georgia,serif);color:#1f3529}
+.glossary-atlas-bridge p{margin:0 0 12px;font:400 13px/1.7 var(--sans,system-ui);color:#566d5b}
+.glossary-atlas-bridge a{display:inline-block;margin:6px 12px 0 0;color:#195a33;font:750 13px/1.5 var(--sans,system-ui);text-decoration:underline;text-underline-offset:3px}
+.article-atlas-links{margin:28px 0;border-top:1px solid var(--journal-line,#d7dcd2);padding-top:19px}
+.article-atlas-links>div{display:flex;flex-wrap:wrap;gap:8px}
+.article-atlas-links a{display:inline-block;padding:10px 13px;border:1px solid #c3d3c4;background:#edf2e8;font:650 12px/1.5 var(--sans,system-ui);color:#20563a;border-radius:3px}
+.article-atlas-links a:hover{background:#dfe9dc}
+@media(max-width:600px){.glossary-atlas-bridge{padding:20px}}

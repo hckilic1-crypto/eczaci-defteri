@@ -96,23 +96,20 @@ const searchTerms = allGlossary.map(item => ({
   href: '/sozluk/' + item.id.replace(/\.json$/, '').split('/').pop()
 }));
 
-const referenceSections = [
-  { collection: 'atlas', title: 'Bileşen Atlası', prefix: '/atlas', key: 'name', summary: 'summary' },
-  { collection: 'labelGuides', title: 'Etiket Rehberi', prefix: '/etiket-rehberi', key: 'title', summary: 'summary' },
-  { collection: 'evidenceFiles', title: 'Kanıt Dosyaları', prefix: '/kanit-dosyalari', key: 'title', summary: 'summary' },
-  { collection: 'comparisons', title: 'Karşılaştırmalar', prefix: '/karsilastirmalar', key: 'title', summary: 'summary' }
-];
-const referenceSearch = (await Promise.all(referenceSections.map(async section => {
-  const records = await getCollection(section.collection, item => !item.data.draft);
-  return records.map(item => ({
-    title: item.data[section.key],
-    excerpt: item.data[section.summary],
-    category: section.title,
-    href: section.prefix + '/' + item.id.replace(/\\.json$/, '')
-  }));
-}))).flat();
-const searchData =
-  JSON.stringify([...searchPosts, ...searchTerms, ...referenceSearch]);
+const atlasSearch = (await getCollection('atlas', item => !item.data.draft))
+  .map(item => ({ title:item.data.name, excerpt:item.data.summary,
+    category:'Bileşen Atlası', href:'/atlas/'+item.id.replace(/\.json$/,'') }));
+const labelSearch = (await getCollection('labelGuides', item => !item.data.draft))
+  .map(item => ({ title:item.data.title, excerpt:item.data.summary,
+    category:'Etiket Rehberi', href:'/etiket-rehberi/'+item.id.replace(/\.json$/,'') }));
+const evidenceSearch = (await getCollection('evidenceFiles', item => !item.data.draft))
+  .map(item => ({ title:item.data.title, excerpt:item.data.summary,
+    category:'Kanıt Dosyaları', href:'/kanit-dosyalari/'+item.id.replace(/\.json$/,'') }));
+const comparisonSearch = (await getCollection('comparisons', item => !item.data.draft))
+  .map(item => ({ title:item.data.title, excerpt:item.data.summary,
+    category:'Karşılaştırmalar', href:'/karsilastirmalar/'+item.id.replace(/\.json$/,'') }));
+const referenceSearch = [...atlasSearch,...labelSearch,...evidenceSearch,...comparisonSearch];
+const searchData = JSON.stringify([...searchPosts, ...searchTerms, ...referenceSearch]);
 
 
 /* =========================================================
