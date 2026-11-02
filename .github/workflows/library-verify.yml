@@ -1,0 +1,22 @@
+name: Reference library build
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  validate-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Install
+        run: npm ci
+      - name: Validate library references
+        run: npm run validate:library
+      - name: Compile Astro site
+        env:
+          ENABLE_KEYSTATIC: 'false'
+        run: npm run build

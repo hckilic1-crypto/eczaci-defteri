@@ -7,7 +7,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "start": "node ./dist/server/entry.mjs"
+    "start": "node ./dist/server/entry.mjs",
+    "validate:library": "node scripts/validate-reference-library.mjs"
   },
   "dependencies": {
     "@astrojs/markdoc": "^2.1.1",
