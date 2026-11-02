@@ -1,0 +1,33 @@
+---
+import type { ContentLinkGroup } from '../lib/content-connections';
+interface Props {
+  groups: ContentLinkGroup[];
+  heading?: string;
+}
+const {groups, heading = 'İlgili kaynaklar'} = Astro.props;
+const visible = groups.filter(group => group.links.length > 0);
+---
+{visible.length > 0 && (
+  <nav class="reference-connections" aria-label={heading}>
+    <div class="reference-connections-head">
+      <span class="library-section-label">ECZACI DEFTERİ / BAĞLANTILI OKUMALAR</span>
+      <h2>{heading}</h2>
+      <p>Konuyu farklı bir açıdan incelemek için kaynaklar arasında ilerleyin.</p>
+    </div>
+    <div class="reference-connections-groups">
+      {visible.map(section => (
+        <section class="reference-connection-group">
+          <h3><span>{section.label}</span> {section.title}</h3>
+          <div class="reference-connection-items">
+            {section.links.map(item => (
+              <a href={item.href} class="reference-connection-link">
+                <span><strong>{item.title}</strong><small>{item.description}</small></span>
+                <span class="reference-connection-arrow" aria-hidden="true">↗</span>
+              </a>
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
+  </nav>
+)}

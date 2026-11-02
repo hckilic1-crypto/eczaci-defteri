@@ -1,0 +1,17 @@
+
+/* Linked reading paths: pre-rendered HTML, no client-side code or empty links. */
+.reference-connections{margin:38px 0 30px;border-top:2px solid #315e42;padding:30px 0 0;max-width:1040px}
+.reference-connections-head>h2{margin:9px 0 7px;font:550 clamp(30px,3.2vw,41px)/1.17 var(--serif,Georgia,serif);letter-spacing:-.028em;color:#24422f}
+.reference-connections-head>p{max-width:750px;margin:0 0 25px;color:#607364;font:400 13px/1.7 var(--sans,system-ui)}
+.reference-connections-groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:30px;row-gap:30px}
+.reference-connection-group{min-width:0}
+.reference-connection-group>h3{display:flex;gap:11px;align-items:baseline;margin:0 0 10px;border-bottom:1px solid #cad6c8;padding:0 0 12px;color:#345940;font:700 13px/1.5 var(--sans,system-ui)}
+.reference-connection-group>h3>span{font:700 10px/1.3 var(--sans,system-ui);letter-spacing:.12em;color:#758e78}
+.reference-connection-items{display:flex;flex-direction:column}
+.reference-connection-link{display:flex;min-width:0;justify-content:space-between;gap:17px;align-items:flex-start;padding:14px 0;border-bottom:1px solid #d9e2d6;color:#284e35;text-decoration:none}
+.reference-connection-link:hover strong{color:#167045;text-decoration:underline;text-underline-offset:3px}
+.reference-connection-link>span:first-child{min-width:0;display:flex;flex-direction:column;gap:5px}
+.reference-connection-link strong{font:650 13px/1.5 var(--sans,system-ui);overflow-wrap:anywhere}
+.reference-connection-link small{font:400 11px/1.5 var(--sans,system-ui);color:#6d806e}
+.reference-connection-arrow{font:400 21px/1.1 var(--serif,Georgia,serif);color:#4f7958}
+@media(max-width:720px){.reference-connections{margin-top:29px;padding-top:25px}.reference-connections-groups{grid-template-columns:1fr;row-gap:26px}}
