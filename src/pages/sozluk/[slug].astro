@@ -17,6 +17,7 @@ const slug=term.id.replace(/\.json$/,'').split('/').pop();
 const glossaryEntries = await getCollection('glossary', t => !t.data.draft);
 const others = relatedTermsForTerm(term, glossaryEntries);
 const relatedArticles = relatedPostsForTerm(term, await getCollection('posts', p => !p.data.draft));
+const atlasMatches = await getCollection('atlas', item => !item.data.draft && item.data.glossarySlug === slug);
 const structuredData={
   '@context':'https://schema.org',
   '@type':'DefinedTerm',
@@ -55,6 +56,14 @@ const structuredData={
         </section>
       )}
     </div>
+    {atlasMatches.length > 0 && (
+      <nav class="glossary-atlas-bridge" aria-label="Bileşen atlasında detaylı inceleme">
+        <span class="library-section-label">İLGİLİ BİLEŞEN DOSYASI</span>
+        <h2>Tanımdan ayrıntıya</h2>
+        <p>Etki mekanizması, klinik bağlam, etkileşim ve etiket okuma notları için atlas dosyasına geçin.</p>
+        {atlasMatches.map(item => <a href={'/atlas/'+item.id.replace(/\.json$/,'')}>{item.data.name} — Bileşen Atlası ↗</a>)}
+      </nav>
+    )}
     <nav class="glossary-entry-back"><a href="/sozluk">← Sözlükteki tüm terimler</a></nav>
     {relatedArticles.length > 0 && (
       <section class="glossary-entry-articles" aria-labelledby="glossary-article-heading">

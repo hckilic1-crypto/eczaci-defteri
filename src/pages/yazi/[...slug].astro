@@ -12,6 +12,7 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const termsForArticle = relatedTermsForPost(post, await getCollection('glossary', term => !term.data.draft));
+const atlasForArticle = await getCollection('atlas', item => !item.data.draft && item.data.relatedArticleSlug === post.id.replace(/\.mdoc$/, ''));
 const { Content, headings } = await render(post);
 const d = post.data;
 const categoryList = await getCollection('categories');
@@ -109,6 +110,12 @@ const structuredData = {
       )}
       <div class="journal-article-copy">
         <div class="article-body"><Content /></div>
+        {atlasForArticle.length > 0 && (
+          <nav class="article-atlas-links" aria-label="Yazıya bağlı bileşen atlası dosyaları">
+            <span class="glossary-detail-kicker">İLGİLİ BİLEŞEN DOSYALARI</span>
+            <div>{atlasForArticle.map(item => <a href={'/atlas/' + item.id.replace(/\.json$/, '')}>{item.data.name} — klinik bilgi, güvenlilik ve etiket ↗</a>)}</div>
+          </nav>
+        )}
         {termsForArticle.length > 0 && (
           <nav class="article-glossary-links" aria-labelledby="article-glossary-label">
             <span class="glossary-detail-kicker" id="article-glossary-label">BU YAZIDAKİ KAVRAMLAR</span>

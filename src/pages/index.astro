@@ -8,6 +8,8 @@ const posts = (await getCollection('posts', p => !p.data.draft))
 const categories = (await getCollection('categories'))
   .sort((a,b) => (a.data.order ?? 100) - (b.data.order ?? 100) || a.data.name.localeCompare(b.data.name,'tr'));
 const topCategories = categories.filter(c => !c.data.parent);
+const glossaryCount = (await getCollection('glossary', t => !t.data.draft)).length;
+const atlasCount = (await getCollection('atlas', t => !t.data.draft)).length;
 const featured = posts.find(p => p.data.featured) ?? posts[0];
 const latest = posts.filter(p => p.id !== featured?.id);
 const leadAside = latest.slice(0,2);
@@ -87,12 +89,12 @@ const dateLabel = p => new Intl.DateTimeFormat('tr-TR',{day:'numeric',month:'lon
         <span class="library-home-top"><small>01 / BİLEŞENLER</small><span aria-hidden="true">↗</span></span>
         <span class="library-home-symbol" aria-hidden="true">A—Z</span>
         <strong>Bileşen Atlası</strong>
-        <span>30 takviye ve dermokozmetik bileşeni. Mekanizma, klinik bağlam, güvenlilik, etkileşim ve etiket notları.</span>
+        <span>{atlasCount} takviye ve dermokozmetik bileşeni. Mekanizma, klinik bağlam, güvenlilik, etkileşim ve etiket notları.</span>
         <span class="library-home-action">Atlası incele ↗</span>
       </a>
       <a class="library-home-card" href="/sozluk">
         <span class="library-home-top"><small>02 / REFERANS</small><span aria-hidden="true">↗</span></span>
-        <strong>Eczacılık Sözlüğü</strong><span>500 terimlik kavram arşivi. Kısa tanımlar ve bağlantılı okumalar.</span>
+        <strong>Eczacılık Sözlüğü</strong><span>{glossaryCount} terimlik kavram arşivi. Kısa tanımlar ve bağlantılı okumalar.</span>
         <span class="library-home-action">Terimleri keşfet ↗</span>
       </a>
       <a class="library-home-card" href="/etiket-rehberi">
