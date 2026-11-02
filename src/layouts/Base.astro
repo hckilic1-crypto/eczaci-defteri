@@ -3,6 +3,7 @@ import '../styles/global.css';
 import '../styles/editorial.css';
 import '../styles/library.css';
 import '../styles/notebook-motifs.css';
+import '../styles/health-tools.css';
 import { getCollection } from 'astro:content';
 
 const {
@@ -475,6 +476,10 @@ const jsonLd = structuredData ? JSON.stringify(structuredData).replace(/</g, '\\
         Etiket Rehberi
       </a>
 
+      <a href="/araclar">
+        Araçlar
+      </a>
+
       <a href="/yazilar">
         Yazılar
       </a>
@@ -695,6 +700,7 @@ const jsonLd = structuredData ? JSON.stringify(structuredData).replace(/</g, '\\
       </a>
 
       <a href="/sozluk" class="mobile-main-link">Sözlük</a>
+      <a href="/araclar" class="mobile-main-link">Sağlık Araçları</a>
       <div class="library-mobile-links" aria-label="Referans kütüphanesi">
         <span>REFERANS KÜTÜPHANESİ</span>
         <a href="/atlas">Bileşen Atlası</a>
@@ -875,7 +881,7 @@ const jsonLd = structuredData ? JSON.stringify(structuredData).replace(/</g, '\\
         eczacılık pratiği üzerine kaynak odaklı içerikler.
       </p>
 
-      <nav class="journal-footer-links" aria-label="Alt menü"><a href="/yazilar">Yazılar</a><a href="/sozluk">Eczacılık Sözlüğü</a><a href="/atlas">Bileşen Atlası</a><a href="/etiket-rehberi">Etiket Rehberi</a><a href="/hakkinda">Hakkında</a></nav>
+      <nav class="journal-footer-links" aria-label="Alt menü"><a href="/yazilar">Yazılar</a><a href="/sozluk">Eczacılık Sözlüğü</a><a href="/atlas">Bileşen Atlası</a><a href="/etiket-rehberi">Etiket Rehberi</a><a href="/araclar">Sağlık Araçları</a><a href="/hakkinda">Hakkında</a></nav>
 
     </div>
 
