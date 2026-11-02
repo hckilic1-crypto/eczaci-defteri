@@ -21,15 +21,23 @@ const connected = [
   group('02','Blog yazıları', postsForAtlas(item,posts,3).map(link.post)),
   group('03','Etiket Okuma Rehberi', guidesForAtlas(item,guides,4).map(link.guide))
 ];
+const entryUrl = 'https://eczacidefteri.com/atlas/'+termSlug;
 const schema={
-  '@context':'https://schema.org','@type':'Article',
-  headline:d.name+' — Bileşen Atlası', description:d.summary,
-  mainEntityOfPage:'https://eczacidefteri.com/atlas/'+termSlug,
-  publisher:{'@type':'Organization',name:'Eczacı Defteri',url:'https://eczacidefteri.com'},
-  citation:d.sourceUrl
+  '@context':'https://schema.org',
+  '@graph':[
+    {'@type':'Article',headline:d.name+' — Bileşen Atlası',
+      description:d.summary,mainEntityOfPage:entryUrl,inLanguage:'tr-TR',
+      publisher:{'@type':'Organization',name:'Eczacı Defteri',url:'https://eczacidefteri.com/'},
+      citation:d.sourceUrl},
+    {'@type':'BreadcrumbList',itemListElement:[
+      {'@type':'ListItem',position:1,name:'Anasayfa',item:'https://eczacidefteri.com/'},
+      {'@type':'ListItem',position:2,name:'Bileşen Atlası',item:'https://eczacidefteri.com/atlas'},
+      {'@type':'ListItem',position:3,name:d.name,item:entryUrl}
+    ]}
+  ]
 };
 ---
-<Base title={d.name+' | Bileşen Atlası - Eczacı Defteri'} description={d.summary} structuredData={schema}>
+<Base title={d.name+' | Bileşen Atlası - Eczacı Defteri'} description={d.summary} type="article" structuredData={schema}>
   <article class="shell library-detail">
     <nav class="article-breadcrumbs" aria-label="Gezinme yolu"><a href="/">Anasayfa</a><span class="article-crumb-sep">/</span><a href="/atlas">Bileşen Atlası</a><span class="article-crumb-sep">/</span><span aria-current="page">{d.name}</span></nav>
     <header class="library-detail-head">

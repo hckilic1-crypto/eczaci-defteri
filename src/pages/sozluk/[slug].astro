@@ -28,18 +28,23 @@ const readingGroups = [
   group('02','Blog yazıları',relatedArticles.map(link.post)),
   group('03','Etiket Okuma Rehberi',relatedGuides.map(link.guide))
 ];
-const structuredData={
+const termUrl = 'https://eczacidefteri.com/sozluk/' + slug;
+const structuredData = {
   '@context':'https://schema.org',
-  '@type':'DefinedTerm',
-  name:d.name,
-  description:d.definition,
-  inDefinedTermSet:'https://eczacidefteri.com/sozluk',
-  url:'https://eczacidefteri.com/sozluk/'+slug,
-  ...(d.sourceUrl ? {citation:d.sourceUrl} : {})
+  '@graph':[
+    {'@type':'DefinedTerm',name:d.name,description:d.definition,
+      inDefinedTermSet:'https://eczacidefteri.com/sozluk',
+      url:termUrl,...(d.sourceUrl ? {citation:d.sourceUrl} : {})},
+    {'@type':'BreadcrumbList',itemListElement:[
+      {'@type':'ListItem',position:1,name:'Anasayfa',item:'https://eczacidefteri.com/'},
+      {'@type':'ListItem',position:2,name:'Sözlük',item:'https://eczacidefteri.com/sozluk'},
+      {'@type':'ListItem',position:3,name:d.name,item:termUrl}
+    ]}
+  ]
 };
 ---
 <Base
-  title={d.name+' Nedir? | Eczacılık Sözlüğü - Eczacı Defteri'}
+  title={d.name+' Nedir? | Eczacı Defteri'}
   description={d.definition}
   structuredData={structuredData}
 >

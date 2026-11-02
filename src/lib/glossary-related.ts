@@ -24,7 +24,9 @@ const aliases: Record<string, string[]> = {
 
 const normalize = (text: string) =>
   text.toLocaleLowerCase('tr-TR')
-    .replace(/ı/g, 'i')
+    .replace(/[ıİ]/g, 'i')
+  .replace(/ğ/g, 'g').replace(/ş/g, 's').replace(/ç/g, 'c')
+  .replace(/ö/g, 'o').replace(/ü/g, 'u')
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
     .replace(/[^a-z0-9]+/g, ' ')

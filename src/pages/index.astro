@@ -19,12 +19,22 @@ const morePosts = latest.slice(2,11);
 const slugOf = p => p.id.replace(/\.mdoc$/, '');
 const catLabel = p => categories.find(c => c.id.replace(/\.json$/,'').split('/').pop() === p.data.category)?.data.name || p.data.category.replaceAll('-',' ');
 const dateLabel = p => new Intl.DateTimeFormat('tr-TR',{day:'numeric',month:'long',year:'numeric'}).format(p.data.publishedAt);
+const structuredData = {
+  '@context':'https://schema.org',
+  '@graph':[
+    {'@type':'WebSite','@id':'https://eczacidefteri.com/#website',
+      name:'Eczacı Defteri',url:'https://eczacidefteri.com/',
+      inLanguage:'tr-TR',publisher:{'@id':'https://eczacidefteri.com/#organization'}},
+    {'@type':'Organization','@id':'https://eczacidefteri.com/#organization',
+      name:'Eczacı Defteri',url:'https://eczacidefteri.com/'}
+  ]
+};
 ---
 
 <Base
   title="Eczacı Defteri | Eczacılık, Takviyeler ve Dermokozmetik"
   description="Eczacılık, takviye edici gıdalar, dermokozmetik ve sağlık üzerine kaynaklı değerlendirmeler. Eczacı Defteri'nde bilgiyi kanıtıyla okuyun."
->
+ structuredData={structuredData}>
   <header class="shell journal-intro journal-intro--notebook">
     <div class="journal-intro-copy">
       <div class="journal-intro-label"><span class="journal-signet" aria-hidden="true">ED</span><span>BAĞIMSIZ ECZACILIK YAYINI</span></div>
