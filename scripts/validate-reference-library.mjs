@@ -2,7 +2,7 @@ import { readdir, readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
 const root = 'src/content';
-const dirs = ['glossary', 'posts', 'atlas', 'label-guides', 'evidence', 'comparisons'];
+const dirs = ['glossary', 'posts', 'atlas', 'label-guides'];
 const names = new Map();
 const content = new Map();
 let errors = 0;
@@ -25,14 +25,10 @@ for (const dir of dirs) {
 const required = {
   atlas: ['name','category','summary','mechanism','clinical','evidence','dose','warnings','interactions','labelTip','sourceLabel','sourceUrl'],
   'label-guides': ['title','category','summary','label','meaning','example','pitfall','checklist','sourceLabel','sourceUrl'],
-  evidence: ['title','area','claim','verdict','summary','evidence','limits','practical','sourceLabel','sourceUrl'],
-  comparisons: ['title','area','summary','leftName','rightName','leftDetail','rightDetail','keyDifference','practical','warning','sourceLabel','sourceUrl']
 };
 const linked = {
   atlas: { glossarySlug:'glossary', relatedArticleSlug:'posts' },
   'label-guides': { relatedAtlasSlug:'atlas' },
-  evidence: { relatedAtlasSlug:'atlas' },
-  comparisons: { leftAtlasSlug:'atlas', rightAtlasSlug:'atlas' }
 };
 for (const [file, { dir, entry }] of content) {
   for (const field of required[dir]) {
@@ -48,7 +44,7 @@ for (const [file, { dir, entry }] of content) {
     }
   }
 }
-for (const dir of ['atlas','label-guides','evidence','comparisons']) {
+for (const dir of ['atlas','label-guides']) {
   console.log(dir + ': ' + names.get(dir)?.size + ' kayıt');
 }
 if (errors) {

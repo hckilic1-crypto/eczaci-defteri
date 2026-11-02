@@ -130,37 +130,11 @@ const labelGuides = defineCollection({
   })
 });
 
-const evidenceFiles = defineCollection({
-  loader: glob({ base: './src/content/evidence', pattern: '**/*.json' }),
-  schema: z.object({
-    title: z.string(), area: z.string(), claim: z.string(),
-    verdict: z.enum(['Belirli koşullarda destekleniyor','Kanıt sınırlı','Genelleme yapılamaz','Kanıt yetersiz']),
-    summary: z.string(), evidence: z.string(), limits: z.string(),
-    practical: z.string(), sourceLabel: z.string(), sourceUrl: z.string().url(),
-    relatedAtlasSlug: z.string().optional(), draft: z.boolean().default(false)
-  })
-});
-
-const comparisons = defineCollection({
-  loader: glob({ base: './src/content/comparisons', pattern: '**/*.json' }),
-  schema: z.object({
-    title: z.string(), area: z.string(), summary: z.string(),
-    leftName: z.string(), rightName: z.string(),
-    leftDetail: z.string(), rightDetail: z.string(),
-    keyDifference: z.string(), practical: z.string(), warning: z.string(),
-    sourceLabel: z.string(), sourceUrl: z.string().url(),
-    leftAtlasSlug: z.string().optional(), rightAtlasSlug: z.string().optional(),
-    draft: z.boolean().default(false)
-  })
-});
-
 export const collections = {
   posts,
   categories,
   settings,
   glossary,
   atlas,
-  labelGuides,
-  evidenceFiles,
-  comparisons
+  labelGuides
 };

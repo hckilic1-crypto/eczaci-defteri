@@ -9,11 +9,7 @@ export async function getStaticPaths(){
 const {item}=Astro.props;
 const d=item.data;
 const termSlug=item.id.replace(/\.json$/,'');
-const [guides, evidence, comparisons] = await Promise.all([
-  getCollection('labelGuides', x=>!x.data.draft && x.data.relatedAtlasSlug===termSlug),
-  getCollection('evidenceFiles', x=>!x.data.draft && x.data.relatedAtlasSlug===termSlug),
-  getCollection('comparisons', x=>!x.data.draft && (x.data.leftAtlasSlug===termSlug||x.data.rightAtlasSlug===termSlug))
-]);
+const guides = await getCollection('labelGuides', x => !x.data.draft && x.data.relatedAtlasSlug === termSlug);
 const cleanSlug=item=>item.id.replace(/\.json$/,'');
 const schema={
   '@context':'https://schema.org','@type':'Article',
@@ -54,7 +50,7 @@ const schema={
         <a href="#kaynak">08 &nbsp; Kaynak</a>
       </aside>
     </div>
-    {(d.glossarySlug||d.relatedArticleSlug||guides.length||evidence.length||comparisons.length)>0 && (
+    {(d.glossarySlug||d.relatedArticleSlug||guides.length)>0 && (
       <nav class="library-connected" aria-label="Bağlantılı içerikler">
         <span class="library-section-label">KÜTÜPHANEDE DEVAM EDİN</span>
         <h2>Bağlantılı okumalar</h2>
@@ -62,8 +58,6 @@ const schema={
           {d.glossarySlug && <a href={'/sozluk/'+d.glossarySlug}>Sözlükteki tanımı ↗</a>}
           {d.relatedArticleSlug && <a href={'/yazi/'+d.relatedArticleSlug}>Konuyla ilgili yazı ↗</a>}
           {guides.map(x=><a href={'/etiket-rehberi/'+cleanSlug(x)}>{x.data.title} ↗</a>)}
-          {evidence.map(x=><a href={'/kanit-dosyalari/'+cleanSlug(x)}>{x.data.title} ↗</a>)}
-          {comparisons.map(x=><a href={'/karsilastirmalar/'+cleanSlug(x)}>{x.data.title} ↗</a>)}
         </div>
       </nav>
     )}

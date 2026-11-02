@@ -102,13 +102,7 @@ const atlasSearch = (await getCollection('atlas', item => !item.data.draft))
 const labelSearch = (await getCollection('labelGuides', item => !item.data.draft))
   .map(item => ({ title:item.data.title, excerpt:item.data.summary,
     category:'Etiket Rehberi', href:'/etiket-rehberi/'+item.id.replace(/\.json$/,'') }));
-const evidenceSearch = (await getCollection('evidenceFiles', item => !item.data.draft))
-  .map(item => ({ title:item.data.title, excerpt:item.data.summary,
-    category:'Kanıt Dosyaları', href:'/kanit-dosyalari/'+item.id.replace(/\.json$/,'') }));
-const comparisonSearch = (await getCollection('comparisons', item => !item.data.draft))
-  .map(item => ({ title:item.data.title, excerpt:item.data.summary,
-    category:'Karşılaştırmalar', href:'/karsilastirmalar/'+item.id.replace(/\.json$/,'') }));
-const referenceSearch = [...atlasSearch,...labelSearch,...evidenceSearch,...comparisonSearch];
+const referenceSearch = [...atlasSearch,...labelSearch];
 const searchData = JSON.stringify([...searchPosts, ...searchTerms, ...referenceSearch]);
 
 
@@ -473,7 +467,11 @@ const jsonLd = structuredData ? JSON.stringify(structuredData).replace(/</g, '\\
       </a>
 
       <a href="/atlas">
-        Kütüphane
+        Atlas
+      </a>
+
+      <a href="/etiket-rehberi">
+        Etiket Rehberi
       </a>
 
       <a href="/yazilar">
@@ -700,8 +698,6 @@ const jsonLd = structuredData ? JSON.stringify(structuredData).replace(/</g, '\\
         <span>REFERANS KÜTÜPHANESİ</span>
         <a href="/atlas">Bileşen Atlası</a>
         <a href="/etiket-rehberi">Etiket Okuma Rehberi</a>
-        <a href="/kanit-dosyalari">Bilimsel Kanıt Dosyaları</a>
-        <a href="/karsilastirmalar">Karşılaştırmalar</a>
       </div>
 
       <a
@@ -878,7 +874,7 @@ const jsonLd = structuredData ? JSON.stringify(structuredData).replace(/</g, '\\
         eczacılık pratiği üzerine kaynak odaklı içerikler.
       </p>
 
-      <nav class="journal-footer-links" aria-label="Alt menü"><a href="/yazilar">Yazılar</a><a href="/sozluk">Eczacılık Sözlüğü</a><a href="/atlas">Bileşen Atlası</a><a href="/etiket-rehberi">Etiket Rehberi</a><a href="/kanit-dosyalari">Kanıt Dosyaları</a><a href="/karsilastirmalar">Karşılaştırmalar</a><a href="/hakkinda">Hakkında</a></nav>
+      <nav class="journal-footer-links" aria-label="Alt menü"><a href="/yazilar">Yazılar</a><a href="/sozluk">Eczacılık Sözlüğü</a><a href="/atlas">Bileşen Atlası</a><a href="/etiket-rehberi">Etiket Rehberi</a><a href="/hakkinda">Hakkında</a></nav>
 
     </div>
 

@@ -91,7 +91,7 @@
 .library-home .journal-section-heading{margin-bottom:17px}
 .library-home-index{font:750 10px var(--sans,system-ui);letter-spacing:.12em;color:#748477}
 .library-home-intro{max-width:730px;margin:0 0 30px;color:#576a5c;font:400 15px/1.78 var(--sans,system-ui)}
-.library-home-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-left:1px solid #ced7ce;border-top:1px solid #ced7ce}
+.library-home-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-left:1px solid #ced7ce;border-top:1px solid #ced7ce}
 .library-home-card{
   display:flex;flex-direction:column;min-width:0;min-height:235px;
   padding:24px 26px 25px;border-right:1px solid #ced7ce;border-bottom:1px solid #ced7ce;
@@ -99,7 +99,7 @@
   transition:background .18s ease
 }
 .library-home-card:hover{background:#edf1e8}
-.library-home-feature{grid-column:span 2;min-height:276px;background:#e7ede3}
+.library-home-feature{grid-column:span 2;min-height:255px;background:#e7ede3}
 .library-home-top{display:flex;justify-content:space-between;gap:14px}
 .library-home-top small{font:750 10px/1.5 var(--sans,system-ui);letter-spacing:.13em;color:#2f6647}
 .library-home-top>span{font:400 20px/1 var(--serif,Georgia,serif);color:#2a5b3f}

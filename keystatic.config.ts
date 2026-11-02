@@ -50,7 +50,7 @@ repo: 'hckilic1-crypto/eczaci-defteri'  },
     },
     navigation: {
       'İçerik Yönetimi': ['posts', 'categories', 'glossary'],
-      'Referans Kütüphanesi': ['atlas', 'labelGuides', 'evidenceFiles', 'comparisons'],
+      'Referans Kütüphanesi': ['atlas', 'labelGuides'],
       'Site Yönetimi': ['site']
     }
   },
@@ -274,53 +274,6 @@ repo: 'hckilic1-crypto/eczaci-defteri'  },
         draft: fields.checkbox({ label: 'Taslak', defaultValue: false })
       }
     }),
-    evidenceFiles: collection({
-      label: 'Bilimsel Kanıt Dosyaları',
-      slugField: 'title', path: 'src/content/evidence/*',
-      format: { data: 'json' }, columns: ['verdict','draft'],
-      schema: {
-        title: fields.slug({ name: { label: 'Başlık', validation: { isRequired: true } } }),
-        area: fields.text({ label: 'Alan' }),
-        claim: fields.text({ label: 'İncelenen iddia', multiline: true }),
-        verdict: fields.select({ label: 'Sonuç', options: [
-          { label: 'Belirli koşullarda destekleniyor', value: 'Belirli koşullarda destekleniyor' },
-          { label: 'Kanıt sınırlı', value: 'Kanıt sınırlı' },
-          { label: 'Genelleme yapılamaz', value: 'Genelleme yapılamaz' },
-          { label: 'Kanıt yetersiz', value: 'Kanıt yetersiz' }
-        ], defaultValue: 'Kanıt sınırlı' }),
-        summary: fields.text({ label: 'Kısa sonuç', multiline: true }),
-        evidence: fields.text({ label: 'Mevcut kanıt', multiline: true }),
-        limits: fields.text({ label: 'Sınırlılıklar', multiline: true }),
-        practical: fields.text({ label: 'Uygulama notu', multiline: true }),
-        sourceLabel: fields.text({ label: 'Kaynak' }),
-        sourceUrl: fields.url({ label: 'Kaynak URL' }),
-        relatedAtlasSlug: fields.relationship({ label: 'İlgili bileşen', collection: 'atlas' }),
-        draft: fields.checkbox({ label: 'Taslak', defaultValue: false })
-      }
-    }),
-    comparisons: collection({
-      label: 'Karşılaştırma Kütüphanesi',
-      slugField: 'title', path: 'src/content/comparisons/*',
-      format: { data: 'json' }, columns: ['area','draft'],
-      schema: {
-        title: fields.slug({ name: { label: 'Başlık', validation: { isRequired: true } } }),
-        area: fields.text({ label: 'Alan' }),
-        summary: fields.text({ label: 'Kısa özet', multiline: true }),
-        leftName: fields.text({ label: 'İlk bileşen' }),
-        rightName: fields.text({ label: 'İkinci bileşen' }),
-        leftDetail: fields.text({ label: 'İlk bileşen açıklaması', multiline: true }),
-        rightDetail: fields.text({ label: 'İkinci bileşen açıklaması', multiline: true }),
-        keyDifference: fields.text({ label: 'Temel fark', multiline: true }),
-        practical: fields.text({ label: 'Seçim ve kullanım bağlamı', multiline: true }),
-        warning: fields.text({ label: 'Güvenlilik notu', multiline: true }),
-        sourceLabel: fields.text({ label: 'Kaynak' }),
-        sourceUrl: fields.url({ label: 'Kaynak URL' }),
-        leftAtlasSlug: fields.relationship({ label: 'İlk bileşenin atlas dosyası', collection: 'atlas' }),
-        rightAtlasSlug: fields.relationship({ label: 'İkinci bileşenin atlas dosyası', collection: 'atlas' }),
-        draft: fields.checkbox({ label: 'Taslak', defaultValue: false })
-      }
-    }),
-
     categories: collection({
       label: 'Kategoriler',
 
