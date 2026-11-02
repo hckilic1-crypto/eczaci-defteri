@@ -1,0 +1,9 @@
+{
+  "name": "Cilt pH'ı",
+  "category": "Dermokozmetik",
+  "definition": "Deri yüzeyinin asitlik düzeyini ifade eden ölçüttür.",
+  "explanation": "Bölge, temizlik ve kullanılan ürünlere göre değişebilir.",
+  "sourceLabel": "DermNet – Skin structure",
+  "sourceUrl": "https://dermnetnz.org/topics/skin-structure",
+  "draft": false
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Dermis",
+  "category": "Dermokozmetik",
+  "definition": "Epidermisin altında bulunan damar, sinir ve bağ dokusu içeren deri tabakasıdır.",
+  "explanation": "Kolajen ve elastin gibi matriks bileşenlerini içerir.",
+  "sourceLabel": "DermNet – Skin structure",
+  "sourceUrl": "https://dermnetnz.org/topics/skin-structure",
+  "draft": false
+}

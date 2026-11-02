@@ -1,0 +1,9 @@
+{
+  "name": "İzotretinoin",
+  "category": "Dermokozmetik",
+  "definition": "Özellikle ağır akne tedavisinde kullanılan sistemik retinoiddir.",
+  "explanation": "Gebelikte ciddi teratojenite riski nedeniyle sıkı güvenlik önlemleri gerektirir.",
+  "sourceLabel": "DermNet – Topical retinoids",
+  "sourceUrl": "https://dermnetnz.org/topics/topical-retinoids",
+  "draft": false
+}
