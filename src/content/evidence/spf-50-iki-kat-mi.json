@@ -1,0 +1,14 @@
+{
+  "title": "SPF 50, SPF 25'in iki katı mı?",
+  "area": "Dermokozmetik",
+  "claim": "SPF 50 güneş koruyucu SPF 25'e göre iki kat UVB ışınını filtreler.",
+  "verdict": "Genelleme yapılamaz",
+  "summary": "SPF derecesi kontrollü koşullarda eritem yanıtıyla ilişkilidir; filtrelenen UVB oranı doğrusal artmaz.",
+  "evidence": "Yeterli miktarda uygulama ve tekrar sürme korumanın önemli parçasıdır.",
+  "limits": "SPF yalnız UVA ve görünür ışığa karşı bütün korumayı anlatmaz.",
+  "practical": "Geniş spektrum SPF 30+ ve suya direnç etiketiyle birlikte değerlendirilmelidir.",
+  "sourceLabel": "AAD — Sun Protection",
+  "sourceUrl": "https://www.aad.org/public/everyday-care/sun-protection",
+  "relatedAtlasSlug": "gunes-koruyucu",
+  "draft": false
+}

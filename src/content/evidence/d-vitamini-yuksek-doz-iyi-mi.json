@@ -1,0 +1,14 @@
+{
+  "title": "D vitamininde daha yüksek doz daha iyi midir?",
+  "area": "Vitamin",
+  "claim": "D vitaminini ne kadar yüksek doz kullanırsak o kadar çok yarar görürüz.",
+  "verdict": "Genelleme yapılamaz",
+  "summary": "Eksiklik tedavisi gereksinimi belirler; yüksek alım hiperkalsemiye neden olabilir.",
+  "evidence": "Kemik metabolizmasındaki rolü belirgindir; birçok diğer hastalık için yüksek doz koruma kanıtı tutarlı değildir.",
+  "limits": "Başlangıç durumunu, toplam alımı ve klinik hedefi hesaba katmayan bir doz karşılaştırması yanıltıcıdır.",
+  "practical": "Birden fazla D vitamini ürünü kullanılırken toplam IU ve mikrogram hesabı yapılmalıdır.",
+  "sourceLabel": "NIH ODS — Vitamin D",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/",
+  "relatedAtlasSlug": "d-vitamini",
+  "draft": false
+}
