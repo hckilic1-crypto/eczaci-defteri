@@ -12,5 +12,12 @@
   "sourceLabel": "DermNet — Moisturisers",
   "sourceUrl": "https://dermnetnz.org/topics/moisturisers",
   "glossarySlug": "hyaluronik-asit",
-  "draft": false
+  "draft": false,
+  "molecularFormula": "Tek sabit molekül formülü yok; polimer",
+  "chemicalClass": "Doğrusal glikozaminoglikan",
+  "chemicalIdentity": "Glukuronik asit ve N-asetilglukozamin birimlerinin tekrarlanmasıyla oluşan çok uzun zincirli bir polimerdir. Zincir uzunluğu değişkendir.",
+  "formulations": "Hyaluronik asit, sodyum hyaluronat ve hidrolize formlar molekül ağırlığı ve iyon yönünden ayrılır. Topikal ve enjeksiyon ürünü aynı değildir.",
+  "studiedPopulation": "Topikal nemlendirme çalışmalarında ürünün bütün formülü önemlidir; dermal rejenerasyon ayrı iddiadır.",
+  "pharmacistChecklist": "Parfüm ve koruyucu duyarlılığı, cilt bariyeri ve kullanılan diğer aktifi sorgulayın.",
+  "practicalLimits": "Küçük molekül iddiası tek başına daha iyi klinik penetrasyon göstermez."
 }

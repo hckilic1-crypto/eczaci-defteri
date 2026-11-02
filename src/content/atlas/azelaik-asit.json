@@ -13,5 +13,13 @@
   "sourceUrl": "https://dermnetnz.org/topics/azelaic-acid",
   "glossarySlug": "azelaik-asit",
   "relatedArticleSlug": "azelaik-asit-akne-leke-kizariklik",
-  "draft": false
+  "draft": false,
+  "molecularFormula": "C9H16O4",
+  "chemicalClass": "Nonandioik asit; dikarboksilik asit",
+  "chemicalIdentity": "Dokuz karbonlu zincirin iki ucunda karboksil grubu vardır. Keratinizasyon, inflamasyon ve pigment oluşumuyla ilişkili farklı süreçleri etkiler.",
+  "formulations": "%10 kozmetik ürünle %15 jel veya %20 krem ilaç formülasyonu aynı maruziyet ve endikasyon değildir; taşıyıcı sistem önemlidir.",
+  "studiedPopulation": "Akne, papülopüstüler rozasea ve melazma/PIH gibi farklı gruplarda incelenmiştir.",
+  "pharmacistChecklist": "Kızarıklık, irritasyon, rosacea/akne tanısı, eşzamanlı AHA/BHA veya retinoid kullanımı değerlendirilir.",
+  "practicalLimits": "Tirozinaz üzerindeki biyokimyasal etki her cilt tipinde belirli bir pigment açılma oranı kanıtlamaz.",
+  "sourceChemUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/Azelaic-acid"
 }

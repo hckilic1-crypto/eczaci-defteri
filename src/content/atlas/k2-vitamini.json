@@ -13,5 +13,12 @@
   "sourceUrl": "https://ods.od.nih.gov/factsheets/VitaminK-HealthProfessional/",
   "glossarySlug": "k2-vitamini",
   "relatedArticleSlug": "d3-ve-k2-vitamini-birlikte-alinmali-mi-bilimsel-kanitlar-ne-soeylueyor",
-  "draft": false
+  "draft": false,
+  "molecularFormula": "MK-7: C46H64O2; MK-4: C31H40O2",
+  "chemicalClass": "Yağda çözünür menakinonlar",
+  "chemicalIdentity": "Menakinon ailesi farklı sayıda izopren yan zinciri taşıyan ayrı moleküllerden oluşur. MK-7 ve MK-4 kimyasal eşdeğer değildir.",
+  "formulations": "K1, MK-4 ve MK-7 farklı kinetik özelliklere ve araştırma dozlarına sahiptir.",
+  "studiedPopulation": "Kemik ve vasküler sonlanımlarda bazı biyobelirteç sonuçları vardır; tüm kişiler için D3+K2 zorunlu değildir.",
+  "pharmacistChecklist": "Varfarin ve diyet K alımı özellikle sorgulanmalıdır.",
+  "practicalLimits": "Osteokalsin karboksilasyonu değişimi her zaman kırık azaltımı demek değildir."
 }

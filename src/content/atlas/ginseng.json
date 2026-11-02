@@ -12,5 +12,12 @@
   "sourceLabel": "NCCIH — Asian Ginseng",
   "sourceUrl": "https://www.nccih.nih.gov/health/asian-ginseng",
   "glossarySlug": "panax-ginseng",
-  "draft": false
+  "draft": false,
+  "molecularFormula": "Tek moleküler formül yok",
+  "chemicalClass": "Panax kök ekstresi; ginsenozit karışımı",
+  "chemicalIdentity": "Panax ginseng kökü çeşitli triterpen saponinler ve diğer doğal bileşenler içerir. Rg1 ve Rb1 farklı moleküllerdir.",
+  "formulations": "Panax türü, kırmızı/beyaz işlem görme durumu, kök kısmı ve ginsenozit profilini değerlendirin.",
+  "studiedPopulation": "Yorgunluk, biliş ve glisemik ölçütler için farklı popülasyonlarda heterojen çalışmalar vardır.",
+  "pharmacistChecklist": "Varfarin, antidiyabetik ilaç, uyku sorunu ve ürünün bitki türü sorgulanmalı.",
+  "practicalLimits": "Adaptogen pazarlaması tek başına klinik endikasyon göstermez."
 }

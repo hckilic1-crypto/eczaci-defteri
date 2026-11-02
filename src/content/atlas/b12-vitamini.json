@@ -13,5 +13,12 @@
   "sourceUrl": "https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/",
   "glossarySlug": "b12-vitamini",
   "relatedArticleSlug": "b12-vitamini-eksikligi-ve-takviye-formlari",
-  "draft": false
+  "draft": false,
+  "molecularFormula": "Kobalamin formuna göre değişir",
+  "chemicalClass": "Kobalt içeren korrin halkalı vitaminler",
+  "chemicalIdentity": "B12 tek molekül değildir; metil, adenozil, hidroksi ve siyano gibi farklı aksiyal ligandlar taşıyan kobalamin formlarını içerir.",
+  "formulations": "Metilkobalamin, siyanokobalamin ve hidroksokobalaminin kimyasal yapısı ile oral/parenteral dozları aynı değildir.",
+  "studiedPopulation": "Vegan beslenenler, ileri yaştakiler, pernisiöz anemisi olanlar ve malabsorpsiyon hastalarında eksiklik riski yükselebilir.",
+  "pharmacistChecklist": "Hemogram, B12 düzeyi, nörolojik yakınma, ilaç öyküsü ve gerektiğinde MMA değerlendirilir.",
+  "practicalLimits": "Daha yüksek serum değeri her hastada daha üstün nörolojik düzelme anlamına gelmez."
 }

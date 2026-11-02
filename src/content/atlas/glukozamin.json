@@ -12,5 +12,13 @@
   "sourceLabel": "NCCIH — Glucosamine and Chondroitin",
   "sourceUrl": "https://www.nccih.nih.gov/health/glucosamine-and-chondroitin-for-osteoarthritis",
   "glossarySlug": "glukozamin-sulfat",
-  "draft": false
+  "draft": false,
+  "molecularFormula": "Serbest baz: C6H13NO5",
+  "chemicalClass": "Amino monosakkarit; tuz formları",
+  "chemicalIdentity": "Glukozamin, heksozun amin grubu taşıyan türevidir; sülfat veya HCl tuzlarında farklı bileşik kütlesi ortaya çıkar.",
+  "formulations": "Belirli kristalin glukozamin sülfat preparatıyla farklı takviye ürünleri biyoeşdeğer kabul edilmez.",
+  "studiedPopulation": "Diz osteoartriti çalışmalarında heterojen klinik sonuçlar bulunmuştur.",
+  "pharmacistChecklist": "Varfarin, şeker hastalığı, alerji ve tedavi edilmemiş eklem ağrısının nedeni değerlendirilir.",
+  "practicalLimits": "Kıkırdak biyokimyasında rol alması insanlarda kıkırdak rejenerasyonu kanıtlamaz.",
+  "sourceChemUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/Glucosamine"
 }

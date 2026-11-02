@@ -13,5 +13,12 @@
   "sourceUrl": "https://www.nccih.nih.gov/health/ashwagandha",
   "glossarySlug": "ashwagandha",
   "relatedArticleSlug": "ashwagandha-stres-uyku-ve-guvenlilik",
-  "draft": false
+  "draft": false,
+  "molecularFormula": "Tek moleküler formül yok",
+  "chemicalClass": "Withania somnifera fitokimyasal ekstre karışımı",
+  "chemicalIdentity": "Withanolid adı verilen steroidal laktonların oranı bitkinin kullanılan kısmı, ekstraksiyon çözücüsü ve üretime göre değişir. Örneğin withaferin A ayrı bir moleküldür; formülü bütün ashwagandha ekstresini temsil etmez.",
+  "formulations": "Kök ile kök+yaprak ekstreleri ve toplam withanolid standardizasyonu birbirine eşit değildir. Ekstrakt miktarı, DER ve marker yüzdesi birlikte okunmalıdır.",
+  "studiedPopulation": "Stres ve uyku araştırmaları genellikle kısa süreli ve yetişkin gruplarında yapılmıştır; gebeler ve karaciğer hastaları için sonuçlar genellenmez.",
+  "pharmacistChecklist": "Tiroid hastalığı, gebelik, sedatif/immünsüpresan tedavi ve karaciğer yakınmaları sorgulanmalı. Sarılık ve koyu idrar gibi belirtiler ciddi uyarıdır.",
+  "practicalLimits": "Laboratuvar kortizol değişimi tek başına tedavi etkinliği göstermez."
 }

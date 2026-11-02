@@ -12,5 +12,13 @@
   "sourceLabel": "DermNet — Alpha hydroxy acids",
   "sourceUrl": "https://dermnetnz.org/topics/alpha-hydroxy-acid",
   "glossarySlug": "glikolik-asit",
-  "draft": false
+  "draft": false,
+  "molecularFormula": "C2H4O3",
+  "chemicalClass": "Alfa hidroksi asit; hidroksiasetik asit",
+  "chemicalIdentity": "En küçük AHA molekülüdür; düşük pH'taki topikal preparatlarda stratum korneumun hücreler arası ayrışmasıyla ilişkilidir.",
+  "formulations": "Toplam yüzde yanında formül pH'ı ve serbest asit miktarı eksfoliasyon ve tahrişi belirler.",
+  "studiedPopulation": "Akne ve fotohasar görünümüne ilişkin araştırmalar farklı konsantrasyon ve temas sürelerindedir.",
+  "pharmacistChecklist": "Hassasiyet, koyu fototipte PIH riski, retinoid kombinasyonu ve UV korunma sorgulanmalı.",
+  "practicalLimits": "%20 profesyonel peeling ile %5 ev ürünü eşdeğer değildir.",
+  "sourceChemUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/Glycolic-Acid"
 }

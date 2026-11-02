@@ -13,5 +13,13 @@
   "sourceUrl": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/",
   "glossarySlug": "demir-bisglisinat",
   "relatedArticleSlug": "demir-takviyesi-ferritin-ve-emilim",
-  "draft": false
+  "draft": false,
+  "molecularFormula": "Fe",
+  "chemicalClass": "Esansiyel metal; Fe2+/Fe3+ bileşikleri",
+  "chemicalIdentity": "Hemoglobin, miyoglobin ve sitokromlarda rol alan metal elementtir. Ferro ve ferrik preparatlar ayrı kimyasal türler içerir.",
+  "formulations": "Sülfat, fumarat, glukonat ve bisglisinatta elementel demir yüzdesi farklıdır. Doz tuz gramına göre değil elementel içeriğe göre değerlendirilir.",
+  "studiedPopulation": "Demir eksikliği anemisi, inflamasyona eşlik eden anemi ve gebelikte laboratuvar yorumları farklıdır.",
+  "pharmacistChecklist": "Hemogram, ferritin, TSAT, inflamasyon, kan kaybı ve ilaçlar; çocuk zehirlenme riski sorgulanır.",
+  "practicalLimits": "Bütün anemiler demir eksikliği değildir, neden araştırılmadan yüksek doz başlamak hatalıdır.",
+  "sourceChemUrl": "https://pubchem.ncbi.nlm.nih.gov/element/Iron"
 }

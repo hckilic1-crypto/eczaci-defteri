@@ -12,5 +12,13 @@
   "sourceLabel": "NIH ODS — Vitamin D",
   "sourceUrl": "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/",
   "relatedArticleSlug": "d3-ve-k2-vitamini-birlikte-alinmali-mi-bilimsel-kanitlar-ne-soeylueyor",
-  "draft": false
+  "draft": false,
+  "molecularFormula": "D3: C27H44O; D2: C28H44O",
+  "chemicalClass": "Sekosteroid hormon öncülleri",
+  "chemicalIdentity": "D2 ve D3 farklı moleküllerdir. Karaciğer 25-hidroksilasyonu sonrası kalsidiol oluşur; aktif metabolit kalsitriol farklıdır.",
+  "formulations": "D2, D3, kalsifediol ve kalsitriol birbirinin yerine geçmez. D vitamini için 1 mcg = 40 IU'dur.",
+  "studiedPopulation": "Osteomalazi, malabsorpsiyon ve eksiklik gibi tabloların kanıtı tüm kronik hastalıklarda megadoz takviyesine genellenmez.",
+  "pharmacistChecklist": "Hiperkalsemi, renal fonksiyon, nefrolitiazis, tiyazidler ve toplam D vitamini/kalsiyum kullanımı kontrol edilir.",
+  "practicalLimits": "25-OH D düzeyinin artması tek başına her klinik sonlanımın iyileştiğini kanıtlamaz.",
+  "sourceChemUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/Cholecalciferol"
 }

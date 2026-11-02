@@ -13,5 +13,12 @@
   "sourceUrl": "https://www.aad.org/public/everyday-care/sun-protection/shade-clothing-sunscreen/understand-sunscreen-labels",
   "glossarySlug": "spf",
   "relatedArticleSlug": "spf-30-ve-spf-50-arasindaki-fark-nedir",
-  "draft": false
+  "draft": false,
+  "molecularFormula": "Tek moleküler formül yok",
+  "chemicalClass": "Çok bileşenli UV filtre preparatı",
+  "chemicalIdentity": "Güneş koruyucu, birden çok filtre ve taşıyıcı içeren bitmiş üründür. Örnek ZnO ve TiO2 ayrı inorganik filtre molekülleridir.",
+  "formulations": "SPF, geniş spektrum ve suya direnç son ürünün ayrı test edilmiş özellikleridir. Mineral/organik filtrelerin fotostabilitesi ve spektrumu değişir.",
+  "studiedPopulation": "UV hasarı ve güneş yanığı için fotokorunma verileri bulunur; melazmada görünür ışık özellikleri ayrıca önemlidir.",
+  "pharmacistChecklist": "SPF miktarı, doğru uygulama, yenileme, güneşle birlikte alınan ilaçlar ve cilt toleransı incelenir.",
+  "practicalLimits": "SPF 50, SPF 25'in engellediği UVB oranını iki katına çıkarmaz."
 }

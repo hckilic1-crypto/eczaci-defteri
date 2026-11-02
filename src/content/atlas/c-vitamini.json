@@ -13,5 +13,13 @@
   "sourceUrl": "https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/",
   "glossarySlug": "c-vitamini",
   "relatedArticleSlug": "c-vitamini-bagisiklik-soguk-alginligi-ve-takviye",
-  "draft": false
+  "draft": false,
+  "molecularFormula": "C6H8O6",
+  "chemicalClass": "L-askorbik asit; suda çözünen lakton",
+  "chemicalIdentity": "Askorbik asit, kollajen sentezindeki hidroksilazlar dahil çok sayıda reaksiyonun kofaktörü olan elektron verici moleküldür.",
+  "formulations": "Askorbik asit ile sodyum/kalsiyum askorbat aynı tuz ağırlığında aynı net C vitamini dozunu göstermez.",
+  "studiedPopulation": "Eksiklik/skorbüt tedavisindeki güçlü biyolojik gereklilik, soğuk algınlığı önleme iddiasıyla karıştırılmamalıdır.",
+  "pharmacistChecklist": "Böbrek taşı öyküsü, hemokromatoz, tolerans ve çoklu takviye kaynakları değerlendirilmeli.",
+  "practicalLimits": "Biyokimyasal antioksidan aktivite tek başına kanser veya enfeksiyon önlenmesi kanıtı değildir.",
+  "sourceChemUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/Ascorbic-Acid"
 }

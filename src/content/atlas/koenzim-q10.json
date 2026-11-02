@@ -12,5 +12,13 @@
   "sourceLabel": "NCCIH — Coenzyme Q10",
   "sourceUrl": "https://www.nccih.nih.gov/health/coenzyme-q10",
   "glossarySlug": "koenzim-q10",
-  "draft": false
+  "draft": false,
+  "molecularFormula": "C59H90O4 (ubikinon)",
+  "chemicalClass": "Lipofilik kinon; mitokondriyal koenzim",
+  "chemicalIdentity": "On izopren birimli yan zinciri olan bir benzoquinondur. Mitokondriyal elektron transferinde ubikinon ve ubikinol birbirine dönüşür.",
+  "formulations": "Ubikinon, ubikinol ve farklı yağ taşıyıcı preparatlar aynı biyoyararlanım profiline sahip değildir.",
+  "studiedPopulation": "Bazı spesifik kardiyovasküler ve nöromüsküler hasta gruplarında incelenmiştir; her yorgunluk durumunda tedavi değildir.",
+  "pharmacistChecklist": "Varfarin, eşzamanlı hipertansiyon ilaçları, kullanım gerekçesi ve ürün formu kontrol edilir.",
+  "practicalLimits": "Yüksek plazma düzeyi bütün klinik sonuçlarda iyileşme anlamına gelmez.",
+  "sourceChemUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/Coenzyme-Q10"
 }

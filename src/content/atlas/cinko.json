@@ -13,5 +13,13 @@
   "sourceUrl": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/",
   "glossarySlug": "cinko",
   "relatedArticleSlug": "cinko-takviyesi-ne-zaman-gerekli",
-  "draft": false
+  "draft": false,
+  "molecularFormula": "Zn",
+  "chemicalClass": "Esansiyel eser element; metal",
+  "chemicalIdentity": "Zn2+ iyonu çok sayıda metalloenzim ve yapısal proteinde rol alır. Takviye çinko iyonunu farklı tuzlarla sağlar.",
+  "formulations": "Glukonat, asetat ve pikolinat tuzlarının gramı değil elementel Zn dozu karşılaştırılır.",
+  "studiedPopulation": "Eksikliği olanlar ve soğuk algınlığında belirli pastil çalışmalarına katılanlar aynı grup değildir.",
+  "pharmacistChecklist": "Kronik yüksek dozda bakır eksikliği, mide yakınmaları ve kinolon/tetrasiklin etkileşimi sorgulanır.",
+  "practicalLimits": "Tuzun emilim avantajı bütün endikasyonlarda klinik üstünlük kanıtlamaz.",
+  "sourceChemUrl": "https://pubchem.ncbi.nlm.nih.gov/element/Zinc"
 }
