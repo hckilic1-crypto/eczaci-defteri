@@ -13,5 +13,13 @@
   "sourceUrl": "https://dermnetnz.org/topics/nicotinamide",
   "glossarySlug": "niasinamid",
   "relatedArticleSlug": "niasinamid-yuzde-5-mi-yuzde-10-mu",
-  "draft": false
+  "draft": false,
+  "molecularFormula": "C6H6N2O",
+  "chemicalClass": "Nikotinamid; vitamin B3 amidi",
+  "chemicalIdentity": "Nikotinamid, niasinin amid formudur; NAD/NADP oluşumu ve hücresel metabolizmayla ilişkilidir. Nikotinik asitten kimyasal olarak farklıdır.",
+  "formulations": "%2–5 ve %10 ürünlerin tahriş olasılığı, taşıyıcı sistemi ve diğer aktiflerle birlikte kullanımı farklıdır.",
+  "studiedPopulation": "Sebum, cilt bariyeri ve bazı pigmentasyon sonlanımlarında topikal ürünler araştırılmıştır.",
+  "pharmacistChecklist": "Kızarıklık, tahriş, eşzamanlı retinoid/asit ve parfümlü ürünler değerlendirilir.",
+  "practicalLimits": "Yüksek yüzde otomatik olarak daha iyi sonuç veya daha hızlı bariyer onarımı sağlamaz.",
+  "sourceChemUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/Niacinamide"
 }

@@ -12,5 +12,12 @@
   "sourceLabel": "Myung ve Park, American Journal of Medicine (2025) — Sistematik Derleme ve Meta-Analiz",
   "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/40324552/",
   "glossarySlug": "kollajen-peptitleri",
-  "draft": false
+  "draft": false,
+  "molecularFormula": "Tek moleküler formül yok",
+  "chemicalClass": "Fibröz proteinler ve peptit hidrolizatları",
+  "chemicalIdentity": "Kolajen, tip I/II/III gibi farklı aminoasit dizileri içeren uzun zincirli bir protein ailesidir. Hidrolize kollajen farklı uzunluktaki peptitlerin karışımıdır; tek kimyasal formülü yoktur.",
+  "formulations": "Deniz/büyükbaş kaynakları, kolajen tipi ve hidroliz derecesi farklıdır. Peptit miktarı ile aminoasit kompozisyonu ayrıca incelenmelidir.",
+  "studiedPopulation": "Cilt nemi, elastikiyet ve eklem ağrısı için farklı popülasyonlarda incelenmiştir; kalite düzeyi yüksek çalışmalardaki fayda net değildir.",
+  "pharmacistChecklist": "Kaynak alerjisi, toplam protein miktarı, beslenme ve UV koruması gözden geçirilir.",
+  "practicalLimits": "Kollajen almak ciltte yeni kolajen üretildiğinin kesin klinik kanıtı değildir."
 }

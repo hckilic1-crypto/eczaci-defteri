@@ -13,5 +13,13 @@
   "sourceUrl": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/",
   "glossarySlug": "omega-3-yag-asitleri",
   "relatedArticleSlug": "omega-3-epa-ve-dha-miktari-nasil-okunur",
-  "draft": false
+  "draft": false,
+  "molecularFormula": "EPA: C20H30O2; DHA: C22H32O2",
+  "chemicalClass": "Çoklu doymamış yağ asidi ailesi",
+  "chemicalIdentity": "Omega-3 tek molekül değil bir yağ asidi sınıfıdır. EPA, DHA ve ALA farklı karbon uzunluğu ve çift bağ sayısına sahiptir.",
+  "formulations": "Balık yağı, alg yağı, etil ester, trigliserit ve rTG ürünler farklı kimyasal sunum ve EPA+DHA dozları taşır.",
+  "studiedPopulation": "Hipertrigliseridemi için reçeteli ürün çalışmalarının sonuçları genel amaçlı kapsüllere doğrudan taşınamaz.",
+  "pharmacistChecklist": "EPA+DHA toplamı, ilaç etkileşimi, AF riski, allerji, ürün oksidasyonu ve toplam doz kontrol edilir.",
+  "practicalLimits": "1000 mg balık yağı 1000 mg EPA+DHA değildir.",
+  "sourceChemUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/Eicosapentaenoic-Acid"
 }

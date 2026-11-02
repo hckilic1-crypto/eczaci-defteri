@@ -13,5 +13,13 @@
   "sourceUrl": "https://www.nccih.nih.gov/health/melatonin-what-you-need-to-know",
   "glossarySlug": "melatonin",
   "relatedArticleSlug": "biyolojik-saat-sirkadiyen-ritim-uyku",
-  "draft": false
+  "draft": false,
+  "molecularFormula": "C13H16N2O2",
+  "chemicalClass": "N-asetil-5-metoksitriptamin; indolamin hormonu",
+  "chemicalIdentity": "Melatonin sirkadiyen saatle bağlantılı MT1/MT2 reseptörleri üzerinden etkili pineal hormondur. Uyku zamanlaması ve doğrudan sedasyon farklı kavramlardır.",
+  "formulations": "Hızlı ve uzatılmış salımlı formülasyonların etkisinin zamanlaması farklıdır; takviyelerde beyan edilen miktar her zaman gerçek analiz miktarına eşit değildir.",
+  "studiedPopulation": "Jet lag ve bazı sirkadiyen ritim durumlarında incelenmiştir; her tip kronik uykusuzluk aynı endikasyon değildir.",
+  "pharmacistChecklist": "Gebelik, çocuk, sedatif ilaçlar, sürüş güvenliği ve gündüz uyku hâli sorgulanmalıdır.",
+  "practicalLimits": "Uykuya dalma süresinin kısalması her uyku bozukluğunun tedavi edildiğini göstermez.",
+  "sourceChemUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/Melatonin"
 }

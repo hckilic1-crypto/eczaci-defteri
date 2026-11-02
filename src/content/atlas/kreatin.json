@@ -12,5 +12,13 @@
   "sourceLabel": "NIH ODS — Exercise and Athletic Performance",
   "sourceUrl": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/",
   "glossarySlug": "kreatin-monohidrat",
-  "draft": false
+  "draft": false,
+  "molecularFormula": "C4H9N3O2·H2O",
+  "chemicalClass": "Kreatin monohidrat; guanidinoasetat türevi",
+  "chemicalIdentity": "Kreatin monohidrat bir kreatin molekülü ve kristal suyu içerir; kas fosfokreatin havuzunu destekleyerek ATP yenilenmesine katkıda bulunur.",
+  "formulations": "Monohidrat, HCl ve diğer kreatin formları eşdeğer biyoyararlanım veya klinik veriyle desteklenmez. Monohidrat en iyi çalışılmış biçimdir.",
+  "studiedPopulation": "Direnç antrenmanı ve kısa süreli yüksek yoğunluklu egzersiz yapan yetişkinlerde performans ve kas gücü sonlanımları incelenmiştir.",
+  "pharmacistChecklist": "Böbrek hastalığı, birlikte kullanılan ilaçlar, hidrasyon, antrenman ve beslenme koşulları sorgulanır.",
+  "practicalLimits": "Kreatin sonrası serum kreatinin değişimi tek başına nefrotoksisite tanısı değildir.",
+  "sourceChemUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/Creatine-Monohydrate"
 }

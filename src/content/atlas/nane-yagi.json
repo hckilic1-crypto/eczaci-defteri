@@ -13,5 +13,12 @@
   "sourceUrl": "https://www.nccih.nih.gov/health/peppermint-oil",
   "glossarySlug": "nane-yagi",
   "relatedArticleSlug": "nane-yagi-ibs-sindirim-konforu",
-  "draft": false
+  "draft": false,
+  "molecularFormula": "Tek moleküler formül yok",
+  "chemicalClass": "Mentha × piperita uçucu yağ karışımı",
+  "chemicalIdentity": "Mentol (C10H20O), menton ve çok sayıda başka terpenoid içeren uçucu yağdır. Mentol formülü bütün yağın formülü değildir.",
+  "formulations": "Enterik kaplı kapsül ile uçucu yağ damlası, oral doz ve üst gastrointestinal çözünme bakımından farklıdır.",
+  "studiedPopulation": "IBS ilişkili abdominal ağrı ve yakınmalar için enterik kaplı bazı ürünlerle çalışmalar bulunur.",
+  "pharmacistChecklist": "Reflü, safra yolu yakınmaları, oral kullanıma uygunluk, çocuk yaşı ve antasit kullanımı kontrol edilir.",
+  "practicalLimits": "Kas gevşetici laboratuvar mekanizması her sindirim hastalığına uçucu yağ içirilmesini haklı çıkarmaz."
 }

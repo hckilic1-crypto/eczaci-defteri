@@ -12,5 +12,13 @@
   "sourceLabel": "NCCIH — Turmeric",
   "sourceUrl": "https://www.nccih.nih.gov/health/turmeric",
   "glossarySlug": "kurkumin",
-  "draft": false
+  "draft": false,
+  "molecularFormula": "C21H20O6",
+  "chemicalClass": "Polifenolik diarilheptanoid",
+  "chemicalIdentity": "Kurkumin zerdeçalın kurkuminoid bileşenlerindendir; demetoksikurkumin gibi diğer moleküllerle karışabilir.",
+  "formulations": "Saf kurkumin, toplam kurkuminoid ekstresi, piperinli ve misel/lipozomal formülasyonlar farklı maruziyet sağlayabilir.",
+  "studiedPopulation": "Osteoartrit ve inflamatuvar belirteçlerin incelendiği çalışmalarda ürün ve sonuç heterojenliği vardır.",
+  "pharmacistChecklist": "Karaciğer hastalığı, safra yolu bozukluğu, piperinle olası etkileşim, gebelik ve antikoagülan tedavi değerlendirilir.",
+  "practicalLimits": "Laboratuvardaki mekanistik antiinflamatuvar etki, insanda bütün hastalıkları tedavi ettiğini kanıtlamaz.",
+  "sourceChemUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/Curcumin"
 }

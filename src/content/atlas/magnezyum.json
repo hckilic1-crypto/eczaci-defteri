@@ -13,5 +13,13 @@
   "sourceUrl": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/",
   "glossarySlug": "magnezyum-bisglisinat",
   "relatedArticleSlug": "magnezyum-sitrat-mi-bisglisinat-mi-etikette-asil-neye-bakmali",
-  "draft": false
+  "draft": false,
+  "molecularFormula": "Mg",
+  "chemicalClass": "Esansiyel toprak alkali metal",
+  "chemicalIdentity": "Mg2+ ATP bağlayan enzimler, elektrolit dengesi ve kas-sinir iletiminde rol alır. Takviyede çoğunlukla sitrat, oksit, bisglisinat gibi tuz ve kompleksleri kullanılır.",
+  "formulations": "Magnezyum tuzlarının toplam gramı ile elementel magnezyum miktarı farklıdır. Çözünürlük ve gastrointestinal tolerans formlar arasında değişir.",
+  "studiedPopulation": "Eksikliği olan bireyler, migren gibi belirli araştırma grupları ve sağlıklı kullanıcılar ayrı değerlendirilir.",
+  "pharmacistChecklist": "Böbrek fonksiyonu, antasit/laksatif miktarı, kinolon, tetrasiklin ve bifosfonat uygulama aralığı kontrol edilir.",
+  "practicalLimits": "Tek bir magnezyum tuzunun bütün bireyler ve belirtilerde en iyi olduğu kanıtlanmamıştır.",
+  "sourceChemUrl": "https://pubchem.ncbi.nlm.nih.gov/element/Magnesium"
 }
