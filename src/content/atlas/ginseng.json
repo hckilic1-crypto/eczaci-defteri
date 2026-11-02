@@ -1,0 +1,16 @@
+{
+  "name": "Panax Ginseng",
+  "category": "Takviye",
+  "summary": "Ginseng adı tek bir türü veya tek bir standardize ekstraktı ifade etmez.",
+  "mechanism": "Panax ginseng kökü ginsenozitler içeren bitkisel drogdur.",
+  "clinical": "Yorgunluk ve bilişsel ölçütlerde araştırmalar olsa da etki popülasyon ve preparata göre değişir.",
+  "evidence": "Çalışmalar arasındaki ekstrakt ve doz farklılığı sonuçları sınırlayabilir.",
+  "dose": "Standart günlük doz bütün ginseng ürünlerine aktarılmaz.",
+  "warnings": "Uykusuzluk, kan şekeri değişiklikleri ve özel popülasyonlardaki veri eksikliği dikkate alınır.",
+  "interactions": "Antikoagülan ve antidiyabetik ilaç kullananlarda etkileşim değerlendirmesi yapılmalıdır.",
+  "labelTip": "Panax türünü, kök miktarını ve ginsenozit standardizasyonunu inceleyin.",
+  "sourceLabel": "NCCIH — Asian Ginseng",
+  "sourceUrl": "https://www.nccih.nih.gov/health/asian-ginseng",
+  "glossarySlug": "panax-ginseng",
+  "draft": false
+}

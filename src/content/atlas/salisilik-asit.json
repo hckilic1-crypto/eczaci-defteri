@@ -1,0 +1,16 @@
+{
+  "name": "Salisilik Asit",
+  "category": "Dermokozmetik",
+  "summary": "Salisilik asit keratolitik özellikli aromatik hidroksi asittir.",
+  "mechanism": "Foliküler keratin birikimini azaltan eksfoliyan preparatlarda kullanılabilir.",
+  "clinical": "Komedonal aknede bazı topikal formüllerde yer alır.",
+  "evidence": "Etki ve tolerans konsantrasyon, pH ve uygulama şekline bağlıdır.",
+  "dose": "Yüksek yüzdeli peelingler düşük yüzdeli günlük ürünlerle aynı şekilde kullanılmaz.",
+  "warnings": "Tahriş, kuruluk ve geniş yüzeye yanlış kullanımda sistemik toksisite ihtimali vardır.",
+  "interactions": "Retinoid ve başka eksfoliyanlarla irritasyon riski artabilir.",
+  "labelTip": "Asit yüzdesi kadar pH, formül tipi ve önerilen kullanım sıklığına bakın.",
+  "sourceLabel": "DermNet — Salicylic acid",
+  "sourceUrl": "https://dermnetnz.org/topics/salicylic-acid",
+  "glossarySlug": "salisilik-asit",
+  "draft": false
+}

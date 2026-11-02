@@ -1,0 +1,16 @@
+{
+  "name": "Psyllium (Karnıyarık Otu Lifi)",
+  "category": "Takviye",
+  "summary": "Psyllium çözünür, viskoz bir diyet lifi kaynağıdır.",
+  "mechanism": "Plantago ovata tohum kabuğu suyla jel oluşturarak dışkı kıvamını ve transit özelliklerini etkiler.",
+  "clinical": "Kabızlık ve bazı kardiyometabolik sonuçlarda uygun dozlarla çalışılmıştır.",
+  "evidence": "Etkiler yeterli sıvı, günlük lif toplamı ve ürün özelliklerine bağlıdır.",
+  "dose": "Doz artırımı toleransa göre kademeli olmalı, ürünün suyla alım talimatına uyulmalıdır.",
+  "warnings": "Yutma güçlüğü, bağırsak tıkanması ve yetersiz sıvı alımında risk doğabilir.",
+  "interactions": "Bazı oral ilaçların emilimini geciktirebileceği için uygun zaman aralığı gerekir.",
+  "labelTip": "Servisteki saf lif gramını ve sıvı gereksinimini kontrol edin.",
+  "sourceLabel": "MedlinePlus — Psyllium",
+  "sourceUrl": "https://medlineplus.gov/druginfo/meds/a601104.html",
+  "glossarySlug": "psyllium",
+  "draft": false
+}

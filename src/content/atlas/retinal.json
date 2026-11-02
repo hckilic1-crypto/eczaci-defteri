@@ -1,0 +1,16 @@
+{
+  "name": "Retinal (Retinaldehit)",
+  "category": "Dermokozmetik",
+  "summary": "Retinal, retinolden bir oksidasyon basamağı ileride bulunan A vitamini türevidir.",
+  "mechanism": "Retinoik aside dönüşebilen aldehit formundadır.",
+  "clinical": "Akne ve foto-yaşlanma hedefli kozmetik ürünlerde kullanılır.",
+  "evidence": "Eşit yüzde karşılaştırması ürünlerin klinik etkinliğini tek başına öngörmez.",
+  "dose": "Başlangıç sıklığı ve iritasyon toleransı birlikte değerlendirilir.",
+  "warnings": "Retinoid hassasiyeti ve gebelikte kullanım soruları tıbbi değerlendirmeyi gerektirir.",
+  "interactions": "BHA/AHA gibi etkinlerle birlikte irritasyon yükü artabilir.",
+  "labelTip": "Retinal ve retinol ifadelerini birbirinin yerine okumayın.",
+  "sourceLabel": "DermNet — Topical retinoids",
+  "sourceUrl": "https://dermnetnz.org/topics/topical-retinoids",
+  "glossarySlug": "retinaldehit",
+  "draft": false
+}

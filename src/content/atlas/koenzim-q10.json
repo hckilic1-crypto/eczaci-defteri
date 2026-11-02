@@ -1,0 +1,16 @@
+{
+  "name": "Koenzim Q10",
+  "category": "Takviye",
+  "summary": "Koenzim Q10 enerji metabolizmasında rol oynar; her yorgunluk için kanıtlanmış tedavi değildir.",
+  "mechanism": "Mitokondri elektron taşıma zincirinde ubikinon/ubikinol redoks çiftinin bileşenidir.",
+  "clinical": "Bazı özel kardiyolojik veya nörolojik durumlarda araştırılmıştır.",
+  "evidence": "Çalışmalar formül, doz ve klinik sonlanıma göre heterojendir.",
+  "dose": "Ubikinol ile ubikinon preparatları dozca doğrudan eşdeğer sayılmamalıdır.",
+  "warnings": "Gastrointestinal tolerans ve altta yatan hastalık önemlidir.",
+  "interactions": "Varfarinin antikoagülan etkisiyle etkileşim olasılığı değerlendirilmelidir.",
+  "labelTip": "Ubikinon/ubikinol ve porsiyon başına mg değerlerini ayrı okuyun.",
+  "sourceLabel": "NCCIH — Coenzyme Q10",
+  "sourceUrl": "https://www.nccih.nih.gov/health/coenzyme-q10",
+  "glossarySlug": "koenzim-q10",
+  "draft": false
+}

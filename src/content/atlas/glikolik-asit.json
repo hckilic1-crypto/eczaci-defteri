@@ -1,0 +1,16 @@
+{
+  "name": "Glikolik Asit",
+  "category": "Dermokozmetik",
+  "summary": "Glikolik asit alfa hidroksi asittir; ev kullanımı ve profesyonel peeling ayrılmalıdır.",
+  "mechanism": "Stratum korneum hücre bağlarını etkileyerek eksfoliasyon oluşturabilir.",
+  "clinical": "Doku ve pigment görünümüne ilişkin topikal çalışmaları vardır.",
+  "evidence": "Klinik sonuçlar pH, derişim ve temas süresine bağlıdır.",
+  "dose": "Kullanım aralığı ve sıklığı cilt tipine göre ayarlanır.",
+  "warnings": "Irritasyon ve güneşe hassasiyet artışı görülebilir.",
+  "interactions": "Diğer asitler ve retinoidler bir arada irritasyonu artırabilir.",
+  "labelTip": "AHA yüzdesine ek olarak pH ve uygulama biçimine bakın.",
+  "sourceLabel": "DermNet — Alpha hydroxy acids",
+  "sourceUrl": "https://dermnetnz.org/topics/alpha-hydroxy-acid",
+  "glossarySlug": "glikolik-asit",
+  "draft": false
+}

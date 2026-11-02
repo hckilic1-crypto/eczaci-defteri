@@ -1,0 +1,16 @@
+{
+  "name": "Topikal Traneksamik Asit",
+  "category": "Dermokozmetik",
+  "summary": "Topikal traneksamik asit pigmentasyon konularında araştırılan bir bileşiktir.",
+  "mechanism": "Plazminojen aktivasyonunun baskılanmasıyla ilişkili mekanizmaya sahiptir.",
+  "clinical": "Melazmada bazı topikal veya uygulama biçimleri araştırılmıştır.",
+  "evidence": "Hazırlama ve klinik protokoller heterojendir; oral kullanım kanıtları ayrı incelenmelidir.",
+  "dose": "Topikal ürünün miktarı ve kullanım süresi dermatolojik değerlendirmeyle belirlenmelidir.",
+  "warnings": "Hassas ciltte irritasyon; sistemik traneksamik asit için ayrı tromboz değerlendirmesi gerekir.",
+  "interactions": "İlaç statüsündeki oral uygulamanın etkileşim ve kontrendikasyonları topikal ürünlerle bir tutulmaz.",
+  "labelTip": "Topikal ile oral uygulamayı aynı doz veya güvenlilik kategorisi saymayın.",
+  "sourceLabel": "DermNet — Melasma",
+  "sourceUrl": "https://dermnetnz.org/topics/melasma",
+  "glossarySlug": "traneksamik-asit-topikal",
+  "draft": false
+}

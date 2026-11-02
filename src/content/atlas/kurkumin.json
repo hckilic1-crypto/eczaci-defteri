@@ -1,0 +1,16 @@
+{
+  "name": "Kurkumin",
+  "category": "Takviye",
+  "summary": "Kurkumin, zerdeçalın tek bileşeni değildir; konsantre ürünlerin güvenliği ayrıca değerlendirilir.",
+  "mechanism": "Curcuma longa rizomunda bulunan kurkuminoidlerden biridir.",
+  "clinical": "Bazı inflamasyon ve ağrı sonlanımlarında klinik araştırmaları vardır, hastalık tedavisi yerine geçmez.",
+  "evidence": "Farklı emilim artırıcı formüller karşılaştırılabilir değildir.",
+  "dose": "Çalışmalardaki mg miktarı toplam zerdeçal tozu yerine kurkuminoid miktarına göre okunmalıdır.",
+  "warnings": "Bazı yüksek biyoyararlanımlı ürünlerde karaciğer hasarı bildirilmiştir.",
+  "interactions": "İlaç kullananlarda özellikle antikoagülanlar ve emilim artırıcı piperin kombinasyonları sorgulanmalıdır.",
+  "labelTip": "Kurkumin yüzdesi, ekstrakt miktarı ve piperin ayrı yazılmalı.",
+  "sourceLabel": "NCCIH — Turmeric",
+  "sourceUrl": "https://www.nccih.nih.gov/health/turmeric",
+  "glossarySlug": "kurkumin",
+  "draft": false
+}

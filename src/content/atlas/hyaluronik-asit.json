@@ -1,0 +1,16 @@
+{
+  "name": "Hyaluronik Asit",
+  "category": "Dermokozmetik",
+  "summary": "Hyaluronik asit güçlü su bağlama kapasitesine sahip bir glikozaminoglikandır.",
+  "mechanism": "Formülün molekül ağırlığı ve taşıyıcısı nem tutma özelliklerini etkileyebilir.",
+  "clinical": "Topikal nemlendirme amacıyla kozmetiklerde yaygındır.",
+  "evidence": "Yalnızca yüksek molekül ağırlığı veya küçük molekül iddiası klinik üstünlük kanıtı değildir.",
+  "dose": "Nemlendirici uygulama, diğer bariyer bileşenleriyle birlikte değerlendirilir.",
+  "warnings": "Üründeki koruyucu ve parfümler bazı kişilerde kontakt yakınma yapabilir.",
+  "interactions": "Eşzamanlı topikal asit veya retinoid kullanımı ciltte toplam irritasyonu etkileyebilir.",
+  "labelTip": "Hyaluronik asit ve sodyum hyaluronatı benzer ama kimyasal olarak ayrı isimler olarak okuyun.",
+  "sourceLabel": "DermNet — Moisturisers",
+  "sourceUrl": "https://dermnetnz.org/topics/moisturisers",
+  "glossarySlug": "hyaluronik-asit",
+  "draft": false
+}

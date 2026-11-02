@@ -1,0 +1,16 @@
+{
+  "name": "Glukozamin",
+  "category": "Takviye",
+  "summary": "Glukozamin sülfat ve hidroklorür preparatları aynı klinik kanıta sahip değildir.",
+  "mechanism": "Kıkırdak bileşenleriyle ilişkili amino şekerdir.",
+  "clinical": "Osteoartritte ağrı ve fonksiyon çalışmalarının sonuçları tutarsızdır.",
+  "evidence": "Ürün standardizasyonu ve çalışma kalitesi sonuçları etkiler.",
+  "dose": "Belirli çalışmalarda kullanılan şema tüm takviyelere eşdeğer değildir.",
+  "warnings": "Gastrointestinal yakınmalar ve kişisel alerji öyküsü dikkate alınır.",
+  "interactions": "Varfarinle birlikte INR artışı bildirimleri nedeniyle ilaç uzlaştırması önemlidir.",
+  "labelTip": "Glukozamin tuzunu, günlük gerçek etkin madde miktarını ve eşlik eden kondroitini ayırın.",
+  "sourceLabel": "NCCIH — Glucosamine and Chondroitin",
+  "sourceUrl": "https://www.nccih.nih.gov/health/glucosamine-and-chondroitin-for-osteoarthritis",
+  "glossarySlug": "glukozamin-sulfat",
+  "draft": false
+}

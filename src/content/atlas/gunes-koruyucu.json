@@ -1,0 +1,17 @@
+{
+  "name": "Güneş Koruyucu ve SPF",
+  "category": "Dermokozmetik",
+  "summary": "SPF öncelikle UVB ile ilişkili eritem korumasını gösterir; UVA koruması da ayrıca önemlidir.",
+  "mechanism": "UV filtreleri farklı dalga boylarında radyasyonu soğurabilir veya saçabilir.",
+  "clinical": "Geniş spektrumlu SPF 30+ güneş koruyucular fotokorunmanın önemli parçasıdır.",
+  "evidence": "Doğru miktar ve yeniden uygulama, etiketteki sayıyı tamamlayan faktörlerdir.",
+  "dose": "Yeterli miktar uygulanmalı; dış ortamda yaklaşık iki saatte bir ve su/terleme sonrası yenilenmelidir.",
+  "warnings": "Cilt tipi, alerji öyküsü ve ürünün göz çevresi toleransı önemlidir.",
+  "interactions": "Fotosensitivite yapan ilaçlarla güneşten korunma gereksinimi artabilir.",
+  "labelTip": "SPF 30+, UVA/UVB geniş spektrum ve suya dayanıklılık bilgisini birlikte okuyun.",
+  "sourceLabel": "AAD — Decoding sunscreen labels",
+  "sourceUrl": "https://www.aad.org/public/everyday-care/sun-protection/shade-clothing-sunscreen/understand-sunscreen-labels",
+  "glossarySlug": "spf",
+  "relatedArticleSlug": "spf-30-ve-spf-50-arasindaki-fark-nedir",
+  "draft": false
+}

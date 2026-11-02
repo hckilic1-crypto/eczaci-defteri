@@ -1,0 +1,16 @@
+{
+  "name": "Retinol",
+  "category": "Dermokozmetik",
+  "summary": "Retinol, tretinoinle aynı molekül veya ilaç değildir.",
+  "mechanism": "Deri içinde retinal ve retinoik aside dönüşebilen A vitamini alkol formudur.",
+  "clinical": "Foto-yaşlanma görünümü ve cilt dokusu için bazı çalışmalar mevcuttur.",
+  "evidence": "Etkiler kararlılık, taşıyıcı sistem, konsantrasyon ve kullanım sürelerine bağlıdır.",
+  "dose": "Düşük sıklıkla başlama ve toleransa göre artırma yaklaşımı yararlı olabilir.",
+  "warnings": "Gebelikte retinoid kullanımı uygunluk açısından hekim değerlendirmesi gerektirir; tahriş gelişebilir.",
+  "interactions": "Eksfoliyan asitlerle birlikte kullanım irritasyonu artırabilir.",
+  "labelTip": "Retinol yüzdesi, ışık/hava geçirmez ambalaj ve kullanım talimatı önemli.",
+  "sourceLabel": "DermNet — Topical retinoids",
+  "sourceUrl": "https://dermnetnz.org/topics/topical-retinoids",
+  "glossarySlug": "retinol",
+  "draft": false
+}

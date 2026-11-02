@@ -1,0 +1,17 @@
+{
+  "name": "Nane Yağı",
+  "category": "Takviye",
+  "summary": "Enterik kaplı nane yağı belirli İBS semptomlarının yönetiminde araştırılmıştır.",
+  "mechanism": "Mentol gibi monoterpenleri içeren uçucu yağ karışımıdır.",
+  "clinical": "Bazı klinik çalışmalarda abdominal ağrı gibi semptomlarda yarar gösterilmiştir.",
+  "evidence": "Güncel kanıt doğrudan tüm nane ürünlerinin eşdeğer olduğunu göstermez.",
+  "dose": "Formülasyonun enterik kaplaması, kapsül dozundan ayrı önem taşır.",
+  "warnings": "Reflü ve özofageal yanma yakınmalarını artırabilir; çocuklarda ve özel gruplarda dikkat gerekir.",
+  "interactions": "Antasit kullanımı bazı enterik ürünlerin kaplama davranışını etkileyebilir.",
+  "labelTip": "Uçucu yağ damlasıyla enterik kaplı kapsül aynı ürün değildir.",
+  "sourceLabel": "NCCIH — Peppermint Oil",
+  "sourceUrl": "https://www.nccih.nih.gov/health/peppermint-oil",
+  "glossarySlug": "nane-yagi",
+  "relatedArticleSlug": "nane-yagi-ibs-sindirim-konforu",
+  "draft": false
+}

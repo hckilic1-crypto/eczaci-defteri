@@ -1,0 +1,17 @@
+{
+  "name": "Azelaik Asit",
+  "category": "Dermokozmetik",
+  "summary": "Azelaik asit akne, rozasea ve pigmentasyon konularında kullanılan dikarboksilik asittir.",
+  "mechanism": "Komedon oluşumu, inflamasyon ve pigmentasyon yollarıyla ilişkili etkilere sahiptir.",
+  "clinical": "Belirli konsantrasyonlarda ilaç endikasyonları vardır; kozmetik ürünler aynı statüde değildir.",
+  "evidence": "Uygun etki ve tolerans konsantrasyona ve kullanım alanına göre değişir.",
+  "dose": "Reçeteli preparat ile kozmetik formülün uygulama rejimi eşdeğer değildir.",
+  "warnings": "İlk haftalarda batma, yanma veya kuruluk oluşabilir.",
+  "interactions": "Tahriş edici başka topikallerle kombinasyon toleransı azaltabilir.",
+  "labelTip": "Yüzde ve ürün statüsünü ayırt edin; yalnızca içerik adından tedavi endikasyonu çıkarmayın.",
+  "sourceLabel": "DermNet — Azelaic acid",
+  "sourceUrl": "https://dermnetnz.org/topics/azelaic-acid",
+  "glossarySlug": "azelaik-asit",
+  "relatedArticleSlug": "azelaik-asit-akne-leke-kizariklik",
+  "draft": false
+}
