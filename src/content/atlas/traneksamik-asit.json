@@ -12,5 +12,13 @@
   "sourceLabel": "DermNet — Melasma",
   "sourceUrl": "https://dermnetnz.org/topics/melasma",
   "glossarySlug": "traneksamik-asit-topikal",
-  "draft": false
+  "draft": false,
+  "molecularFormula": "C8H15NO2",
+  "chemicalClass": "Trans-4-(aminometil)siklohekzankarboksilik asit",
+  "chemicalIdentity": "Traneksamik asit, lizin analoğu antifibrinolitik etkin maddedir. Topikal kozmetikte pigmentasyon kullanımının mekanistik arka planı sistemik hemostatik ilaç kullanımından ayrıdır.",
+  "formulations": "Topikal serum, dermatolojik uygulamalar ve oral tabletler sistemik maruziyet ve risk açısından aynı değildir.",
+  "studiedPopulation": "Melazma gibi pigmentasyon tablolarındaki topikal çalışmalarda belirli formülasyon ve süreler kullanılmıştır.",
+  "pharmacistChecklist": "Topikal irritasyon ile oral traneksamik asidin tromboembolik riskleri farklı risk bağlamlarında ele alınmalıdır.",
+  "practicalLimits": "Topikal maddenin bulunması oral kullanımda tanımlı güvenlilik koşullarıyla eşdeğer olduğu anlamına gelmez.",
+  "sourceChemUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/Tranexamic-Acid"
 }

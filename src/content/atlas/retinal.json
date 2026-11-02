@@ -12,5 +12,13 @@
   "sourceLabel": "DermNet — Topical retinoids",
   "sourceUrl": "https://dermnetnz.org/topics/topical-retinoids",
   "glossarySlug": "retinaldehit",
-  "draft": false
+  "draft": false,
+  "molecularFormula": "C20H28O",
+  "chemicalClass": "Retinaldehit; retinoid aldehit",
+  "chemicalIdentity": "Retinal, retinolden retinoik aside ilerleyen oksidasyon yolundaki A vitamini aldehitidir. Tretinoinle aynı etkin madde değildir.",
+  "formulations": "Retinal yüzdesi, stabilizasyon/enkapsülasyon, taşıyıcı ve gerçek moleküler korunma ürüne göre farklıdır.",
+  "studiedPopulation": "Akne görünümü ve foto-yaşlanma için retinoid ürün araştırmalarında incelenmiştir.",
+  "pharmacistChecklist": "Gebelik, tahriş, cilt bariyeri bozukluğu ve eşzamanlı AHA/BHA ile kullanım değerlendirilir.",
+  "practicalLimits": "Retinalin yüzde 0,1 olması retinol yüzde 0,3'e karşı tek başına üstünlük göstermez.",
+  "sourceChemUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/retinaldehyde"
 }

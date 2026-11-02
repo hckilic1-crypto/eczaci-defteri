@@ -12,5 +12,12 @@
   "sourceLabel": "MedlinePlus — Psyllium",
   "sourceUrl": "https://medlineplus.gov/druginfo/meds/a601104.html",
   "glossarySlug": "psyllium",
-  "draft": false
+  "draft": false,
+  "molecularFormula": "Tek moleküler formül yok",
+  "chemicalClass": "Plantago ovata tohum kabuğu; polisakkarit karışımı",
+  "chemicalIdentity": "Psyllium büyük oranda arabinoksilanlar barındıran, molekül ağırlığı dağılımı değişken doğal liftir. Tek bir küçük molekül formülü yoktur.",
+  "formulations": "Toz, kabuk, kapsül ve çok bileşenli lif karışımları viskozite ile sıvı gereksinimi bakımından ayrılır.",
+  "studiedPopulation": "Kabızlık, bazı dışkı kıvamı sorunları ve lipid düzeyi sonlanımlarında incelenmiştir.",
+  "pharmacistChecklist": "Yutma güçlüğü, bağırsak tıkanması, yeterli su ve eş zamanlı oral ilaçlarla alım aralığı sorgulanır.",
+  "practicalLimits": "Az suyla kullanılan hacim artırıcı lif boğulma veya obstrüksiyon riski oluşturabilir."
 }

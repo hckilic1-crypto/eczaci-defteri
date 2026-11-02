@@ -13,5 +13,12 @@
   "sourceUrl": "https://ods.od.nih.gov/factsheets/Probiotics-HealthProfessional/",
   "glossarySlug": "probiyotik",
   "relatedArticleSlug": "probiyotik-secerken-cfu-mu-sus-mu",
-  "draft": false
+  "draft": false,
+  "molecularFormula": "Tek moleküler formül yok",
+  "chemicalClass": "Canlı mikroorganizma ve suş bazlı preparatlar",
+  "chemicalIdentity": "Probiyotik canlı organizma temelli bir işlevsel tanımdır; belirli bir tek molekülün formülüyle gösterilemez. Tür ile suş kodu farklı bilimsel kimlik düzeyleridir.",
+  "formulations": "Lactobacillaceae üyeleri, Bifidobacterium türleri ve S. boulardii mayaları biyolojik açıdan birbirinden farklıdır.",
+  "studiedPopulation": "Antibiyotik ilişkili ishal ve seçilmiş bağırsak yakınmaları için belirli suşları içeren çalışmalar vardır.",
+  "pharmacistChecklist": "Suş kodu, son kullanma tarihindeki CFU, santral venöz kateter, ağır immünsüpresyon ve antibiyotik/antifungal kullanımı incelenir.",
+  "practicalLimits": "Yüksek CFU, her hastada veya her endikasyonda klinik etkinlik kanıtlamaz."
 }

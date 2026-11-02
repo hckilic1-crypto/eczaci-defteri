@@ -13,5 +13,12 @@
   "sourceUrl": "https://isappscience.org/resource/prebiotics-consensus-statement/",
   "glossarySlug": "prebiyotik",
   "relatedArticleSlug": "sinbiyotik-ve-postbiyotik-nedir",
-  "draft": false
+  "draft": false,
+  "molecularFormula": "Tek moleküler formül yok",
+  "chemicalClass": "Seçici kullanılan mikrobiyal substratlar",
+  "chemicalIdentity": "Prebiyotik belirli bir molekül adı değil, konağın mikroorganizmalarınca seçici kullanılması ve sağlık yararı göstermesi koşuluyla tanımlanan substrattır.",
+  "formulations": "İnülin, GOS ve FOS'un polimer zincir uzunlukları, şeker bileşimi ve fermentasyon özellikleri farklıdır.",
+  "studiedPopulation": "Bağırsak dışkılama, mikrobiyal kompozisyon ve çeşitli metabolik sonlanımlar için farklı alt gruplarda çalışılmıştır.",
+  "pharmacistChecklist": "IBS/FODMAP hassasiyeti, lif dozu, gaz ve şişkinlik, mevcut lif alımı ve sıvı tüketimi sorgulanır.",
+  "practicalLimits": "Her fermente edilebilir lif otomatik olarak klinik prebiyotik değildir."
 }

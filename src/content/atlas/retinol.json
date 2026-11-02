@@ -12,5 +12,13 @@
   "sourceLabel": "DermNet — Topical retinoids",
   "sourceUrl": "https://dermnetnz.org/topics/topical-retinoids",
   "glossarySlug": "retinol",
-  "draft": false
+  "draft": false,
+  "molecularFormula": "C20H30O",
+  "chemicalClass": "A vitamini alkolü; retinoid öncülü",
+  "chemicalIdentity": "Retinol retinale ve daha sonra retinoik aside dönüşebilir; doğrudan tretinoin değildir. Lipofilik yapısı ve oksidasyon duyarlılığı formülasyon tasarımını önemli hâle getirir.",
+  "formulations": "Anhidroz yağ, emülsiyon, enkapsüle retinol ve diğer esterler stabilite ile uygulama toleransında farklıdır.",
+  "studiedPopulation": "Foto-yaşlanma görünümü, kırışıklık ve cilt dokusu araştırmalarında belirli kozmetik ürünler kullanılmıştır.",
+  "pharmacistChecklist": "Gebelik ve emzirme planı, hassas cilt, AHA/BHA ve gündüz güneş koruyucu kullanımı sorgulanır.",
+  "practicalLimits": "Daha yüksek retinol yüzde değeri daha iyi stabilite veya tüm ciltlerde daha hızlı etki demek değildir.",
+  "sourceChemUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/Retinol"
 }

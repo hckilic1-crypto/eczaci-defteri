@@ -13,5 +13,12 @@
   "sourceUrl": "https://www.aad.org/public/everyday-care/skin-care-basics/dry/pick-moisturizer",
   "glossarySlug": "seramid",
   "relatedArticleSlug": "seramidler-cilt-bariyeri-ve-nemlendirme",
-  "draft": false
+  "draft": false,
+  "molecularFormula": "Tek moleküler formül yok",
+  "chemicalClass": "Zincir uzunluğu değişken sfingolipit ailesi",
+  "chemicalIdentity": "Seramidler yağ asidi ile sfingoid baz arasında amid bağı taşıyan lipitler ailesidir. NP, AP veya EOP gibi grupların kimyasal zincirleri ve formülleri farklıdır.",
+  "formulations": "Seramid NP/EOP/AP, serbest yağ asitleri ve kolesterol oranı bitmiş nemlendiricinin bariyer performansında önemlidir.",
+  "studiedPopulation": "Kuru, atopiye eğilimli veya bariyeri bozulmuş ciltte seramidli ürünler incelenmiştir.",
+  "pharmacistChecklist": "Koruyucular, parfüm, kontakt dermatit öyküsü, sebum ve eşzamanlı reçeteli topikaller değerlendirilir.",
+  "practicalLimits": "Etikette seramid bulunması klinik atopik dermatit tedavisinin tek başına yerine geçmez."
 }
