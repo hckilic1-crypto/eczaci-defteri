@@ -104,9 +104,63 @@ const glossary = defineCollection({
   })
 });
 
+
+/** Structured editorial references: all records are editable in Keystatic. */
+const atlas = defineCollection({
+  loader: glob({ base: './src/content/atlas', pattern: '**/*.json' }),
+  schema: z.object({
+    name: z.string(), category: z.enum(['Takviye', 'Dermokozmetik']),
+    summary: z.string(), mechanism: z.string(), clinical: z.string(),
+    evidence: z.string(), dose: z.string(), warnings: z.string(),
+    interactions: z.string(), labelTip: z.string(),
+    sourceLabel: z.string(), sourceUrl: z.string().url(),
+    glossarySlug: z.string().optional(), relatedArticleSlug: z.string().optional(),
+    draft: z.boolean().default(false)
+  })
+});
+
+const labelGuides = defineCollection({
+  loader: glob({ base: './src/content/label-guides', pattern: '**/*.json' }),
+  schema: z.object({
+    title: z.string(), category: z.string(), summary: z.string(),
+    label: z.string(), meaning: z.string(), example: z.string(),
+    pitfall: z.string(), checklist: z.string(),
+    sourceLabel: z.string(), sourceUrl: z.string().url(),
+    relatedAtlasSlug: z.string().optional(), draft: z.boolean().default(false)
+  })
+});
+
+const evidenceFiles = defineCollection({
+  loader: glob({ base: './src/content/evidence', pattern: '**/*.json' }),
+  schema: z.object({
+    title: z.string(), area: z.string(), claim: z.string(),
+    verdict: z.enum(['Belirli koşullarda destekleniyor','Kanıt sınırlı','Genelleme yapılamaz','Kanıt yetersiz']),
+    summary: z.string(), evidence: z.string(), limits: z.string(),
+    practical: z.string(), sourceLabel: z.string(), sourceUrl: z.string().url(),
+    relatedAtlasSlug: z.string().optional(), draft: z.boolean().default(false)
+  })
+});
+
+const comparisons = defineCollection({
+  loader: glob({ base: './src/content/comparisons', pattern: '**/*.json' }),
+  schema: z.object({
+    title: z.string(), area: z.string(), summary: z.string(),
+    leftName: z.string(), rightName: z.string(),
+    leftDetail: z.string(), rightDetail: z.string(),
+    keyDifference: z.string(), practical: z.string(), warning: z.string(),
+    sourceLabel: z.string(), sourceUrl: z.string().url(),
+    leftAtlasSlug: z.string().optional(), rightAtlasSlug: z.string().optional(),
+    draft: z.boolean().default(false)
+  })
+});
+
 export const collections = {
   posts,
   categories,
   settings,
-  glossary
+  glossary,
+  atlas,
+  labelGuides,
+  evidenceFiles,
+  comparisons
 };

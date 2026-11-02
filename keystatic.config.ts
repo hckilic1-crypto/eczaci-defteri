@@ -50,6 +50,7 @@ repo: 'hckilic1-crypto/eczaci-defteri'  },
     },
     navigation: {
       'İçerik Yönetimi': ['posts', 'categories', 'glossary'],
+      'Referans Kütüphanesi': ['atlas', 'labelGuides', 'evidenceFiles', 'comparisons'],
       'Site Yönetimi': ['site']
     }
   },
@@ -226,6 +227,97 @@ repo: 'hckilic1-crypto/eczaci-defteri'  },
           description: 'İşaretli terim sözlükte görünmez.',
           defaultValue: false
         })
+      }
+    }),
+
+
+    atlas: collection({
+      label: 'Bileşen Atlası',
+      slugField: 'name', path: 'src/content/atlas/*',
+      format: { data: 'json' }, columns: ['category', 'draft'],
+      schema: {
+        name: fields.slug({ name: { label: 'Bileşen', validation: { isRequired: true } } }),
+        category: fields.select({ label: 'Alan', options: [
+          { label: 'Takviye', value: 'Takviye' }, { label: 'Dermokozmetik', value: 'Dermokozmetik' }
+        ], defaultValue: 'Takviye' }),
+        summary: fields.text({ label: 'Özet', multiline: true, validation: { isRequired: true } }),
+        mechanism: fields.text({ label: 'Mekanizma / nedir?', multiline: true }),
+        clinical: fields.text({ label: 'Klinik kullanım ve kanıtın sınırı', multiline: true }),
+        evidence: fields.text({ label: 'Kanıt düzeyine ilişkin not', multiline: true }),
+        dose: fields.text({ label: 'Çalışma dozu / kullanım bağlamı', multiline: true }),
+        warnings: fields.text({ label: 'Kontrendikasyon ve uyarılar', multiline: true }),
+        interactions: fields.text({ label: 'Olası ilaç etkileşimleri', multiline: true }),
+        labelTip: fields.text({ label: 'Etiket okuma ipucu', multiline: true }),
+        sourceLabel: fields.text({ label: 'Kaynak adı' }),
+        sourceUrl: fields.url({ label: 'Kaynak URL' }),
+        glossarySlug: fields.text({ label: 'Sözlük dosya adı (uzantısız)' }),
+        relatedArticleSlug: fields.text({ label: 'İlgili yazı slug (opsiyonel)' }),
+        draft: fields.checkbox({ label: 'Taslak', defaultValue: false })
+      }
+    }),
+    labelGuides: collection({
+      label: 'Etiket Okuma Rehberi',
+      slugField: 'title', path: 'src/content/label-guides/*',
+      format: { data: 'json' }, columns: ['category','draft'],
+      schema: {
+        title: fields.slug({ name: { label: 'Başlık', validation: { isRequired: true } } }),
+        category: fields.text({ label: 'Konu alanı' }),
+        summary: fields.text({ label: 'Özet', multiline: true }),
+        label: fields.text({ label: 'Etiketteki ifade' }),
+        meaning: fields.text({ label: 'Anlamı', multiline: true }),
+        example: fields.text({ label: 'Sayısal veya pratik örnek', multiline: true }),
+        pitfall: fields.text({ label: 'Sık yapılan hata', multiline: true }),
+        checklist: fields.text({ label: 'Kontrol noktası', multiline: true }),
+        sourceLabel: fields.text({ label: 'Kaynak' }),
+        sourceUrl: fields.url({ label: 'Kaynak URL' }),
+        relatedAtlasSlug: fields.text({ label: 'İlgili atlas slug' }),
+        draft: fields.checkbox({ label: 'Taslak', defaultValue: false })
+      }
+    }),
+    evidenceFiles: collection({
+      label: 'Bilimsel Kanıt Dosyaları',
+      slugField: 'title', path: 'src/content/evidence/*',
+      format: { data: 'json' }, columns: ['verdict','draft'],
+      schema: {
+        title: fields.slug({ name: { label: 'Başlık', validation: { isRequired: true } } }),
+        area: fields.text({ label: 'Alan' }),
+        claim: fields.text({ label: 'İncelenen iddia', multiline: true }),
+        verdict: fields.select({ label: 'Sonuç', options: [
+          { label: 'Belirli koşullarda destekleniyor', value: 'Belirli koşullarda destekleniyor' },
+          { label: 'Kanıt sınırlı', value: 'Kanıt sınırlı' },
+          { label: 'Genelleme yapılamaz', value: 'Genelleme yapılamaz' },
+          { label: 'Kanıt yetersiz', value: 'Kanıt yetersiz' }
+        ], defaultValue: 'Kanıt sınırlı' }),
+        summary: fields.text({ label: 'Kısa sonuç', multiline: true }),
+        evidence: fields.text({ label: 'Mevcut kanıt', multiline: true }),
+        limits: fields.text({ label: 'Sınırlılıklar', multiline: true }),
+        practical: fields.text({ label: 'Uygulama notu', multiline: true }),
+        sourceLabel: fields.text({ label: 'Kaynak' }),
+        sourceUrl: fields.url({ label: 'Kaynak URL' }),
+        relatedAtlasSlug: fields.text({ label: 'İlgili atlas slug' }),
+        draft: fields.checkbox({ label: 'Taslak', defaultValue: false })
+      }
+    }),
+    comparisons: collection({
+      label: 'Karşılaştırma Kütüphanesi',
+      slugField: 'title', path: 'src/content/comparisons/*',
+      format: { data: 'json' }, columns: ['area','draft'],
+      schema: {
+        title: fields.slug({ name: { label: 'Başlık', validation: { isRequired: true } } }),
+        area: fields.text({ label: 'Alan' }),
+        summary: fields.text({ label: 'Kısa özet', multiline: true }),
+        leftName: fields.text({ label: 'İlk bileşen' }),
+        rightName: fields.text({ label: 'İkinci bileşen' }),
+        leftDetail: fields.text({ label: 'İlk bileşen açıklaması', multiline: true }),
+        rightDetail: fields.text({ label: 'İkinci bileşen açıklaması', multiline: true }),
+        keyDifference: fields.text({ label: 'Temel fark', multiline: true }),
+        practical: fields.text({ label: 'Seçim ve kullanım bağlamı', multiline: true }),
+        warning: fields.text({ label: 'Güvenlilik notu', multiline: true }),
+        sourceLabel: fields.text({ label: 'Kaynak' }),
+        sourceUrl: fields.url({ label: 'Kaynak URL' }),
+        leftAtlasSlug: fields.text({ label: 'İlk atlas slug' }),
+        rightAtlasSlug: fields.text({ label: 'İkinci atlas slug' }),
+        draft: fields.checkbox({ label: 'Taslak', defaultValue: false })
       }
     }),
 
