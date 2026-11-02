@@ -1,0 +1,26 @@
+---
+export const prerender = true;
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+export async function getStaticPaths(){
+ const entries=await getCollection('evidenceFiles',x=>!x.data.draft);
+ return entries.map(item=>({params:{slug:item.id.replace(/\.json$/,'')},props:{item}}));
+}
+const {item}=Astro.props;const d=item.data;
+const schema={'@context':'https://schema.org','@type':'Article',headline:d.title,description:d.summary,mainEntityOfPage:'https://eczacidefteri.com/kanit-dosyalari/'+item.id.replace(/\.json$/,'')};
+---
+<Base title={d.title+' | Bilimsel Kanıt Dosyaları'} description={d.summary} structuredData={schema}>
+ <article class="shell library-detail">
+  <nav class="article-breadcrumbs" aria-label="Gezinme yolu"><a href="/">Anasayfa</a><span class="article-crumb-sep">/</span><a href="/kanit-dosyalari">Kanıt Dosyaları</a><span class="article-crumb-sep">/</span><span aria-current="page">{d.title}</span></nav>
+  <header class="library-detail-head"><span class="library-index-kicker">KANIT DOSYASI / {d.area}</span><h1>{d.title}</h1><p>{d.summary}</p></header>
+  <div class="library-reading">
+   <div class="library-claim"><span>İNCELENEN İDDİA</span><strong>{d.claim}</strong><div><small>DEĞERLENDİRME</small><b>{d.verdict}</b></div></div>
+   <section><span class="library-section-label">01 / BULGULAR</span><h2>Çalışmalar ne gösteriyor?</h2><p>{d.evidence}</p></section>
+   <section><span class="library-section-label">02 / SINIRLILIKLAR</span><h2>Neden kesin konuşmuyoruz?</h2><p>{d.limits}</p></section>
+   <section><span class="library-section-label">03 / PRATİK DEĞERLENDİRME</span><h2>Eczacının notu</h2><p>{d.practical}</p></section>
+   <section><span class="library-section-label">04 / KAYNAK</span><h2>Bilimsel dayanak</h2><a class="library-source" href={d.sourceUrl} target="_blank" rel="noopener noreferrer">{d.sourceLabel} ↗</a></section>
+   {d.relatedAtlasSlug && <div class="library-connected"><span class="library-section-label">BAĞLANTILI DOSYA</span><a href={'/atlas/'+d.relatedAtlasSlug}>Bileşen Atlası'nda incele ↗</a></div>}
+  </div>
+  <aside class="library-disclaimer">Bu dosya belirli çalışmalar ve kaynaklar üzerine kısa bir editoryal değerlendirmedir; tam kapsamlı sistematik derleme veya klinik kılavuz değildir.</aside>
+ </article>
+</Base>

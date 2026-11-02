@@ -1,0 +1,27 @@
+---
+export const prerender = true;
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+export async function getStaticPaths(){
+ const entries=await getCollection('labelGuides',x=>!x.data.draft);
+ return entries.map(item=>({params:{slug:item.id.replace(/\.json$/,'')},props:{item}}));
+}
+const {item}=Astro.props;const d=item.data;
+const schema={'@context':'https://schema.org','@type':'Article',headline:d.title,description:d.summary,mainEntityOfPage:'https://eczacidefteri.com/etiket-rehberi/'+item.id.replace(/\.json$/,'')};
+---
+<Base title={d.title+' | Etiket Okuma Rehberi'} description={d.summary} structuredData={schema}>
+ <article class="shell library-detail">
+  <nav class="article-breadcrumbs" aria-label="Gezinme yolu"><a href="/">Anasayfa</a><span class="article-crumb-sep">/</span><a href="/etiket-rehberi">Etiket Rehberi</a><span class="article-crumb-sep">/</span><span aria-current="page">{d.title}</span></nav>
+  <header class="library-detail-head"><span class="library-index-kicker">ETİKET REHBERİ / {d.category}</span><h1>{d.title}</h1><p>{d.summary}</p></header>
+  <div class="library-reading">
+   <div class="library-label-sample"><span>ETİKETTE ŞÖYLE GÖREBİLİRSİNİZ</span><strong>{d.label}</strong></div>
+   <section><span class="library-section-label">01 / ANLAMI</span><h2>Bu ifade ne demek?</h2><p>{d.meaning}</p></section>
+   <section><span class="library-section-label">02 / ÖRNEK</span><h2>Birlikte okuyalım</h2><p>{d.example}</p></section>
+   <section><span class="library-section-label">03 / SIK HATA</span><h2>En çok karıştırılan nokta</h2><p>{d.pitfall}</p></section>
+   <section><span class="library-section-label">04 / KONTROL LİSTESİ</span><h2>Satın almadan önce</h2><p>{d.checklist}</p></section>
+   <section><span class="library-section-label">05 / KAYNAK</span><h2>Bilimsel referans</h2><a class="library-source" href={d.sourceUrl} target="_blank" rel="noopener noreferrer">{d.sourceLabel} ↗</a></section>
+   {d.relatedAtlasSlug && <div class="library-connected"><span class="library-section-label">BAĞLANTILI DOSYA</span><a href={'/atlas/'+d.relatedAtlasSlug}>Bileşen Atlası'nda ayrıntılı bilgi ↗</a></div>}
+  </div>
+  <aside class="library-disclaimer">Etiket örnekleri açıklama amaçlıdır; belirli bir ürünün tedavi etkinliğini veya uygunluğunu garanti etmez.</aside>
+ </article>
+</Base>

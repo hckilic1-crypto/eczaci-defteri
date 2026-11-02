@@ -1,0 +1,72 @@
+---
+export const prerender = true;
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+export async function getStaticPaths(){
+  const items=await getCollection('atlas', x=>!x.data.draft);
+  return items.map(item=>({params:{slug:item.id.replace(/\.json$/,'')},props:{item}}));
+}
+const {item}=Astro.props;
+const d=item.data;
+const termSlug=item.id.replace(/\.json$/,'');
+const [guides, evidence, comparisons] = await Promise.all([
+  getCollection('labelGuides', x=>!x.data.draft && x.data.relatedAtlasSlug===termSlug),
+  getCollection('evidenceFiles', x=>!x.data.draft && x.data.relatedAtlasSlug===termSlug),
+  getCollection('comparisons', x=>!x.data.draft && (x.data.leftAtlasSlug===termSlug||x.data.rightAtlasSlug===termSlug))
+]);
+const cleanSlug=item=>item.id.replace(/\.json$/,'');
+const schema={
+  '@context':'https://schema.org','@type':'Article',
+  headline:d.name+' — Bileşen Atlası', description:d.summary,
+  mainEntityOfPage:'https://eczacidefteri.com/atlas/'+termSlug,
+  publisher:{'@type':'Organization',name:'Eczacı Defteri',url:'https://eczacidefteri.com'},
+  citation:d.sourceUrl
+};
+---
+<Base title={d.name+' | Bileşen Atlası - Eczacı Defteri'} description={d.summary} structuredData={schema}>
+  <article class="shell library-detail">
+    <nav class="article-breadcrumbs" aria-label="Gezinme yolu"><a href="/">Anasayfa</a><span class="article-crumb-sep">/</span><a href="/atlas">Bileşen Atlası</a><span class="article-crumb-sep">/</span><span aria-current="page">{d.name}</span></nav>
+    <header class="library-detail-head">
+      <span class="library-index-kicker">BİLEŞEN ATLASI / {d.category.toLocaleUpperCase('tr-TR')}</span>
+      <h1>{d.name}</h1><p>{d.summary}</p>
+      <div class="library-head-meta"><span>MEKANİZMA</span><span>KANIT</span><span>GÜVENLİLİK</span></div>
+    </header>
+    <div class="library-detail-layout">
+      <div class="library-detail-content">
+        <section id="mekanizma"><span class="library-section-label">01 / BİLEŞENİN YAPISI</span><h2>Nedir, nasıl çalışır?</h2><p>{d.mechanism}</p></section>
+        <section id="klinik"><span class="library-section-label">02 / KLİNİK KULLANIM</span><h2>Hangi amaçlarla inceleniyor?</h2><p>{d.clinical}</p></section>
+        <section id="kanit"><span class="library-section-label">03 / KANITIN GÜCÜ</span><h2>Araştırmalar ne söylüyor?</h2><p>{d.evidence}</p></section>
+        <section id="doz"><span class="library-section-label">04 / DOZ BAĞLAMI</span><h2>Doz ve formülasyon</h2><p>{d.dose}</p></section>
+        <section id="guvenlilik"><span class="library-section-label">05 / GÜVENLİLİK</span><h2>Uyarılar ve kontrendikasyonlar</h2><p>{d.warnings}</p></section>
+        <section id="etkilesimler"><span class="library-section-label">06 / BİRLİKTE KULLANIM</span><h2>İlaç etkileşimleri</h2><p>{d.interactions}</p></section>
+        <section id="etiket"><span class="library-section-label">07 / ECZACININ NOTU</span><h2>Etikette neye bakmalı?</h2><p>{d.labelTip}</p></section>
+        <section id="kaynak"><span class="library-section-label">08 / BİLİMSEL KAYNAK</span><h2>Kaynak</h2><a class="library-source" href={d.sourceUrl} rel="noopener noreferrer" target="_blank">{d.sourceLabel} ↗</a></section>
+      </div>
+      <aside class="library-detail-aside">
+        <div class="library-aside-label">BU DOSYADA</div>
+        <a href="#mekanizma">01 &nbsp; Mekanizma</a>
+        <a href="#klinik">02 &nbsp; Klinik kullanım</a>
+        <a href="#kanit">03 &nbsp; Kanıt</a>
+        <a href="#doz">04 &nbsp; Doz bağlamı</a>
+        <a href="#guvenlilik">05 &nbsp; Güvenlilik</a>
+        <a href="#etkilesimler">06 &nbsp; Etkileşimler</a>
+        <a href="#etiket">07 &nbsp; Etiket</a>
+        <a href="#kaynak">08 &nbsp; Kaynak</a>
+      </aside>
+    </div>
+    {(d.glossarySlug||d.relatedArticleSlug||guides.length||evidence.length||comparisons.length)>0 && (
+      <nav class="library-connected" aria-label="Bağlantılı içerikler">
+        <span class="library-section-label">KÜTÜPHANEDE DEVAM EDİN</span>
+        <h2>Bağlantılı okumalar</h2>
+        <div class="library-connected-links">
+          {d.glossarySlug && <a href={'/sozluk/'+d.glossarySlug}>Sözlükteki tanımı ↗</a>}
+          {d.relatedArticleSlug && <a href={'/yazi/'+d.relatedArticleSlug}>Konuyla ilgili yazı ↗</a>}
+          {guides.map(x=><a href={'/etiket-rehberi/'+cleanSlug(x)}>{x.data.title} ↗</a>)}
+          {evidence.map(x=><a href={'/kanit-dosyalari/'+cleanSlug(x)}>{x.data.title} ↗</a>)}
+          {comparisons.map(x=><a href={'/karsilastirmalar/'+cleanSlug(x)}>{x.data.title} ↗</a>)}
+        </div>
+      </nav>
+    )}
+    <aside class="library-disclaimer">Bu sayfa kişisel tedavi, doz veya ürün önerisi değildir. Kullanım kararı için güncel kısa ürün bilgisi, özel hasta koşulları ve klinik değerlendirme esas alınır.</aside>
+  </article>
+</Base>
