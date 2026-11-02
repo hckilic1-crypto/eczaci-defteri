@@ -61,55 +61,6 @@ const categorySlug = (category: any) =>
 
 
 /* =========================================================
-   SEARCH DATA
-========================================================= */
-
-const allPosts = await getCollection(
-  'posts',
-  (post) => !post.data.draft
-);
-
-const searchPosts = allPosts.map((post) => {
-  const postSlug = post.id
-    .replace('.mdoc', '')
-    .replace(/\\/g, '/')
-    .split('/')
-    .pop();
-
-  const category = categories.find(
-    (item) =>
-      categorySlug(item) === post.data.category
-  );
-
-  return {
-    title: post.data.title,
-    excerpt: post.data.excerpt,
-    category:
-      category?.data.name ??
-      post.data.category,
-    href: `/yazi/${postSlug}`
-  };
-});
-
-const allGlossary = await getCollection('glossary', item => !item.data.draft);
-const searchTerms = allGlossary.map(item => ({
-  title: item.data.name,
-  excerpt: item.data.definition,
-  category: 'Eczacılık Sözlüğü',
-  href: '/sozluk/' + item.id.replace(/\.json$/, '').split('/').pop()
-}));
-
-const atlasSearch = (await getCollection('atlas', item => !item.data.draft))
-  .map(item => ({ title:item.data.name, excerpt:item.data.summary,
-    category:'Bileşen Atlası', href:'/atlas/'+item.id.replace(/\.json$/,'') }));
-const labelSearch = (await getCollection('labelGuides', item => !item.data.draft))
-  .map(item => ({ title:item.data.title, excerpt:item.data.summary,
-    category:'Etiket Rehberi', href:'/etiket-rehberi/'+item.id.replace(/\.json$/,'') }));
-const referenceSearch = [...atlasSearch,...labelSearch];
-const searchData = JSON.stringify([...searchPosts, ...searchTerms, ...referenceSearch]);
-
-
-/* =========================================================
    SEO
 ========================================================= */
 
@@ -1024,11 +975,46 @@ const jsonLd = structuredData ? JSON.stringify(structuredData).replace(/</g, '\\
 
 <script
   is:inline
-  define:vars={{ searchData }}
 >
 
-  const posts =
-    JSON.parse(searchData);
+  let posts = [];
+  let indexPromise = null;
+
+  // Fetch once only when somebody searches; don't repeat the entire index in every page.
+  const ensureSearchIndex = () => {
+    if (!indexPromise) {
+      indexPromise = fetch('/search-index.json', { credentials: 'same-origin' })
+        .then(response => {
+          if (!response.ok) throw new Error('Arama dizini yüklenemedi');
+          return response.json();
+        })
+        .then(data => {
+          if (!Array.isArray(data)) throw new Error('Arama dizini geçersiz');
+          posts = data;
+        })
+        .catch(error => {
+          indexPromise = null; // Retrying is possible after a temporary network failure.
+          throw error;
+        });
+    }
+    return indexPromise;
+  };
+
+  const searchAndRender = async (value, container, input) => {
+    if (!container || !value.trim()) {
+      if (container) container.innerHTML = '';
+      return;
+    }
+    if (!posts.length) container.textContent = 'Arama yükleniyor…';
+    try {
+      await ensureSearchIndex();
+      // Ignore stale responses while the person is still typing.
+      if (input.value !== value) return;
+      renderResults(filterPosts(value), container);
+    } catch {
+      if (input.value === value) container.textContent = 'Arama şu anda yüklenemiyor. Tekrar deneyin.';
+    }
+  };
 
 
   const normalizeText = (value) => {
@@ -1276,10 +1262,7 @@ const jsonLd = structuredData ? JSON.stringify(structuredData).replace(/</g, '\\
         return;
       }
 
-      renderResults(
-        filterPosts(value),
-        searchResults
-      );
+      searchAndRender(value,searchResults,target);
 
     }
   );
@@ -1319,10 +1302,7 @@ const jsonLd = structuredData ? JSON.stringify(structuredData).replace(/</g, '\\
         return;
       }
 
-      renderResults(
-        filterPosts(value),
-        mobileSearchResults
-      );
+      searchAndRender(value,mobileSearchResults,target);
 
     }
   );
