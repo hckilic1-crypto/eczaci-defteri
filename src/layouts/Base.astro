@@ -617,7 +617,7 @@ const jsonLd = structuredData ? JSON.stringify(structuredData).replace(/</g, '\\
       button.setAttribute('aria-label', dark ? 'Açık temaya geç' : 'Koyu temaya geç');
       button.title = dark ? 'Açık temaya geç' : 'Koyu temaya geç';
       const meta = document.querySelector('meta[name="theme-color"]');
-      if (meta) meta.setAttribute('content', dark ? '#121c17' : '#f7f4ea');
+      if (meta) meta.setAttribute('content', dark ? '#0b0b0d' : '#f7f4ea');
     };
     button.addEventListener('click', () => {
       const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
