@@ -1,6 +1,7 @@
 ---
 export const prerender = true;
 import Base from '../../layouts/Base.astro';
+import { responsiveCover } from '../../lib/cover-images';
 import PostCard from '../../components/PostCard.astro';
 import { getCollection, render } from 'astro:content';
 import { relatedTermsForPost } from '../../lib/glossary-related';
@@ -28,6 +29,7 @@ const readingGroups = [
 ];
 const { Content, headings } = await render(post);
 const d = post.data;
+const cover = responsiveCover(d.coverImage, 'article');
 const categoryList = await getCollection('categories');
 const getCategorySlug = c => c.id.replace(/\.json$/, '').split('/').pop();
 const category = categoryList.find(c => getCategorySlug(c) === d.category);
@@ -82,7 +84,9 @@ const structuredData = {
   title={d.seoTitle || `${d.title} | Eczacı Defteri`}
   description={d.seoDescription || d.excerpt}
   image={d.coverImage || '/og-default.gif'}
-  preloadImage={d.coverImage || undefined}
+  preloadImage={cover.src}
+  preloadImageSrcset={cover.srcset}
+  preloadImageSizes={cover.sizes}
   type="article"
   publishedAt={d.publishedAt}
   updatedAt={d.updatedAt}
@@ -111,7 +115,7 @@ const structuredData = {
       </div>
     </header>
 
-    {d.coverImage && <figure class="article-cover"><img src={d.coverImage} alt="" width="1200" height="675" loading="eager" fetchpriority="high" decoding="async" /></figure>}
+    {d.coverImage && <figure class="article-cover"><img src={cover.src} srcset={cover.srcset} sizes={cover.sizes} alt="" width="1200" height="675" loading="eager" fetchpriority="high" decoding="async" /></figure>}
 
     <div class="journal-article-layout">
       {toc.length > 2 && (
