@@ -37,6 +37,7 @@
       const colIndex = key => columns.findIndex(el => (el.textContent || '').toLocaleLowerCase('tr').includes(key));
       const titleAt = colIndex('ba\u015fl\u0131k') >= 0 ? colIndex('ba\u015fl\u0131k') : colIndex('title');
       const statusAt = colIndex('taslak');
+      const reviewedAt = columns.findIndex(el => /editorReviewed|editör kontrol|editor kontrol/i.test((el.textContent || '').trim()));
       const categoryAt = colIndex('kategori');
       if (titleAt < 0 || statusAt < 0) continue;
       table.setAttribute('data-ed-articles-table', '');
@@ -65,6 +66,16 @@
             statusCell.dataset.edStatus = value;
             statusCell.dataset.edLabel = value === 'draft' ? 'Taslak' : 'Yay\u0131nda';
             statusCell.setAttribute('aria-label', statusCell.dataset.edLabel);
+          }
+        }
+        if (reviewedAt >= 0 && cells[reviewedAt]) {
+          const reviewCell = cells[reviewedAt];
+          const raw = (reviewCell.textContent || '').trim().toLowerCase();
+          if (raw === 'true' || raw === 'false' || raw === 'evet' || raw === 'hayır') {
+            const checked = raw === 'true' || raw === 'evet';
+            reviewCell.dataset.edReviewed = checked ? 'yes' : 'no';
+            reviewCell.dataset.edReviewedLabel = checked ? 'Kontrol edildi' : 'Bekliyor';
+            reviewCell.setAttribute('aria-label', reviewCell.dataset.edReviewedLabel);
           }
         }
         if (categoryAt >= 0 && cells[categoryAt]) {
