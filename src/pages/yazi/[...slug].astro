@@ -110,7 +110,7 @@ const structuredData = {
       </div>
     </header>
 
-    {d.coverImage && <figure class="article-cover"><img src={d.coverImage} alt="" width="1200" height="675" loading="eager" decoding="async" /></figure>}
+    {d.coverImage && <figure class="article-cover"><img src={d.coverImage} alt="" width="1200" height="675" loading="eager" fetchpriority="high" decoding="async" /></figure>}
 
     <div class="journal-article-layout">
       {toc.length > 2 && (
