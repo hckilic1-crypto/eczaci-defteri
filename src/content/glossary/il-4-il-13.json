@@ -1,0 +1,9 @@
+{
+  "name": "IL-4 ve IL-13",
+  "category": "Dermokozmetik",
+  "definition": "Atopik dermatitin tip 2 inflamatuvar yolaklarıyla bağlantılı, bağışıklık sistemi hücreleri arasında sinyal taşıyan sitokinlerdir.",
+  "explanation": "Bu sinyaller epidermal inflamasyon ve bariyer proteinlerinin düzenlenmesiyle ilişkilidir. Dupilumab ve lebrikizumab gibi bazı biyolojik tedavilerin hedeflerinin anlaşılmasında önemlidir; kullanım kararı ağır hastalıkta uzman değerlendirmesine bağlıdır.",
+  "sourceLabel": "Bilimsel/klinik başvuru kaynağı",
+  "sourceUrl": "https://www.aad.org/member/clinical-quality/guidelines/atopic-dermatitis",
+  "draft": false
+}

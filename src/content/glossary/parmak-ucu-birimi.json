@@ -1,0 +1,9 @@
+{
+  "name": "Parmak Ucu Birimi (FTU)",
+  "category": "Dermokozmetik",
+  "definition": "Topikal ilaçların cilde uygulanacak yaklaşık miktarını anlatmak için kullanılan pratik ölçüm yöntemidir.",
+  "explanation": "Bir FTU, standart tüp ağzından yetişkin işaret parmağının son eklemi ile ucu arasına sıkılan krem/merhem şerididir. Gram ve kapladığı alan kişiye/tüpe göre değişebilir. Reçeteli ilacın hekim talimatı yine esastır.",
+  "sourceLabel": "Bilimsel/klinik başvuru kaynağı",
+  "sourceUrl": "https://www.aad.org/member/clinical-quality/guidelines/atopic-dermatitis",
+  "draft": false
+}

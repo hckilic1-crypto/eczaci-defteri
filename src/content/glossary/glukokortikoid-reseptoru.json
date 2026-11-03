@@ -1,0 +1,9 @@
+{
+  "name": "Glukokortikoid Reseptörü",
+  "category": "Dermokozmetik",
+  "definition": "Kortikosteroidlerin hücresel gen düzenleme etkilerinin önemli bölümüne aracılık eden hücre içi reseptördür.",
+  "explanation": "Topikal kortikosteroidlerin atopik dermatitte inflamasyonu azaltması glukokortikoid reseptörüyle ilişkilidir. Klinik etkinlik ve deri atrofisi gibi riskler kullanılan molekül, potens, alan, süre ve uygulama biçimine göre değişir.",
+  "sourceLabel": "Bilimsel/klinik başvuru kaynağı",
+  "sourceUrl": "https://www.aad.org/member/clinical-quality/guidelines/atopic-dermatitis",
+  "draft": false
+}

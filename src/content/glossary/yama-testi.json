@@ -1,0 +1,9 @@
+{
+  "name": "Yama Testi (Patch Test)",
+  "category": "Dermokozmetik",
+  "definition": "Gecikmiş tip alerjik kontakt dermatitten sorumlu maddeleri araştırmak için standart alerjenlerin kontrollü cilt temasına dayalı testtir.",
+  "explanation": "Sıklıkla sırt bölgesinde uygulanan alerjenler 48 saat civarında çıkarılır ve geç reaksiyonlar için ek okumalar yapılır. Yama testi, ani tip alerjiye yönelik deri prick testinden farklıdır; irritan dermatitin doğrudan tek tanı testi değildir.",
+  "sourceLabel": "Bilimsel/klinik başvuru kaynağı",
+  "sourceUrl": "https://dermnetnz.org/topics/patch-tests",
+  "draft": false
+}

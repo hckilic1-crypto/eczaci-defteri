@@ -1,0 +1,9 @@
+{
+  "name": "Melanozom Transferi",
+  "category": "Dermokozmetik",
+  "definition": "Melanositlerde üretilen melanin içeren organellerin komşu keratinositlere aktarılması sürecidir.",
+  "explanation": "Cilt renginin dağılımı açısından önemlidir. Niasinamidin pigmentasyon üzerine araştırılan etkilerinden biri bu aktarımı azaltmasıdır; bu mekanizma doğrudan tirozinaz enzimini baskılamaktan farklıdır.",
+  "sourceLabel": "Bilimsel/klinik başvuru kaynağı",
+  "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/12100180/",
+  "draft": false
+}

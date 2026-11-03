@@ -77,42 +77,56 @@ export const topicHubs: TopicHub[] = [
   {
     "slug": "cilt-bariyeri-ve-dermokozmetik",
     "title": "Cilt Bariyeri ve Dermokozmetik",
-    "short": "Seramidler, niasinamid, retinoidler ve güneşten korunmayı mekanizmalarıyla keşfedin.",
+    "short": "Cilt bariyeri, dermokozmetik aktifler, egzama, akne, lekeler ve güneşten korunma üzerine bağımsız bilimsel dosyalar.",
     "eyebrow": "CİLT / BİLEŞENLER / UYGULAMA",
     "mark": "02",
     "symbol": "02",
     "intro": [
-      "Cilt bariyeri yalnızca bir nemlendiricinin hissettirdiği yumuşaklık değildir. Stratum corneum, hücreler arası lipitler ve epidermal su kaybını sınırlayan düzenekler birlikte çalışır. Bu yapı bozulduğunda kuruluk ve tahriş artabilir; ancak her kızarıklığın nedeni bariyer hasarı değildir.",
-      "Seramidler, niasinamid, pantenol ve farklı retinoidler aynı amaçla kullanılmaz. Bazıları bariyer desteğiyle ilişkilendirilirken bazıları akne veya pigmentasyon gibi hedeflerde incelenir. Ürün formülasyonu, konsantrasyon, uygulama sıklığı ve tolerans, tek bir bileşen adından daha fazlasını anlatır.",
-      "Bu merkezde bileşenleri kullanım amacına göre okumayı, yüzdeleri yanlış karşılaştırmamayı ve SPF ile UVA korumasını birbirinden ayırmayı hedefliyoruz. Klinik hastalık kuşkusunda kozmetik danışmanlığı dermatolojik değerlendirmenin yerine geçmez."
+      "Cilt bariyerinin merkezinde korneositler, seramidler, kolesterol, serbest yağ asitleri ve doğal nemlendirici faktörler birlikte çalışır. Bariyer desteği; yalnız yoğun bir krem kullanmaktan ibaret değildir. Kuruluk, irritan temas, inflamatuvar egzama ve rozasea farklı sorunlardır. Bu dosya önce epidermisin nasıl çalıştığını, ardından cildin hangi koşulda hangi bakımdan yarar sağlayabileceğini açıklar.",
+      "Seramidler, gliserin, pantenol, hyaluronik asit ve niasinamid gibi bileşenleri kullanırken kimyasal işlevleri önemlidir. Retinoidler, azelaik asit, benzoil peroksit ve AHA/BHA ise akne, pigmentasyon veya yüzey dokusu gibi daha özgül hedeflerde değerlendirilir. Bunların bazıları ruhsatlı ilaç, bazıları kozmetik bileşendir; etki mekanizması ve kanıtı birbirinden ayrılmalıdır.",
+      "Güneş koruyucu seçimi bütün merkezin ortak bağlantı noktasıdır: SPF, UVA koruması ve pigmentasyon için görünür ışık aynı göstergeyle ölçülmez. Özellikle melazmada demir oksit içeren renkli koruyucular yararlı olabilir. Okuma sırası, kullanım amacı, formülasyon, tolerans ve kontrendikasyonları birlikte görmeyi sağlar."
     ],
     "steps": [
       {
-        "title": "Bariyerin işlevini öğren",
-        "text": "Seramidler ve epidermal yapı üzerinden kuruluk ve tahrişin mekanizmasını anla."
+        "title": "Önce dokuyu ve tanıyı tanı",
+        "text": "Stratum corneum, lipit lamelleri, TEWL ve NMF işlevlerini öğren; kuruluk ile egzama, alerji veya rozaseayı aynı durum sanma."
       },
       {
-        "title": "Etkin maddeleri ayır",
-        "text": "Niasinamid, azelaik asit, retinol ve retinalin formülasyon ve endikasyon farklarına bak."
+        "title": "Etkiyi ve mekanizmayı eşleştir",
+        "text": "Nemlendirici, niasinamid, retinoid, azelaik asit, BPO ve AHA/BHA arasındaki farmakolojik/kozmetik farkları yararlarına göre değerlendir."
       },
       {
-        "title": "Koruma iddiasını doğrula",
-        "text": "SPF, UVA ve suya dayanıklılık ifadelerini gerçek kullanım koşullarıyla birlikte yorumla."
+        "title": "Uygulamayı kişiselleştir",
+        "text": "Ürün yüzdesi, formülasyon, gebelik/iritasyon riski, günlük bakım ve SPF–UVA–görünür ışık korumasını aynı rutinde dengele."
       }
     ],
     "posts": [
+      "cilt-bariyeri-bozulmasi-seramidler-dermatit-bakim",
+      "nemlendirici-secimi-gliserin-ure-petrolatum-hyaluronik-asit",
       "seramidler-cilt-bariyeri-ve-nemlendirme",
+      "atopik-dermatit-egzama-cilt-bariyeri-topikal-tedaviler",
+      "irritan-alerjik-kontakt-dermatit-yama-testi",
+      "rozasea-hassas-cilt-kizariklik-azelaik-asit-ivermektin",
       "niasinamid-yuzde-5-mi-yuzde-10-mu",
+      "c-vitamini-serumu-l-askorbik-asit-fotoyaslanma",
+      "retinoidler-retinol-retinal-tretinoin-adapalen-farklari",
+      "akne-tedavisi-retinoid-benzoil-peroksit-salisilik-asit",
       "azelaik-asit-akne-leke-kizariklik",
+      "aha-bha-peeling-glikolik-salisilik-asit-uygulama",
+      "melazma-leke-hiperpigmentasyon-spf-azelaik-traneksamik",
       "spf-30-ve-spf-50-arasindaki-fark-nedir"
     ],
     "atlas": [
       "seramid",
-      "niasinamid",
+      "hyaluronik-asit",
       "pantenol",
-      "azelaik-asit",
+      "niasinamid",
       "retinol",
       "retinal",
+      "azelaik-asit",
+      "salisilik-asit",
+      "glikolik-asit",
+      "traneksamik-asit",
       "gunes-koruyucu"
     ],
     "glossary": [
@@ -121,7 +135,22 @@ export const topicHubs: TopicHub[] = [
       "keratinosit",
       "retinol",
       "genis-spektrum-gunes-korumasi",
-      "alerjik-kontakt-dermatit"
+      "alerjik-kontakt-dermatit",
+      "filaggrin",
+      "dogal-nemlendirici-faktor",
+      "okluzif",
+      "retinaldehit",
+      "melanozom-transferi",
+      "yama-testi",
+      "parmak-ucu-birimi",
+      "fotoyaslanma",
+      "komedon",
+      "glukokortikoid-reseptoru",
+      "il-4-il-13",
+      "cilt-fototipi",
+      "demir-oksit-renkli-spf",
+      "seramid-lamelleri",
+      "aha-exfoliasyon"
     ],
     "guides": [
       "niasinamid-yuzde",

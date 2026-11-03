@@ -1,0 +1,9 @@
+{
+  "name": "Cilt Fototipi",
+  "category": "Dermokozmetik",
+  "definition": "Cildin UV maruziyetine karşı yanma ve bronzlaşma eğilimini kabaca sınıflandırmak için kullanılan klinik tanımlamadır.",
+  "explanation": "Fitzpatrick sınıflandırması sık kullanılır ancak cilt tonu, fototip ve hiperpigmentasyon riski her zaman birebir aynı özellik değildir. Melazma ve PIH yönetiminde güneş ışığı ve görünür ışığa maruziyetin değerlendirilmesi yararlıdır.",
+  "sourceLabel": "Bilimsel/klinik başvuru kaynağı",
+  "sourceUrl": "https://www.aad.org/public/diseases/a-z/melasma-self-care",
+  "draft": false
+}

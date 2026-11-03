@@ -1,0 +1,9 @@
+{
+  "name": "AHA ile Eksfoliasyon",
+  "category": "Dermokozmetik",
+  "definition": "Glikolik ve laktik asit gibi alfa hidroksi asitlerle stratum corneumun yüzeyel yenilenme/deskuamasyon süreçlerinin etkilenmesidir.",
+  "explanation": "Etki konsantrasyonun yanı sıra pH, serbest asit oranı, temas süresi ve formülasyona bağlıdır. Kimyasal peeling ve günlük kozmetik serum farklı uygulamalardır; tahriş ve PIH riski uygun kullanımda değerlendirilir.",
+  "sourceLabel": "Bilimsel/klinik başvuru kaynağı",
+  "sourceUrl": "https://www.fda.gov/cosmetics/cosmetic-ingredients/alpha-hydroxy-acids",
+  "draft": false
+}
