@@ -24,6 +24,8 @@ const posts = defineCollection({
 
     draft: z.boolean().default(false),
 
+    editorReviewed: z.boolean().default(false),
+
     readingTime: z.number().default(5),
 
     seoTitle: z.string().optional(),
