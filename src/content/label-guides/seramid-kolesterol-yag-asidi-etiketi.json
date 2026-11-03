@@ -1,0 +1,61 @@
+{
+  "title": "Seramidli Nemlendiricilerde INCI Nasıl Okunur?",
+  "summary": "Ceramide NP, AP, EOP, kolesterol, yağ asitleri ve gliserin arasındaki farklar; bir ürünün bariyer bakımını tek etikette nasıl değerlendiririz?",
+  "label": "Ceramide NP · Ceramide AP · Cholesterol · Glycerin",
+  "meaning": "Ceramide NP/AP gibi isimler farklı seramid alt sınıflarını belirtir. Kolesterol ve serbest yağ asitleri stratum corneum lipit matriksinin diğer bileşenleridir. Glycerin ise humektandır; hücreler arası lipitlerden farklı olarak suyu bağlamayı destekler. Her seramidli kremin doğal bariyer lipitlerinin aynı oranına sahip olduğu veya klinik olarak üstün olduğu varsayılmaz.",
+  "example": "İki kurgusal nemlendirici karşılaştırın: A ürünü Ceramide NP + Cholesterol + Glycerin içeriyor; B ürünü Glycerin + Petrolatum + Dimethicone içeriyor. A, lipit bileşenlerini hedefleyen formülasyon olabilir; B ise humektan ve oklüzif işleve ağırlık verir. İki ürünün hangisinin daha iyi olduğu yalnız bu kısa listeyle kararlaştırılamaz.",
+  "calculation": "INCI listesindeki bileşen adları çoğu zaman net yüzdeleri vermez. Bir ürünün 50 ml hacminden seramid miktarını hesaplamak için seramid yüzdesi ve gerekirse ürün yoğunluğu bilinmelidir; yalnız listedeki sıradan miktar hesabı çıkarılamaz.",
+  "pitfall": "'Üç seramid var; diğer kremden üç kat güçlü' veya 'seramid tek başına bariyeri kesin onarır' şeklinde molekül sayısını klinik yararla eşitlemek.",
+  "checklist": "Ceramide NP/AP/EOP; cholesterol; free fatty acids; glycerin; petrolatum/dimethicone; koku/koruyucu; ürün dokusu; tolerans; hasta hedefi.",
+  "buyingChecklist": "Cilt kuru mu aktif dermatit mi? Daha yoğun koruma mı hafif doku mu gerekiyor? Nemlendiricinin gliserin/oklüzif bileşenleri var mı? Parfüm veya hassasiyet yaratan içerik mevcut mu? Kullanıcının günde yeniden uygulayabileceği bir ürün mü?",
+  "safetyNote": "Seramidin yaygın sistemik etkileşimi beklenmez fakat tamamlanmış formülasyon irritasyon veya kontakt alerji yapabilir. Şiddetli egzamada yalnız kozmetik bakımın yerine reçeteli antiinflamatuvar tedavi geçmesi gerekebilir.",
+  "clinicalContext": "Seramidler, kolesterol ve serbest yağ asitleri birlikte doğal geçirgenlik bariyerinde rol oynar. 2024 tarihli bir derleme seramidin ürün formülasyonunda uygun biçimde dağıtılmasının önemini vurgular. Nemlendiriciler atopik dermatitte güçlü kılavuz desteği alır; tek bir seramid alt sınıfının bütün nemlendiricilerden üstün olduğu genel bir sonuç çıkarılamaz.",
+  "evidenceLimit": "Lipit matriks için raporlanan yaklaşık doku kompozisyonları kozmetik ürünlerde aynı oranların zorunlu olduğu anlamına gelmez. INCI'da görünmek konsantrasyon, biyoyararlanım veya klinik etkiyi kanıtlamaz; uygun ürün araştırmaları ve kullanıcı toleransı önemlidir.",
+  "readingSteps": [
+    {
+      "title": "İçerikleri işlevlerine ayır",
+      "explanation": "Ceramide NP/AP lipit yapıyla; glycerin su bağlamayla; petrolatum veya dimethicone oklüzif işlevle ilişkili olabilir. Bir ürün birkaç grubu birlikte taşıyabilir."
+    },
+    {
+      "title": "Yüzde verilmemişse uydurma miktar hesaplama",
+      "explanation": "INCI sırası kabaca bir bilgi verebilir, fakat tam doz beyanı değildir. Ürün hacmi ve içerik listesi tek başına seramid miktarını belirlemez."
+    },
+    {
+      "title": "Formülasyonu ve hedefi eşleştir",
+      "explanation": "Ağır kurulukta koruyucu yoğunluk, akne eğiliminde kabul edilebilir doku, atopik ciltte düşük irritan yük ve düzenli uygulama öncelik kazanabilir."
+    },
+    {
+      "title": "Klinik durumu gözden geçir",
+      "explanation": "Egzamada nemlendirici destekleyicidir; aktif inflamasyon veya enfeksiyonda tanı ve uygun ilaç tedavisi ayrı değerlendirilmelidir."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Ceramide NP ve AP farklı maddeler mi?",
+      "answer": "Evet, farklı kimyasal seramid alt sınıflarıdır. Üründe birden fazla seramid bulunması tek başına belirli klinik üstünlüğü göstermez."
+    },
+    {
+      "question": "Seramid kremine ek olarak gliserin gerekir mi?",
+      "answer": "Birçok formül zaten birlikte içerir. Lipit desteği ve su tutma farklı işlevlerdir; birlikte bulunmaları yararlı olabilir."
+    },
+    {
+      "question": "Seramidli ürün akne yapar mı?",
+      "answer": "Tek bir seramid molekülü üzerinden karar verilmez. Ürünün toplam dokusu, komedojenik özellikleri ve kişinin toleransı değerlendirilir."
+    }
+  ],
+  "sourceLabel": "Seramides in skin barrier and formulation, 2024",
+  "sourceUrl": "https://doi.org/10.1111/ics.12972",
+  "additionalSources": [
+    {
+      "label": "AAD Atopic Dermatitis Guideline",
+      "url": "https://www.aad.org/member/clinical-quality/guidelines/atopic-dermatitis"
+    },
+    {
+      "label": "DermNet Emollients and Moisturisers",
+      "url": "https://dermnetnz.org/topics/emollients-and-moisturisers"
+    }
+  ],
+  "relatedAtlasSlug": "seramid",
+  "category": "Dermokozmetik",
+  "draft": false
+}

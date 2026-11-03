@@ -1,0 +1,61 @@
+{
+  "title": "AHA/BHA Etiketi: Glikolik Asit, Salisilik Asit, Yüzde ve pH",
+  "summary": "Asitli bakımda yüzde tek başına yeterli değildir: ürün pH'sı, temas süresi, durulama ve retinoidle birlikte kullanım kararını etkiler.",
+  "label": "Glycolic Acid %7 / Salicylic Acid %2",
+  "meaning": "Glikolik asit bir AHA, salisilik asit ise kozmetikte BHA olarak adlandırılan lipofilik keratolitiğe örnektir. İki maddenin yüzde oranı farklı etki mekanizmalarını eşdeğer güçte göstermez. Yüzde dışında ürünün pH'sı, tampon sistemi, temas süresi ve durulanan/ciltte kalan form olması önemlidir.",
+  "example": "100 g üründe %7 glikolik asit teorik 7 g; %2 salisilik asit teorik 2 g maddedir. Bu sayılar yüzeydeki serbest asit fraksiyonunu veya klinik peeling gücünü doğrudan ölçmez.",
+  "calculation": "100 g × 0,07 = 7 g glikolik asit; 100 g × 0,02 = 2 g salisilik asit. Farklı moleküllerdeki miktar oranı klinik etkinlik oranı değildir.",
+  "pitfall": "'Asit ne kadar yakarsa o kadar etkilidir' veya %7 AHA'nın %2 BHA'dan kesin daha güçlü olduğu varsayımı. İrritasyon ve postinflamatuvar hiperpigmentasyon özellikle dikkat gerektirir.",
+  "checklist": "AHA/BHA molekül kimliği; yüzde; pH; durulanır/bırakılır; kullanım sıklığı; retinoid/BPO birlikteliği; SPF; mevcut dermatit.",
+  "buyingChecklist": "Hedef komedon mu, pürüz mü, pigmentasyon mu? Cilt hassas mı? Formül kullanımda kalacak mı? Aynı gün retinoid veya benzoil peroksit var mı? Ürün üzerinde açık uyarılar ve fotokorunma tavsiyesi var mı?",
+  "safetyNote": "Yüksek konsantrasyonlu veya düşük pH'lı ürünler ciltte kimyasal irritasyona neden olabilir. Yüksek güçlü profesyonel peelingler ev kullanımındaki serumlarla aynı değildir. Gebelikte, çocuklarda, geniş alan uygulamasında ve belirgin bariyer bozukluğunda uygunluk ayrıca değerlendirilir.",
+  "clinicalContext": "AHA'lar cilt yüzeyindeki deskuamasyon/doku görünümünü etkileyebilir. Salisilik asit lipofilik ve keratolitik özelliği nedeniyle komedonlarda kullanılır; AAD 2024 akne kılavuzunda koşullu öneri alır. Retinoidlerin aknede güçlü klinik kanıtı bulunur; asit içeren kozmetiklerin hepsi ilaçla aynı endikasyonda değildir.",
+  "evidenceLimit": "Ürün pH'sının klinik etkisi molekülün pKa değeri, tampon sistemi ve formülasyonla bağlantılıdır; ambalajdan yalnız yüzde okuyarak doğrudan epidermal doz ve yanıt hesaplanamaz.",
+  "readingSteps": [
+    {
+      "title": "Asidin kimliğini doğrula",
+      "explanation": "Glycolic Acid, Lactic Acid ve Salicylic Acid ayrı moleküllerdir; aynı yüzde değerleri karşılaştırmalı güç ölçüsü değildir."
+    },
+    {
+      "title": "Formülasyonun uygulama tipini belirle",
+      "explanation": "Durulanan temizleyici ile ciltte kalan serumun temas süresi farklıdır; profesyonel peelingin kontrol koşulları bambaşkadır."
+    },
+    {
+      "title": "Yüzde ve pH bilgilerini birlikte oku",
+      "explanation": "Aynı toplam yüzde, pH ve taşıyıcı değiştiğinde farklı serbest asit fraksiyonu ve tolerans gösterebilir."
+    },
+    {
+      "title": "Kombinasyonları ve fotokorunmayı planla",
+      "explanation": "Retinoid, BPO ve başka eksfoliyanlarla birlikte kullanımda irritan yüküne dikkat edin; AHA ürünleriyle güneşten korunma özellikle önemlidir."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "%7 glikolik asit %2 salisilik asitten güçlü müdür?",
+      "answer": "Doğrudan kıyaslanamaz; molekül, pH, taşıyıcı, süre ve hedef farklıdır."
+    },
+    {
+      "question": "Yüzüm yanıyorsa asit işe yarıyor mu?",
+      "answer": "Yanma etkinlik göstergesi değil, irritasyon olabilir; uygulamayı ve formülasyonu yeniden değerlendirmek gerekir."
+    },
+    {
+      "question": "Retinol kullanan herkes AHA kullanmalı mı?",
+      "answer": "Hayır. Hedef ve cilt toleransı belirleyicidir; aynı anda birden fazla kuvvetli aktif tahrişi artırabilir."
+    }
+  ],
+  "sourceLabel": "FDA. Alpha Hydroxy Acids",
+  "sourceUrl": "https://www.fda.gov/cosmetics/cosmetic-ingredients/alpha-hydroxy-acids",
+  "additionalSources": [
+    {
+      "label": "DermNet Chemical Peels",
+      "url": "https://dermnetnz.org/topics/chemical-peels"
+    },
+    {
+      "label": "AAD Acne clinical guideline 2024",
+      "url": "https://www.aad.org/member/clinical-quality/guidelines/acne"
+    }
+  ],
+  "relatedAtlasSlug": "glikolik-asit",
+  "category": "Dermokozmetik",
+  "draft": false
+}

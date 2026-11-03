@@ -1,0 +1,61 @@
+{
+  "title": "Renkli Güneş Koruyucu Etiketi: Demir Oksit ve Görünür Işık",
+  "summary": "Melazma ve koyu lekelerde renkli SPF neden önemlidir? Iron Oxides INCI adları, UVA/UVB, geniş spektrum ve görünür ışık ayrımı.",
+  "label": "SPF 50 · Broad Spectrum / UVA · Iron Oxides (CI 77491 / 77492 / 77499)",
+  "meaning": "Iron Oxides veya CI 77491/77492/77499 pigmentleri renkli ürünlerde bulunabilir. Bazı demir oksitli renkli güneş koruyucular UV'nin yanı sıra görünür ışığın pigmentasyon üzerindeki etkisini azaltmaya katkıda bulunabilir. SPF değeri tek başına görünür ışık korumasını anlatmaz.",
+  "example": "Birinci üründe SPF 50 ve geniş spektrum beyanı var fakat renkli pigmentler yok; ikincisinde SPF 50, geniş spektrum ve demir oksit pigmentleri bulunuyor. Melazması olan bireyde ikinci ürünün görünür ışıkla ilişkili ek avantajı olabilir; bunun büyüklüğü bitmiş ürünün formülasyonuna bağlıdır.",
+  "calculation": "SPF 50, ideal test bağlamında eritem ağırlıklı UV iletiminin yaklaşık 1/50 (%2) olmasıyla ilişkilidir. Bu matematik, demir oksitli ürünün görünür ışık korumasını yüzde olarak hesaplamaz.",
+  "pitfall": "'SPF 50 = görünür ışıkta %98 koruma' sanmak veya yalnız fondötenin renkli olmasını kanıtlı görünür ışık korumasıyla eşitlemek.",
+  "checklist": "Geniş spektrum/UV koruması; SPF 30+; Iron Oxides veya CI 77491-77499; ürünün gerçek renkli güneş koruyucu olması; düzenli uygulama ve yenileme.",
+  "buyingChecklist": "Melazma/PIH var mı? Renkli ürün cilt tonuna uyuyor mu? SPF ve UVA iddiası açık mı? Yeterli miktarda sürülebiliyor mu? Sadece makyaj ürününden SPF performansı bekleniyor mu? Gün içinde yeniden uygulama pratik mi?",
+  "safetyNote": "Renkli SPF de koruyucu ürünün bütün formülasyonuna bağlı olarak iritasyon/alerji yapabilir. Tek başına makyaj ürününün üzerinde SPF yazması, belirli miktarda güneş koruyucu kadar uygulanacağı anlamına gelmez. Gölge ve giysiyle birlikte kullanılmalıdır.",
+  "clinicalContext": "AAD, melazmada geniş spektrumlu SPF 30+ ve görünür ışık etkisine karşı demir oksit içeren renkli güneş koruyucuları önermektedir. Özellikle daha koyu fototiplerde görünür ışığın tetiklediği pigmentasyon önem kazanabilir. Fotokorunma, azelaik asit veya diğer dermatolojik leke tedavilerinin tamamlayıcısıdır.",
+  "evidenceLimit": "CI pigment kodları, ürünün tam görünür ışık koruma spektrumunu veya klinik etki yüzdesini tek başına göstermez. SPF standardı UVA performansını tamamen ve görünür ışığı hiç aynı sayı üzerinden açıklamaz.",
+  "readingSteps": [
+    {
+      "title": "Önce UV korumasını doğrula",
+      "explanation": "SPF 30+ ve geniş spektrum/UVA beyanını kontrol edin. Güneş koruyucu olmayan renkli kozmetiğin bu basamağı karşılaması garanti değildir."
+    },
+    {
+      "title": "Demir oksit pigmentlerini bul",
+      "explanation": "Iron Oxides, CI 77491, CI 77492, CI 77499 gibi isimler bulunabilir. Görünür ışık koruması ürün tasarımına bağlıdır."
+    },
+    {
+      "title": "Renk ve doku uyumunu değerlendir",
+      "explanation": "Kişinin cilt tonuna uymayan ürün az uygulanabilir; yeterli miktar ve düzenli tekrar kullanım önemlidir."
+    },
+    {
+      "title": "Melazma tedavi hedefini planla",
+      "explanation": "Renkli SPF, azelaik asit, reçeteli pigmentasyon tedavisi veya başka yöntemlerle klinik plan çerçevesinde birlikte değerlendirilebilir."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Renkli her fondöten melazmaya karşı korur mu?",
+      "answer": "Hayır. Ürünün UVA/UVB koruması ve uygulama miktarı ayrıca değerlendirilmelidir; demir oksit içeriği tek başına tam performansı garantilemez."
+    },
+    {
+      "question": "Demir oksit bir mineral UV filtresi midir?",
+      "answer": "Renkli güneş koruyucularda esas olarak pigmenttir. Belirli görünür ışık dalga boylarına karşı korumaya katkı verebilir; SPF beyanı ayrıca UV filtre performansına dayanır."
+    },
+    {
+      "question": "SPF 50 kullanıyorum; demir oksit gerekli mi?",
+      "answer": "Herkes için zorunlu değildir. Özellikle melazma veya görünür ışığa duyarlı pigmentasyonda yararlı bir ek özellik olabilir."
+    }
+  ],
+  "sourceLabel": "AAD. Melasma self-care",
+  "sourceUrl": "https://www.aad.org/public/diseases/a-z/melasma-self-care",
+  "additionalSources": [
+    {
+      "label": "AAD. Understanding sunscreen labels",
+      "url": "https://www.aad.org/public/everyday-care/sun-protection/shade-clothing-sunscreen/understand-sunscreen-labels"
+    },
+    {
+      "label": "AAD. How to fade dark spots",
+      "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/fade-dark-spots"
+    }
+  ],
+  "relatedAtlasSlug": "gunes-koruyucu",
+  "category": "Dermokozmetik",
+  "draft": false
+}

@@ -1,0 +1,61 @@
+{
+  "title": "C Vitamini Serumu Etiketi: Yüzde, pH, Türev ve Stabilite",
+  "summary": "L-Ascorbic Acid ile Sodium Ascorbyl Phosphate gibi türevleri ayırın; yüzde ve pH'ı klinik etkiyle karıştırmadan ürün etiketini okuyun.",
+  "label": "L-Ascorbic Acid %15 / Sodium Ascorbyl Phosphate / Ascorbyl Glucoside",
+  "meaning": "L-askorbik asit C vitamininin doğrudan askorbat formudur. Sodyum askorbil fosfat veya askorbil glukozit gibi türevler farklı kimyasal maddelerdir; deri içi dönüşüm ve formülasyon davranışı değişebilir. Ürün yüzde etiketi, içindeki ilgili molekül miktarını ifade eder; bütün türevlerin biyolojik olarak eşdeğer yüzdede etkili olduğunu göstermez.",
+  "example": "30 g serum %15 L-askorbik asit içeriyorsa formülün tamamında teorik 4,5 g L-AA bulunur. Bu toplam ürüne ait miktardır; tek uygulamadaki doz, emilim veya klinik fayda anlamına gelmez.",
+  "calculation": "30 g × 0,15 = 4,5 g L-askorbik asit. Aynı hesap 30 g %10 ürün için 3 g verir. Serumun ciltteki etkinliğini kıyaslamak için pH, stabilite ve penetrasyon gibi değişkenler ayrıca gerekir.",
+  "pitfall": "'%20 serum, %10 serumdan iki kat etkili' sonucunu çıkarmak; farklı C vitamini türevlerini aynı madde kabul etmek veya renk değişimini tek başına analitik saflık testi saymak.",
+  "checklist": "INCI kimyasal kimlik; yüzde, mümkünse formülasyonun pH'sı; ışık/oksijen koruması; açıldıktan sonra kullanım koşulları; başka asit/retinoid kullanımı.",
+  "buyingChecklist": "Gerçek L-askorbik asit mi yoksa türev mi? İstenen hedef leke/doku görünümü mü? Kullanıcı düşük pH ürünleri tolere ediyor mu? Ambalaj opak veya hava teması sınırlı mı? Günlük SPF kullanımı planlandı mı?",
+  "safetyNote": "Düşük pH'lı L-AA ürünleri hassas ciltte batma oluşturabilir. Formülasyondaki koruyucular ve diğer aktifler de kontakt reaksiyon yaratabilir. Belirgin bozulma, renk/koku değişimi veya tahrişte üretici bilgisi ve klinik değerlendirme önemlidir.",
+  "clinicalContext": "C vitamini normal kolajen metabolizmasının ve antioksidan savunmanın parçasıdır. İyi formüle edilmiş topikal ürünler fotoyaşlanma ile ilişkili cilt sonlanımlarında araştırılmıştır. LPI, topikal ve beslenme yoluyla C vitamininin cilt sağlığındaki rollerini inceler; serum güneş koruyucu filtrenin yerine geçmez.",
+  "evidenceLimit": "L-askorbik asidin belirli bir domuz derisi emilim çalışmasında pH 3,5'in altında daha iyi penetrasyon göstermesi her türev veya marka için zorunlu pH eşiği anlamına gelmez. Klinik etkinlik ürüne ve çalışmaya göre değerlendirilir.",
+  "readingSteps": [
+    {
+      "title": "INCI kimliğini oku",
+      "explanation": "L-Ascorbic Acid ile Sodium Ascorbyl Phosphate veya Ascorbyl Glucoside aynı molekül değildir; araştırma verisi ürün sınıfına göre değişebilir."
+    },
+    {
+      "title": "Yüzdeyi yalnız madde miktarı olarak yorumla",
+      "explanation": "%15 ürünün kütlece 15/100 kısmı ilgili madde olabilir; cilde emilen miktarı veya etkinlikte yüzde 15 iyileşme anlamına gelmez."
+    },
+    {
+      "title": "pH ve stabilite koşullarını birlikte ele al",
+      "explanation": "Saf L-AA'nın oksijen/pH duyarlılığı önemlidir. Ambalaj, antioksidan sistem ve ürünün son kullanma koşulları dikkate alınmalıdır."
+    },
+    {
+      "title": "Bariyer ve SPF rutinini unutma",
+      "explanation": "Tahrişe yatkın ciltte yeni aktifi yavaş eklemek; gündüz güneş koruyucu ve nemlendirmeyi sürdürmek daha kabul edilebilir bir rutin sağlar."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "%20 C vitamini %10'dan her zaman iyi mi?",
+      "answer": "Hayır. Yüzde kütle bilgisidir; cilde geçiş, kimyasal stabilite, ürün tipi ve klinik yanıt aynı şekilde artmayabilir."
+    },
+    {
+      "question": "Askorbil glukozit L-askorbik asit midir?",
+      "answer": "Hayır. C vitaminiyle ilişkili ayrı bir türevdir ve dönüşüm ile formülasyon koşulları farklıdır."
+    },
+    {
+      "question": "C vitamini serumu SPF yerine geçer mi?",
+      "answer": "Hayır. Antioksidan işlev UV filtrelerinin standart test edilmiş fotokoruyucu etkisinin yerine geçmez."
+    }
+  ],
+  "sourceLabel": "Linus Pauling Institute. Vitamin C and Skin Health",
+  "sourceUrl": "https://lpi.oregonstate.edu/mic/health-disease/skin-health/vitamin-C",
+  "additionalSources": [
+    {
+      "label": "DermNet. Topical vitamin C",
+      "url": "https://dermnetnz.org/topics/topical-vitamin-c"
+    },
+    {
+      "label": "Pinnell et al. Percutaneous absorption study",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11207686/"
+    }
+  ],
+  "relatedAtlasSlug": "c-vitamini",
+  "category": "Dermokozmetik",
+  "draft": false
+}
