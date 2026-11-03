@@ -1,0 +1,10 @@
+---
+/**
+ * Friendly administrative entry point.
+ * Keystatic manages its own /keystatic and /api/keystatic routes.
+ * Redirect instead of rewriting OAuth callbacks or CMS internals.
+ */
+export const prerender = false;
+
+return Astro.redirect('/keystatic', 302);
+---
