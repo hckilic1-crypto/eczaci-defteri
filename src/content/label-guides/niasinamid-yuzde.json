@@ -1,0 +1,61 @@
+{
+  "title": "Niasinamid Serumu: %5 mi %10 mu?",
+  "category": "Dermokozmetik",
+  "summary": "Niasinamidin INCI adı, serum yüzdesi, günlük kullanım ve tolerans ilişkisini ayırın; yüksek yüzdeyi otomatik üstün klinik etkinlik sanmayın.",
+  "label": "Niacinamide %5 / %10 (serum)",
+  "meaning": "Ağırlıkça %5 niasinamid, 100 g ürünün teorik olarak 5 g niasinamid içerdiğini; %10 ise 100 g'da 10 g olduğunu gösterir. Aynı yüzde farklı formülasyonlarda aynı cilt maruziyeti veya aynı etki demek değildir. Niacinamide ve nicotinamide isimleri aynı B3 vitamini formunu tanımlar; nicotinic acid (niasin) ile karıştırılmamalıdır.",
+  "example": "20 g ürün %5 niasinamid içeriyorsa teorik toplam niasinamid kütlesi 1 g'dır. Ancak bu, tek uygulamada 1 g maddenin cilde geçtiği veya sistemik olarak emildiği anlamına gelmez.",
+  "calculation": "20 g × 0,05 = 1 g niasinamid (ürünün tamamındaki teorik kütle). Aynı 20 g ürün %10 olsa 2 g olur. Gerçekte cilde uygulanan miktar, emilim, formülasyon ve kullanım süresi ayrı değişkenlerdir; burada hesap etkinlik karşılaştırması değildir.",
+  "pitfall": "%10 niasinamidin %5'in iki katı klinik fayda sağlayacağını varsaymak veya 'yüksek yüzde' ibaresinden bütün cilt tiplerine uygunluk çıkarmak. Serumdaki yüzde, tek seferde cilde geçen net doz olarak okunmaz.",
+  "checklist": "INCI: Niacinamide/Nicotinamide; ürün tipi ve yüzde; bariyer hassasiyeti; birlikte kullanılan retinoid/AHA/BHA ürünleri; üreticinin uygulama sıklığı ve tolerans talimatı.",
+  "buyingChecklist": "Formülasyon emülsiyon mu serum mu? Konsantrasyon açık mı? Koku/iritan bileşenler var mı? Niacinamide dışında benzersiz başka aktifler var mı? Kızarıklık, egzama/rozasea veya aktif dermatit var mı? Güneş koruyucu kullanımı planlı mı?",
+  "safetyNote": "Topikal niasinamid genellikle iyi tolere edilse de kozmetik ürünün tamamı tahriş, kızarıklık veya kontakt reaksiyona neden olabilir. Yeni ürünü cilt bariyeri hassas kişilerde dikkatli değerlendirin. Oral nikotinamid üzerine yapılan araştırmalar, topikal serum yüzdesine doğrudan aktarılmaz. Ciddi akne veya dermatolojik hastalıkta yalnızca kozmetik ürünle tedaviyi geciktirmeyin.",
+  "clinicalContext": "Niasinamid, B3 vitamininin nikotinamid formudur ve kozmetikte bariyer bakımı, sebum kontrolü ve pigmentasyon görünümü açısından çalışılmıştır. Bazı klinik çalışmalarda %2–5 aralığındaki topikal formülasyonların belirli sonlanımlarda yararları görülmüştür. Örneğin 50 kadında 12 haftalık çift kör, split-face randomize çalışmada %5 niasinamid içeren nemlendirici bazı foto-yaşlanma göstergelerini kontrol ürüne göre iyileştirmiştir. Bu sonuçlar bütün serumların veya %10 formülasyonların daha üstün olduğu anlamına gelmez; formülasyon ve çalışma popülasyonu belirleyicidir.",
+  "readingSteps": [
+    {
+      "title": "INCI'daki gerçek bileşeni doğrula",
+      "explanation": "Niacinamide/Nicotinamide B3 vitamininin nikotinamid formudur. Niacin (nikotinik asit) ile aynı molekül değildir; sistemik ve topikal kullanım bağlamları da farklıdır."
+    },
+    {
+      "title": "Yüzdeyi ürün kütlesine çevir",
+      "explanation": "Ağırlıkça %5, 100 gram ürün içinde yaklaşık 5 gram niasinamid anlamına gelir. Her uygulamadaki emilen miktarı göstermez. Yüzdenin miktar karşılaştırmasına, gram üzerinden basit hesapla yaklaşılabilir."
+    },
+    {
+      "title": "Diğer aktifleri ve taşıyıcı sistemi incele",
+      "explanation": "AHA/BHA, retinoid, alkol veya farklı kozmetik yardımcı maddelerle birlikte kullanım toleransı etkileyebilir. Tek başına niasinamid yüzdesine bakmak ürünü değerlendirmek için yeterli değildir."
+    },
+    {
+      "title": "Klinik veriyi hedefle eşleştir",
+      "explanation": "Bariyer desteği, pigmentasyon veya sebum gibi hedefler farklı sonlanımlardır. Hangi yüzde, kaç hafta ve hangi kullanıcı grubunda araştırılmış sorularını sor; yüksek yüzdeyi otomatik etkinlik artışı kabul etme."
+    }
+  ],
+  "evidenceLimit": "%5 niasinamidli nemlendiriciyle elde edilmiş kontrollü klinik verilerin %10 niasinamidli her serum için eşdeğer ya da daha üstün sonuç öngördüğü söylenemez. Formülasyon matriksi, cilt tipi, uygulama miktarı ve süre önemlidir. Kısa süreli kozmetik çalışmalarda görülmüş pigmentasyon veya bariyer iyileşmesi, hastalık tedavisi endikasyonuyla karıştırılmamalıdır.",
+  "faqs": [
+    {
+      "question": "%10 niasinamid %5'ten iki kat etkili mi?",
+      "answer": "Kütlece iki kat içerik beyanı söz konusu olabilir; fakat klinik etki doğrusal kabul edilemez. Farklı konsantrasyonların doğrudan karşılaştırıldığı insan çalışmalarına bakmak gerekir."
+    },
+    {
+      "question": "%5 niasinamid ile %5 retinol aynı güçte midir?",
+      "answer": "Hayır. Yüzde yalnızca o molekülün ürün içindeki oranını gösterir; farklı etkin maddelerin farmakolojik gücünü karşılaştıran ortak bir ölçek değildir."
+    },
+    {
+      "question": "Niasinamid ve nikotinamid aynı madde mi?",
+      "answer": "Evet. Niacinamide ve nicotinamide aynı B3 formunu ifade eder. Nicotinic acid/niasin ise başka moleküldür ve özellikle sistemik yan etki profili bakımından ayrılır."
+    }
+  ],
+  "sourceLabel": "DermNet — Nicotinamide: topical clinical uses",
+  "sourceUrl": "https://dermnetnz.org/topics/nicotinamide",
+  "additionalSources": [
+    {
+      "label": "Bissett ve ark. — %5 topikal niasinamid, 12 haftalık kontrollü çalışma",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18492135/"
+    },
+    {
+      "label": "Hakozaki ve ark. — Melanozom transferi ve pigmentasyon",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12100180/"
+    }
+  ],
+  "relatedAtlasSlug": "niasinamid",
+  "draft": false
+}

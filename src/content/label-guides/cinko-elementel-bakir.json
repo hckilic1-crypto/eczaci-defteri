@@ -1,0 +1,57 @@
+{
+  "title": "Çinko etiketinde elementel miktar ve bakır dengesi",
+  "category": "Mineral",
+  "summary": "Çinko pikolinat, glukonat ve bisglisinat etiketlerinde elementel çinkoyu, günlük toplam alımı ve uzun süreli yüksek dozların bakır metabolizmasına etkisini birlikte yorumlayın.",
+  "label": "Çinko (çinko pikolinattan) 15 mg / günlük porsiyon",
+  "meaning": "'Çinko 15 mg (pikolinat formunda)' ifadesi ile 'çinko pikolinat 15 mg' aynı bilgi değildir. İlkinde 15 mg elementel çinko beyanı söz konusu olabilir; ikincisinde tuzun toplam kütlesi yazıyor olabilir. Öncelik elementel Zn miktarını içerik tablosundan doğrulamaktır.",
+  "example": "İki ayrı takviyeden birinin günlük porsiyonu 15 mg, diğerinin günlük porsiyonu 10 mg elementel çinko veriyorsa toplam takviye kaynaklı çinko 25 mg/gündür; beslenmeden gelen çinko da günlük toplam maruziyete katkı sağlar.",
+  "calculation": "Ürün A: kapsül başına 15 mg elementel Zn × 1 kapsül = 15 mg. Ürün B: tablet başına 10 mg elementel Zn × 1 tablet = 10 mg. Takviyeler toplamı 25 mg/gün. ABD FNB'nin sağlıklı yetişkin için 40 mg/gün UL değeri, besin ve takviyeler dahil toplam alım içindir; hekim gözetimindeki tedavi dozuyla karıştırılmamalıdır.",
+  "pitfall": "'50 mg çinko pikolinat' ifadesini otomatik 50 mg elementel Zn sanmak veya en yüksek mg değerini daha güçlü bağışıklık desteği olarak sunmak. Uzun süreli yüksek dozun bakır emilimini engelleyebileceğini atlamak.",
+  "checklist": "Kimyasal form; elementel Zn mg; günlük porsiyon; başka multivitaminlerdeki çinko; uzun süreli kullanım amacı; bakır dengesi ve eşlik eden ilaçlar.",
+  "buyingChecklist": "Etikette Zn miktarı mineral olarak mı tuz olarak mı yazıyor? Günlük kaç kapsül öneriliyor? Kullanım planı kaç hafta sürüyor? Kişide bakır eksikliği, anemi veya nörolojik yakınmalar olabilir mi? Antibiyotik ya da penisilamin tedavisi var mı?",
+  "safetyNote": "NIH ODS, yetişkinlerde toplam çinko için 40 mg/gün UL bildirir. Haftalar boyunca 50 mg/gün ve üzeri çinko kullanımı bazı kişilerde bakır emilimini azaltabilir. Kinolon/tetrasiklin antibiyotiklerle eşzamanlı kullanım emilim etkileşimine yol açabilir; doz aralığı ilgili ilaç ürün bilgisine göre belirlenmelidir.",
+  "clinicalContext": "Çinko, enzimler, immün işlev ve doku onarımında rol oynayan zorunlu bir eser elementtir. Ancak vitamin/mineral ürünlerinde elementel miktar yerine kullanılan tuzun kütlesini okumak yanlış doz karşılaştırmalarına yol açabilir. Çinko pikolinat, glukonat, sitrat ve bisglisinat gibi formların her biri farklı kimyasal bileşim taşır. Ayrıca çinko, bakır metabolizmasından bağımsız değerlendirilemez: kronik yüksek alım, bakır eksikliği ve buna bağlı hematolojik veya nörolojik sonuçlar oluşturabilir. Eksiklik replasmanı, soğuk algınlığında araştırılan kısa süreli preparatlar ve genel beslenme desteği farklı klinik bağlamlardır.",
+  "readingSteps": [
+    {
+      "title": "Tuz ismini ve elementel çinko beyanını ayır",
+      "explanation": "'Çinko (pikolinat olarak) 15 mg' ifadesi 15 mg mineral beyanı olabilir. 'Çinko pikolinat 15 mg' ifadesinde ise toplam tuz ağırlığı söz konusu olabilir. İçerik tablosu ve porsiyon bilgisi birlikte doğrulanmalıdır."
+    },
+    {
+      "title": "Günlük toplamı birden çok ürün için hesapla",
+      "explanation": "Multivitamin, çinko pastili ve ayrı çinko kapsülü eşzamanlı kullanılabilir. Her birindeki elementel Zn miktarını toplayın. Beslenmeden gelen çinko da toplam günlük alımın parçasıdır."
+    },
+    {
+      "title": "Süre ve amaç bilgisi ekle",
+      "explanation": "Ürünün ne için ve ne kadar süreyle kullanılacağı önemlidir. Günlük beslenme desteği için etiketlenen miktar, laboratuvarla doğrulanan eksiklikteki veya araştırma protokolündeki miktarla eşdeğer değildir."
+    },
+    {
+      "title": "Bakır ve ilaç etkileşimlerini kontrol et",
+      "explanation": "Uzun süre yüksek doz çinko, bakır eksikliğine katkıda bulunabilir. Bazı antibiyotikler ve penisilaminle gastrointestinal bağlanma/absorpsiyon sorunları vardır. Kişinin ilaç listesi değerlendirilmelidir."
+    }
+  ],
+  "evidenceLimit": "Çinko fizyolojik olarak gerekli diye eksikliği olmayan herkesin daha yüksek dozdan yarar göreceği sonucu çıkarılamaz. Tuzun adı ve yüzde günlük değer, bir klinik sonlanımı tek başına kanıtlamaz. Ürün formülasyonu ve kullanıcının çinko durumu etkili olabilir. ABD'deki UL sınırı farklı ülke kurumlarının tüm referanslarıyla birebir aynı kabul edilmemelidir.",
+  "faqs": [
+    {
+      "question": "15 mg çinko pikolinat, 15 mg elementel çinko mudur?",
+      "answer": "Etiketin yazımına bağlıdır. Mineral tablosunda 'Çinko 15 mg (çinko pikolinattan)' varsa bu genellikle elementel Zn beyanıdır; yalnız 'çinko pikolinat 15 mg' yazıyorsa kompleks ağırlığı olabilir."
+    },
+    {
+      "question": "Yüksek çinko neden bakır eksikliği yapabilir?",
+      "answer": "Uzun süre yüksek çinko maruziyeti bağırsakta bakır emilimini azaltabilir. Sonuçta anemi veya nörolojik belirtiler gelişebilir; doz ve sürenin klinik açıdan gerekçelendirilmesi gerekir."
+    },
+    {
+      "question": "40 mg sınırı takviyeden gelen çinko için mi?",
+      "answer": "NIH/FNB yetişkin 40 mg/gün UL değeri besin, takviye ve diğer kaynaklardan gelen toplam günlük çinkoyu kapsar. Klinisyen tarafından belirli bir hastalık için verilen yüksek doz tedaviyi tek başına yasaklayan eşik değildir."
+    }
+  ],
+  "sourceLabel": "NIH ODS — Zinc, Health Professional Fact Sheet",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/",
+  "additionalSources": [
+    {
+      "label": "NIH ODS — Zinc and medication interactions",
+      "url": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/"
+    }
+  ],
+  "relatedAtlasSlug": "cinko",
+  "draft": false
+}

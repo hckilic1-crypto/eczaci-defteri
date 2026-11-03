@@ -1,0 +1,57 @@
+{
+  "title": "K2 Vitamini Etiketi: MK-7, MK-4 ve D3 Kombinasyonu",
+  "category": "Vitamin",
+  "summary": "MK-7 ve MK-4'ün farklı K2 formları olduğunu, D3+K2 ürünlerindeki miktarları ve özellikle varfarin etkileşiminin neden kritik olduğunu öğrenin.",
+  "label": "Vitamin D3 1000 IU + Vitamin K2 (MK-7) 100 µg",
+  "meaning": "K2 vitamini bir tek molekül değildir; menakinonlardan oluşan bir aileyi belirtir. MK-7 ile MK-4 farklı yan zincir uzunluklarına sahiptir. Etikette K2'nin toplam miktarı kadar spesifik form ve biyoyararlanım bağlamı da önemlidir. D vitamininin IU birimiyle K2'nin µg birimi birbirinin yerine geçmez.",
+  "example": "Etikette 1 fısta D3 1000 IU ve MK-7 100 µg yazıyorsa günlük 2 fıs D3 2000 IU (50 µg) ve MK-7 200 µg sağlar. Bu, her bireyin ikisini birlikte alması gerektiği anlamına gelmez.",
+  "calculation": "D3: 2 fıs × 1000 IU = 2000 IU = 50 µg (D vitamini için 1 µg = 40 IU). MK-7: 2 fıs × 100 µg = 200 µg = 0,2 mg. İki farklı vitaminin kütle değerlerini birbirine ekleyerek tek bir 'toplam vitamin dozu' oluşturmayın.",
+  "pitfall": "'K2 100 µg' ifadesinden ürünün MK-7 olduğunu varsaymak. MK-4 ve MK-7'nin araştırmalardaki doz/yarar sonuçlarını aynı görmek; D3+K2 kombinasyonunun herkes için zorunlu olduğunu söylemek.",
+  "checklist": "D3 ve K2 miktarları ayrı mı? K2'nin tipi MK-4 mü MK-7 mi? Birim mg mı µg mı? Günlük porsiyon kaç damla/fıs? Kişi varfarin ya da benzer K vitamini antagonisti kullanıyor mu?",
+  "buyingChecklist": "MK-7'nin hangi formu belirtilmiş? D vitamini başka üründen de alınıyor mu? Antikoagülan tedavisi, özellikle varfarin var mı? K2 kullanımının klinik gerekçesi nedir? Ürün etiketinde sağlıklı birey için kanıtsız damar kireçlenmesi önleme iddiası bulunuyor mu?",
+  "safetyNote": "Varfarin, asenokumarol ve diğer vitamin K antagonistleriyle K vitamini alımındaki değişiklikler antikoagülan etkiyi değiştirebilir; ürün hekime ve INR takibini yapan ekibe danışılmadan başlatılmamalı veya kesilmemelidir. Vitamin K'nin fizyolojik rolü damar kalsifikasyonunu tedavi ettiği anlamına gelmez. K2, D3'ün bütün kullanıcılar için zorunlu tamamlayıcısı değildir.",
+  "clinicalContext": "Vitamin K, pıhtılaşma ve bazı kemik proteinlerinin karboksilasyonunda görev alır. K1 (filokinon) ve K2 (menakinonlar) aynı aile içinde farklı bileşenlerdir. MK-4, MK-7 ve diğer menakinonların farmakokinetik özellikleri aynı değildir. Bazı çalışmalarda MK-7'nin dolaşımda daha uzun süre kalabildiği bildirilmiştir; ancak bu, tüm klinik sonuçlarda daha etkili olduğunu ispatlamaz. Kombine D3+K2 ürünlerde ayrıca D3 miktarı, kaynakları ve güvenlilik değerlendirilmeli. Vitamin K'nin genel beslenme yeterli alım referansı, ayrı bir MK-7 tedavi dozu değildir.",
+  "readingSteps": [
+    {
+      "title": "K2 formunu tam adıyla doğrula",
+      "explanation": "Menakinon-4 ve menakinon-7 farklı moleküllerdir. Etikette yalnız 'K2' yazması literatürde çalışılan formu kesinleştirmez; MK-4/MK-7 adı aranmalıdır."
+    },
+    {
+      "title": "D3 ve K2 birimlerini ayrı dönüştür",
+      "explanation": "D3'ün IU değeri µg'ye çevrilebilir; K2 için IU dönüştürme tablosu varmış gibi davranılmaz. MK-7 miktarı µg veya mg olarak belirtilir."
+    },
+    {
+      "title": "Günlük porsiyonda iki bileşeni hesapla",
+      "explanation": "Bir fıs ve günlük kullanım önerisi farklı olabilir. D3 toplamını kendi içinde, K2 toplamını kendi içinde hesaplayın. Multivitamin, D damlası ve diğer K vitaminli ürünleri de sorgulayın."
+    },
+    {
+      "title": "Antikoagülan öyküsünü özellikle kontrol et",
+      "explanation": "Varfarin ve benzeri K vitamini antagonistlerinde sabit K vitamini alımı önemlidir. Yeni K2 takviyesi başlatmak veya kesmek INR'yi etkileyebilir; hekim takibi gerekir."
+    }
+  ],
+  "evidenceLimit": "Vitamin K'nin osteokalsin veya matriks Gla proteini gibi biyolojik hedeflerinin bulunması, sağlıklı bireyde MK-7 takviyesinin kırıkları veya damar kireçlenmesini kesin olarak önlediğini kanıtlamaz. Kemik ve kardiyovasküler sonlanımlara ilişkin çalışmalar farklı doz, form ve popülasyonlar kullanır. Menakinon ailesinin hepsini eşdeğer kabul edip tek bir 'K2 dozu' önermek doğru değildir.",
+  "faqs": [
+    {
+      "question": "MK-7 ile MK-4 aynı K2 vitamini mi?",
+      "answer": "İkisi de K2 ailesinin üyesidir fakat farklı yan zincirlere sahip ayrı menakinonlardır. Emilim/yarı ömür ve araştırmalarda kullanılan dozlar farklı olabilir."
+    },
+    {
+      "question": "D3 kullanan herkesin K2 alması gerekir mi?",
+      "answer": "Hayır. D3 ve K2'nin birlikte satılması, bütün bireylerde zorunlu kombinasyon olduklarının klinik kanıtı değildir. Gereksinim, beslenme ve ilaç tedavisine göre değerlendirilir."
+    },
+    {
+      "question": "Varfarin kullanırken K2 içeren ürün alabilir miyim?",
+      "answer": "Kendi başınıza yeni K2 takviyesi başlamayın. Vitamin K alımındaki ani değişiklikler INR'yi etkileyebilir. Antikoagülanı yöneten hekimle ürün ve doz değerlendirilmelidir."
+    }
+  ],
+  "sourceLabel": "NIH ODS — Vitamin K, Health Professional Fact Sheet",
+  "sourceUrl": "https://ods.od.nih.gov/factsheets/VitaminK-HealthProfessional/",
+  "additionalSources": [
+    {
+      "label": "NHS — Warfarin and vitamin K interactions",
+      "url": "https://www.nhs.uk/medicines/warfarin/"
+    }
+  ],
+  "relatedAtlasSlug": "k2-vitamini",
+  "draft": false
+}
