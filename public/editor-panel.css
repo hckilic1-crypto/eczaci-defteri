@@ -204,3 +204,22 @@ html.ed-editor-post-list [data-ed-articles-table] [data-ed-title-cell][title]{cu
   html.ed-editor-post-list [data-ed-articles-table] [data-ed-title-cell]{min-width:220px!important;}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;}}
+
+/* Editorial review state in the posts list. This is an internal CMS marker only. */
+html.ed-editor-post-list [data-ed-articles-table] [data-ed-reviewed]{
+  font-size:0!important;color:transparent!important;white-space:nowrap!important;
+  min-width:112px;
+}
+html.ed-editor-post-list [data-ed-articles-table] [data-ed-reviewed] *{
+  font-size:0!important;color:transparent!important;
+}
+html.ed-editor-post-list [data-ed-articles-table] [data-ed-reviewed]::after{
+  content:attr(data-ed-reviewed-label);display:inline-flex;align-items:center;
+  padding:6px 10px;border-radius:999px;
+  background:rgba(182,125,39,.14);border:1px solid rgba(224,168,90,.42);
+  color:#f2ce9c!important;font:700 11px/1.4 Inter,-apple-system,BlinkMacSystemFont,sans-serif;
+}
+html.ed-editor-post-list [data-ed-articles-table] [data-ed-reviewed="yes"]::after{
+  background:rgba(40,145,85,.16);border-color:rgba(122,211,147,.42);
+  color:#b9efd0!important;
+}
