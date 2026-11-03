@@ -1,7 +1,9 @@
 ---
 import { getCollection } from 'astro:content';
+import { responsiveCover } from '../lib/cover-images';
 const { post, featured = false } = Astro.props;
 const d = post.data;
+const cover = responsiveCover(d.coverImage, 'card');
 const slug = post.id.replace(/\.mdoc$/, '');
 const cats = await getCollection('categories');
 const categoryName = cats.find(c => c.id.replace(/\.json$/, '').split('/').pop() === d.category)?.data.name ?? d.category.replaceAll('-', ' ');
@@ -10,7 +12,7 @@ const date = new Intl.DateTimeFormat('tr-TR', {day:'numeric', month:'short', yea
 <a class:list={['card', 'journal-card', {'featured': featured}]} href={'/yazi/' + slug} data-category={d.category} data-search={[d.title,d.excerpt,categoryName].join(' ')}>
   {d.coverImage ? (
     <div class="journal-card-media">
-      <img src={d.coverImage} alt="" loading={featured ? 'eager' : 'lazy'} fetchpriority={featured ? 'high' : 'low'} decoding="async" width="720" height="405" />
+      <img src={cover.src} srcset={cover.srcset} sizes={cover.sizes} alt="" loading={featured ? 'eager' : 'lazy'} fetchpriority={featured ? 'high' : 'low'} decoding="async" width="720" height="405" />
     </div>
   ) : (
     <div class="journal-card-media journal-card-media--plain" aria-hidden="true"><span>ECZACI DEFTERİ</span></div>
