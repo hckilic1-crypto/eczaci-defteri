@@ -61,7 +61,7 @@ repo: 'hckilic1-crypto/eczaci-defteri'  },
 
       // Liste görünümü: mevcut taslak alanı üzerinden yayında/taslak ayrımı.
       // İşaretli = Taslak, işaretsiz = Yayında. Yayınlama mantığı değişmez.
-      columns: ['title', 'draft', 'category', 'publishedAt'],
+      columns: ['title', 'editorReviewed', 'draft', 'category', 'publishedAt'],
 
       slugField: 'title',
 
@@ -125,6 +125,12 @@ repo: 'hckilic1-crypto/eczaci-defteri'  },
         draft: fields.checkbox({
           label: 'Taslak mı?',
           description: 'İşaretliyse yazı sitede yayınlanmaz. İşaretli değilse yayınlanır.',
+          defaultValue: false
+        }),
+
+        editorReviewed: fields.checkbox({
+          label: 'Editör kontrol etti',
+          description: 'İçerik, kaynakça, dozlar ve güvenlilik kontrolünden geçtiyse işaretle. Yayın durumunu etkilemez. Yeni ve mevcut yazılar varsayılan olarak kontrol bekler.',
           defaultValue: false
         }),
 
