@@ -6,6 +6,7 @@ import '../styles/notebook-motifs.css';
 import '../styles/health-tools.css';
 import '../styles/content-connections.css';
 import '../styles/topic-hubs.css';
+import '../styles/theme.css';
 import { topicHubs } from '../lib/topic-hubs';
 import { getCollection } from 'astro:content';
 
@@ -54,7 +55,16 @@ const jsonLd = structuredData ? JSON.stringify(structuredData).replace(/</g, '\\
 
 <!doctype html>
 
-<html lang="tr">
+<html lang="tr" data-theme="light">
+
+<!-- Apply saved theme before first paint; default is always light. -->
+<script is:inline>
+  try {
+    if (localStorage.getItem('ed-theme') === 'dark') {
+      document.documentElement.dataset.theme = 'dark';
+    }
+  } catch (_) { /* Private mode or blocked storage keeps light theme. */ }
+</script>
 
 <head>
 
@@ -298,6 +308,10 @@ const jsonLd = structuredData ? JSON.stringify(structuredData).replace(/</g, '\\
       <a href="/araclar">Araçlar</a>
       <a href="/hakkinda">Hakkında</a>
       <a href="/iletisim">İletişim</a>
+      <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Koyu temaya geç" aria-pressed="false" title="Koyu temaya geç">
+        <svg class="theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 15.7A8.8 8.8 0 0 1 8.3 3.7a8.8 8.8 0 1 0 12 12Z"/></svg>
+        <svg class="theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
       <button class="search-trigger" id="search-trigger" type="button" aria-label="Sitede ara">
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" /><path d="m16 16 4 4" /></svg>
       </button>
@@ -584,6 +598,30 @@ const jsonLd = structuredData ? JSON.stringify(structuredData).replace(/</g, '\\
 </footer>
 
 
+
+<!-- Visitor theme: light by default; saved choice persists across visits. -->
+<script is:inline>
+  (() => {
+    const root = document.documentElement;
+    const button = document.getElementById('theme-toggle');
+    if (!button) return;
+    const sync = () => {
+      const dark = root.dataset.theme === 'dark';
+      button.setAttribute('aria-pressed', String(dark));
+      button.setAttribute('aria-label', dark ? 'Açık temaya geç' : 'Koyu temaya geç');
+      button.title = dark ? 'Açık temaya geç' : 'Koyu temaya geç';
+      const meta = document.querySelector('meta[name="theme-color"]');
+      if (meta) meta.setAttribute('content', dark ? '#121c17' : '#f7f4ea');
+    };
+    button.addEventListener('click', () => {
+      const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+      root.dataset.theme = next;
+      try { localStorage.setItem('ed-theme', next); } catch (_) {}
+      sync();
+    });
+    sync();
+  })();
+</script>
 
 <!-- Accessible navigation: native details controls + Escape/outside-click closing. -->
 <script is:inline>
