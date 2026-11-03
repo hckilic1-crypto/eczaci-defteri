@@ -200,3 +200,8 @@ html[data-theme="dark"] .article-body th{background:#242428!important;color:#fff
 html[data-theme="dark"] .article-body td{background:#171719!important;color:#e5e5e9!important}
 html[data-theme="dark"] .theme-toggle{background:#1c1c20!important;color:#ffffff!important;border-color:#38383f!important}
 html[data-theme="dark"] .theme-toggle:hover{background:#2a2a2e!important}
+
+/* Avoid laying out far-below-the-fold related card grids until approached. */
+@supports (content-visibility: auto) {
+  .related-posts { content-visibility: auto; contain-intrinsic-size: auto 520px; }
+}
