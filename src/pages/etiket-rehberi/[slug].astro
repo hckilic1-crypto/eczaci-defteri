@@ -20,13 +20,19 @@ const readingGroups = [
   group('03','Blog yazıları',postsForGuide(item,posts,atlases,3).map(link.post))
 ];
 const entryUrl = 'https://eczacidefteri.com/etiket-rehberi/'+item.id.replace(/\.json$/,'');
+const sources = [
+  {label:d.sourceLabel,url:d.sourceUrl},
+  ...(d.additionalSources || [])
+];
+const steps = d.readingSteps || [];
+const faqs = d.faqs || [];
 const schema={
   '@context':'https://schema.org',
   '@graph':[
     {'@type':'Article',headline:d.title,description:d.summary,
       mainEntityOfPage:entryUrl,inLanguage:'tr-TR',
       publisher:{'@type':'Organization',name:'Eczacı Defteri',url:'https://eczacidefteri.com/'},
-      citation:d.sourceUrl},
+      citation:sources.map(source => source.url)},
     {'@type':'BreadcrumbList',itemListElement:[
       {'@type':'ListItem',position:1,name:'Anasayfa',item:'https://eczacidefteri.com/'},
       {'@type':'ListItem',position:2,name:'Etiket Okuma Rehberi',item:'https://eczacidefteri.com/etiket-rehberi'},
@@ -39,17 +45,31 @@ const schema={
  <article class="shell library-detail">
   <nav class="article-breadcrumbs" aria-label="Gezinme yolu"><a href="/">Anasayfa</a><span class="article-crumb-sep">/</span><a href="/etiket-rehberi">Etiket Rehberi</a><span class="article-crumb-sep">/</span><span aria-current="page">{d.title}</span></nav>
   <header class="library-detail-head"><span class="library-index-kicker">ETİKET REHBERİ / {d.category}</span><h1>{d.title}</h1><p>{d.summary}</p></header>
-  <div class="library-reading">
-   <div class="library-label-sample"><span>ETİKETTE ŞÖYLE GÖREBİLİRSİNİZ</span><strong>{d.label}</strong></div>
-   <section><span class="library-section-label">01 / ANLAMI</span><h2>Bu ifade ne demek?</h2><p>{d.meaning}</p></section>
-   <section><span class="library-section-label">02 / ÖRNEK</span><h2>Birlikte okuyalım</h2><p>{d.example}</p></section>
-   {d.calculation && <section class="library-worked-example"><span class="library-section-label">03 / ADIM ADIM</span><h2>Hesabı nasıl yaparız?</h2><p>{d.calculation}</p></section>}
-   <section><span class="library-section-label">04 / SIK HATA</span><h2>En çok karıştırılan nokta</h2><p>{d.pitfall}</p></section>
-   <section><span class="library-section-label">05 / KONTROL LİSTESİ</span><h2>Satın almadan önce</h2><p>{d.checklist}</p></section>
-   {d.buyingChecklist && <section><span class="library-section-label">06 / SATIN ALMA KONTROLLERİ</span><h2>Etiketteki son kontrol</h2><p>{d.buyingChecklist}</p></section>}
-   {d.safetyNote && <section><span class="library-section-label">07 / GÜVENLİLİK</span><h2>Kimler dikkat etmeli?</h2><p>{d.safetyNote}</p></section>}
-   <section><span class="library-section-label">08 / KAYNAK</span><h2>Bilimsel referans</h2><a class="library-source" href={d.sourceUrl} target="_blank" rel="noopener noreferrer">{d.sourceLabel} ↗</a></section>
-   <ContentConnections groups={readingGroups} heading="Etiketin arkasındaki bilgi" />
+  <div class="library-reading label-longform">
+    <div class="library-label-sample"><span>ETİKET ÖRNEĞİ / TEMSİLÎ ÜRÜN</span><strong>{d.label}</strong></div>
+    {d.clinicalContext && <section id="baglam">
+      <span class="library-section-label">01 / ÖNCE BAĞLAM</span><h2>Etiketi okumadan önce</h2>
+      <p>{d.clinicalContext}</p>
+    </section>}
+    <section id="anlam"><span class="library-section-label">02 / NE ANLAMA GELİR?</span><h2>Bu ibare neyi ölçüyor?</h2><p>{d.meaning}</p></section>
+    <section id="ornek"><span class="library-section-label">03 / UYGULAMALI ÖRNEK</span><h2>Örnek bir etiketi yorumlayalım</h2><p>{d.example}</p></section>
+    {steps.length > 0 && <section id="okuma"><span class="library-section-label">04 / ÜRÜNÜ ÇÖZÜMLE</span><h2>Etiketi dört adımda oku</h2>
+      <ol class="label-reading-steps">{steps.map((step,index)=><li><span class="label-step-num">{String(index+1).padStart(2,'0')}</span><div><h3>{step.title}</h3><p>{step.explanation}</p></div></li>)}</ol>
+    </section>}
+    {d.calculation && <section id="hesap" class="library-worked-example"><span class="library-section-label">05 / SAYISAL ÖRNEK</span><h2>Hesabı nasıl yaparız?</h2><p>{d.calculation}</p></section>}
+    {d.evidenceLimit && <section id="kanit"><span class="library-section-label">06 / KANITIN SINIRI</span><h2>Etiketten hangi sonuç çıkarılamaz?</h2><p>{d.evidenceLimit}</p></section>}
+    <section id="hatalar"><span class="library-section-label">07 / SIK HATA</span><h2>En çok ne karıştırılıyor?</h2><p>{d.pitfall}</p></section>
+    <section id="kontrol"><span class="library-section-label">08 / PRATİK KONTROL</span><h2>Üründe mutlaka kontrol et</h2><p>{d.checklist}</p></section>
+    {d.buyingChecklist && <section id="secim"><span class="library-section-label">09 / SEÇİM SORULARI</span><h2>Ürünleri karşılaştırırken</h2><p>{d.buyingChecklist}</p></section>}
+    {d.safetyNote && <section id="guvenlilik"><span class="library-section-label">10 / GÜVENLİLİK</span><h2>Hangi durumlarda dikkat gerekir?</h2><p>{d.safetyNote}</p></section>}
+    {faqs.length > 0 && <section id="sorular"><span class="library-section-label">11 / MERAK EDİLENLER</span><h2>Sık sorulan sorular</h2>
+      <div class="label-faqs">{faqs.map((faq,index)=><details><summary><span>{faq.question}</span><span class="label-faq-plus" aria-hidden="true">+</span></summary><div><p>{faq.answer}</p></div></details>)}</div>
+    </section>}
+    <section id="kaynaklar"><span class="library-section-label">12 / KAYNAKÇA</span><h2>Bilimsel referanslar</h2>
+      <ol class="label-source-list">{sources.map(source=><li><a class="library-source" href={source.url} target="_blank" rel="noopener noreferrer">{source.label} <span aria-hidden="true">↗</span></a></li>)}</ol>
+      <p class="label-reference-note">Kurumların beslenme referansları, klinik tedavi dozları ve kozmetik mevzuat aynı amaçla oluşturulmaz. Örnekler ürün tanıtımı değildir.</p>
+    </section>
+    <ContentConnections groups={readingGroups} heading="Etiketin arkasındaki bilgi" />
   </div>
   <aside class="library-disclaimer">Etiket örnekleri açıklama amaçlıdır; belirli bir ürünün tedavi etkinliğini veya uygunluğunu garanti etmez.</aside>
  </article>

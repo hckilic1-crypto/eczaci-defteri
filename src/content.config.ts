@@ -130,6 +130,11 @@ const labelGuides = defineCollection({
     label: z.string(), meaning: z.string(), example: z.string(),
     calculation: z.string().optional(), buyingChecklist: z.string().optional(),
     safetyNote: z.string().optional(),
+    clinicalContext: z.string().optional(),
+    evidenceLimit: z.string().optional(),
+    readingSteps: z.array(z.object({ title: z.string(), explanation: z.string() })).default([]),
+    faqs: z.array(z.object({ question: z.string(), answer: z.string() })).default([]),
+    additionalSources: z.array(z.object({ label: z.string(), url: z.string().url() })).default([]),
     pitfall: z.string(), checklist: z.string(),
     sourceLabel: z.string(), sourceUrl: z.string().url(),
     relatedAtlasSlug: z.string().optional(), draft: z.boolean().default(false)

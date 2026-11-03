@@ -20,9 +20,14 @@ const structuredData = {
     <header class="library-head">
       <div class="library-index-kicker">ECZACI DEFTERİ / UYGULAMALI REHBER</div>
       <h1>Etiket Okuma Rehberi<span class="library-head-period">.</span></h1>
-      <p>Kutudaki sayıları ve ifadeleri gerçek miktarlarına göre okuyun. EPA+DHA, elementel mineral, CFU ve SPF gibi kavramları örneklerle açıklıyoruz.</p>
+      <p>Bir ürünün etiketinde yazan miktar, kimyasal form, suş, standardizasyon ve güvenlilik bilgilerini birbirinden ayırın. EPA+DHA, elementel mineral, CFU, biyotin ve SPF gibi ibareleri gerçek örneklerle inceleyin.</p>
       <div class="library-head-meta"><span>{entries.length} kayıt</span><span>Uygulamalı örnekler</span><span>Kaynak temelli</span></div>
     </header>
+    <section class="label-intro" aria-label="Etiket okuma yöntemi">
+      <div><small>01 / PORSİYON</small><strong>Gerçek günlük miktar</strong><p>Bir kapsül, bir damla ve günlük porsiyonun aynı olup olmadığını kontrol edin.</p></div>
+      <div><small>02 / BİLEŞEN</small><strong>Form ve etkin içerik</strong><p>Toplam karışımın ağırlığını elementel mineral, EPA+DHA veya marker miktarıyla karıştırmayın.</p></div>
+      <div><small>03 / KANIT</small><strong>İddia ve güvenlilik</strong><p>Etiketteki iddianın ilgili insan çalışmalarıyla ve sizin kullanım koşullarınızla uyumunu sorgulayın.</p></div>
+    </section>
     <section class="library-browser" aria-label="Kütüphanede ara ve filtrele">
       <label class="library-search"><span class="sr-only">Kaydın adını ara</span><input id="library-query" type="search" placeholder="Konu veya bileşen ara..." autocomplete="off" /></label>
       <label class="library-category"><span class="sr-only">Konu seç</span><select id="library-category"><option value="">Tüm konular</option>{categories.map(c => <option value={c}>{c}</option>)}</select></label>

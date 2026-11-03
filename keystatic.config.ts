@@ -279,6 +279,20 @@ repo: 'hckilic1-crypto/eczaci-defteri'  },
         calculation: fields.text({ label: 'Adım adım hesap veya gerçek etiket örneği', multiline: true }),
         buyingChecklist: fields.text({ label: 'Kontrol listesi / seçim soruları', multiline: true }),
         safetyNote: fields.text({ label: 'Güvenlilik ve ilaç etkileşimi uyarıları', multiline: true }),
+        clinicalContext: fields.text({ label: 'Klinik bağlam ve ürün seçimi', multiline: true }),
+        readingSteps: fields.array(fields.object({
+          title: fields.text({ label: 'Kontrol adımı' }),
+          explanation: fields.text({ label: 'Ayrıntılı açıklama', multiline: true })
+        }), { label: 'Etiketi adım adım okuma', itemLabel: props => props.fields.title.value || 'Adım' }),
+        evidenceLimit: fields.text({ label: 'Kanıtın sınırları ve yanlış çıkarımlar', multiline: true }),
+        faqs: fields.array(fields.object({
+          question: fields.text({ label: 'Soru' }),
+          answer: fields.text({ label: 'Bilimsel yanıt', multiline: true })
+        }), { label: 'Sık sorulan sorular', itemLabel: props => props.fields.question.value || 'Soru' }),
+        additionalSources: fields.array(fields.object({
+          label: fields.text({ label: 'Kaynağın adı' }),
+          url: fields.url({ label: 'Kaynak URL' })
+        }), { label: 'Ek bilimsel kaynaklar', itemLabel: props => props.fields.label.value || 'Kaynak' }),
         sourceLabel: fields.text({ label: 'Kaynak' }),
         sourceUrl: fields.url({ label: 'Kaynak URL' }),
         relatedAtlasSlug: fields.relationship({ label: 'İlgili bileşen', collection: 'atlas' }),
