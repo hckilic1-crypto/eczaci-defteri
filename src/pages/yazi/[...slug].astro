@@ -82,6 +82,7 @@ const structuredData = {
   title={d.seoTitle || `${d.title} | Eczacı Defteri`}
   description={d.seoDescription || d.excerpt}
   image={d.coverImage || '/og-default.gif'}
+  preloadImage={d.coverImage || undefined}
   type="article"
   publishedAt={d.publishedAt}
   updatedAt={d.updatedAt}
