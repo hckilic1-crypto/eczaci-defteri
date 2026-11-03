@@ -2,35 +2,55 @@
 export const prerender = true;
 import Base from '../../layouts/Base.astro';
 import { topicHubs } from '../../lib/topic-hubs';
-const schema = {
-  '@context':'https://schema.org',
-  '@graph':[
-    {'@type':'CollectionPage',name:'Konu Merkezleri | Eczacı Defteri',
-      description:'Eczacı Defteri konu merkezleri: saç ve tırnak, cilt bariyeri, mikrobiyota, vitamin ve mineraller, takviye güvenliliği.',
-      url:'https://eczacidefteri.com/konular',
-      inLanguage:'tr-TR'},
-    {'@type':'BreadcrumbList',itemListElement:[
-      {'@type':'ListItem',position:1,name:'Anasayfa',item:'https://eczacidefteri.com/'},
-      {'@type':'ListItem',position:2,name:'Konu Merkezleri',item:'https://eczacidefteri.com/konular'}
-    ]}
-  ]
+const schema={
+ '@context':'https://schema.org',
+ '@graph':[
+  {'@type':'CollectionPage',name:'Konu Merkezleri | Eczacı Defteri',
+    description:'Saç ve tırnak, cilt bariyeri, bağırsak mikrobiyotası, vitamin-mineraller ve takviye güvenliliği üzerine bağımsız okuma dosyaları.',
+    url:'https://eczacidefteri.com/konular',inLanguage:'tr-TR'},
+  {'@type':'BreadcrumbList',itemListElement:[
+    {'@type':'ListItem',position:1,name:'Anasayfa',item:'https://eczacidefteri.com/'},
+    {'@type':'ListItem',position:2,name:'Konular',item:'https://eczacidefteri.com/konular'}]}
+ ]
 };
+const introductions=[
+  'Saç dökülmesinin nedenini ürün etiketinden önce anlamak gerekir.',
+  'Hassas ciltte hangi içerikten önce hangi probleme baktığımız önemlidir.',
+  'Mikrobiyota hakkında çok bilgi var; hepsi klinik bir öneriye dönüşmüyor.',
+  'Bir referans alım değeri, tedavi dozu veya toksisite eşiği değildir.',
+  'Doğal kaynaklı bir ürün de ilaçlarla etkileşebilir.'
+];
 ---
-<Base title="Konu Merkezleri: Takviye, Dermokozmetik ve Sağlık | Eczacı Defteri" description="Saç ve tırnak, cilt bariyeri, bağırsak mikrobiyotası, vitamin ve mineraller, takviye güvenliliği: bilimsel konu merkezleri." structuredData={schema}>
-  <div class="shell topic-hub-index">
-    <nav class="article-breadcrumbs" aria-label="Gezinme yolu"><a href="/">Anasayfa</a><span class="article-crumb-sep">/</span><span aria-current="page">Konular</span></nav>
-    <header class="topic-hub-hero">
-      <div class="topic-overline">ECZACI DEFTERİ / BİLGİYİ BAĞLAYAN DOSYALAR</div>
-      <h1>Konular<span class="topic-dot">.</span></h1>
-      <p>Bir sorudan başlayın. İlgili yazılara, bileşenlerin bilimsel dosyalarına, sözlük tanımlarına ve etiket okuma rehberlerine tek bir yerden ulaşın.</p>
-      <div class="topic-hero-meta"><span>05 konu merkezi</span><span>İlişkili okumalar</span><span>Kaynak temelli</span></div>
-    </header>
-    <section class="topic-card-grid" aria-label="Konu merkezleri">
-      {topicHubs.map((hub,i)=><a class:list={['topic-hub-card',{'topic-hub-card--lead':i===0}]} href={'/konular/'+hub.slug}>
-        <div class="topic-card-top"><span>{hub.mark} / {hub.eyebrow}</span><span aria-hidden="true">↗</span></div>
-        <div class="topic-card-bottom"><h2>{hub.title}</h2><p>{hub.short}</p><span class="topic-card-link">Konuyu keşfet <span aria-hidden="true">↗</span></span></div>
-      </a>)}
-    </section>
-    <div class="topic-hub-context"><span>OKUMA YAKLAŞIMI / 01</span><p>Bu merkezler tanı veya kişiye özel tedavi oluşturmaz. Aynı kavram farklı konularla bağlantılı olabilir; burada yalnızca yayımlanmış ve ilgili içerikler gösterilir.</p></div>
-  </div>
+<Base title="Konu Dosyaları | Eczacı Defteri" description="Eczacı Defteri konu dosyaları: saç ve tırnak, cilt bariyeri, bağırsak mikrobiyotası, vitamin-mineral gereksinimi ve takviye güvenliliği." structuredData={schema}>
+ <main class="shell ed-dossier-index">
+   <nav class="article-breadcrumbs" aria-label="Gezinme yolu"><a href="/">Anasayfa</a><span class="article-crumb-sep">/</span><span aria-current="page">Konular</span></nav>
+   <header class="ed-dossier-index-header">
+     <div class="ed-dossier-heading">
+       <span class="ed-overline">Eczacı Defteri <span class="ed-meta-separator">/</span> Konu dosyaları</span>
+       <h1>Bir konuyu<br/><em>derinlemesine.</em></h1>
+       <p>Bilimsel bir sorudan yola çıkıp ilgili çalışmalara, bileşenlerin mekanizmalarına ve ürün etiketlerine uzanan okuma rotaları. Tek bir ürünün tanıtımı değil; konunun kendisi.</p>
+     </div>
+     <aside class="ed-editor-note" aria-label="Editörün notu">
+       <div class="ed-editor-note-label">EDİTÖRÜN NOTU</div>
+       <p>Yalnızca “ne işe yarar?” sorusunu değil, <em>kimin için, hangi koşulda ve ne kadar güvenilir?</em> sorularını da soruyoruz.</p>
+       <span>Takviye · Dermokozmetik · Eczacılık</span>
+     </aside>
+   </header>
+   <div class="ed-issue-heading"><strong>Dosyalar</strong><span>{String(topicHubs.length).padStart(2,'0')} konu</span></div>
+   <div class="ed-topic-index" aria-label="Konu dosyaları">
+     {topicHubs.map((hub,i)=><article class="ed-topic-index-entry">
+       <a href={'/konular/'+hub.slug} aria-label={hub.title+' dosyasını oku'}>
+         <span class="ed-topic-index-number">{String(i+1).padStart(2,'0')}</span>
+         <div class="ed-topic-index-copy">
+           <div class="ed-topic-index-discipline">{hub.eyebrow.replaceAll(' / ', ' · ')}</div>
+           <h2>{hub.title}</h2>
+           <p>{hub.short}</p>
+           <span class="ed-topic-index-open">Dosyayı aç <span aria-hidden="true">⟶</span></span>
+         </div>
+       </a>
+       <div class="ed-topic-index-aside">{introductions[i]}</div>
+     </article>)}
+   </div>
+   <footer class="ed-dossier-index-bottom"><span>BAĞIMSIZ BİR ECZACILIK YAYINI</span><p>Bu dosyalarda yalnızca yayımlanmış kaynaklara bağlantı verilir. Klinik karar bireyin koşulları ve güncel kanıtlarla değerlendirilmelidir.</p></footer>
+ </main>
 </Base>

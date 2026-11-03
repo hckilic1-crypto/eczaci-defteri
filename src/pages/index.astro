@@ -74,18 +74,18 @@ const structuredData = {
     </section>
   )}
 
-  <section class="shell topic-home" aria-labelledby="topic-home-title">
+  <section class="shell ed-topic-home" aria-labelledby="ed-topic-home-head">
     <div class="journal-section-heading">
-      <div><span class="journal-eyebrow">ECZACI DEFTERİ / BİLGİYİ KEŞFET</span><h2 id="topic-home-title">Konu Merkezleri</h2></div>
-      <a href="/konular">Tüm merkezler <span aria-hidden="true">↗</span></a>
+      <div><span class="journal-eyebrow">KONU DOSYALARI</span><h2 id="ed-topic-home-head">Derinlemesine okumalar</h2></div>
+      <a href="/konular">Bütün konular <span aria-hidden="true">↗</span></a>
     </div>
-    <p class="topic-home-lead">Bileşenleri, klinik bağlamı ve ürün etiketlerini birbirinden koparmadan okuyun. Beş editoryal dosyadan biriyle başlayın.</p>
-    <div class="topic-home-grid">
-      {topicHubs.map((hub,i)=><a class:list={['topic-home-card',{'topic-home-card--first':i===0}]} href={'/konular/'+hub.slug}>
-        <span>{hub.mark} / KONU MERKEZİ <span aria-hidden="true">↗</span></span>
+    <p class="ed-topic-home-intro">Bir bileşenin nasıl çalıştığını, hangi insan çalışmalarında araştırıldığını ve hangi koşullarda dikkat gerektirdiğini birbirinden ayırıyoruz.</p>
+    <div class="ed-topic-home-list">
+      {topicHubs.map((hub,i)=><a href={'/konular/'+hub.slug}>
+        <span>{String(i+1).padStart(2,'0')}</span>
         <strong>{hub.title}</strong>
-        <p>{hub.short}</p>
-        <small>Dosyayı incele →</small>
+        <small>{hub.short}</small>
+        <span aria-hidden="true">↗</span>
       </a>)}
     </div>
   </section>
