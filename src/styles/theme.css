@@ -25,42 +25,42 @@ html[data-theme="dark"] .theme-icon-sun{display:block}
 /* All tonal aliases used by the site, including the topic dossiers. */
 html[data-theme="dark"]{
  color-scheme:dark;
- --paper:#121c17;
- --paper-2:#1a2820;
- --ink:#e8efe8;
- --muted:#b5c4b8;
- --green:#99d9ae;
- --green-soft:#243d2d;
- --line:rgba(170,206,180,.14);
- --border:rgba(175,210,185,.22);
+ --paper:#0b0b0d;
+ --paper-2:#171719;
+ --ink:#f4f4f5;
+ --muted:#b7b7bd;
+ --green:#b8ddc1;
+ --green-soft:#26262a;
+ --line:rgba(255,255,255,.12);
+ --border:rgba(255,255,255,.17);
  --shadow:0 18px 50px rgba(0,0,0,.22);
  --shadow-lg:0 30px 90px rgba(0,0,0,.35);
- --journal-paper:#121c17;
- --journal-ink:#e8efe8;
- --journal-green:#9cddb3;
- --journal-line:#344a3d;
- --journal-muted:#b5c4b8;
- --ed-paper:#121c17;
- --ed-ink:#e8efe8;
- --ed-secondary:#bacfbe;
- --ed-line:#3c5946;
- --ed-accent:#99d9ae;
- --ed-dark:#1f4932;
+ --journal-paper:#0b0b0d;
+ --journal-ink:#f4f4f5;
+ --journal-green:#b8ddc1;
+ --journal-line:#313137;
+ --journal-muted:#b7b7bd;
+ --ed-paper:#0b0b0d;
+ --ed-ink:#f4f4f5;
+ --ed-secondary:#bdbdc4;
+ --ed-line:#34343a;
+ --ed-accent:#b8ddc1;
+ --ed-dark:#222226;
 }
 html[data-theme="dark"] body{
- background-color:#121c17!important;
- background-image:repeating-linear-gradient(to bottom,transparent 0 35px,rgba(140,185,148,.10) 35px 36px),
- linear-gradient(to bottom,rgba(145,89,77,.27),rgba(145,89,77,.27))!important;
+ background-color:#0b0b0d!important;
+ background-image:repeating-linear-gradient(to bottom,transparent 0 35px,rgba(255,255,255,.04) 35px 36px),
+ linear-gradient(to bottom,rgba(255,255,255,.045),rgba(255,255,255,.045))!important;
  color:var(--journal-ink);
 }
 html[data-theme="dark"] ::selection{background:#476b51;color:#fff}
 html[data-theme="dark"] .site-header,
-html[data-theme="dark"] .mobile-menu{background:#15241b!important;color:var(--journal-ink)!important}
-html[data-theme="dark"] .theme-toggle{color:#e0f6e5;border-color:#54725b}
-html[data-theme="dark"] .theme-toggle:hover{background:#2a4934}
+html[data-theme="dark"] .mobile-menu{background:#101013!important;color:var(--journal-ink)!important}
+html[data-theme="dark"] .theme-toggle{color:#f4f4f5;border-color:#44444b}
+html[data-theme="dark"] .theme-toggle:hover{background:#27272d}
 html[data-theme="dark"] .brand,
 html[data-theme="dark"] .site-header .edf-nav>a,
-html[data-theme="dark"] .site-header .edf-nav>.edf-flyout>summary{color:#e7f2e9!important}
+html[data-theme="dark"] .site-header .edf-nav>.edf-flyout>summary{color:#f4f4f5!important}
 
 /* Reading surfaces and text foregrounds. */
 html[data-theme="dark"] :is(
@@ -73,18 +73,18 @@ html[data-theme="dark"] :is(
  .journal-article-byline,.journal-byline-date,
  .ed-dossier-intro p,.ed-dossier-body p,.ed-dossier-body li,
  .ed-margin-note,.ed-topic-index-discipline
-){color:#c5d5c9!important}
+){color:#e4e4e7!important}
 html[data-theme="dark"] :is(
  .article h1,.article-body h2,.article-body h3,.article-body h4,
  .journal-intro h1,.journal-section-heading h2,
  .library-head h1,.library-detail-head h1,.library-detail h2,
  .ed-dossier-head h1,.ed-dossier-body h2,.ed-dossier-body h3,
  .card h2,.card h3,.footer strong,.authorbox strong
-){color:#f0f7ef!important}
+){color:#fafafa!important}
 html[data-theme="dark"] :is(.article-body a,.journal-article-copy a,.library-detail a,.article-toc a){
- color:#a7e7bd;
+ color:#c0e9cc;
 }
-html[data-theme="dark"] :is(.article-body a,.journal-article-copy a):hover{color:#d9ffe3}
+html[data-theme="dark"] :is(.article-body a,.journal-article-copy a):hover{color:#e1ffe9}
 html[data-theme="dark"] :is(.article-body,.article-body p,.article-body li,.article-body h2,.article-body h3,.article-body h4){
  background-color:transparent!important;
  background-image:none!important;
@@ -104,53 +104,53 @@ html[data-theme="dark"] :is(
  .ed-dossier-folio,.ed-dossier-index,.ed-topic-index,
  .ed-guide-card,.tool-card
 ){
- background:#1b2b21!important;
+ background:#18181b!important;
  background-image:none!important;
- color:#e5f0e7!important;
- border-color:#3a5141!important;
+ color:#f4f4f5!important;
+ border-color:#333339!important;
  box-shadow:none!important;
 }
 html[data-theme="dark"] :is(
  .card:hover,.category-mini:hover,.journal-card:hover,.journal-archive-item:hover,
  .library-directory-item:hover,.ed-topic-card:hover
-){background-color:#243b2b!important}
+){background-color:#242428!important}
 html[data-theme="dark"] :is(
  .edf-flyout-intro p,.edf-flyout-topic-grid a span,.edf-library-item small,
  .journal-archive-item p,.journal-card p,.journal-card small,
  .library-directory-item small,.library-directory-copy small,
  .library-head-meta>span,.library-results,.article-toc li,.article-references-count,
  .article-reference-title,.authorbox p,.legalbox p,.ed-topic-index a
-){color:#b8cdbd!important}
+){color:#b7b7bd!important}
 html[data-theme="dark"] :is(
  .edf-flyout-topic-grid a,.edf-library-item,.library-directory-item,
  .journal-archive-item,.journal-archive-item strong
-){color:#eff9f0!important}
+){color:#f4f4f5!important}
 html[data-theme="dark"] :is(
  input,select,textarea,.archive-tools input,.archive-tools select,
  .library-browser input,.library-browser select,.mobile-search-wrap input,
  .search-field-wrap input
-){background-color:#1d3225!important;color:#f0f8f1!important;border-color:#52705a!important}
+){background-color:#1c1c20!important;color:#f4f4f5!important;border-color:#45454b!important}
 html[data-theme="dark"] input::placeholder,
-html[data-theme="dark"] textarea::placeholder{color:#acc3b0!important}
+html[data-theme="dark"] textarea::placeholder{color:#a8a8b1!important}
 
 /* Article tables, code, callouts, bibliographies and topic navigation. */
 html[data-theme="dark"] :is(.article-body table,.journal-article-copy table,.library-detail table){
- background:#18271e!important;color:#e3efe7!important;border-color:#49604f!important;
+ background:#161619!important;color:#e4e4e7!important;border-color:#3a3a41!important;
 }
 html[data-theme="dark"] :is(.article-body th,.journal-article-copy th,.library-detail th){
- background:#294331!important;color:#f3fbf3!important;border-color:#49604f!important;
+ background:#27272d!important;color:#fafafa!important;border-color:#3a3a41!important;
 }
 html[data-theme="dark"] :is(.article-body td,.journal-article-copy td,.library-detail td){
- background:#1b2c21!important;color:#d5e6d8!important;border-color:#425a49!important;
+ background:#1b1b1f!important;color:#e4e4e7!important;border-color:#38383f!important;
 }
 html[data-theme="dark"] :is(.article-body blockquote,.article-body pre,.article-body code,
  .journal-article-copy blockquote,.article-references-list li){
- background-color:#1b2b21!important;color:#e0ebe2!important;border-color:#3b5543!important;
+ background-color:#18181b!important;color:#e4e4e7!important;border-color:#38383f!important;
 }
-html[data-theme="dark"] .article-reference-title{color:#dfefe1!important}
-html[data-theme="dark"] .article-references-list a{color:#dfefe1!important}
-html[data-theme="dark"] .article-reference-link{color:#9ee6b5!important}
-html[data-theme="dark"] .article-references-list a:hover .article-reference-link{color:#d7ffe4!important}
+html[data-theme="dark"] .article-reference-title{color:#f4f4f5!important}
+html[data-theme="dark"] .article-references-list a{color:#f4f4f5!important}
+html[data-theme="dark"] .article-reference-link{color:#c0e9cc!important}
+html[data-theme="dark"] .article-references-list a:hover .article-reference-link{color:#e1ffe9!important}
 
 /* Across all components, a light hard-coded foreground is safe; hard-coded dark foreground is not.
    Provide readable text for shared editorial headings and metadata. */
@@ -158,18 +158,18 @@ html[data-theme="dark"] :is(.section-head,.section-head h2,.journal-archive-titl
  .journal-feature h2,.journal-card h3,.journal-index-title,
  .ed-dossier-title,.ed-issue-heading,.ed-topic-index-title,.library-directory-copy strong,
  .library-detail-head,.mobile-main-link,.edf-mobile-group summary
-){color:#ecf5ed!important}
-html[data-theme="dark"] .primary-button{background:#9bd5ae!important;color:#142419!important}
-html[data-theme="dark"] .primary-button:hover{background:#c6efd1!important}
+){color:#f4f4f5!important}
+html[data-theme="dark"] .primary-button{background:#e4e4e7!important;color:#101013!important}
+html[data-theme="dark"] .primary-button:hover{background:#ffffff!important}
 html[data-theme="dark"] :is(.mobile-main-link,.edf-mobile-group,.mobile-category-wrapper,
  .library-directory-item,.article-head,.article-references-head){
- border-color:#3c5644!important;
+ border-color:#34343a!important;
 }
 html[data-theme="dark"] :is(.search-overlay,.search-results,.mobile-search-results){
- color:#e7f1e9!important;
+ color:#f4f4f5!important;
 }
 html[data-theme="dark"] :is(.search-result-item,.mobile-search-results a){
- background:#1e3527!important;color:#e7f1e9!important;border-color:#435e49!important;
+ background:#202024!important;color:#f4f4f5!important;border-color:#38383f!important;
 }
 
 /* High-contrast default SVG text stays unchanged; photography is never inverted. */
@@ -177,3 +177,26 @@ html[data-theme="dark"] img,html[data-theme="dark"] video{filter:none}
 
 /* Respect reduced motion. Theme changes never require a reload. */
 @media(prefers-reduced-motion:reduce){.theme-toggle{transition:none}}
+
+/* v2: neutral black reading mode — green is an accent, never a reading surface. */
+html[data-theme="dark"] {--journal-paper:#0b0b0d;--paper:#0b0b0d;--paper-2:#171719;--journal-ink:#f5f5f7;--ink:#f5f5f7;--journal-muted:#bcbcc3;--muted:#bcbcc3;--journal-line:#303036;--border:#303036;--ed-paper:#171719;--ed-ink:#f5f5f7;--ed-secondary:#bcbcc3;--ed-line:#333339;color-scheme:dark}
+html[data-theme="dark"] body{background:#0b0b0d!important;background-image:none!important;color:#f5f5f7!important}
+html[data-theme="dark"] .site-header{background:#0f0f11!important;border-bottom:1px solid #303036!important}
+html[data-theme="dark"] .mobile-menu{background:#101013!important}
+html[data-theme="dark"] :is(.article,.article-head,.journal-article-layout,.journal-article-copy,.article-body,.journal-article-rail){background:transparent!important;color:#f5f5f7!important}
+html[data-theme="dark"] :is(.article-body p,.article-body li,.article-body blockquote p,.journal-article-copy p,.journal-article-copy li,.dek){color:#e7e7eb!important}
+html[data-theme="dark"] :is(.article-body h2,.article-body h3,.article-body h4,.article h1){color:#ffffff!important}
+html[data-theme="dark"] :is(.article-body h2,.article-body h3,.article-head,.article-references-head){border-color:#39393f!important}
+html[data-theme="dark"] :is(.article-toc,.journal-article-rail .article-toc){background:#171719!important;border:1px solid #323237!important;box-shadow:none!important}
+html[data-theme="dark"] :is(.article-toc li,.article-toc a,.article-toc-label,.journal-article-rail .article-toc li,.journal-article-rail .article-toc a){color:#e4e4e8!important;background:transparent!important}
+html[data-theme="dark"] :is(.article-toc a:hover,.article-toc a:focus-visible){color:#ffffff!important;text-decoration:underline}
+html[data-theme="dark"] :is(.article-references,.authorbox,.legalbox){background:#171719!important;border-color:#333339!important;color:#f4f4f5!important}
+html[data-theme="dark"] :is(.journal-byline-mark,.pill){background:#26262b!important;color:#f4f4f5!important;border-color:#3b3b42!important}
+html[data-theme="dark"] :is(.journal-article-byline small,.meta,.article-head .meta,.article-references-count,.article-reference-title){color:#bcbcc3!important}
+html[data-theme="dark"] .article-reference-link{color:#c4e9d0!important}
+html[data-theme="dark"] :is(.edf-flyout-panel,.desktop-dropdown-panel,.search-modal,.journal-card,.card,.library-detail-card,.ed-dossier-card,.ed-topic-card){background:#18181b!important;color:#f4f4f5!important;border-color:#333339!important}
+html[data-theme="dark"] :is(.article-body table,.article-body th,.article-body td){border-color:#3b3b42!important}
+html[data-theme="dark"] .article-body th{background:#242428!important;color:#ffffff!important}
+html[data-theme="dark"] .article-body td{background:#171719!important;color:#e5e5e9!important}
+html[data-theme="dark"] .theme-toggle{background:#1c1c20!important;color:#ffffff!important;border-color:#38383f!important}
+html[data-theme="dark"] .theme-toggle:hover{background:#2a2a2e!important}
