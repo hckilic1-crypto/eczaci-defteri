@@ -193,6 +193,7 @@ export const topicHubs: TopicHub[] = [
       }
     ],
     "posts": [
+      "bagirsak-mikrobiyotasi-sindirim-bagisiklik-probiyotikler",
       "probiyotik-secerken-cfu-mu-sus-mu",
       "saccharomyces-boulardii-ne-ise-yarar",
       "sinbiyotik-ve-postbiyotik-nedir",
