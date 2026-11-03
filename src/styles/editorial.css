@@ -773,3 +773,27 @@ a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{
 .glossary-article-list span{font:400 12px/1.65 var(--sans);color:var(--journal-muted)}
 .glossary-article-list small{margin-top:auto;font:700 11px/1.5 var(--sans);color:var(--journal-green)}
 @media(max-width:600px){.glossary-article-list{grid-template-columns:1fr}.glossary-article-list>a{padding:18px}}
+
+/* Clinical reading tables and editorial figures: neutral, not generic dashboard cards. */
+.article-body table{
+  border-collapse:collapse;width:100%;max-width:100%;margin:26px 0 30px;
+  font:400 13px/1.63 var(--sans,system-ui);color:#294232;
+  table-layout:fixed;
+}
+.article-body thead{background:#e8efe6}
+.article-body th{font-weight:700;color:#1d4730;text-align:left}
+.article-body th,.article-body td{
+  padding:12px 10px;vertical-align:top;border-bottom:1px solid #cbd9cb;
+  overflow-wrap:anywhere;hyphens:auto
+}
+.article-body tbody tr:nth-child(even){background:#f4f6ef}
+.article-body p:has(> img[src^="/images/editorial/"]){margin:26px 0 4px}
+.article-body img[src^="/images/editorial/"]{
+  display:block;width:100%;height:auto;margin:0;max-width:100%;
+  border:1px solid #ccd8cc;border-radius:0;background:#f8f6ef
+}
+.article-body p:has(> img[src^="/images/editorial/"])+p{font:400 12px/1.6 var(--sans,system-ui);color:#66786b}
+@media(max-width:600px){
+  .article-body table{font-size:11px;line-height:1.5}
+  .article-body th,.article-body td{padding:9px 6px}
+}

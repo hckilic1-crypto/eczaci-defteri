@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="355" viewBox="0 0 1040 355" role="img" aria-labelledby="title desc">
+<title id="title">Saç folikülünün dört aşamalı döngüsü</title>
+<desc id="desc">Anajen büyüme, katajen geçiş, telojen dinlenme, ekzojen dökülme ve yeni büyüme. Şematik ve bireyler arasında değişken döngüdür.</desc>
+<rect width="1040" height="355" fill="#f8f6ef"/><path d="M30 74 H1010 M30 302 H1010" stroke="#c9d8c9"/>
+<text x="30" y="38" fill="#183d28" font-family="Georgia,serif" font-size="25">Saç folikülünün yaşam döngüsü</text><text x="1010" y="36" text-anchor="end" fill="#62836c" font-family="Arial,sans-serif" font-size="11" letter-spacing="2">ECZACI DEFTERİ / ŞEMA</text>
+<g stroke="#c5d4c8"><path d="M260 90 V296 M520 90 V296 M780 90 V296" stroke-dasharray="3 6"/></g>
+<g fill="#edf1e7"><rect x="47" y="106" width="197" height="137" rx="1"/><rect x="306" y="106" width="197" height="137" rx="1"/><rect x="566" y="106" width="197" height="137" rx="1"/><rect x="826" y="106" width="169" height="137" rx="1"/></g>
+<g fill="none" stroke="#4f7356" stroke-width="7" stroke-linecap="round">
+<path d="M119 219 C114 198 109 171 113 152 C119 129 135 136 139 153 C143 170 141 192 138 216"/>
+<path d="M371 208 C370 186 377 166 387 168 C398 169 402 190 401 208"/>
+<path d="M638 202 C640 184 650 171 661 175 C670 178 675 188 675 202"/>
+</g>
+<g stroke="#244b32" stroke-width="3" fill="none" stroke-linecap="round">
+<path d="M128 210 L123 119 L119 82"/><path d="M388 198 L389 146 L392 136"/><path d="M657 195 L654 164 L655 143"/><path d="M894 139 C890 123 888 112 887 100"/>
+</g>
+<g fill="#9cb8a0"><ellipse cx="127" cy="221" rx="22" ry="15"/><ellipse cx="386" cy="214" rx="20" ry="12"/><ellipse cx="657" cy="208" rx="20" ry="12"/><ellipse cx="895" cy="214" rx="20" ry="12"/></g>
+<g stroke="#527b5a" stroke-width="2" fill="none"><path d="M200 168 H278" stroke-dasharray="6 5"/><path d="M460 168 H536" stroke-dasharray="6 5"/><path d="M720 168 H796" stroke-dasharray="6 5"/></g>
+<g fill="#193d29" font-family="Georgia,serif" font-size="21"><text x="47" y="273">Anajen</text><text x="306" y="273">Katajen</text><text x="566" y="273">Telojen</text><text x="826" y="273">Ekzojen</text></g>
+<g fill="#637769" font-family="Arial,sans-serif" font-size="12"><text x="47" y="293">Aktif büyüme</text><text x="306" y="293">Geçiş</text><text x="566" y="293">Dinlenme</text><text x="826" y="293">Telin ayrılması</text><text x="31" y="331">Foliküller aynı anda aynı evrede değildir. Bu çizim biyolojik döngüyü basitleştirir; süreleri göstermez.</text></g>
+</svg>

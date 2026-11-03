@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="360" viewBox="0 0 1040 360" role="img" aria-labelledby="title desc">
+<title id="title">Üç farklı tırnak bulgusu: onikoşizi, onikoreksis ve onikoliz</title><desc id="desc">Tırnak şemaları: distal kenarda yatay katmanlara ayrılma, boyuna çizgilenme ve tırnak plağının yataktan ayrılması.</desc>
+<rect width="1040" height="360" fill="#f8f6ef"/><text x="35" y="41" fill="#193d29" font-family="Georgia,serif" font-size="26">Benzer görünen üç farklı tırnak bulgusu</text><text x="1005" y="38" fill="#63846a" text-anchor="end" font-family="Arial,sans-serif" font-size="11" letter-spacing="1.4">ECZACI DEFTERİ / KLİNİK ŞEMA</text>
+<path d="M35 66 H1005 M35 313 H1005" stroke="#bbcdbd"/><path d="M350 83 V300 M685 83 V300" stroke="#cbd8c9" stroke-dasharray="4 6"/>
+<g fill="#e6eddf" stroke="#44664d" stroke-width="2">
+<path d="M138 229 V132 Q138 92 178 92 H235 Q275 92 275 132 V229 Q257 269 205 269 Q154 269 138 229 Z"/>
+<path d="M468 229 V132 Q468 92 508 92 H565 Q605 92 605 132 V229 Q587 269 535 269 Q484 269 468 229 Z"/>
+<path d="M798 229 V132 Q798 92 838 92 H895 Q935 92 935 132 V229 Q917 269 865 269 Q814 269 798 229 Z"/>
+</g>
+<g fill="none" stroke="#8baca0" stroke-width="5"><path d="M153 218 C183 207 235 207 260 219 M156 229 C193 216 236 217 257 230 M158 239 C187 229 230 230 253 241"/>
+<path d="M515 114 C501 153 501 204 508 248 M538 108 C530 155 529 205 535 252 M556 112 C568 156 568 206 559 245"/>
+</g>
+<path d="M802 204 Q862 187 932 204 V240 Q890 268 843 248 Q813 238 802 204" fill="#f4f2e6" stroke="#a9b9ac" stroke-width="2" stroke-dasharray="5 5"/>
+<g fill="#203b29" font-family="Georgia,serif" font-size="20"><text x="35" y="292">Onikoşizi</text><text x="370" y="292">Onikoreksis</text><text x="710" y="292">Onikoliz</text></g>
+<g fill="#637668" font-family="Arial,sans-serif" font-size="12"><text x="35" y="335">Uçta katmanlaşma</text><text x="370" y="335">Boyuna çizgilenme</text><text x="710" y="335">Tırnak yatağından ayrılma</text></g>
+</svg>
