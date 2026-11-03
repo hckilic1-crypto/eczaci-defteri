@@ -51,6 +51,17 @@ export const topicHubs: TopicHub[] = [
       "kollajen"
     ],
     "glossary": [
+      "telogen-effluvium",
+      "androgenetik-alopesi",
+      "alopesi-areata",
+      "sikatrisyel-alopesi",
+      "trikoskopi",
+      "folikul-minyaturizasyonu",
+      "onikosizi",
+      "onikoreksis",
+      "onikoliz",
+      "onikomikoz",
+      "melanonisi",
       "biotin",
       "keratin",
       "keratinosit",
