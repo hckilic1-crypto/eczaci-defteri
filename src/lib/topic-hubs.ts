@@ -13,29 +13,36 @@ export const topicHubs: TopicHub[] = [
     "mark": "01",
     "symbol": "01",
     "intro": [
-      "Saç dökülmesi tek bir vitamin eksikliğinin belirtisi değildir. Androgenetik alopesi, telogen effluvium, dermatolojik hastalıklar ve beslenme yetersizlikleri farklı mekanizmalara sahiptir. Bu merkezde amaç, bir takviyeyi başlangıç noktası yapmak yerine önce belirtileri ve olası nedenleri ayırt etmektir.",
-      "Biyotin, demir ve çinko saç ve tırnakların normal yapısıyla ilişkili besin öğeleridir. Buna karşılık eksiklik kanıtı olmadan daha yüksek doz kullanmanın ek fayda sağladığı genellenemez. Özellikle yüksek doz biyotinin bazı laboratuvar testlerinde yanıltıcı sonuç oluşturabilmesi, etiket okumanın da klinik değerlendirmenin bir parçası olduğunu gösterir.",
-      "İlk olarak biyotin dosyasıyla yaygın iddiaları ele alın; ardından demir ve çinko gibi olası eksikliklerin nasıl değerlendirildiğini okuyun. İlişkili kavramlar ve ürün etiketleri sizi daha ayrıntılı kaynaklara götürür."
+      "Saç ve tırnak sorunlarının ortak noktası keratinize dokuları etkilemeleridir; ancak nedenleri ve tedavileri aynı değildir. Yaygın saç dökülmesi, folikül minyatürizasyonu, otoimmün saç kaybı, skarlı alopesi ve tırnak plağı kırılganlığı birbirinden ayrılmalıdır. Bu merkez tanıyı bir vitamin kutusuna indirgemeden, klinik örüntüden başlayarak okunacak biçimde düzenlenmiştir.",
+      "Saç tarafında önce dökülmenin türü, ardından telogen effluvium ile androgenetik alopesi arasındaki farklar ve alopesi areata/skarlı süreçlerde erken değerlendirme önemlidir. Tırnak tarafında onikoşizi, onikoreksis, mantar, sedef ve melanonişi farklı mekanizmalarla ele alınır. Özellikle ağrılı inflamasyon veya yeni gelişen tek tırnak pigment bandında kozmetik öneri öncelik olmamalıdır.",
+      "Demir, çinko ve biyotin eksikliklerinde saç veya tırnak belirtileri gelişebilir; fakat eksikliği olmayan bireyde yüksek doz takviyenin yararı otomatik olarak kanıtlanmış değildir. Son okumalarımız ürün etiketleri, laboratuvar girişimi ve insan çalışmalarının sınırlılıklarını bir araya getirir. Başlıklardan birini izleyebilir veya önce ana klinik incelemeyle başlayabilirsiniz."
     ],
     "steps": [
       {
-        "title": "Sorunun tipini tanımla",
-        "text": "Saçın seyrelme biçimi, dökülme süresi ve eşlik eden deri-tırnak bulguları olası nedenleri değiştirir."
+        "title": "Önce bulgunun tipini ayır",
+        "text": "Yaygın dökülme, yavaş seyrelme, fokal plak, inflamasyon ve tırnak distrofisi farklı tanı yollarına işaret eder."
       },
       {
-        "title": "Eksikliği iddiadan ayır",
-        "text": "Biyotin, demir veya çinko desteğinde yarar, kişinin durumuna ve kanıtlanmış gereksinime bağlıdır."
+        "title": "Doğru incelemeyi seç",
+        "text": "Ferritin, hemogram, TSH ve diğer ölçümler ancak öykü ve muayeneyle ilişkilendirildiğinde anlam kazanır; şüpheli mantar veya pigment bandı ayrı inceleme gerektirir."
       },
       {
-        "title": "Ürünü güvenli oku",
-        "text": "µg–mg dönüşümü, elementel mineral miktarı ve biyotinin tahlil girişimi gibi ayrıntıları kontrol et."
+        "title": "Etkinlik ile güvenliliği birlikte değerlendir",
+        "text": "Minoksidil ve diğer hastalığa yönelik tedavileri eksiklik replasmanından; biyotin/kolajen reklamını ise kontrollü insan kanıtından ayır."
       }
     ],
     "posts": [
+      "sac-dokulmesi-nedenleri-turleri-klinik-degerlendirme",
+      "telogen-effluvium-reaktif-sac-dokulmesi",
+      "androgenetik-alopesi-kadin-erkek-tedavi-kanit",
+      "alopesi-areata-skarlı-alopesi-kritik-belirtiler",
+      "sac-dokulmesinde-kan-tahlilleri-ferritin-tsh-b12-cinko",
+      "kirilan-tirnaklar-onikosizi-biyotin-klinik-nedenler",
+      "tirnak-mantari-sedef-melanonişi-ayirici-tani",
+      "sac-tirnak-takviyeleri-biyotin-kolajen-keratin-kanit",
       "biotin-b7-vitamini-sac-tirnak-laboratuvar-testleri",
       "demir-takviyesi-ferritin-ve-emilim",
-      "cinko-takviyesi-ne-zaman-gerekli",
-      "biyoyararlanim-nedir-takviyelerde-emilim-ve-etki"
+      "cinko-takviyesi-ne-zaman-gerekli"
     ],
     "atlas": [
       "biotin",
