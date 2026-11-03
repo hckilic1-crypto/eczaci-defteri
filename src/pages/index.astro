@@ -37,9 +37,6 @@ const structuredData = {
 <Base
   title="Eczacı Defteri | Eczacılık, Takviyeler ve Dermokozmetik"
   description="Eczacılık, takviye edici gıdalar, dermokozmetik ve sağlık üzerine kaynaklı değerlendirmeler. Eczacı Defteri'nde bilgiyi kanıtıyla okuyun."
- preloadImage={featuredCover.src}
- preloadImageSrcset={featuredCover.srcset}
- preloadImageSizes={featuredCover.sizes}
  structuredData={structuredData}>
   <header class="shell journal-intro journal-intro--notebook">
     <div class="journal-intro-copy">
@@ -56,7 +53,7 @@ const structuredData = {
       <a class="journal-lead-story" href={'/yazi/' + slugOf(featured)}>
         <div class="journal-lead-image">
           {featured.data.coverImage
-            ? <img src={featuredCover.src} srcset={featuredCover.srcset} sizes={featuredCover.sizes} alt="" width="1200" height="675" loading="eager" decoding="async" fetchpriority="high" />
+            ? <img src={featuredCover.src} srcset={featuredCover.srcset} sizes={featuredCover.sizes} alt="" width="1200" height="675" loading="lazy" decoding="async" fetchpriority="low" />
             : <div class="journal-lead-fallback" aria-hidden="true">ECZACI DEFTERİ / DOSYA</div>}
         </div>
         <div class="journal-lead-caption">
