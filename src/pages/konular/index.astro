@@ -1,0 +1,36 @@
+---
+export const prerender = true;
+import Base from '../../layouts/Base.astro';
+import { topicHubs } from '../../lib/topic-hubs';
+const schema = {
+  '@context':'https://schema.org',
+  '@graph':[
+    {'@type':'CollectionPage',name:'Konu Merkezleri | Eczacı Defteri',
+      description:'Eczacı Defteri konu merkezleri: saç ve tırnak, cilt bariyeri, mikrobiyota, vitamin ve mineraller, takviye güvenliliği.',
+      url:'https://eczacidefteri.com/konular',
+      inLanguage:'tr-TR'},
+    {'@type':'BreadcrumbList',itemListElement:[
+      {'@type':'ListItem',position:1,name:'Anasayfa',item:'https://eczacidefteri.com/'},
+      {'@type':'ListItem',position:2,name:'Konu Merkezleri',item:'https://eczacidefteri.com/konular'}
+    ]}
+  ]
+};
+---
+<Base title="Konu Merkezleri: Takviye, Dermokozmetik ve Sağlık | Eczacı Defteri" description="Saç ve tırnak, cilt bariyeri, bağırsak mikrobiyotası, vitamin ve mineraller, takviye güvenliliği: bilimsel konu merkezleri." structuredData={schema}>
+  <div class="shell topic-hub-index">
+    <nav class="article-breadcrumbs" aria-label="Gezinme yolu"><a href="/">Anasayfa</a><span class="article-crumb-sep">/</span><span aria-current="page">Konular</span></nav>
+    <header class="topic-hub-hero">
+      <div class="topic-overline">ECZACI DEFTERİ / BİLGİYİ BAĞLAYAN DOSYALAR</div>
+      <h1>Konular<span class="topic-dot">.</span></h1>
+      <p>Bir sorudan başlayın. İlgili yazılara, bileşenlerin bilimsel dosyalarına, sözlük tanımlarına ve etiket okuma rehberlerine tek bir yerden ulaşın.</p>
+      <div class="topic-hero-meta"><span>05 konu merkezi</span><span>İlişkili okumalar</span><span>Kaynak temelli</span></div>
+    </header>
+    <section class="topic-card-grid" aria-label="Konu merkezleri">
+      {topicHubs.map((hub,i)=><a class:list={['topic-hub-card',{'topic-hub-card--lead':i===0}]} href={'/konular/'+hub.slug}>
+        <div class="topic-card-top"><span>{hub.mark} / {hub.eyebrow}</span><span aria-hidden="true">↗</span></div>
+        <div class="topic-card-bottom"><h2>{hub.title}</h2><p>{hub.short}</p><span class="topic-card-link">Konuyu keşfet <span aria-hidden="true">↗</span></span></div>
+      </a>)}
+    </section>
+    <div class="topic-hub-context"><span>OKUMA YAKLAŞIMI / 01</span><p>Bu merkezler tanı veya kişiye özel tedavi oluşturmaz. Aynı kavram farklı konularla bağlantılı olabilir; burada yalnızca yayımlanmış ve ilgili içerikler gösterilir.</p></div>
+  </div>
+</Base>

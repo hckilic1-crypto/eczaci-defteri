@@ -1,0 +1,75 @@
+---
+export const prerender = true;
+import Base from '../../layouts/Base.astro';
+import { topicHubs } from '../../lib/topic-hubs';
+import { resourcesForHub } from '../../lib/topic-resources';
+
+export function getStaticPaths() {
+  return topicHubs.map(hub=>({params:{slug:hub.slug},props:{hub}}));
+}
+const {hub} = Astro.props;
+const data = await resourcesForHub(hub);
+const sections = [
+  {index:'01',title:'Önce yazılar',subtitle:'Konuyu klinik ve bilimsel çerçevede okuyun',items:data.posts},
+  {index:'02',title:'Bileşen Atlası',subtitle:'Mekanizma, kanıt ve güvenlilik dosyaları',items:data.atlas},
+  {index:'03',title:'Etiket Okuma Rehberi',subtitle:'Birimler, porsiyonlar, formlar ve sık hatalar',items:data.guides},
+  {index:'04',title:'Eczacılık Sözlüğü',subtitle:'Konuyu anlamayı kolaylaştıran kısa tanımlar',items:data.glossary}
+].filter(section=>section.items.length);
+const url='https://eczacidefteri.com/konular/'+hub.slug;
+const schema={
+  '@context':'https://schema.org',
+  '@graph':[
+    {'@type':'CollectionPage',name:hub.title,description:hub.short,url,inLanguage:'tr-TR',
+      isPartOf:{'@type':'WebSite',url:'https://eczacidefteri.com/'},
+      mainEntity:{'@type':'ItemList',itemListElement:sections.flatMap(x=>x.items).map((item,index)=>({
+        '@type':'ListItem',position:index+1,name:item.title,url:'https://eczacidefteri.com'+item.href}))}},
+    {'@type':'BreadcrumbList',itemListElement:[
+      {'@type':'ListItem',position:1,name:'Anasayfa',item:'https://eczacidefteri.com/'},
+      {'@type':'ListItem',position:2,name:'Konular',item:'https://eczacidefteri.com/konular'},
+      {'@type':'ListItem',position:3,name:hub.title,item:url}
+    ]}
+  ]
+};
+const next=topicHubs.filter(x=>x.slug!==hub.slug).slice(0,3);
+---
+<Base title={hub.title+' | Konu Merkezi - Eczacı Defteri'} description={hub.short} structuredData={schema}>
+  <article class="shell topic-hub-detail">
+    <nav class="article-breadcrumbs" aria-label="Gezinme yolu"><a href="/">Anasayfa</a><span class="article-crumb-sep">/</span><a href="/konular">Konular</a><span class="article-crumb-sep">/</span><span aria-current="page">{hub.title}</span></nav>
+    <header class="topic-hub-hero topic-hub-hero--detail">
+      <div class="topic-overline">KONU MERKEZİ / {hub.mark} / {hub.eyebrow}</div>
+      <h1>{hub.title}<span class="topic-dot">.</span></h1>
+      <p>{hub.short}</p>
+      <div class="topic-hero-meta"><span>{data.total} bağlantılı kaynak</span><span>{sections.length} okuma bölümü</span><span>Özgün editoryal rehber</span></div>
+    </header>
+    <div class="topic-detail-layout">
+      <div class="topic-detail-main">
+        <section class="topic-editorial-intro" aria-labelledby="topic-why">
+          <span class="topic-overline">BAŞLANGIÇ / BÜYÜK RESİM</span>
+          <h2 id="topic-why">Konuyu nasıl okumalı?</h2>
+          {hub.intro.map(p=><p>{p}</p>)}
+        </section>
+        <section class="topic-reading-path" aria-labelledby="topic-path-title">
+          <span class="topic-overline">ÜÇ ADIMLIK OKUMA YOLU</span>
+          <h2 id="topic-path-title">Nereden başlamalı?</h2>
+          <ol>{hub.steps.map((step,i)=><li><span>{String(i+1).padStart(2,'0')}</span><div><h3>{step.title}</h3><p>{step.text}</p></div></li>)}</ol>
+        </section>
+        {sections.map(section=><section class="topic-resource-section" id={'bolum-'+section.index} aria-label={section.title}>
+          <div class="topic-resource-heading"><span>{section.index} / İLGİLİ KAYNAKLAR</span><h2>{section.title}</h2><p>{section.subtitle}</p></div>
+          <div class="topic-resource-grid">{section.items.map((item,i)=><a class="topic-resource-link" href={item.href}>
+            <span class="topic-resource-top"><span>{item.section} / {String(i+1).padStart(2,'0')}</span><span aria-hidden="true">↗</span></span>
+            <strong>{item.title}</strong><span class="topic-resource-excerpt">{item.excerpt}</span>
+          </a>)}</div>
+        </section>)}
+        <aside class="topic-hub-disclaimer">Bilgiler genel eğitim amaçlıdır. Klinik bulgular, tanı, doz, kontrendikasyon ve birlikte kullanılan ilaçlar sağlık profesyoneli tarafından ayrıca değerlendirilmelidir.</aside>
+      </div>
+      <aside class="topic-detail-aside" aria-label="Sayfa içi gezinme">
+        <span class="topic-overline">BU DOSYADA</span>
+        <a href="#topic-why">Konunun çerçevesi</a>
+        <a href="#topic-path-title">Okuma yolu</a>
+        {sections.map(x=><a href={'#bolum-'+x.index}>{x.title} <span>{x.items.length}</span></a>)}
+        <a class="topic-aside-all" href="/konular">Tüm konu merkezleri ↗</a>
+      </aside>
+    </div>
+    <section class="topic-more"><div class="topic-resource-heading"><span>DEVAM ET / DİĞER MERKEZLER</span><h2>Bir sonraki konu</h2></div><div class="topic-more-grid">{next.map(x=><a href={'/konular/'+x.slug}><span>{x.mark}</span><strong>{x.title}</strong><span aria-hidden="true">↗</span></a>)}</div></section>
+  </article>
+</Base>
