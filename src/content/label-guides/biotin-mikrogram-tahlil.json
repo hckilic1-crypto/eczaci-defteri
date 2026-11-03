@@ -13,5 +13,49 @@
   "sourceLabel": "AACC — Biotin Interference Guidance (2020)",
   "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/32445355/",
   "relatedAtlasSlug": "biotin",
-  "draft": false
+  "draft": false,
+  "clinicalContext": "Biyotin (B7), metabolik enzimlerin çalışması için gereklidir; ancak ürün etiketindeki 5.000 veya 10.000 µg, sağlıklı bir yetişkinin günlük ihtiyacının bu kadar olduğu anlamına gelmez. ABD'de yetişkin yeterli alım (AI) değeri 30 µg, EFSA'nın yetişkin AI değeri 40 µg'dır. Biyotin eksikliğinde tedavi ile eksikliği olmayan kişilerde kozmetik amaçlı takviye kullanımı farklı klinik sorulardır. Özellikle yüksek doz biyotin, belirli streptavidin–biyotin yöntemli kan tahlillerini etkileyebilir. Bu nedenle etiket okurken saç ve tırnak vaadinden önce günlük dozu ve yakın tarihli laboratuvar testlerini düşünmek gerekir.",
+  "readingSteps": [
+    {
+      "title": "µg ile mg'ı karıştırma",
+      "explanation": "1 mg = 1000 µg'dır. Etikette '5000 µg' yazıyorsa bu 5 mg'dır, 5000 mg değil. Günlük porsiyon iki kapsülse miktarın kapsül başına mı porsiyon başına mı yazıldığı ayrıca incelenmelidir."
+    },
+    {
+      "title": "Beslenme referansını tedavi dozundan ayır",
+      "explanation": "30 ve 40 µg gibi yeterli alım değerleri genel nüfus içindir. Biyotinidaz eksikliği gibi nadir kalıtsal hastalıklarda uzman tarafından mg düzeyinde farmakolojik dozlar kullanılabilir; bunlar saç dökülmesi için örnek doz kabul edilemez."
+    },
+    {
+      "title": "Girişime duyarlı tahlilleri sorgula",
+      "explanation": "Kullanılan laboratuvar yöntemine bağlı olarak bazı tiroid hormonları, TSH, troponin ve başka biyokimya testlerinde yalancı düşük veya yüksek sonuçlar oluşabilir. Hangi testin etkileneceği kullanılan analitik platformla ilgilidir."
+    },
+    {
+      "title": "Son doz saatini ve test bilgisini kaydet",
+      "explanation": "Kan testi öncesi takviyenin adı, günlük biyotin miktarı ve son alım zamanı laboratuvar ve hekimle paylaşılmalı. Kesme süresi her test ve doz için aynı değildir; metabolik hastalıkta reçete edilen tedavi kendi kendine kesilmemelidir."
+    }
+  ],
+  "evidenceLimit": "Biyotin eksikliğinin saç veya deri belirtileriyle ilişkili olması, eksikliği olmayan herkesin yüksek doz biyotinden kozmetik yarar göreceği anlamına gelmez. Biyotin için bir UL'nin bulunmaması da laboratuvar güvenliği açısından risksiz olduğu anlamına gelmez. Özellikle bazı troponin immünoassaylerinde yalancı düşük sonuç, göğüs ağrısı gibi acil durumlarda önemli klinik tehlike yaratabilir. FDA'nın uyarısı bütün troponin yöntemlerinin aynı düzeyde etkilendiği iddiası değildir.",
+  "faqs": [
+    {
+      "question": "5000 µg biyotin, 30 µg AI değerinin 167 katıysa toksik midir?",
+      "answer": "Kat farkı, doğrudan toksisite göstergesi değildir. Biyotin için yerleşik bir UL belirlenmemiştir. Bununla birlikte yüksek dozlarda analitik test girişimi somut bir güvenlilik sorunudur; gereksiz kullanımı haklı çıkaracak etkinlik kanıtı aranmalıdır."
+    },
+    {
+      "question": "Biyotin TSH'yi her zaman düşürür mü?",
+      "answer": "Hayır. Biyotinin kendisi gerçek tiroid fonksiyonunu mutlaka değiştirmez. Bazı sandwich tip testlerde TSH ölçümü yalancı düşük, bazı kompetitif testlerde serbest tiroid hormonları yalancı yüksek bulunabilir. Etki analitik platforma bağlıdır."
+    },
+    {
+      "question": "Tahlilden önce biyotini 24 saat bırakmak yeterli mi?",
+      "answer": "Tek bir güvenilir süre yoktur. Doz, böbrek fonksiyonu, testin biyotin duyarlılığı ve son alım zamanı önemlidir. Kesme veya yeniden test zamanlaması laboratuvar ve hekim tarafından belirlenir."
+    }
+  ],
+  "additionalSources": [
+    {
+      "label": "NIH ODS — Biotin Fact Sheet for Health Professionals",
+      "url": "https://ods.od.nih.gov/factsheets/Biotin-HealthProfessional/"
+    },
+    {
+      "label": "FDA — Biotin Interference with Troponin Lab Tests",
+      "url": "https://www.fda.gov/medical-devices/in-vitro-diagnostics/biotin-interference-troponin-lab-tests-assays-subject-biotin-interference"
+    }
+  ]
 }

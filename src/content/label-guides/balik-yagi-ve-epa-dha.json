@@ -13,5 +13,45 @@
   "draft": false,
   "calculation": "Örnek etiket: Kapsül başına 1000 mg balık yağı, 180 mg EPA, 120 mg DHA. Bir kapsülde EPA+DHA = 180+120 = 300 mg. İki kapsüllük günlük porsiyonda 600 mg EPA+DHA alınır; 2000 mg toplam balık yağı ifadesi etkin omega-3 miktarı değildir.",
   "buyingChecklist": "Günlük porsiyon kaç kapsül? EPA ve DHA ayrı ayrı listelenmiş mi? Serbest yağ asidi, etil ester veya trigliserit formu belirtiliyor mu? Balık/alg kaynağı, son kullanma ve oksidasyon kontrolü mevcut mu?",
-  "safetyNote": "Yüksek doz reçeteli EPA preparatları sıradan balık yağı kapsülleriyle eşdeğer değildir. Atriyal fibrilasyon öyküsü veya antikoagülan/antiplatelet kullanımı varsa toplam doz klinik olarak değerlendirilmelidir."
+  "safetyNote": "Yüksek doz reçeteli EPA preparatları sıradan balık yağı kapsülleriyle eşdeğer değildir. Atriyal fibrilasyon öyküsü veya antikoagülan/antiplatelet kullanımı varsa toplam doz klinik olarak değerlendirilmelidir.",
+  "clinicalContext": "Balık yağı ürünlerinde ambalajın ön yüzündeki büyük sayı çoğu zaman yağın toplam ağırlığını gösterir. Klinik çalışmalarda değerlendirilen EPA ve DHA miktarı ise bundan farklıdır. EPA ve DHA'nın mutlak miktarı, günlük porsiyon ve kullanım amacına göre ayrı incelenmelidir. Omega-3 yağ asitleri ailesindeki ALA'nın, EPA'nın ve DHA'nın metabolik işlevleri aynı değildir. Ürünün trigliserit, etil ester veya fosfolipit formunda olması da kendi başına hastalık tedavisi kanıtı değildir. Beslenme desteği ile reçeteli, belirli endikasyonları olan EPA preparatları birbirinin yerine kullanılamaz.",
+  "readingSteps": [
+    {
+      "title": "Porsiyonu belirle",
+      "explanation": "'Bir kapsülde 1000 mg balık yağı' ile 'iki kapsülde 1000 mg balık yağı' aynı şey değildir. Günlük kullanım önerisini ve içerik tablosunun tek kapsül mü günlük porsiyon mu için düzenlendiğini kontrol et."
+    },
+    {
+      "title": "EPA ve DHA'yı ayrı oku",
+      "explanation": "EPA ve DHA satırları ayrı veriliyorsa toplamı hesapla. Örneğin bir kapsülde EPA 180 mg ve DHA 120 mg ise toplam 300 mg'dır. Bunun dışında yağın içindeki diğer yağ asitlerini EPA+DHA diye sayma."
+    },
+    {
+      "title": "Form ve kaynağı kontrol et",
+      "explanation": "Balık, alg veya krill kaynakları; trigliserit, yeniden esterifiye trigliserit, etil ester veya fosfolipit formu birbirinden ayrılır. Ürünün hangi formda olduğu farmakokinetik bağlamda anlamlı olabilir; fakat form adı tek başına üstün klinik sonuç anlamına gelmez."
+    },
+    {
+      "title": "Kalite ve klinik bağlamı sorgula",
+      "explanation": "Son kullanma tarihi, oksidasyonla ilgili beyanların doğrulanabilirliği ve mümkünse lot analizleri araştırılır. Trigliserit düşürme gibi tedavi amaçlarında reçeteli ürünlerin çalışmaları esas alınır; gıda takviyesinin etiketi o endikasyonu otomatik karşılamaz."
+    }
+  ],
+  "evidenceLimit": "Bir ürünün 2000 mg balık yağı sunması, 2000 mg EPA+DHA alındığını veya iki kat klinik yarar elde edileceğini göstermez. EPA+DHA miktarı ve formu yeterli olsa bile araştırmalardaki popülasyon, doz ve sonlanım farklıysa etkinlik doğrudan ürünün üzerine taşınamaz. Balık yağı ve yalnız EPA içeren reçeteli ürünler aynı terapötik kanıta sahip değildir. Çalışmalardaki kardiyovasküler sonuçlar bütün omega-3 ürünlerine topluca atfedilmemelidir.",
+  "faqs": [
+    {
+      "question": "1000 mg balık yağı, 1000 mg omega-3 müdür?",
+      "answer": "Hayır. Toplam yağ miktarı, EPA+DHA ve toplam omega-3 miktarı ayrı kavramlardır. Bir kapsülde 1000 mg yağın yalnızca 300 mg'ı EPA+DHA olabilir. Ürünün beyan ettiği içerik tablosunu esas alın."
+    },
+    {
+      "question": "EPA ve DHA'dan hangisi daha önemli?",
+      "answer": "Kullanım amacına ve kanıtın hangi molekül veya kombinasyonla elde edildiğine göre değerlendirilir. Etiketten yalnızca EPA/DHA oranına bakarak bir hastalık için tercih yapılmaz."
+    },
+    {
+      "question": "Etikette 'trigliserit formu' yazması üstünlük kanıtı mı?",
+      "answer": "Bazı karşılaştırmalarda belirli yağ asidi formlarının emilimi farklı bulunabilir. Ancak emilim farkı tüm klinik sonlanımlarda üstünlük anlamına gelmez; ürünün günlük miktarı, formülasyonu ve ilgili insan çalışmaları birlikte değerlendirilmelidir."
+    }
+  ],
+  "additionalSources": [
+    {
+      "label": "NIH ODS — Omega-3 Fatty Acids: Supplement forms and bioavailability",
+      "url": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/"
+    }
+  ]
 }

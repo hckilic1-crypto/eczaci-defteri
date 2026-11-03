@@ -13,5 +13,45 @@
   "draft": false,
   "calculation": "D vitamini için 1 mikrogram (µg) = 40 IU. 2000 IU ÷ 40 = 50 µg; 25 µg × 40 = 1000 IU. Şişe üzerinde 1 damla 400 IU yazıyor ve günlük 5 damla kullanılıyorsa toplam 2000 IU = 50 µg eder.",
   "buyingChecklist": "Değer tek damla mı porsiyon mu? 1 fıs veya 5 damla kaç IU? Başka takviyeler veya ilaçlarda D vitamini var mı? D3 mü D2 mi? Tedavi kararı için klinik gerekçe bulunuyor mu?",
-  "safetyNote": "Yüksek D vitamini alımı hiperkalsemi ve böbrek sorunlarına yol açabilir. Kalsiyum, tiyazid diüretik ve böbrek fonksiyonu gibi unsurlar özel değerlendirme gerektirir."
+  "safetyNote": "Yüksek D vitamini alımı hiperkalsemi ve böbrek sorunlarına yol açabilir. Kalsiyum, tiyazid diüretik ve böbrek fonksiyonu gibi unsurlar özel değerlendirme gerektirir.",
+  "clinicalContext": "D vitamini etiketlerinde uluslararası birim (IU) ile mikrogram (µg) yan yana kullanılabilir. Bunlar D vitamini özelinde matematiksel olarak birbirine çevrilebilir; aynı dönüşüm katsayısı bütün vitaminler için kullanılamaz. Etiket okurken '400 IU/damla' ile '400 IU/5 damla' ayrımını yapmak gerekir. D3 (kolekalsiferol) ile D2 (ergokalsiferol) de farklı moleküllerdir. Beslenmede yeterli alımı hedefleyen referanslar, kanıtlanmış eksikliğin tedavi protokolünden farklıdır. D vitamini yağda çözündüğü için birden fazla kaynaktan gelen aşırı alımın klinik sonuçları olabilir.",
+  "readingSteps": [
+    {
+      "title": "Birim dönüşümünü doğrula",
+      "explanation": "D vitamini için 1 µg = 40 IU ve 1 IU = 0,025 µg. Örneğin 1000 IU = 25 µg; 4000 IU = 100 µg. Bu dönüşüm D vitaminine aittir."
+    },
+    {
+      "title": "Damla veya fıs başına miktarı bul",
+      "explanation": "Bir damla 400 IU içeriyor ve günlük 5 damla kullanılıyorsa günlük toplam 2000 IU, yani 50 µg'dır. Ama 400 IU'nun beş damlalık porsiyona mı ait olduğu önce okunmalıdır."
+    },
+    {
+      "title": "Günlük toplamı farklı ürünlerle birlikte hesapla",
+      "explanation": "Multivitamin, D3+K2 spreyi ve ayrı D vitamini damlası aynı gün kullanılabilir. Her birinin porsiyondaki D miktarı ortak birimde toplanmalı; ayrıca reçeteli ürünler unutulmamalıdır."
+    },
+    {
+      "title": "Klinik gerekçeyi beslenme referansından ayır",
+      "explanation": "Düşük 25(OH)D düzeyinin yorumlanması, bireysel risk ve tedavi gerekliliği yalnız etiketle belirlenemez. Emzirme, çocukluk, malabsorpsiyon ve böbrek hastalığı gibi durumlarda özel değerlendirme gerekir."
+    }
+  ],
+  "evidenceLimit": "Etikette daha yüksek IU bulunması, her birey için daha fazla kemik veya bağışıklık yararı sağlayacağını kanıtlamaz. ABD'de yetişkinler için 4000 IU/gün üst güvenli alım (UL) referansı bulunmaktadır; bu sağlıklı nüfusa yönelik güvenlilik değeridir, hekim gözetimindeki eksiklik tedavisinin otomatik üst dozu değildir. Fazla D vitamini hiperkalsemi, hiperkalsiüri ve böbrek komplikasyonlarına neden olabilir. % günlük değer ve ülkeye özgü beslenme referanslarıyla klinik doz hedeflerini karıştırmayın.",
+  "faqs": [
+    {
+      "question": "2000 IU vitamin D3 kaç mikrogramdır?",
+      "answer": "2000 ÷ 40 = 50 µg'dır. Ters dönüşümde µg değeri 40 ile çarpılır."
+    },
+    {
+      "question": "5 damla 400 IU ise günlük 2000 IU mu?",
+      "answer": "400 IU'nun tek damlaya ait olduğu açıkça yazıyorsa evet. Üretici 5 damla için 400 IU beyan etmişse günlük toplam 400 IU olur. Porsiyon bilgisi önceliklidir."
+    },
+    {
+      "question": "D3 ile K2 birlikte yazması K2'nin herkes için gerekli olduğu anlamına gelir mi?",
+      "answer": "Hayır. K2'nin ayrı biyolojik görevleri ve önemli ilaç etkileşimleri vardır. Birlikte formülasyonun varlığı, bütün sağlıklı bireylerde ikisinin birlikte alınması gerektiğini göstermez."
+    }
+  ],
+  "additionalSources": [
+    {
+      "label": "NIH ODS — Vitamin D, Units and Upper Intake Levels",
+      "url": "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/"
+    }
+  ]
 }

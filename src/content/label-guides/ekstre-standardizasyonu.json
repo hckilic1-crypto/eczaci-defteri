@@ -13,5 +13,45 @@
   "draft": false,
   "calculation": "300 mg ekstrede %5 toplam withanolid ifadesi, tanımlı analitik yönteme göre 300×0,05=15 mg marker miktarına karşılık gelebilir. 'DER 10:1' teorik olarak 300 mg ekstreye karşılık gelen 3000 mg başlangıç drogunu tanımlar; fakat ekstraksiyon çözücüsü ve doğal/son ekstre ayrımı bilinmeden farmakolojik eşdeğerlik kurulmaz.",
   "buyingChecklist": "Bitkinin Latincesi ve bitki kısmı yazıyor mu? Ekstraksiyon çözücüsü ve DER türü belirtiliyor mu? Marker hangisi ve hangi yöntemle ölçülmüş? Ürünün üçüncü taraf kalite analiz belgesi var mı?",
-  "safetyNote": "Yüksek DER daha yüksek klinik etki veya güvenlilik garantisi değildir. Ashwagandha gibi bazı ekstrelerde gebelik, tiroid bozukluğu ve karaciğer hasarı bildirimleri ayrıca değerlendirilmelidir."
+  "safetyNote": "Yüksek DER daha yüksek klinik etki veya güvenlilik garantisi değildir. Ashwagandha gibi bazı ekstrelerde gebelik, tiroid bozukluğu ve karaciğer hasarı bildirimleri ayrıca değerlendirilmelidir.",
+  "clinicalContext": "Bitkisel ürün etiketindeki '10:1', '300 mg ekstre', '%5 standardize' ve 'bitki tozu 3000 mg eşdeğeri' ifadeleri aynı analitik bilgiyi vermez. Ekstrenin üretiminde hangi bitki türünün hangi kısmının kullanıldığı, ekstraksiyon çözücüsü, ham drog–ekstre oranı ve hangi bileşenin işaretleyici olarak ölçüldüğü önemlidir. EMA kalite kılavuzundaki DERgenuine (native ekstre oranı) ve DERtotal (yardımcı maddeler dahil toplam ekstre oranı) farkı özellikle kritik olabilir. Bir ürünün botanik kökenli olması etkinlik veya güvenlilik garantisi değildir.",
+  "readingSteps": [
+    {
+      "title": "Latin tür adı ve bitki kısmıyla başla",
+      "explanation": "'Ginseng' veya 'zerdeçal' gibi yaygın adlar her zaman belirli ham maddeyi tarif etmez. Latin tür, kök/yaprak/meyve kısmı, üretici ve lot bilgisi mümkün olduğunca belirli olmalıdır."
+    },
+    {
+      "title": "Ekstrenin türünü ve çözücüyü ayır",
+      "explanation": "Su, etanol veya farklı çözücülerle elde edilen ekstreler aynı molekül profilini vermeyebilir. Kuru ekstre/akışkan ekstre gibi bilgiler ve kullanılan solvent sisteminin belirtilmesi değerlendirmeyi güçlendirir."
+    },
+    {
+      "title": "DER değerinin neyi kapsadığını sor",
+      "explanation": "Örneğin 10:1, yaklaşık 10 birim başlangıç drogunun 1 birim ekstreye karşılık gelmesini ifade eder; fakat bunun native ekstre mi yardımcı maddeli toplam ekstre mi olduğu açıklığa kavuşturulmalıdır."
+    },
+    {
+      "title": "Standardizasyon markerını hesapla ve doğrula",
+      "explanation": "300 mg ekstre × %5 marker = teorik 15 mg işaretleyici bileşen. Marker bir tek molekül veya bileşen grubu olabilir; kullanılan analiz yöntemi ve marker profilinin klinik çalışma ürününe benzerliği araştırılmalıdır."
+    }
+  ],
+  "evidenceLimit": "Yüksek DER, otomatik olarak yüksek biyoyararlanım veya daha iyi klinik etki sağlamaz. Aynı botanik ada ve aynı marker yüzdesine sahip ekstreler başka bileşenleri farklı miktarlarda içerebilir. EMA bitkisel tıbbi ürün kalite kılavuzu, takviye edici gıda için otomatik ruhsat veya kalite onayı yerine geçmez. Ashwagandha gibi örneklerde gebelik, tiroid ve olası karaciğer sorunları da ürünün klinik bağlamında ayrıca ele alınmalıdır.",
+  "faqs": [
+    {
+      "question": "DER 10:1, 300 mg ekstreyi 3000 mg ilaçla eşdeğer kılar mı?",
+      "answer": "Hayır. Bu oran üretimde kullanılan başlangıç drog miktarıyla elde edilen ekstre arasındaki kütle ilişkisini anlatır; aynı klinik etki veya biyoyararlanım anlamına gelmez."
+    },
+    {
+      "question": "%5 withanolid yazıyorsa kesin 15 mg aktif madde mi alıyorum?",
+      "answer": "300 mg × %5 = 15 mg analitik marker beyanına karşılık gelebilir. Ancak markerın toplam withanolid mi belirli bir molekül mü olduğu, kullanılan test yöntemi ve ekstrenin diğer bileşenleri önemlidir."
+    },
+    {
+      "question": "Standardize ekstre, standardize edilmemiş her üründen üstün müdür?",
+      "answer": "Standardizasyon, ölçülebilir kalite tutarlılığı sağlayabilir. Buna karşılık markerın klinik sonlanımla ilişkisi, kullanılan doz ve üretim kalitesi ayrı sorulardır. Tek başına etkinlik garantisi değildir."
+    }
+  ],
+  "additionalSources": [
+    {
+      "label": "EMA — Quality of herbal medicinal products, Revision 3",
+      "url": "https://www.ema.europa.eu/en/scientific-guidelines/quality-herbal-medicinal-products-traditional-herbal-medicinal-products"
+    }
+  ]
 }

@@ -13,5 +13,45 @@
   "draft": false,
   "calculation": "Örnek: 325 mg ferroz sülfat heptahidrat yaklaşık 65 mg elementel demir sağlar; fakat hidrasyon/tuz formu ve üretici etiketi kontrol edilmelidir. 325 mg tuz = 325 mg demir değildir. Hedeflenen sayı elementel demir satırındaki mg miktarıdır.",
   "buyingChecklist": "Ferroz sülfat, fumarat, glukonat veya bisglisinat hangisi? Günlük elementel Fe kaç mg? Ferritin/hemoglobin ve eksiklik nedeni değerlendirilmiş mi? Kalsiyum, levotiroksin, çay/kahve ve antibiyotiklerle kullanım zamanı uygun mu?",
-  "safetyNote": "Demir fazlalığında takviye zararlı olabilir; çocuklarda akut doz aşımı acildir. Her anemide demir kullanılmaz. Bireyde melena, beklenmedik kan kaybı veya açıklanamayan anemi varsa değerlendirme gerekir."
+  "safetyNote": "Demir fazlalığında takviye zararlı olabilir; çocuklarda akut doz aşımı acildir. Her anemide demir kullanılmaz. Bireyde melena, beklenmedik kan kaybı veya açıklanamayan anemi varsa değerlendirme gerekir.",
+  "clinicalContext": "Demir preparatlarının karşılaştırılmasında en kritik ayrım, kullanılan tuzun toplam kütlesi ile sağladığı elementel demir miktarıdır. Örneğin 'ferroz sülfat 325 mg' ibaresi, 325 mg elementel demir alındığı anlamına gelmez. Ayrıca demir eksikliği, demir eksikliği anemisi ve diğer anemi nedenleri ayrı değerlendirilir. Ferritin, hemoglobin, inflamasyon ve kan kaybı öyküsü olmadan yalnız etiket üzerinden tedavi seçimi yapmak doğru değildir. Preparatın oral biyoyararlanımı, yan etkileri ve günlük kullanım düzeni de klinik kararın parçasıdır.",
+  "readingSteps": [
+    {
+      "title": "Bileşiğin tam adını tespit et",
+      "explanation": "Ferroz sülfat, ferroz fumarat, ferroz glukonat veya demir bisglisinat yazıyor olabilir. Form ve hidrasyon durumu elementel oranı etkiler; yalnız tuz adından sabit bir etkin demir miktarı varsayılmaz."
+    },
+    {
+      "title": "Elementel Fe satırını esas al",
+      "explanation": "Etiket '65 mg elementel demir' diyorsa farmakolojik karşılaştırmada bu beyan edilen mg dikkate alınır. Tuz ağırlığı başka, elementel Fe başka satırlardır. Sayısal oranlar ürün ve kimyasal forma göre doğrulanır."
+    },
+    {
+      "title": "Porsiyon ve diğer demir kaynaklarını topla",
+      "explanation": "Bir tabletin elementel demir miktarı ile günlük önerilen tablet sayısı çarpılır. Gebelik multivitamini veya ayrı mineral takviyesindeki demir tekrar alınabilir; toplam maruziyet kontrol edilmelidir."
+    },
+    {
+      "title": "Emilim koşulları ve etkileşimlere bak",
+      "explanation": "Kalsiyum ve bazı diğer mineral takviyeleri ile eşzamanlı alım, antasitler, levotiroksin ve bazı antibiyotiklerle etkileşim zamanlaması önemlidir. Kesin ayırma aralığı için ilgili ilacın kısa ürün bilgisi kontrol edilir."
+    }
+  ],
+  "evidenceLimit": "Elementel demiri aynı olan iki ürünün gastrointestinal toleransı veya emilim oranı mutlaka aynı değildir. 'Şelat form' ifadesi tek başına superior klinik sonuç kanıtı sunmaz. Serum demir tek başına demir eksikliği tanısı için yeterli olmayabilir. Oral demirin günlük veya gün aşırı kullanımı konusunda literatürde farklı protokoller bulunur; eksikliğin tipi ve tolere edilebilirlik belirlenmeden etiket üzerinden tedavi programı çıkarılmaz.",
+  "faqs": [
+    {
+      "question": "325 mg ferroz sülfat kaç mg elementel demirdir?",
+      "answer": "Sık kullanılan ferroz sülfat heptahidrat preparatlarında yaklaşık 65 mg olabilir; ancak kimyasal form ve ürün beyanı değişebilir. Kesin değerlendirmeyi ürünün elementel Fe satırından yapın."
+    },
+    {
+      "question": "Demir bisglisinat her zaman daha iyi emilir mi?",
+      "answer": "Emilim ve tolerans formülasyona ve çalışılan popülasyona bağlıdır. Sadece 'bisglisinat' yazdığı için herkes için kesin üstünlük söylenemez; elementel miktar ve klinik yanıt esas alınır."
+    },
+    {
+      "question": "Ferritin normalse demir almak doğru mudur?",
+      "answer": "Tek başına ferritinin normal oluşu tüm olasılıkları dışlamaz; inflamasyonda ferritin yükselebilir. Ancak eksiklik değerlendirilmeden demir almak da doğru değildir. Hemogram, inflamasyon ve klinik öyküyle karar verilmelidir."
+    }
+  ],
+  "additionalSources": [
+    {
+      "label": "NIH ODS — Iron: Elemental iron across preparations",
+      "url": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/"
+    }
+  ]
 }
