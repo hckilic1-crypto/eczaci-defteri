@@ -1,0 +1,23 @@
+{
+  "name": "Benzoil Peroksit",
+  "category": "Dermokozmetik",
+  "summary": "Benzoil peroksit, akne tedavisinde güçlü klinik kanıta sahip oksidatif antimikrobiyal ve keratolitik özellikli topikal ilaç bileşenidir.",
+  "mechanism": "Benzoil peroksit deride radikal/oksidatif ara ürünler oluşturarak Cutibacterium acnes ile ilişkili mikrobiyal yükü azaltır. Bu mekanizma klasik antibiyotik hedeflerinden farklıdır ve antibiyotik direnci yönetiminde kombinasyon olarak değerlidir. Foliküler keratinizasyon üzerinde de etkileri olabilir.",
+  "clinical": "AAD 2024 akne kılavuzunda güçlü öneri alır. İnflamatuvar papül-püstül sayısını azaltabilir; adapalen gibi topikal retinoidlerle kombinasyon, farklı hastalık basamaklarının birlikte hedeflenmesini sağlar. Topikal antibiyotikle birleştirilmesi direnç gelişiminin azaltılması bakımından önerilmektedir.",
+  "evidence": "AAD 2024 akne kılavuzu benzoil peroksidi güçlü biçimde önerirken topikal antibiyotik monoterapisinden kaçınılmasını belirtir. Tedavi başarısı akne tipi, konsantrasyon, taşıyıcı ve düzenli kullanıma bağlıdır.",
+  "dose": "Farklı ürünlerde %2,5, %5 ve %10 gibi konsantrasyonlar bulunabilir. Doz ve uygulama sıklığı ruhsatlı ürüne, hastanın yaşına ve toleransına göre belirlenir. Daha yüksek yüzde her hastada daha yüksek başarı sağlamaz; irritasyon artabilir.",
+  "warnings": "Kuruluk, soyulma, yanma ve kontakt dermatit görülebilir; kumaş ve saç rengini açabilir. Göz/mukoza teması ve geniş hasarlı deri uygulaması önlenmelidir. Şiddetli reaksiyonda ürün ve tanı tekrar değerlendirilir.",
+  "interactions": "Adapalenle sabit kombinasyon aknede kullanılır. Retinoid, AHA/BHA veya yoğun temizleyicilerle birlikte irritan yük artabilir. Bazı tretinoin formülasyonlarında BPO ile birlikte kullanımın stabilite etkisi olduğundan belirli ürün bilgisi esas alınmalıdır.",
+  "labelTip": "Benzoyl Peroxide yüzdesi, ürünün durulanan mı ciltte kalan mı olduğunu ve ek retinoid/antibiyotik içerip içermediğini gösteren etiket bilgileri birlikte kontrol edilmelidir.",
+  "chemicalIdentity": "Dibenzoil peroksit; organik peroksit grubu molekül",
+  "chemicalClass": "Organik peroksit / topikal akne ajanı",
+  "molecularFormula": "C14H10O4",
+  "formulations": "Jel, krem, temizleyici ve retinoid veya topikal antibiyotikle sabit kombinasyonlar.",
+  "studiedPopulation": "Komedonal/inflamatuvar aknesi olan ergen ve erişkin hasta grupları.",
+  "pharmacistChecklist": "Akne tipi nedir? Reçeteli retinoid veya antibiyotik kullanıyor mu? Başlangıç kuruluğu, gebelik, ciltte irritasyon ve kumaş ağartma riski anlatıldı mı?",
+  "practicalLimits": "Rozasea, alerjik dermatit veya şiddetli akne skarı gibi farklı sorunlarda standart tek seçenek değildir; uygun tanı ve ruhsatlı preparat bilgisi önemlidir.",
+  "relatedArticleSlug": "akne-tedavisi-retinoid-benzoil-peroksit-salisilik-asit",
+  "sourceLabel": "AAD. Acne vulgaris clinical guideline (2024)",
+  "sourceUrl": "https://www.aad.org/member/clinical-quality/guidelines/acne",
+  "draft": false
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Gliserin (Glycerol)",
+  "category": "Dermokozmetik",
+  "summary": "Gliserin, su bağlama kapasitesi yüksek ve nemlendirici formüllerde yaygın kullanılan humektandır. Kuru ve gergin ciltte nem içeriğini destekler.",
+  "mechanism": "Gliserin üç hidroksil grubu taşıyan küçük, hidrofilik bir moleküldür. Stratum corneumdaki suyu bağlamaya katkı verir ve nemlendirici formülasyonun su tutma işlevini destekler. Oklüzif petrolatumdan farklı olarak temel görevi yüzeyde hidrofobik film oluşturmak değil suyla etkileşimdir.",
+  "clinical": "Gliserin içeren ürünler kuruluğun ve gerginliğin azaltılmasında günlük bakımın parçası olabilir. Atopik ve kuru ciltte humektanların oklüzif ve emoliyanlarla birleştirilmesi daha kapsamlı destek sağlayabilir.",
+  "evidence": "DermNet, gliserini nemlendiricilerin başlıca humektan örnekleri arasında sayar. Bileşenin etkinliği ürünün tamamıyla ve düzenli kullanımla değerlendirilmelidir; yalnız gliserin yüzdesine bakmak son ürün karşılaştırması değildir.",
+  "dose": "Topikal kozmetikte gliserin için her kullanıcıya uygun tek hedef yüzde yoktur. Günlük uygulama ve gerektiğinde yeniden sürme ürünün formu ve cilt ihtiyacına göre belirlenir.",
+  "warnings": "Genellikle iyi tolere edilir. Şiddetli dermatitte uygulanan ürünün diğer bileşenlerine bağlı tahriş/alerji olabilir. Gliserinin varlığı bütün koruyucu ve koku maddelerinin güvenli olduğu anlamına gelmez.",
+  "interactions": "Topikal olarak önemli sistemik ilaç etkileşimi beklenmez. Retinoid veya antiakne ilaçlarıyla oluşabilen kuruluğu yönetmeye yardımcı nemlendiricilerde kullanılabilir.",
+  "labelTip": "Glycerin/Glycerol adlarını tanıyın. Humektan etkisi için yanında dimetikon, petrolatum, yağ esterleri veya bariyer lipitleri bulunabilir. Tüm ürün performansı farklıdır.",
+  "chemicalIdentity": "Propane-1,2,3-triol",
+  "chemicalClass": "Triol / humektan",
+  "molecularFormula": "C3H8O3",
+  "formulations": "Krem, losyon, serum, temizleyici ve farklı su bazlı nemlendiricilerde bulunur.",
+  "studiedPopulation": "Kuru, bariyer hassas ve genel kozmetik nemlendirme gereksinimi olan kullanıcılar.",
+  "pharmacistChecklist": "Kişinin kuruluğu hafif mi ileri mi? Gliserinli serumun üzerinde ayrıca oklüzif/bariyer krem gerekiyor mu? Günlük kullanım sürdürülebiliyor mu?",
+  "practicalLimits": "Gliserin tek başına atopik dermatitin inflamatuvar tedavisi değildir; aktif alevlenmede tıbbi tedavi gerekebilir.",
+  "relatedArticleSlug": "nemlendirici-secimi-gliserin-ure-petrolatum-hyaluronik-asit",
+  "sourceLabel": "DermNet. Emollients and moisturisers",
+  "sourceUrl": "https://dermnetnz.org/topics/emollients-and-moisturisers",
+  "draft": false
+}

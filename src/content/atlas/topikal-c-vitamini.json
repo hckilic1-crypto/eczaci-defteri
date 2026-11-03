@@ -1,0 +1,23 @@
+{
+  "name": "Topikal C Vitamini (L-Askorbik Asit)",
+  "category": "Dermokozmetik",
+  "summary": "C vitamininin topikal L-askorbik asit ve türevleri, uygun formülasyonlarla ciltte antioksidan savunmayı ve foto-yaşlanma bakımını desteklemek için kullanılır.",
+  "mechanism": "Askorbik asit elektron verici antioksidan olarak reaktif oksijen türleriyle ilişkili süreçleri etkileyebilir. Kollajen biyosentezinde prolil/lizil hidroksilaz enzimlerinin işleyişi için gerekli bir kofaktördür. Saf L-askorbik asidin deriye geçişi formülasyon pH'sına, stabiliteye ve konsantrasyona bağlıdır; türevler için dönüşüm ve penetrasyon farklıdır.",
+  "clinical": "Uygun formüle edilmiş topikal C vitamini bazı insan çalışmalarında fotoyaşlanma, yüzey dokusu ve pigmentasyon görünümünde yarar sağlayabilir. Ciltteki antioksidan savunmaya katkı hedeflenir. Serum, UV filtreli güneş koruyucunun yerine geçmez; gündüz SPF ile tamamlayıcıdır.",
+  "evidence": "LPI C vitamini ve cilt incelemesi biyokimyasal işlevleri ve topikal verileri özetler. DermNet, stabil formülasyonlarda foto-yaşlanma yararlarını bildirir. Pinnell ve arkadaşlarının 2001 domuz derisi emilim çalışmasındaki pH 3,5 altı bulgusu, bütün formülasyonlar için klinik etkinlik garantisi değildir.",
+  "dose": "Topikal serumlarda L-askorbik asidin farklı yüzdeleri bulunur. Bir emilim çalışmasında %20 yakınında belirli koşullarda doygunluk bildirilmiş olsa da tek standart klinik doz olarak uygulanamaz. Ürün talimatı, pH ve tolerans birlikte değerlendirilmelidir.",
+  "warnings": "Asidik formülasyonlar hassas ciltte yanma, kızarıklık ve iritasyon yapabilir. Oksijen/ışık/sıcaklık ürün stabilitesini etkileyebilir. Açıldıktan sonra saklama ve kullanım süresi üreticiye göre izlenmelidir.",
+  "interactions": "Topikal retinoid, AHA/BHA ve benzoil peroksit kullanılan rutinde toplam irritan yük kontrol edilmelidir. Sistemik vitamin C alımından farklı maruziyet söz konusudur; serum dozuyla oral takviye dozu eşdeğer değildir.",
+  "labelTip": "L-Ascorbic Acid ile Sodium Ascorbyl Phosphate veya Ascorbyl Glucoside farklı kimyasal formlardır. Yüzde, pH, ambalaj, taşıyıcı ve stabilite birlikte değerlendirilir. Yüksek yüzde tek başına yüksek klinik yarar değildir.",
+  "chemicalIdentity": "L-askorbik asit biyolojik aktif C vitamini formudur; askorbil fosfatlar ve glukozitler türevdir.",
+  "chemicalClass": "Suda çözünen antioksidan / vitamin türevi",
+  "molecularFormula": "C6H8O6 (L-askorbik asit)",
+  "formulations": "Düşük pH'lı L-AA serumları, anhidrus formülasyonlar ve daha stabil türev bazlı serum/kremler bulunabilir.",
+  "studiedPopulation": "Fotoyaşlanma ve düzensiz pigmentasyon yakınması bulunan erişkinler; in vitro ve deri penetrasyonu çalışmaları ayrıca ele alınır.",
+  "pharmacistChecklist": "Ürün gerçek L-AA mı? Hedef pigmentasyon mu fotoyaşlanma mı? Birlikte retinoid/asit var mı? Hassasiyet ve günlük SPF kullanımı değerlendirildi mi?",
+  "practicalLimits": "Topikal ürünün kimyasal kararlılığı ve penetrasyonu oral C vitamini dozuyla kıyaslanamaz. Melazma tanısında tek serum yerine fotokorunma ve uygun dermatolojik plan gerekir.",
+  "relatedArticleSlug": "c-vitamini-serumu-l-askorbik-asit-fotoyaslanma",
+  "sourceLabel": "Linus Pauling Institute. Vitamin C and Skin Health",
+  "sourceUrl": "https://lpi.oregonstate.edu/mic/health-disease/skin-health/vitamin-C",
+  "draft": false
+}
