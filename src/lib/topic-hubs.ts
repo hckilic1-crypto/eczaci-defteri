@@ -118,12 +118,16 @@ export const topicHubs: TopicHub[] = [
     ],
     "atlas": [
       "seramid",
+      "gliserin",
       "hyaluronik-asit",
       "pantenol",
       "niasinamid",
+      "topikal-c-vitamini",
       "retinol",
       "retinal",
+      "tretinoin",
       "azelaik-asit",
+      "benzoil-peroksit",
       "salisilik-asit",
       "glikolik-asit",
       "traneksamik-asit",
@@ -153,8 +157,12 @@ export const topicHubs: TopicHub[] = [
       "aha-exfoliasyon"
     ],
     "guides": [
+      "seramid-kolesterol-yag-asidi-etiketi",
       "niasinamid-yuzde",
+      "c-vitamini-serumu-yuzde-ph-stabilite",
       "retinol-ve-retinal",
+      "aha-bha-yuzde-ve-ph-nasil-okunur",
+      "renkli-gunes-koruyucu-demir-oksit-melazma",
       "spf-uva-uvb"
     ]
   },
