@@ -103,3 +103,8 @@
   .notebook-scene-pen{animation:none}
   .notebook-scene-ink{animation:none;stroke-dasharray:none;stroke-dashoffset:0}
 }
+/* Mobile initial paint: keep the notebook illustration static; avoid SVG stroke repaint. */
+@media (max-width: 767px), (prefers-reduced-motion: reduce) {
+  .notebook-scene-pen, .notebook-scene-ink { animation: none !important; }
+  .notebook-scene-ink { stroke-dashoffset: 0; }
+}
