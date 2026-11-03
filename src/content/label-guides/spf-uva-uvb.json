@@ -13,5 +13,45 @@
   "draft": false,
   "calculation": "İdeal test koşullarında SPF 30 için erytemal ağırlıklı UV iletimi yaklaşık 1/30 (%3,33); SPF 50 için 1/50 (%2) şeklindedir. Bu nedenle teorik filtreleme yaklaşık %96,7 ve %98'dir. İki değer günlük gerçek korunmanın doğrudan oranı değildir.",
   "buyingChecklist": "SPF kaç? Geniş spektrum/UVA logosu var mı? Suya dayanıklılık süresi belirtiliyor mu? Doğru miktarda uygulama ve yenileme yapılıyor mu? Melazmada görünür ışığa karşı renkli formül gerekebilir mi?",
-  "safetyNote": "SPF bir UVB/eritem temelli testtir; tek başına UVA veya görünür ışık korumasının tamamını göstermez. Suya dayanıklı ifadesi kalıcı/terden etkilenmez demek değildir."
+  "safetyNote": "SPF bir UVB/eritem temelli testtir; tek başına UVA veya görünür ışık korumasının tamamını göstermez. Suya dayanıklı ifadesi kalıcı/terden etkilenmez demek değildir.",
+  "clinicalContext": "Güneş koruyucunun ön yüzündeki SPF değeri, ağırlıklı olarak UV ışınına bağlı eritem (kızarıklık) üzerinden belirlenen bir performans göstergesidir. UVA korumasını, görünür ışığa karşı korumayı ve suya dayanıklılığı aynı sayıdan okuyamayız. Avrupa'daki UVA logosu, belirli minimum UVA koruma kriteriyle ilişkilidir; 'broad spectrum' gibi ifadeler farklı pazarlarda farklı test sistemleriyle kullanılabilir. Etiket okurken kullanılan test yönteminin yanı sıra uygulama miktarı, yenileme ve gerçek kullanım koşullarını değerlendirmek gerekir.",
+  "readingSteps": [
+    {
+      "title": "SPF değerini bağlamına oturt",
+      "explanation": "Test düzeyinde SPF 30 yaklaşık 1/30, SPF 50 ise yaklaşık 1/50 eritem ağırlıklı UV iletimi demektir. Buradan sırasıyla yaklaşık %96,7 ve %98 teorik azalma hesaplanır. Bu oran gerçek yaşamda güneşte kalma süresini aynı oranda uzatmaz."
+    },
+    {
+      "title": "UVA beyanını ayrı incele",
+      "explanation": "SPF, UVA korumasının tam ölçüsü değildir. Üzerinde UVA logosu bulunması veya geniş spektrum ifadesi ilgili pazarın test ölçütleriyle yorumlanır. Özellikle hiperpigmentasyonda görünür ışığın da klinik önemi olabilir."
+    },
+    {
+      "title": "Suya dayanıklılık ifadesinin standardını bul",
+      "explanation": "'40 dakika' veya '80 dakika' gibi ifadeler ABD'deki test/etiket sisteminde suya dayanıklılık beyanıyla ilişkilendirilebilir. Bunlar sonsuz su geçirmezlik veya havlu sonrası korumanın değişmemesi anlamına gelmez."
+    },
+    {
+      "title": "Uygulama ve yeniden sürmeyi planla",
+      "explanation": "Laboratuvar SPF testi standart uygulama miktarına dayanır. Günlük hayatta daha ince tabaka veya silinme korumayı düşürebilir. Yüzme, terleme, havlu kullanma, dışarıda uzun kalma durumlarında yeniden uygulama talimatı önemlidir."
+    }
+  ],
+  "evidenceLimit": "SPF 50, SPF 25'in iki katı süre boyunca güvenle güneşte kalınabileceği anlamına gelmez. SPF 30'un yaklaşık %96,7 ve SPF 50'nin yaklaşık %98 eritem ağırlıklı azaltma değerleri, standart test varsayımı altında matematiksel yaklaşımdır. Klinik korunma miktar, yenileme, UVA maruziyeti ve davranışlara bağlıdır. 'Suya dayanıklı' ifadesi de kalıcı su geçirmezlik iddiası değildir. EU, ABD ve Türkiye'deki etiket terimlerinin düzenleyici bağlamları eşit varsayılmamalıdır.",
+  "faqs": [
+    {
+      "question": "SPF 50, SPF 30'dan ne kadar farklıdır?",
+      "answer": "Test varsayımı altında eritem ağırlıklı iletim SPF 30 için yaklaşık %3,33, SPF 50 için yaklaşık %2'dir. Bu sayı tek başına günlük yaşamda oluşan farkı veya yeterli sürülme miktarını ifade etmez."
+    },
+    {
+      "question": "UVA logosu varsa görünür ışığa karşı da korunur muyum?",
+      "answer": "UVA ve görünür ışık aynı spektral bölge değildir. Avrupa UVA logosu belirli UVA koruma ölçütleriyle ilişkilidir; görünür ışık korumasını tek başına garanti etmez."
+    },
+    {
+      "question": "'80 dakika suya dayanıklı' yazması yeniden sürmeye gerek olmadığı anlamına mı gelir?",
+      "answer": "Hayır. ABD'deki test beyanlarında 80 dakika suya dayanıklılık belirli prosedürün sonucudur; ter, sürtünme ve havluyla kurulanmadan sonra uygulama talimatı dikkate alınmalıdır."
+    }
+  ],
+  "additionalSources": [
+    {
+      "label": "European Commission — Sunscreen products and UVA recommendations",
+      "url": "https://single-market-economy.ec.europa.eu/sectors/cosmetics/cosmetic-products-specific-topics/sunscreen-products_en"
+    }
+  ]
 }

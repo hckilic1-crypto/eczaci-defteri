@@ -13,5 +13,49 @@
   "draft": false,
   "calculation": "%0,3 retinol, formülün ağırlıkça %0,3'ü ise teorik olarak 1 g üründe 3 mg retinol demektir. %0,1 retinal aynı hesapla 1 g üründe 1 mg retinaldir. Ancak farklı moleküllerin bu gram hesapları klinik güç veya cilt maruziyeti karşılaştırması olarak kullanılamaz.",
   "buyingChecklist": "INCI'da retinol mü retinal mi yazıyor? Ambalaj ışık/oksijen korumalı mı? Yüzde, kullanım sıklığı ve birlikte kullanılan AHA/BHA var mı? Cilt bariyeri ve gebelik durumunda uygunluk değerlendirildi mi?",
-  "safetyNote": "Retinoidler tahriş, kuruluk ve kızarıklık yapabilir; gebelikte kullanımları özel değerlendirme gerektirir. Yüksek yüzde veya pazarlama terimleri daha güvenli/etkili olduğunu göstermez."
+  "safetyNote": "Retinoidler tahriş, kuruluk ve kızarıklık yapabilir; gebelikte kullanımları özel değerlendirme gerektirir. Yüksek yüzde veya pazarlama terimleri daha güvenli/etkili olduğunu göstermez.",
+  "clinicalContext": "Kozmetik etiketlerinde retinol, retinal (retinaldehit) ve retinil esterleri aynı 'retinoid' başlığı altında pazarlanabilir; ancak bunlar kimyasal olarak aynı molekül değildir. Konsantrasyon yüzdesi, ürünün toplam kütlesi içindeki ilgili bileşenin oranıdır; tek başına biyolojik etkinlik veya cilde geçen miktar değildir. Formülün stabilitesi, ambalaj, uygulama sıklığı ve cilt bariyerinin durumu da önem taşır. AB Komisyonu'nun 2024/996 düzenlemesindeki retinol eşdeğeri (RE) limitleri retinol ve belirli retinil esterleri içindir; retinalin bu listede aynı madde olarak düzenlendiği varsayılmamalıdır. AB kurallarını Türkiye'deki ulusal mevzuatla otomatik özdeşleştirmemek gerekir.",
+  "readingSteps": [
+    {
+      "title": "INCI'da hangi molekül yazıyor belirle",
+      "explanation": "'Retinol', 'Retinal' veya 'Retinyl Palmitate' farklı kimyasal kimliklerdir. Ürünün ön yüzündeki 'retinoid kompleks' ifadesi kesin molekül ve yüzde bilgisi yerine geçmez."
+    },
+    {
+      "title": "Yüzdenin bazını doğru yorumla",
+      "explanation": "Ağırlık/ağırlık %0,3 retinol, teorik olarak 100 g üründe 0,3 g retinol anlamına gelir. %0,1 retinal ise başka bir molekülün oranıdır. Bu sayılar etki gücü bakımından birbirinin basit üçte biri değildir."
+    },
+    {
+      "title": "Formül kararlılığını ve diğer aktifleri değerlendir",
+      "explanation": "Retinoidler ışık ve oksijen gibi koşullara duyarlı olabilir. Ambalaj tipi, ürünün formülasyonu, niasinamid veya asitlerle beraber kullanım ve tolerans klinik deneyimi değiştirir."
+    },
+    {
+      "title": "Güvenlilik ve düzenleme kapsamını kontrol et",
+      "explanation": "AB 2024/996'da retinol/retinil asetat/retinil palmitat için vücut losyonlarında %0,05 RE, diğer belirli kozmetiklerde %0,3 RE sınırları tanımlanmıştır. Bu bilgi retinal için aynı limit bulunduğu veya Türkiye mevzuatında birebir aynı uygulama olduğu anlamına gelmez."
+    }
+  ],
+  "evidenceLimit": "'Retinal retinolden daha güçlüdür' gibi genel bir iddiayı, moleküllerin bir oksidasyon basamağı farkına dayanarak bütün ürün ve konsantrasyonlara genellemek doğru değildir. Bir retinoidin biyokimyasal dönüşüm basamağı, aynı taşıyıcı sistemde aynı cilt maruziyeti anlamına gelmez. AB kozmetik limitlerinin de klinik etkinlik sıralaması değil, belirli bileşenler için tüketici güvenliği değerlendirmesi olduğu unutulmamalıdır. Gebelik ve gebelik planı durumunda retinoid kullanımına ilişkin özel uyarılar ayrıca değerlendirilir.",
+  "faqs": [
+    {
+      "question": "%0,1 retinal, %0,3 retinolden daha mı güçlü?",
+      "answer": "Bu iki farklı retinoid molekülünün yüzde değeri doğrudan klinik etki karşılaştırması değildir. Stabilite, taşıyıcı sistem, cildin toleransı ve çalışmanın sonlanımı belirleyicidir."
+    },
+    {
+      "question": "AB'de %0,3 sınırı bütün retinoidleri kapsıyor mu?",
+      "answer": "Hayır. 2024/996 düzenlemesindeki ilgili hüküm retinol, retinil asetat ve retinil palmitatı retinol eşdeğeri olarak tanımlar. Retinal ayrı moleküldür; kapsam varsayımı yapılmaz."
+    },
+    {
+      "question": "Aynı yüzdeye sahip iki retinol serumu eşdeğer mi?",
+      "answer": "Hayır. Bileşenin kararlılığı, ambalaj, ürün matriksi, diğer aktifler ve uygulama biçimi cilt maruziyeti ve tahrişi değiştirebilir."
+    }
+  ],
+  "additionalSources": [
+    {
+      "label": "Avrupa Komisyonu — Regulation (EU) 2024/996 (Retinol eşdeğerleri)",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AL_202400996"
+    },
+    {
+      "label": "SCCS — Vitamin A Cosmetic Safety Opinion, 2022",
+      "url": "https://health.ec.europa.eu/publications/revision-scientific-opinion-sccs157616-vitamin-retinol-retinyl-acetate-retinyl-palmitate_en"
+    }
+  ]
 }

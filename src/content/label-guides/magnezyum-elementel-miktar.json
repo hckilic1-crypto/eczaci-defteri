@@ -13,5 +13,45 @@
   "draft": false,
   "calculation": "500 mg magnezyum oksit molekülü yaklaşık 302 mg elementel magnezyum içerebilir (MgO için kütlece yaklaşık %60,3). Ancak ticari üründeki gerçek içerik etikette beyan edilen elementel mg üzerinden kontrol edilir. 1000 mg magnezyum bisglisinat kompleksinin tamamı magnezyum değildir.",
   "buyingChecklist": "Günlük porsiyonda ELEMENTEL Mg kaç mg? Oksit, sitrat, bisglisinat veya başka bir tuz mu? Bileşik miktarıyla elementel miktar ayrılmış mı? Böbrek fonksiyonu ve diğer magnezyum içeren antasit/laksatifler kontrol edildi mi?",
-  "safetyNote": "Oral magnezyum, kinolon/tetrasiklin antibiyotikler ve bifosfonatların emilimini etkileyebilir; zaman aralığı ürün bilgisine göre ayarlanır. Böbrek yetmezliğinde birikim ve yüksek dozlarda ishal riski vardır."
+  "safetyNote": "Oral magnezyum, kinolon/tetrasiklin antibiyotikler ve bifosfonatların emilimini etkileyebilir; zaman aralığı ürün bilgisine göre ayarlanır. Böbrek yetmezliğinde birikim ve yüksek dozlarda ishal riski vardır.",
+  "clinicalContext": "Magnezyum takviyelerinde oksit, sitrat, bisglisinat ve diğer tuzların adları sıklıkla büyük puntolarla yazılır. Fakat kişinin gerçekten aldığı magnezyumu karşılaştırırken tuzun toplam ağırlığı ile elementel magnezyum miktarı farklı tutulmalıdır. Bir ürünün 1000 mg magnezyum bisglisinat kompleksi içerdiği yazması 1000 mg elementel magnezyum sağladığını göstermez. Formun çözünürlüğü, gastrointestinal toleransı ve çalışmalardaki kullanım alanı ayrıca dikkate alınır. Eksikliği gidermek, laksatif etki elde etmek veya genel beslenme desteği almak aynı klinik hedef değildir.",
+  "readingSteps": [
+    {
+      "title": "Magnezyum tuzunu ve hidrasyon durumunu belirle",
+      "explanation": "MgO, magnezyum sitrat ve bisglisinatın elementel magnezyum yüzdeleri kimyasal bileşimlerine göre farklıdır. Özellikle hidratlı tuzlarda ve ticari kompleks karışımlarında tek bir sabit yüzde varsaymak yanıltıcı olabilir."
+    },
+    {
+      "title": "Etikette 'elementel Mg' miktarını bul",
+      "explanation": "'Magnezyum 120 mg (magnezyum sitrattan)' ifadesi çoğu zaman elementel mineral değerini bildirir. Buna karşılık 'magnezyum sitrat 120 mg' toplam tuz ağırlığı olabilir. Ambalajın içerik tablosunu ve beyan biçimini birlikte incele."
+    },
+    {
+      "title": "Günlük porsiyonu hesapla",
+      "explanation": "Bir kapsül 60 mg elementel Mg sağlıyorsa iki kapsül 120 mg sağlar. Diğer multivitamin, antasit veya laksatif ürünler de toplam magnezyum maruziyetinde dikkate alınmalıdır."
+    },
+    {
+      "title": "Emilim, tolerans ve böbrek fonksiyonunu değerlendir",
+      "explanation": "Farklı tuzların çözünürlüğü, dozun sindirim sistemi etkileri ve ilaçlarla etkileşimi değişebilir. Böbrek işlev bozukluğunda magnezyum birikimi riski artar; bu nedenle etiket miktarı tek başına uygunluğu belirlemez."
+    }
+  ],
+  "evidenceLimit": "Yüksek elementel mineral oranı, yüksek bağırsak emilimi anlamına gelmez. MgO teorik olarak kütlece yaklaşık %60,3 magnezyum içerirken bazı karşılaştırmalarda sitrat daha iyi emilir; bu oranlar gerçek ürünün klinik üstünlüğünü otomatik belirlemez. NIH yetişkinler için takviye/ilaç kaynaklı magnezyumda 350 mg/gün UL bildirir; besindeki magnezyum bu özel UL hesabına dahil değildir. Bu güvenlilik referansı klinisyen gözetimindeki eksiklik tedavisinin doz reçetesi değildir.",
+  "faqs": [
+    {
+      "question": "1000 mg magnezyum bisglisinat = 1000 mg magnezyum mudur?",
+      "answer": "Hayır. Bileşiğin önemli kısmını glisin ligandı oluşturur; ticari kompleksin gerçek elementel miktarı üretici beyanından doğrulanmalıdır. Piyasadaki bütün ürünlere tek bir sabit yüzde uygulamak doğru değildir."
+    },
+    {
+      "question": "En çok elementel magnezyum içeren form en iyi emilen midir?",
+      "answer": "Hayır. Bir tuzun kütlece yüksek mineral oranına sahip olması, çözünürlüğünün ve klinik yararının en yüksek olduğu anlamına gelmez."
+    },
+    {
+      "question": "Yetişkinler için 350 mg sınırı bütün magnezyum alımını mı kapsar?",
+      "answer": "NIH/FNB'nin 350 mg/gün UL'si takviye ve ilaç kaynaklı magnezyum için belirlenmiştir; doğal besinlerdeki magnezyum bu hesapta yer almaz. Böbrek hastalığı veya tedavi kullanımı için kişiselleştirme gerekir."
+    }
+  ],
+  "additionalSources": [
+    {
+      "label": "NIH ODS — Magnesium: Formulation, Interactions and UL",
+      "url": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/"
+    }
+  ]
 }

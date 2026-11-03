@@ -13,5 +13,49 @@
   "draft": false,
   "calculation": "Etikette 10 milyar CFU yazması tek başına yeterli değildir. Örnek doğru ayrıntı: Lacticaseibacillus rhamnosus GG (ATCC 53103) ve belirtilen son kullanım tarihine kadar garantili canlı miktarı. Tür adı ile suş kimliği aynı düzey değildir; 5+5 milyar farklı suşun 10 milyar tek suşla klinik eşdeğerliği yoktur.",
   "buyingChecklist": "Tam tür + suş kodu bulunuyor mu? CFU üretim anında mı son kullanma tarihine kadar mı garanti ediliyor? Saklama koşulu nedir? Ürüne özgü klinik endikasyon ve çalışmada kullanılan miktar uyuyor mu?",
-  "safetyNote": "Ağır immünsüpresyon, kritik hastalık veya santral venöz kateter varlığında bazı canlı mikroorganizma ürünleri invaziv enfeksiyon riski oluşturabilir. Suş bazında güvenlilik sorgulanmalıdır."
+  "safetyNote": "Ağır immünsüpresyon, kritik hastalık veya santral venöz kateter varlığında bazı canlı mikroorganizma ürünleri invaziv enfeksiyon riski oluşturabilir. Suş bazında güvenlilik sorgulanmalıdır.",
+  "clinicalContext": "Probiyotik ürünlerde en büyük rakam çoğu zaman CFU (colony forming units, koloni oluşturan birim) sayısıdır. Ancak bir mikroorganizmanın belirli klinik yararını öngörmek için miktarın yanında cins, tür, suş ve çalışmanın kullanıldığı popülasyon bilinmelidir. Lacticaseibacillus rhamnosus GG ile aynı türün başka bir suşu birbirinin klinik kanıtını otomatik taşımaz. Ayrıca çok suşlu formüllerde toplam CFU'nun suşlara nasıl dağıldığı etikette açıklanmamış olabilir. Bir ürünün '10 suş, 50 milyar CFU' yazması tek başına her endikasyonda daha etkili olduğu anlamına gelmez.",
+  "readingSteps": [
+    {
+      "title": "Mikroorganizmanın tam kimliğini oku",
+      "explanation": "Cins + tür + suş düzeyini arayın. 'Lactobacillus' gibi yalnızca geniş bir isim, çalışmalardaki suşla eşleştirme yapmaya yetmez. Güncellenen taksonomik isimlerle eski ticari isimler de gerektiğinde çapraz kontrol edilir."
+    },
+    {
+      "title": "CFU sayısının hangi tarihte geçerli olduğunu belirle",
+      "explanation": "Beyan edilen miktar üretim anındaki sayı mı yoksa raf ömrü sonuna kadar garanti edilen canlı miktar mı? Son kullanma tarihi ve saklama koşulları olmadan rakamın anlamı sınırlıdır."
+    },
+    {
+      "title": "Suş başına miktar var mı incele",
+      "explanation": "İki suşlu bir üründe 10 milyar toplam CFU'nun iki suşa eşit dağıldığı varsayılmaz. Etiket suş başına sayıları vermiyorsa çalışmada kullanılan doza uyumu kesinleştirmek zorlaşır."
+    },
+    {
+      "title": "Endikasyonla klinik çalışmayı eşleştir",
+      "explanation": "Antibiyotik ilişkili ishal, irritabl bağırsak belirtileri veya başka bir amaç için ilgili suş ve dozda insan verisi aranır. Bir suşun belirli sonlanımdaki verisi, başka hastalığa veya başka suşa taşınamaz."
+    }
+  ],
+  "evidenceLimit": "'Daha fazla CFU daha iyi etki' evrensel bir kural değildir. Probiyotik etkinliği uygun suş, uygun popülasyon ve uygun miktarla ilgilidir. Ürünün ticari iddiası çalışma tasarımı, suş kimliği ve canlılık doğrulamasıyla desteklenmelidir. Ağır immünsüpresyon, kritik hastalık veya santral venöz kateter bulunan kişilerde bazı canlı mikroorganizma ürünlerinin invaziv enfeksiyon riski oluşturabileceği unutulmamalıdır. ABD veya AB için hazırlanmış örnek etiketler Türkiye'de aynen geçerli mevzuat örneği değildir.",
+  "faqs": [
+    {
+      "question": "50 milyar CFU, 10 milyar CFU'dan beş kat etkili midir?",
+      "answer": "Hayır. CFU sayısı etki büyüklüğünün doğrusal bir ölçüsü değildir. Klinik sonlanım, suş ve araştırma dozuyla birlikte değerlendirilir."
+    },
+    {
+      "question": "Lactobacillus rhamnosus yazması LGG suşu olduğunu gösterir mi?",
+      "answer": "Hayır. Lacticaseibacillus rhamnosus GG (ATCC 53103) belirli bir suştur. Yalnız tür adının bulunması LGG verilerinin ürüne uygulanmasını sağlamaz."
+    },
+    {
+      "question": "Raf ömrü sonuna kadar CFU garantisi neden önemli?",
+      "answer": "Canlı mikroorganizma miktarı depolama koşulları ve zamanla azalabilir. Klinik çalışmayla karşılaştırma için kullanım anındaki canlı miktar üretim anındaki sayıdan daha anlamlıdır."
+    }
+  ],
+  "additionalSources": [
+    {
+      "label": "ISAPP — Decoding a Probiotic Product Label",
+      "url": "https://isappscience.org/decoding-a-probiotic-product-label/"
+    },
+    {
+      "label": "ISAPP — Probiotic Checklist, 2025",
+      "url": "https://isappscience.org/resource/probiotic-checklist-making-a-smart-selection/"
+    }
+  ]
 }
