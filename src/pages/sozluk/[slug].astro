@@ -4,6 +4,8 @@ import Base from '../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import { glossarySlug, relatedPostsForTerm, relatedTermsForTerm } from '../../lib/glossary-related';
 import ContentConnections from '../../components/ContentConnections.astro';
+import TopicBacklinks from '../../components/TopicBacklinks.astro';
+import { hubsForContent } from '../../lib/topic-hubs';
 import { atlasForTerm, guidesForTerm, link, group } from '../../lib/content-connections';
 
 export async function getStaticPaths(){
@@ -16,6 +18,7 @@ export async function getStaticPaths(){
 const {term}=Astro.props;
 const d=term.data;
 const slug=term.id.replace(/\.json$/,'').split('/').pop();
+const relevantHubs=hubsForContent('glossary',slug);
 const glossaryEntries = await getCollection('glossary', t => !t.data.draft);
 const others = relatedTermsForTerm(term, glossaryEntries);
 const relatedArticles = relatedPostsForTerm(term, await getCollection('posts', p => !p.data.draft));
@@ -72,6 +75,7 @@ const structuredData = {
       )}
     </div>
     <ContentConnections groups={readingGroups} heading="Bu kavramı daha ayrıntılı keşfedin" />
+    <TopicBacklinks hubs={relevantHubs} />
     <nav class="glossary-entry-back"><a href="/sozluk">← Sözlükteki tüm terimler</a></nav>
     {others.length > 0 && (
       <aside class="glossary-entry-related">

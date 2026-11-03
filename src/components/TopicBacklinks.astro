@@ -1,0 +1,9 @@
+---
+import type { TopicHub } from '../lib/topic-hubs';
+interface Props { hubs: TopicHub[] }
+const {hubs} = Astro.props;
+---
+{hubs.length>0 && <nav class="topic-hub-backlinks" aria-label="Bağlantılı konu merkezleri">
+  <div class="topic-overline">BU İÇERİĞİN YER ALDIĞI KONU MERKEZLERİ</div>
+  <div>{hubs.map(hub=><a href={'/konular/'+hub.slug}>{hub.title} <span aria-hidden="true">↗</span></a>)}</div>
+</nav>}

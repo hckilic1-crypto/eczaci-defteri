@@ -3,12 +3,15 @@ export const prerender = true;
 import Base from '../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import ContentConnections from '../../components/ContentConnections.astro';
+import TopicBacklinks from '../../components/TopicBacklinks.astro';
+import { hubsForContent } from '../../lib/topic-hubs';
 import { atlasForGuide, termsForGuide, postsForGuide, group, link } from '../../lib/content-connections';
 export async function getStaticPaths(){
  const entries=await getCollection('labelGuides',x=>!x.data.draft);
  return entries.map(item=>({params:{slug:item.id.replace(/\.json$/,'')},props:{item}}));
 }
 const {item}=Astro.props;const d=item.data;
+const relevantHubs=hubsForContent('guides',item.id.replace(/\.json$/,'').split('/').pop());
 const [atlases,terms,posts] = await Promise.all([
   getCollection('atlas',x => !x.data.draft),
   getCollection('glossary',x => !x.data.draft),
@@ -70,6 +73,7 @@ const schema={
       <p class="label-reference-note">Kurumların beslenme referansları, klinik tedavi dozları ve kozmetik mevzuat aynı amaçla oluşturulmaz. Örnekler ürün tanıtımı değildir.</p>
     </section>
     <ContentConnections groups={readingGroups} heading="Etiketin arkasındaki bilgi" />
+    <TopicBacklinks hubs={relevantHubs} />
   </div>
   <aside class="library-disclaimer">Etiket örnekleri açıklama amaçlıdır; belirli bir ürünün tedavi etkinliğini veya uygunluğunu garanti etmez.</aside>
  </article>

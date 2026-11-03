@@ -3,6 +3,8 @@ export const prerender = true;
 import Base from '../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import ContentConnections from '../../components/ContentConnections.astro';
+import TopicBacklinks from '../../components/TopicBacklinks.astro';
+import { hubsForContent } from '../../lib/topic-hubs';
 import { postsForAtlas, termsForAtlas, guidesForAtlas, link, group } from '../../lib/content-connections';
 export async function getStaticPaths(){
   const items=await getCollection('atlas', x=>!x.data.draft);
@@ -11,6 +13,7 @@ export async function getStaticPaths(){
 const {item}=Astro.props;
 const d=item.data;
 const termSlug=item.id.replace(/\.json$/,'');
+const relevantHubs=hubsForContent('atlas',termSlug);
 const [guides,posts,terms] = await Promise.all([
   getCollection('labelGuides', x => !x.data.draft),
   getCollection('posts', x => !x.data.draft),
@@ -88,6 +91,7 @@ const schema={
       </aside>
     </div>
     <ContentConnections groups={connected} heading="Bileşenle bağlantılı içerikler" />
+    <TopicBacklinks hubs={relevantHubs} />
     <aside class="library-disclaimer">Bu sayfa kişisel tedavi, doz veya ürün önerisi değildir. Kullanım kararı için güncel kısa ürün bilgisi, özel hasta koşulları ve klinik değerlendirme esas alınır.</aside>
   </article>
 </Base>

@@ -5,6 +5,8 @@ import PostCard from '../../components/PostCard.astro';
 import { getCollection, render } from 'astro:content';
 import { relatedTermsForPost } from '../../lib/glossary-related';
 import ContentConnections from '../../components/ContentConnections.astro';
+import TopicBacklinks from '../../components/TopicBacklinks.astro';
+import { hubsForContent } from '../../lib/topic-hubs';
 import { atlasForPost, guidesForPost, group, link } from '../../lib/content-connections';
 
 export async function getStaticPaths() {
@@ -13,6 +15,7 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
+const relevantHubs = hubsForContent('posts',post.id.replace(/\.mdoc$/,'').split('/').pop());
 const termsForArticle = relatedTermsForPost(post, await getCollection('glossary', term => !term.data.draft));
 const atlases = await getCollection('atlas', item => !item.data.draft);
 const guides = await getCollection('labelGuides', item => !item.data.draft);
@@ -121,6 +124,7 @@ const structuredData = {
       <div class="journal-article-copy">
         <div class="article-body"><Content /></div>
         <ContentConnections groups={readingGroups} heading="Bu yazıyla bağlantılı kaynaklar" />
+        <TopicBacklinks hubs={relevantHubs} />
       </div>
     </div>
 
