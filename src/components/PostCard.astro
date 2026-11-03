@@ -10,7 +10,7 @@ const date = new Intl.DateTimeFormat('tr-TR', {day:'numeric', month:'short', yea
 <a class:list={['card', 'journal-card', {'featured': featured}]} href={'/yazi/' + slug} data-category={d.category} data-search={[d.title,d.excerpt,categoryName].join(' ')}>
   {d.coverImage ? (
     <div class="journal-card-media">
-      <img src={d.coverImage} alt="" loading={featured ? 'eager' : 'lazy'} fetchpriority={featured ? 'high' : 'auto'} decoding="async" width="720" height="405" />
+      <img src={d.coverImage} alt="" loading={featured ? 'eager' : 'lazy'} fetchpriority={featured ? 'high' : 'low'} decoding="async" width="720" height="405" />
     </div>
   ) : (
     <div class="journal-card-media journal-card-media--plain" aria-hidden="true"><span>ECZACI DEFTERİ</span></div>
