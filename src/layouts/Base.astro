@@ -5,6 +5,8 @@ import '../styles/library.css';
 import '../styles/notebook-motifs.css';
 import '../styles/health-tools.css';
 import '../styles/content-connections.css';
+import '../styles/topic-hubs.css';
+import { topicHubs } from '../lib/topic-hubs';
 import { getCollection } from 'astro:content';
 
 const {
@@ -29,35 +31,6 @@ const settings = settingsCollection[0]?.data;
 const siteName =
   settings?.siteName ??
   'Eczacı Defteri';
-
-
-/* =========================================================
-   CATEGORIES
-========================================================= */
-
-const categories = (
-  await getCollection('categories')
-).sort((a, b) =>
-  (a.data.order ?? 100) - (b.data.order ?? 100) ||
-  a.data.name.localeCompare(b.data.name, 'tr')
-);
-
-const topCategories = categories.filter(
-  (category) => !category.data.parent
-);
-
-const getChildren = (slug: string) =>
-  categories.filter(
-    (category) =>
-      category.data.parent === slug
-  );
-
-const categorySlug = (category: any) =>
-  category.id
-    .replace('.json', '')
-    .replace(/\\/g, '/')
-    .split('/')
-    .pop();
 
 
 /* =========================================================
@@ -292,191 +265,43 @@ const jsonLd = structuredData ? JSON.stringify(structuredData).replace(/</g, '\\
 
 
 
-    <!-- ===================================================
-         DESKTOP NAV
-    ==================================================== -->
+    <!-- Simplified desktop navigation. Yazılar intentionally follows Anasayfa. -->
+    <nav class="desktop-nav edf-nav" aria-label="Ana menü">
+      <a href="/" aria-current={Astro.url.pathname==='/' ? 'page' : undefined}>Anasayfa</a>
+      <a href="/yazilar" aria-current={Astro.url.pathname==='/yazilar' ? 'page' : undefined}>Yazılar</a>
 
-    <nav
-      class="desktop-nav"
-      aria-label="Ana menü"
-    >
-
-      <a href="/">
-        Anasayfa
-      </a>
-
-
-      <!-- CATEGORIES -->
-
-      <div class="desktop-dropdown">
-
-        <button
-          class="desktop-dropdown-trigger"
-          type="button"
-          aria-label="Kategorileri göster"
-        >
-
-          Kategoriler
-
-          <svg
-            viewBox="0 0 20 20"
-            aria-hidden="true"
-          >
-            <path d="m6 8 4 4 4-4" />
-          </svg>
-
-        </button>
-
-
-        <div class="desktop-dropdown-panel">
-
-          <div class="dropdown-header">
-
-            <span>
-              KATEGORİLER
-            </span>
-
-            <p>
-              Konulara göre içerikleri keşfet.
-            </p>
-
+      <details class="edf-flyout edf-flyout--topics">
+        <summary aria-label="Konu merkezleri menüsünü aç">Konular
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 7 5 5 5-5" /></svg>
+        </summary>
+        <div class="edf-flyout-panel">
+          <div class="edf-flyout-intro"><span>ECZACI DEFTERİ / KEŞFET</span><strong>Konu merkezleri</strong><p>Bir sorudan başlayın; yazı, Atlas, sözlük ve rehberleri birlikte okuyun.</p></div>
+          <div class="edf-flyout-topic-grid">
+            {topicHubs.map(hub=><a href={'/konular/'+hub.slug}><small>{hub.mark} / KONU</small><strong>{hub.title}</strong><span>{hub.short}</span></a>)}
           </div>
-
-
-          <div class="dropdown-grid">
-
-            {topCategories.map((category) => {
-              const slug =
-                categorySlug(category);
-
-              const children =
-                getChildren(slug);
-
-              return (
-
-                <div class="dropdown-category">
-
-                  <a
-                    class="dropdown-category-title"
-                    href={`/kategori/${slug}`}
-                  >
-
-                    <span
-                      class="dropdown-dot"
-                      style={`background:${category.data.accent}`}
-                    ></span>
-
-                    <span>
-                      {category.data.name}
-                    </span>
-
-                    <span class="dropdown-arrow">
-                      →
-                    </span>
-
-                  </a>
-
-
-                  {category.data.description && (
-
-                    <p>
-                      {category.data.description}
-                    </p>
-
-                  )}
-
-
-                  {children.length > 0 && (
-
-                    <div class="dropdown-children">
-
-                      {children.map((child) => (
-
-                        <a
-                          href={`/kategori/${categorySlug(child)}`}
-                        >
-                          {child.data.name}
-                        </a>
-
-                      ))}
-
-                    </div>
-
-                  )}
-
-                </div>
-
-              );
-            })}
-
-          </div>
-
+          <a class="edf-flyout-all" href="/konular">Beş konu merkezinin tümü <span aria-hidden="true">↗</span></a>
         </div>
+      </details>
 
-      </div>
+      <details class="edf-flyout edf-flyout--library">
+        <summary aria-label="Kütüphane menüsünü aç">Kütüphane
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 7 5 5 5-5" /></svg>
+        </summary>
+        <div class="edf-flyout-panel">
+          <div class="edf-flyout-intro"><span>ARAŞTIRMA / BAŞVURU</span><strong>Referans kütüphanesi</strong><p>Bileşen dosyaları, etiket örnekleri ve eczacılık kavramları.</p></div>
+          <a class="edf-library-item" href="/atlas"><strong>Bileşen Atlası</strong><small>Etki mekanizması ve güvenlilik <span aria-hidden="true">↗</span></small></a>
+          <a class="edf-library-item" href="/etiket-rehberi"><strong>Etiket Okuma Rehberi</strong><small>Porsiyon, birim ve içerik analizi <span aria-hidden="true">↗</span></small></a>
+          <a class="edf-library-item" href="/sozluk"><strong>Eczacılık Sözlüğü</strong><small>Kavramlar ve bağlantılı okumalar <span aria-hidden="true">↗</span></small></a>
+        </div>
+      </details>
 
-
-      <a href="/sozluk">
-        Sözlük
-      </a>
-
-      <a href="/atlas">
-        Atlas
-      </a>
-
-      <a href="/etiket-rehberi">
-        Etiket Rehberi
-      </a>
-
-      <a href="/araclar">
-        Araçlar
-      </a>
-
-      <a href="/yazilar">
-        Yazılar
-      </a>
-
-      <a href="/hakkinda">
-        Hakkında
-      </a>
-
-
-      <!-- SEARCH BUTTON -->
-
-      <button
-        class="search-trigger"
-        id="search-trigger"
-        type="button"
-        aria-label="Yazı veya terim ara"
-      >
-
-        <svg
-          viewBox="0 0 24 24"
-          aria-hidden="true"
-        >
-
-          <circle
-            cx="11"
-            cy="11"
-            r="6.5"
-          ></circle>
-
-          <path
-            d="m16 16 4 4"
-          ></path>
-
-        </svg>
-
+      <a href="/araclar">Araçlar</a>
+      <a href="/hakkinda">Hakkında</a>
+      <a href="/iletisim">İletişim</a>
+      <button class="search-trigger" id="search-trigger" type="button" aria-label="Sitede ara">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" /><path d="m16 16 4 4" /></svg>
       </button>
-
-
-      <a href="/iletisim">
-        İletişim
-      </a>
-
     </nav>
-
-
 
     <!-- ===================================================
          MOBILE HAMBURGER
@@ -552,126 +377,29 @@ const jsonLd = structuredData ? JSON.stringify(structuredData).replace(/</g, '\\
 
 
 
-      <a
-        href="/"
-        class="mobile-main-link"
-      >
-        Anasayfa
-      </a>
+      <a href="/" class="mobile-main-link">Anasayfa</a>
+      <a href="/yazilar" class="mobile-main-link">Yazılar</a>
 
-
-
-      <!-- MOBILE CATEGORIES -->
-
-      <div class="mobile-category-wrapper">
-
-        <button
-          class="mobile-category-button"
-          id="mobile-category-button"
-          type="button"
-          aria-expanded="false"
-        >
-
-          <span>
-            Kategoriler
-          </span>
-
-          <svg
-            viewBox="0 0 20 20"
-            aria-hidden="true"
-          >
-            <path d="m6 8 4 4 4-4" />
-          </svg>
-
-        </button>
-
-
-        <div
-          class="mobile-categories"
-          id="mobile-categories"
-        >
-
-          {topCategories.map((category) => {
-            const slug =
-              categorySlug(category);
-
-            const children =
-              getChildren(slug);
-
-            return (
-
-              <div class="mobile-category-group">
-
-                <a
-                  class="mobile-category-title"
-                  href={`/kategori/${slug}`}
-                >
-
-                  <span
-                    style={`background:${category.data.accent}`}
-                  ></span>
-
-                  {category.data.name}
-
-                </a>
-
-
-                {children.length > 0 && (
-
-                  <div class="mobile-subcategories">
-
-                    {children.map((child) => (
-
-                      <a
-                        href={`/kategori/${categorySlug(child)}`}
-                      >
-                        {child.data.name}
-                      </a>
-
-                    ))}
-
-                  </div>
-
-                )}
-
-              </div>
-
-            );
-          })}
-
+      <details class="edf-mobile-group">
+        <summary>Konular <span aria-hidden="true">+</span></summary>
+        <div class="edf-mobile-group-links">
+          <a href="/konular" class="edf-mobile-all">Tüm konu merkezleri ↗</a>
+          {topicHubs.map(hub=><a href={'/konular/'+hub.slug}><span>{hub.mark}</span>{hub.title}</a>)}
         </div>
+      </details>
 
-      </div>
+      <details class="edf-mobile-group">
+        <summary>Kütüphane <span aria-hidden="true">+</span></summary>
+        <div class="edf-mobile-group-links">
+          <a href="/atlas"><span>01</span>Bileşen Atlası</a>
+          <a href="/etiket-rehberi"><span>02</span>Etiket Okuma Rehberi</a>
+          <a href="/sozluk"><span>03</span>Eczacılık Sözlüğü</a>
+        </div>
+      </details>
 
-
-      <a
-        href="/yazilar"
-        class="mobile-main-link"
-      >
-        Yazılar
-      </a>
-
-      <a href="/sozluk" class="mobile-main-link">Sözlük</a>
       <a href="/araclar" class="mobile-main-link">Sağlık Araçları</a>
-      <div class="library-mobile-links" aria-label="Referans kütüphanesi">
-        <span>REFERANS KÜTÜPHANESİ</span>
-        <a href="/atlas">Bileşen Atlası</a>
-        <a href="/etiket-rehberi">Etiket Okuma Rehberi</a>
-      </div>
-
-      <a
-        href="/hakkinda"
-        class="mobile-main-link"
-      >
-        Hakkında
-      </a>
-
-      <a
-        href="/iletisim"
-        class="mobile-main-link"
-      >
-        İletişim
-      </a>
+      <a href="/hakkinda" class="mobile-main-link">Hakkında</a>
+      <a href="/iletisim" class="mobile-main-link">İletişim</a>
 
     </div>
 
@@ -833,7 +561,7 @@ const jsonLd = structuredData ? JSON.stringify(structuredData).replace(/</g, '\\
         eczacılık pratiği üzerine kaynak odaklı içerikler.
       </p>
 
-      <nav class="journal-footer-links" aria-label="Alt menü"><a href="/yazilar">Yazılar</a><a href="/sozluk">Eczacılık Sözlüğü</a><a href="/atlas">Bileşen Atlası</a><a href="/etiket-rehberi">Etiket Rehberi</a><a href="/araclar">Sağlık Araçları</a><a href="/hakkinda">Hakkında</a></nav>
+      <nav class="journal-footer-links" aria-label="Alt menü"><a href="/yazilar">Yazılar</a><a href="/konular">Konu Merkezleri</a><a href="/sozluk">Eczacılık Sözlüğü</a><a href="/atlas">Bileşen Atlası</a><a href="/etiket-rehberi">Etiket Rehberi</a><a href="/araclar">Sağlık Araçları</a><a href="/hakkinda">Hakkında</a></nav>
 
     </div>
 
@@ -857,117 +585,44 @@ const jsonLd = structuredData ? JSON.stringify(structuredData).replace(/</g, '\\
 
 
 
-<!-- =======================================================
-     MOBILE MENU SCRIPT
-======================================================== -->
-
+<!-- Accessible navigation: native details controls + Escape/outside-click closing. -->
 <script is:inline>
+  const menuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const desktopFlyouts = [...document.querySelectorAll('.edf-nav details.edf-flyout')];
 
-  const menuButton =
-    document.getElementById(
-      'mobile-menu-button'
-    );
-
-  const mobileMenu =
-    document.getElementById(
-      'mobile-menu'
-    );
-
-  const categoryButton =
-    document.getElementById(
-      'mobile-category-button'
-    );
-
-  const mobileCategories =
-    document.getElementById(
-      'mobile-categories'
-    );
-
-
-  menuButton?.addEventListener(
-    'click',
-    () => {
-
-      const isOpen =
-        mobileMenu?.classList.toggle(
-          'is-open'
-        );
-
-      menuButton.classList.toggle(
-        'is-open',
-        Boolean(isOpen)
-      );
-
-      menuButton.setAttribute(
-        'aria-expanded',
-        String(Boolean(isOpen))
-      );
-
-      document.body.classList.toggle(
-        'menu-open',
-        Boolean(isOpen)
-      );
-
+  const closeMobile = () => {
+    mobileMenu?.classList.remove('is-open');
+    menuButton?.classList.remove('is-open');
+    menuButton?.setAttribute('aria-expanded','false');
+    document.body.classList.remove('menu-open');
+  };
+  menuButton?.addEventListener('click', () => {
+    const open = !mobileMenu?.classList.contains('is-open');
+    mobileMenu?.classList.toggle('is-open', open);
+    menuButton?.classList.toggle('is-open', open);
+    menuButton?.setAttribute('aria-expanded',String(open));
+    document.body.classList.toggle('menu-open',open);
+    if (open) desktopFlyouts.forEach(x => x.open = false);
+  });
+  mobileMenu?.querySelectorAll('a').forEach(link => link.addEventListener('click',closeMobile));
+  desktopFlyouts.forEach(current => current.addEventListener('toggle', () => {
+    if(current.open) desktopFlyouts.filter(other => other !== current).forEach(other => other.open = false);
+  }));
+  document.addEventListener('pointerdown', event => {
+    if (!event.target?.closest?.('.edf-flyout')) desktopFlyouts.forEach(x=>x.open=false);
+  });
+  document.addEventListener('keydown', event => {
+    if(event.key==='Escape') {
+      desktopFlyouts.forEach(x=>x.open=false);
+      closeMobile();
     }
-  );
-
-
-  categoryButton?.addEventListener(
-    'click',
-    () => {
-
-      const isOpen =
-        mobileCategories?.classList.toggle(
-          'is-open'
-        );
-
-      categoryButton.classList.toggle(
-        'is-open',
-        Boolean(isOpen)
-      );
-
-      categoryButton.setAttribute(
-        'aria-expanded',
-        String(Boolean(isOpen))
-      );
-
-    }
-  );
-
-
-  window.addEventListener(
-    'resize',
-    () => {
-
-      if(
-        window.innerWidth > 820
-      ){
-
-        mobileMenu?.classList.remove(
-          'is-open'
-        );
-
-        menuButton?.classList.remove(
-          'is-open'
-        );
-
-        menuButton?.setAttribute(
-          'aria-expanded',
-          'false'
-        );
-
-        document.body.classList.remove(
-          'menu-open'
-        );
-
-      }
-
-    }
-  );
-
+  });
+  window.addEventListener('resize',()=>{
+    if(window.innerWidth>1080) closeMobile();
+    else desktopFlyouts.forEach(x=>x.open=false);
+  });
 </script>
-
-
 
 <!-- =======================================================
      SEARCH SCRIPT
