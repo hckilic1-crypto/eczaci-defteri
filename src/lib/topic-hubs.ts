@@ -252,6 +252,14 @@ export const topicHubs: TopicHub[] = [
       }
     ],
     "posts": [
+      "vitamin-mineral-gereksinimi-rda-ai-ul-nrv",
+      "d-vitamini-25ohd-doz-eksiklik-hiperkalsemi",
+      "folat-folik-asit-b12-maskeleme-gebelik",
+      "b6-vitamini-piridoksin-noropati-ust-sinir",
+      "a-vitamini-retinol-beta-karoten-gebelik-toksisite",
+      "iyot-selenyum-tiroid-doz-etkilesimler",
+      "kalsiyum-fosfor-kemik-sagligi-takviye-etkilesim",
+      "potasyum-sodyum-elektrolitler-bobrek-risk",
       "b12-vitamini-eksikligi-ve-takviye-formlari",
       "d3-ve-k2-vitamini-birlikte-alinmali-mi-bilimsel-kanitlar-ne-soeylueyor",
       "magnezyum-sitrat-mi-bisglisinat-mi-etikette-asil-neye-bakmali",
@@ -313,6 +321,14 @@ export const topicHubs: TopicHub[] = [
       }
     ],
     "posts": [
+      "takviye-ilac-etkilesimleri-cyp-pgp-farmakodinamik",
+      "antikoagulan-antiplatelet-takviye-kanama-riski",
+      "serotonin-sendromu-5htp-safran-sari-kantaron-ssri",
+      "takviye-karaciger-hasari-dili-herbal-hepatotoksisite",
+      "gebelik-emzirme-cocuklarda-takviye-guvenliligi",
+      "ameliyat-anestezi-oncesi-takviyeler-risk",
+      "bitkisel-ekstre-der-standardizasyon-kalite-analiz",
+      "takviyelerde-ust-doz-toksisite-b6-a-d-selenyum-cinko",
       "birden-fazla-takviyeyi-birlikte-kullanmak",
       "ilac-etkilesimleri-her-uyari-ayni-mi",
       "bilimsel-calismalari-yorumlarken-kanit-duzeyi",
