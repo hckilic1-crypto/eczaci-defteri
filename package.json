@@ -10,7 +10,7 @@
     "start": "node ./dist/server/entry.mjs",
     "validate:library": "node scripts/validate-reference-library.mjs",
     "audit:seo": "node scripts/audit-seo.mjs",
-    "prebuild": "node scripts/optimize-covers.mjs"
+    "prebuild": "node scripts/apply-image-seo.mjs && node scripts/optimize-covers.mjs"
   },
   "dependencies": {
     "@astrojs/markdoc": "^2.1.1",
