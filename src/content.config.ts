@@ -64,6 +64,19 @@ const categories = defineCollection({
 });
 
 
+const imageSeo = defineCollection({
+  loader: glob({ base: './src/content/image-seo', pattern: '**/*.json' }),
+  schema: z.object({
+    name: z.string(),
+    sourcePath: z.string(),
+    folder: z.string(),
+    fileName: z.string(),
+    alt: z.string(),
+    seoTitle: z.string().optional().nullable(),
+    description: z.string().optional().nullable()
+  })
+});
+
 const settings = defineCollection({
   loader: glob({
     base: './src/content/settings',
@@ -145,6 +158,7 @@ const labelGuides = defineCollection({
 
 export const collections = {
   posts,
+  imageSeo,
   categories,
   settings,
   glossary,
