@@ -16,9 +16,9 @@ function EditorBrandMark() {
     if (typeof document === 'undefined') return;
     const assets = [
       {id:'eczaci-admin-style-v7', tag:'link', href:'/editor-panel.css?v=7'},
-      {id:'eczaci-analytics-style-v6', tag:'link', href:'/editor-analytics.css?v=7'},
+      {id:'eczaci-analytics-style-v6', tag:'link', href:'/editor-analytics.css?v=8'},
       {id:'eczaci-admin-script-v7', tag:'script', src:'/editor-panel.js?v=7'},
-      {id:'eczaci-analytics-script-v6', tag:'script', src:'/editor-analytics.js?v=6'}
+      {id:'eczaci-analytics-script-v6', tag:'script', src:'/editor-analytics.js?v=8'}
     ];
     for (const asset of assets) {
       if (document.getElementById(asset.id)) continue;
