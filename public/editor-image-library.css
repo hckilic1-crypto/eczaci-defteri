@@ -1,0 +1,25 @@
+/* Görsel SEO Yönetimi / medya kütüphanesi */
+.ed-media-library,.ed-media-library *{box-sizing:border-box}
+.ed-media-library{width:100%;margin:16px 0 26px;padding:22px;border:1px solid #47755770;border-radius:15px;background:#14271c;color:#eef7ef;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.ed-media-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.ed-media-heading>div>span{font-size:10px;letter-spacing:.14em;font-weight:800;color:#91d1a6}
+.ed-media-heading h2{font-size:22px!important;line-height:1.25!important;color:#f1faf1!important;margin:5px 0 7px!important;font-weight:800}
+.ed-media-heading p{font-size:12px!important;color:#b1cbb8!important;line-height:1.6!important;max-width:760px;margin:0!important}
+.ed-media-heading b{font-size:12px;color:#a6dcb5;border:1px solid #5b977075;padding:8px 12px;border-radius:9px}
+.ed-media-filters{display:grid;grid-template-columns:minmax(0,1fr) minmax(160px,230px);gap:10px;margin:18px 0 16px}
+.ed-media-filters input,.ed-media-filters select{width:100%;min-height:42px;padding:10px 12px;border:1px solid #557b60!important;background:#0d1f14!important;color:#edf8ed!important;border-radius:9px;font-size:13px}
+.ed-media-filters input::placeholder{color:#9bb6a3}
+.ed-media-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:13px;max-height:570px;overflow:auto;padding:3px 5px 5px 0;scrollbar-width:thin}
+.ed-media-card{min-width:0;background:#203829;border:1px solid #476c5080;border-radius:12px;overflow:hidden}
+.ed-media-preview{aspect-ratio:16/10;background:#e9efe9;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.ed-media-preview img{width:100%;height:100%;object-fit:contain}
+.ed-media-cardbody{padding:12px;min-width:0;display:flex;flex-direction:column;gap:5px}
+.ed-media-type{color:#9acbaa;font-size:10px;font-weight:700}
+.ed-media-cardbody strong{font-size:12px;color:#f0f8f0;overflow-wrap:anywhere;line-height:1.4}
+.ed-media-cardbody small{font-size:10px;color:#b4c8b6;overflow-wrap:anywhere;line-height:1.4}
+.ed-media-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:9px;align-items:center}
+.ed-media-actions button,.ed-media-actions a{border:1px solid #76aa82;border-radius:8px;padding:7px 9px;font-size:11px;font-weight:700;cursor:pointer;background:#296b40;color:#fff!important;text-decoration:none!important;line-height:1.3}
+.ed-media-actions a{background:transparent;color:#b8efc7!important}
+.ed-media-unset{font-size:10px;color:#e7c599}
+.ed-media-empty{grid-column:1/-1;padding:26px;color:#c6dac9;font-size:12px}
+@media(max-width:700px){.ed-media-library{padding:15px}.ed-media-filters{grid-template-columns:1fr}.ed-media-grid{max-height:480px;grid-template-columns:repeat(2,minmax(0,1fr))}}
