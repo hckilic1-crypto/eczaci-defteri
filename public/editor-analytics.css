@@ -98,12 +98,3 @@
 [data-split-pane="secondary"] main > .ed-analytics::-webkit-scrollbar-thumb{
   background:#4c8461;border:2px solid #14231b;border-radius:12px
 }
-
-/* Kapaksız yazılar: filtrelenebilir tam liste */
-.ed-analytics__missing{margin-top:18px}
-.ed-analytics__missing .ed-analytics__topic-list{max-height:520px}
-.ed-analytics__missing-controls{display:grid;grid-template-columns:minmax(0,1fr) minmax(180px,260px);align-items:center;gap:12px;margin:8px 0 14px}
-.ed-analytics__missing-controls .ed-analytics__search{margin:0}
-.ed-analytics__missing-controls select{width:100%;min-height:43px;padding:10px 12px;border:1px solid #76958066;border-radius:9px;background:#112017;color:#eff9f1;font:12px Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-.ed-analytics__missing .ed-analytics__panelhead h3 span{font-size:14px;color:#9ed7ae}
-@media(max-width:680px){.ed-analytics__missing-controls{grid-template-columns:1fr}}
