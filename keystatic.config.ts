@@ -18,7 +18,9 @@ function EditorBrandMark() {
       {id:'eczaci-admin-style-v7', tag:'link', href:'/editor-panel.css?v=7'},
       {id:'eczaci-analytics-style-v6', tag:'link', href:'/editor-analytics.css?v=9'},
       {id:'eczaci-admin-script-v7', tag:'script', src:'/editor-panel.js?v=7'},
-      {id:'eczaci-analytics-script-v6', tag:'script', src:'/editor-analytics.js?v=9'}
+      {id:'eczaci-analytics-script-v6', tag:'script', src:'/editor-analytics.js?v=9'},
+      {id:'eczaci-image-library-style-v1', tag:'link', href:'/editor-image-library.css?v=1'},
+      {id:'eczaci-image-library-script-v1', tag:'script', src:'/editor-image-library.js?v=1'}
     ];
     for (const asset of assets) {
       if (document.getElementById(asset.id)) continue;
