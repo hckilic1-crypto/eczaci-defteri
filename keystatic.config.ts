@@ -51,7 +51,7 @@ repo: 'hckilic1-crypto/eczaci-defteri'  },
     navigation: {
       'İçerik Yönetimi': ['posts', 'categories', 'glossary'],
       'Referans Kütüphanesi': ['atlas', 'labelGuides'],
-      'Site Yönetimi': ['site']
+      'Site Yönetimi': ['imageSeo', 'site']
     }
   },
 
@@ -180,6 +180,40 @@ repo: 'hckilic1-crypto/eczaci-defteri'  },
             }
           }
         })
+      }
+    }),
+
+    imageSeo: collection({
+      label: 'Görsel SEO Yönetimi',
+      slugField: 'name',
+      path: 'src/content/image-seo/*',
+      format: { data: 'json' },
+      columns: ['sourcePath', 'folder', 'fileName', 'alt'],
+      schema: {
+        name: fields.slug({ name: { label: 'Kayıt adı', validation: { isRequired: true } } }),
+        sourcePath: fields.text({
+          label: 'Mevcut görsel yolu',
+          description: 'Örnek: /images/posts/yazi-adi/coverImage.webp veya /uploads/resim.png',
+          validation: { isRequired: true }
+        }),
+        folder: fields.text({
+          label: 'Yeni SEO klasörü',
+          description: 'Örnek: serotonin-sendromu. Görseller /images/seo/ altında yayınlanır.',
+          validation: { isRequired: true }
+        }),
+        fileName: fields.text({
+          label: 'Yeni SEO dosya adı (uzantısız)',
+          description: 'Örnek: 5-htp-safran-antidepresan-etkilesimi. Uzantı otomatik korunur.',
+          validation: { isRequired: true }
+        }),
+        alt: fields.text({
+          label: 'Alternatif metin (ALT)',
+          description: 'Görseli gerçekten tarif eden kısa, anlamlı metin.',
+          multiline: true,
+          validation: { isRequired: true }
+        }),
+        seoTitle: fields.text({ label: 'Görsel başlığı (title)' }),
+        description: fields.text({ label: 'Görsel açıklaması', multiline: true })
       }
     }),
 
