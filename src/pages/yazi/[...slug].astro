@@ -1,7 +1,7 @@
 ---
 export const prerender = true;
 import Base from '../../layouts/Base.astro';
-import { responsiveCover } from '../../lib/cover-images';
+import { responsiveCover, imageSeoMetadata } from '../../lib/cover-images';
 import PostCard from '../../components/PostCard.astro';
 import { getCollection, render } from 'astro:content';
 import { relatedTermsForPost } from '../../lib/glossary-related';
@@ -30,6 +30,7 @@ const readingGroups = [
 const { Content, headings } = await render(post);
 const d = post.data;
 const cover = responsiveCover(d.coverImage, 'article');
+const coverSeo = imageSeoMetadata(d.coverImage);
 const categoryList = await getCollection('categories');
 const getCategorySlug = c => c.id.replace(/\.json$/, '').split('/').pop();
 const category = categoryList.find(c => getCategorySlug(c) === d.category);
@@ -44,7 +45,7 @@ const related = (await getCollection('posts', p => !p.data.draft && p.id !== pos
 const date = x => new Intl.DateTimeFormat('tr-TR', { day: '2-digit', month: 'long', year: 'numeric' }).format(x);
 const siteURL = 'https://eczacidefteri.com';
 const postURL = new URL(`/yazi/${post.id.replace(/\.mdoc$/, '')}`, siteURL).href;
-const imageURL = new URL(d.coverImage || '/og-default.gif', siteURL).href;
+const imageURL = new URL(coverSeo.url || '/og-default.gif', siteURL).href;
 const settings = (await getCollection('settings'))[0]?.data;
 const authorName = settings?.authorName || 'Eczacı H.K.';
 const authorBio = settings?.authorBio || 'Eczacılık ve sağlık alanındaki konuları bilimsel kaynaklarla değerlendiren Eczacı Defteri editörü.';
@@ -83,7 +84,7 @@ const structuredData = {
 <Base
   title={d.seoTitle || `${d.title} | Eczacı Defteri`}
   description={d.seoDescription || d.excerpt}
-  image={d.coverImage || '/og-default.gif'}
+  image={coverSeo.url || '/og-default.gif'}
   preloadImage={cover.src}
   preloadImageSrcset={cover.srcset}
   preloadImageSizes={cover.sizes}
@@ -115,7 +116,7 @@ const structuredData = {
       </div>
     </header>
 
-    {d.coverImage && <figure class="article-cover"><img src={cover.src} srcset={cover.srcset} sizes={cover.sizes} alt="" width="1200" height="675" loading="eager" fetchpriority="high" decoding="async" /></figure>}
+    {d.coverImage && <figure class="article-cover"><img src={cover.src} srcset={cover.srcset} sizes={cover.sizes} alt={coverSeo.alt} title={coverSeo.title} width="1200" height="675" loading="eager" fetchpriority="high" decoding="async" /></figure>}
 
     <div class="journal-article-layout">
       {toc.length > 2 && (
