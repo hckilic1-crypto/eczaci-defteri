@@ -44,13 +44,6 @@
         '</div>',
       '</div>',
       '<div id="ed-overview" class="ed-analytics__loading" role="status">\u0130\u00e7erik verileri okunuyor...</div>',
-      '<section class="ed-analytics__panel ed-analytics__missing" id="ed-missing-cover-panel">',
-        '<div class="ed-analytics__panelhead"><div><span class="ed-analytics__kicker">GÖRSEL KONTROLÜ</span><h3>Kapak görseli olmayan yazılar <span id="ed-missing-cover-count"></span></h3></div></div>',
-        '<p class="ed-analytics__helper">Yayındaki kapaksız yazıları burada görüntüle. Yazı başlığına tıklayarak Keystatic düzenleme ekranına git.</p>',
-        '<div class="ed-analytics__missing-controls"><label class="ed-analytics__search"><span class="ed-sr">Kapaksız yazılarda ara</span><input type="search" id="ed-missing-cover-search" placeholder="Kapaksız yazı ara..." autocomplete="off"></label>',
-        '<select id="ed-missing-cover-category" aria-label="Kategoriye göre filtrele"><option value="">Tüm kategoriler</option></select></div>',
-        '<div id="ed-missing-cover-list" class="ed-analytics__topic-list"><div class="ed-analytics__loading">Liste yükleniyor...</div></div>',
-      '</section>',
       '<div class="ed-analytics__layout">',
         '<section class="ed-analytics__panel">',
           '<div class="ed-analytics__panelhead"><div><span class="ed-analytics__kicker">\u0130\u00c7ER\u0130K STRATEJ\u0130S\u0130</span><h3>Hedeflenen konular</h3></div><span class="ed-analytics__subtle">Ba\u015fl\u0131k ve metadata</span></div>',
@@ -126,36 +119,6 @@
       new Date(data.generatedAt).toLocaleString('tr-TR') +
       '. Search Console verileri yalnizca CSV y\u00fcklendiginde gosterilir.';
     drawTopics(root, data);
-    drawMissingCovers(root, data);
-  }
-
-  function drawMissingCovers(root, data) {
-    const target = root.querySelector('#ed-missing-cover-list');
-    if (!target || !Array.isArray(data.articles)) return;
-    const missing = data.articles.filter(a => !a.cover);
-    const count = root.querySelector('#ed-missing-cover-count');
-    if (count) count.textContent = '(' + formatInt(missing.length) + ')';
-    const categorySelect = root.querySelector('#ed-missing-cover-category');
-    if (categorySelect && categorySelect.options.length === 1) {
-      [...new Set(missing.map(a => a.category))].sort((a,b) => a.localeCompare(b,'tr')).forEach(category => {
-        const option = document.createElement('option');
-        option.value = category;
-        option.textContent = category;
-        categorySelect.appendChild(option);
-      });
-    }
-    const search = (root.querySelector('#ed-missing-cover-search')?.value || '').toLocaleLowerCase('tr-TR').trim();
-    const category = categorySelect?.value || '';
-    const filtered = missing.filter(a => (!category || a.category === category) &&
-      (!search || (a.title + ' ' + a.category).toLocaleLowerCase('tr-TR').includes(search)));
-    target.innerHTML = !filtered.length
-      ? '<div class="ed-analytics__empty">' + (missing.length ? 'Bu filtrede kapaksız yazı yok.' : 'Yayındaki tüm yazılarda kapak görseli var.') + '</div>'
-      : filtered.map(a => {
-        const href = editorBase() + '/collection/posts/item/' + encodeURIComponent(a.slug);
-        return '<a class="ed-analytics__topic" href="' + escapeHtml(href) + '">' +
-          '<span><b>' + escapeHtml(a.title) + '</b><small>' + escapeHtml(a.category) + ' · ' + escapeHtml(a.publishedAt || '') + '</small></span>' +
-          '<span class="ed-analytics__topicflags"><em>Kapak ekle →</em></span></a>';
-      }).join('');
   }
 
   function drawTopics(root, data) {
@@ -272,12 +235,6 @@
     });
   }
   function setupEvents(root) {
-    root.querySelector('#ed-missing-cover-search')?.addEventListener('input', () => {
-      if (report) drawMissingCovers(root, report);
-    });
-    root.querySelector('#ed-missing-cover-category')?.addEventListener('change', () => {
-      if (report) drawMissingCovers(root, report);
-    });
     root.querySelector('#ed-article-search')?.addEventListener('input', () => {
       if (report) drawTopics(root, report);
     });
